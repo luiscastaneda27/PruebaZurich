@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CubrePreexistencias&quot; : &quot;Si&quot;,
+  &quot;CubreTodasPreexistencias&quot; : &quot;Solo las seleccionadas por la Compañía&quot;,
+  &quot;CualesPreexistencias&quot; : &quot;Diabetes;Hipertiroidismo&quot;,
+  &quot;ConsideraTopePreexistencias&quot; : &quot;Si&quot;,
+  &quot;MontoTopePreexistencias&quot; : 2300,
+  &quot;TopeTodasPreexistencias&quot; : &quot;Todas&quot;,
+  &quot;NumeroDiasLibrePreexistencias&quot; : 24,
+  &quot;TipoTopePreexistencias&quot; : &quot;Tope Global (A nivel de Póliza)&quot;,
+  &quot;AgregarNivelPreexistencia&quot; : &quot;Agregar a nivel de Grupo de Negocio&quot;,
+  &quot;QuoteId&quot; : &quot;0Q075000000E9ZbCAK&quot;,
+  &quot;QuoteContratantes&quot; : [ {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgOCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgPCAW&quot;
+  } ]
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;CubrePreexistencias&quot; : &quot;Si&quot;,
+  &quot;CubreTodasPreexistencias&quot; : &quot;Solo las seleccionadas por la Compañía&quot;,
+  &quot;CualesPreexistencias&quot; : &quot;Diabetes;Hipertiroidismo&quot;,
+  &quot;ConsideraTopePreexistencias&quot; : &quot;Si&quot;,
+  &quot;MontoTopePreexistencias&quot; : 2300,
+  &quot;TopeTodasPreexistencias&quot; : &quot;Todas&quot;,
+  &quot;NumeroDiasLibrePreexistencias&quot; : 24,
+  &quot;TipoTopePreexistencias&quot; : &quot;Tope Global (A nivel de Póliza)&quot;,
+  &quot;AgregarNivelPreexistencia&quot; : &quot;Agregar a nivel de Grupo de Negocio&quot;,
+  &quot;QuoteId&quot; : &quot;0Q075000000E9ZbCAK&quot;,
+  &quot;QuoteContratantes&quot; : [ {
+    &quot;CualesPreexistencias&quot; : &quot;Hipertiroidismo&quot;,
+    &quot;Id&quot; : &quot;0Q075000000E9ZbCAK&quot;,
+    &quot;CubrePreexistencias&quot; : &quot;%CubrePreexistencias1%&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom9883</globalKey>
+        <inputFieldName>ConsideraTopePreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:ConsideraTopePreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom6138</globalKey>
+        <inputFieldName>MontoTopePreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:MontoTopePreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom3161</globalKey>
+        <inputFieldName>TipoTopePreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:TipoTopePreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom5702</globalKey>
+        <inputFieldName>CubreTodasPreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:CubreTodasPreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom423</globalKey>
+        <inputFieldName>NivelPreexistencia</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:NivelPreexistencia</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom1488</globalKey>
+        <inputFieldName>TopeTodasPreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:TopeTodasPreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom6956</globalKey>
+        <inputFieldName>CualesPreexistenciasObject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Object</outputFieldFormat>
+        <outputFieldName>QuoteContratantes:CualesPreexistenciasObject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom9950</globalKey>
+        <inputFieldName>NumeroDiasLibrePreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:NumeroDiasLibrePreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom3673</globalKey>
+        <inputFieldName>QuoteContratantes:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom8061</globalKey>
+        <inputFieldName>CubrePreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:CubrePreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPreexistenciasCustom4361</globalKey>
+        <inputFieldName>CualesPreexistenciasTransf</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>QuoteContratantes:CualesPreexistenciasTransf</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;QuoteContratantes&quot; : [ {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgOCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgPCAW&quot;
+  } ],
+  &quot;Id&quot; : &quot;0Q075000000EAgPCAW&quot;,
+  &quot;NivelPreexistencia&quot; : &quot;Grupo de Negocio&quot;,
+  &quot;TipoTopePreexistencias&quot; : &quot;Tope por Patología (A nivel de Cobertura)&quot;,
+  &quot;NumeroDiasLibrePreexistencias&quot; : 123,
+  &quot;TopeTodasPreexistencias&quot; : &quot;Solo las indicadas por la Compañía&quot;,
+  &quot;MontoTopePreexistencias&quot; : 200,
+  &quot;ConsideraTopePreexistencias&quot; : &quot;Si&quot;,
+  &quot;CualesPreexistencias&quot; : &quot;&quot;,
+  &quot;CubreTodasPreexistencias&quot; : &quot;Todas&quot;,
+  &quot;CubrePreexistencias&quot; : &quot;Si&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarCotizacionesContratantesPreexistencias_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_LM_Todas_las_Cuentas_Personal_Pagador_Segur</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ZRH_LM_RUT__c</columns>
+    <columns>ZRH_LM_Digito_Verificador__c</columns>
+    <columns>ZRH_LM_Comuna__c</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.ZRH_LM_Cuenta_Personal_Pagador_Seguro</value>
+    </filters>
+    <label>Todas las Cuentas Personal Pagador Seg.</label>
+</ListView>

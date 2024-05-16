@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ComisionCorredorMenorACien</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+   ZRH_ComisionCorredor__c &gt; 1.0,
+   ZRH_ComisionCorredor__c &lt; 0.0
+)</errorConditionFormula>
+    <errorDisplayField>ZRH_ComisionCorredor__c</errorDisplayField>
+    <errorMessage>Ingresar un valor entre 0 y 100</errorMessage>
+</ValidationRule>

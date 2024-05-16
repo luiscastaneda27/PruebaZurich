@@ -1,0 +1,238 @@
+<!--/*********************************************************************************
+Project      : Zurich 
+Created By   : Deloitte
+Created Date : 23/08/2023
+Description  : HTML - Table to display values from JSON BMI
+History      :
+**************************ACRONYM OF AUTHORS************************************
+AUTHOR                         ACRONYM
+Luis Castañeda                    LC
+********************************************************************************
+VERSION  AUTHOR         DATE            Description
+1.0       LC	     23/08/2023		  initial version
+********************************************************************************/-->
+<template >
+    <lightning-card if:false={recordId} title="BMI Seleccionados">
+        <lightning-button slot="actions" variant="brand" label="Agregar otro BMI" onclick={onclickNewBMI} disabled={disabledNewBMI} >
+        </lightning-button>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small" size="5">
+                <div class="header-column">
+                    <p><b> BMI</b></p>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="5">
+                <div class="header-column">
+                    <p><b>Uso Inferior (%)</b></p>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="2">
+            </lightning-layout-item>
+        </lightning-layout>
+        <template for:each={BMIList} for:item="record">
+            <lightning-layout key={record.Id}>
+                <lightning-layout-item padding="around-small" size="5">
+                    <div class="header-column">
+                        <p>{record.BMI}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="5">
+                    <div class="header-column">
+                        <p>{record.UsoInferior}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <a name={record.Id} onclick={onclickShow}>Ver</a>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </lightning-card>
+    <lightning-layout if:true={data.showBMI} vertical-align="stretch" multiple-rows="true">
+        <lightning-layout-item padding="around-small" size="5">
+            <br />
+            <lightning-combobox name="bmi" options={optionsBMI} onchange={handleChange} value={data.BMI}>
+            </lightning-combobox>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="5">
+            <lightning-input type="number" max="100" minlength="1" maxlength="3" message-when-too-short="Entrada demasiado corta" message-when-too-long="Entrada demasiado larga"  value={data.UsoInferior} disabled={data.disabledLowerUse} name="lowerUse"
+                formatter="percent-fixed" onchange={handleChange} ></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="2">
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6" if:false={data.disabledLowerUse}>
+            <label for="filter">Filtrar:</label>
+            <lightning-input type="text" name="filterPreferred" onchange={onchangeFilter} value={data.filterPreferred}>
+            </lightning-input>
+            <div class="table-container">
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">
+                                <div class="slds-truncate" title="Record ID">Prestador Preferente</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Select">Seleccionar</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={preferredProvidersListTable} for:item="record">
+                            <tr key={record.Id}>
+                                <td data-label="Record ID">
+                                    <div class="slds-truncate" title={record.NombreCobertura}>{record.Nombre}</div>
+                                </td>
+                                <td data-label="Select">
+                                    <lightning-input type="checkbox" checked={record.selected} data-id={record.Id}
+                                        id={record.Id} data-name="preferredProviders" onchange={handleCheckboxChange}>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="6" if:false={data.disabledLowerUse}>
+            <label for="filter">Filtrar:</label>
+            <lightning-input type="text" name="filterCoverage" onchange={onchangeFilter} value={data.filterCoverage}>
+            </lightning-input>
+            <div class="table-container">
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">
+                                <div class="slds-truncate" title="Record ID">Cobertura</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Select">Seleccionar</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={coveragesListTable} for:item="record">
+                            <tr key={record.Id}>
+                                <td data-label="Record ID">
+                                    <div class="slds-truncate" title={record.NombreCobertura}>{record.Nombre}</div>
+                                </td>
+                                <td data-label="Select">
+                                    <lightning-input type="checkbox" checked={record.selected} data-id={record.Id}
+                                        id={record.Id} data-name="coverage" onchange={handleCheckboxChange}>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" >
+            <footer class="slds-modal__footer">
+                <lightning-button label="Eliminar" title="Eliminar" onclick={onclickDeleteBMI} variant="destructive" if:false={data.isNew} class="slds-m-left_x-small" >
+                </lightning-button>
+                <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveBMI} variant="brand" class="slds-m-left_x-small">
+                </lightning-button>
+            </footer>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <lightning-card if:true={recordId} title="BMI Seleccionados" icon-name="standard:quotes" >
+        <lightning-layout vertical-align="stretch" multiple-rows="true">
+            <lightning-layout-item padding="around-small" size="12" >
+                <div class="table-container">
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">BMI</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Select">Uso Inferior (%)</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Select"> Prestadores / Coberturas</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={BMIList} for:item="record">
+                                <tr key={record.Id}>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.BMI}</div>
+                                    </td>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.UsoInferior}</div>
+                                    </td>
+                                    <td data-label="Record ID">
+                                        <div class="header-column">
+                                            <a name={record.Id} onclick={onclickShowRecord} if:true={record.UsoInferior} >Ver</a>
+                                        </div></div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="stretch" multiple-rows="true">
+            <lightning-layout-item padding="around-small" size="6" if:true={data.UsoInferior} >
+                <div class="table-container">
+                    <b>BMI:</b> {data.BMI}
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">Prestador Preferente</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={data.ListaPrestadores} for:item="record">
+                                <tr key={record.Id}>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.Nombre}</div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="6" if:true={data.UsoInferior} >
+                <div class="table-container">
+                    <b>Uso Inferior (%):</b> {data.UsoInferior}
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">Cobertura</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={data.ListaCoberturas} for:item="record">
+                                <tr key={record.Id}>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.Nombre}</div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+        
+    <template if:true={showSpinner}>
+        <div id="activityIndicator" class="slds-spinner_container">
+            <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+                <span class="slds-assistive-text">Loading, Please Wait...</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

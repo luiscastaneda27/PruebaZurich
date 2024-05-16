@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="">
+        <div class="slds-p-around_small">
+            <lightning-dual-listbox name="preexistencias"
+                                    label="¿Cuáles Preexistencias?"
+                                    source-label="Disponible"
+                                    selected-label="Seleccionado"
+                                    field-level-help=""
+                                    required="true"
+                                    options={lstOptions}
+                                    onchange={handleChange}
+                                    value={lstSelected}></lightning-dual-listbox>
+                                
+                                    <br/>
+        </div>
+    </lightning-card>
+</template>

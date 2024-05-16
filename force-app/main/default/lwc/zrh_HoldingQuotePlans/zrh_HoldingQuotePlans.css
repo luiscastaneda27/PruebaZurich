@@ -1,0 +1,39 @@
+.vloc-ins-spinner {
+    top: 4rem;
+}
+
+.vloc-ins-product {
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 30px;
+    background-color: #F5F6F9;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.vloc-ins-product-name {
+    width: 100%;
+}
+
+.vloc-ins-product-summary:hover {
+    background-color: #ebf3fc;
+}
+
+.vloc-ins-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vloc-ins-label {
+    color: #7c7c7c;
+}
+
+
+.vloc-ins-header-content {
+    width: 100%;
+}
+
+.vloc-ins-title-container  {
+    line-height: 2rem;
+}

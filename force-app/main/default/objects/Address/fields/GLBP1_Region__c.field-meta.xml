@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Region__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Seleccione una Región y luego la Comuna</inlineHelpText>
+    <label>Región</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>GLBP1_Pais__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>GLBP1_Region</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>01 Tarapacá</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>02 Antofagasta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>03 Atacama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>04 Coquimbo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>05 Valparaíso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>06 Libertador General Bernardo O&apos;Higgins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>07 Maule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>08 Biobío</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>09 La Araucanía</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>10 Los Lagos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>11 Aysén del General Carlos Ibáñez del Campo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>12 Magallanes y de la Antártica Chilena</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>13 Metropolitana de Santiago</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>14 Los Ríos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>15 Arica y Parinacota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chile</controllingFieldValue>
+            <valueName>16 Ñuble</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

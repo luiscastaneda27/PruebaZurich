@@ -1,0 +1,16 @@
+:host {
+    width: 100%;
+}
+
+.vloc-ins-coverage {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.vloc-ins-coverage:last-child {
+    border-bottom: none;
+}
+
+.vloc-ins-coverages-heading {
+    font-size: 1.25rem;
+    line-height: 1.25;
+}

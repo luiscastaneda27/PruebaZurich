@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_CualesPreexistencias__c</fullName>
+    <externalId>false</externalId>
+    <label>Cúales Preexistencias</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diabetes</fullName>
+                <default>false</default>
+                <label>Diabetes</label>
+            </value>
+            <value>
+                <fullName>Hipertensión Arterial</fullName>
+                <default>false</default>
+                <label>Hipertensión Arterial</label>
+            </value>
+            <value>
+                <fullName>Hipotiroidismo</fullName>
+                <default>false</default>
+                <label>Hipotiroidismo</label>
+            </value>
+            <value>
+                <fullName>Hipertiroidismo</fullName>
+                <default>false</default>
+                <label>Hipertiroidismo</label>
+            </value>
+            <value>
+                <fullName>Tiroiditis</fullName>
+                <default>false</default>
+                <label>Tiroiditis</label>
+            </value>
+            <value>
+                <fullName>Bocio</fullName>
+                <default>false</default>
+                <label>Bocio</label>
+            </value>
+            <value>
+                <fullName>Resistencia a la Insulina</fullName>
+                <default>false</default>
+                <label>Resistencia a la Insulina</label>
+            </value>
+            <value>
+                <fullName>Intolerancia a la Glucosa</fullName>
+                <default>false</default>
+                <label>Intolerancia a la Glucosa</label>
+            </value>
+            <value>
+                <fullName>Depresión</fullName>
+                <default>false</default>
+                <label>Depresión</label>
+            </value>
+            <value>
+                <fullName>Dermatitis</fullName>
+                <default>false</default>
+                <label>Dermatitis</label>
+            </value>
+            <value>
+                <fullName>Asma</fullName>
+                <default>false</default>
+                <label>Asma</label>
+            </value>
+            <value>
+                <fullName>Psoriasis</fullName>
+                <default>false</default>
+                <label>Psoriasis</label>
+            </value>
+            <value>
+                <fullName>Estrabismo</fullName>
+                <default>false</default>
+                <label>Estrabismo</label>
+            </value>
+            <value>
+                <fullName>Escoliosis</fullName>
+                <default>false</default>
+                <label>Escoliosis</label>
+            </value>
+            <value>
+                <fullName>Hernia Lumbar</fullName>
+                <default>false</default>
+                <label>Hernia Lumbar</label>
+            </value>
+            <value>
+                <fullName>Hernia Nucleo Pulposo</fullName>
+                <default>false</default>
+                <label>Hernia Nucleo Pulposo</label>
+            </value>
+            <value>
+                <fullName>Vitiligo</fullName>
+                <default>false</default>
+                <label>Vitiligo</label>
+            </value>
+            <value>
+                <fullName>Acné</fullName>
+                <default>false</default>
+                <label>Acné</label>
+            </value>
+            <value>
+                <fullName>Rosácea</fullName>
+                <default>false</default>
+                <label>Rosácea</label>
+            </value>
+            <value>
+                <fullName>Reflujo Gastroesofágico</fullName>
+                <default>false</default>
+                <label>Reflujo Gastroesofágico</label>
+            </value>
+            <value>
+                <fullName>Soplos</fullName>
+                <default>false</default>
+                <label>Soplos</label>
+            </value>
+            <value>
+                <fullName>Rinitis</fullName>
+                <default>false</default>
+                <label>Rinitis</label>
+            </value>
+            <value>
+                <fullName>Varices Extremidades Inferiores</fullName>
+                <default>false</default>
+                <label>Varices Extremidades Inferiores</label>
+            </value>
+            <value>
+                <fullName>Tendinitis</fullName>
+                <default>false</default>
+                <label>Tendinitis</label>
+            </value>
+            <value>
+                <fullName>Discopatía Lumbar</fullName>
+                <default>false</default>
+                <label>Discopatía Lumbar</label>
+            </value>
+            <value>
+                <fullName>Enfermedad Diverticular</fullName>
+                <default>false</default>
+                <label>Enfermedad Diverticular</label>
+            </value>
+            <value>
+                <fullName>Varicoceles</fullName>
+                <default>false</default>
+                <label>Varicoceles</label>
+            </value>
+            <value>
+                <fullName>Osteopenia</fullName>
+                <default>false</default>
+                <label>Osteopenia</label>
+            </value>
+            <value>
+                <fullName>Osteoporosis</fullName>
+                <default>false</default>
+                <label>Osteoporosis</label>
+            </value>
+            <value>
+                <fullName>Colitis Ulcerosa</fullName>
+                <default>false</default>
+                <label>Colitis Ulcerosa</label>
+            </value>
+            <value>
+                <fullName>Labio Leporino</fullName>
+                <default>false</default>
+                <label>Labio Leporino</label>
+            </value>
+            <value>
+                <fullName>Fisura Palatina</fullName>
+                <default>false</default>
+                <label>Fisura Palatina</label>
+            </value>
+            <value>
+                <fullName>Urolitiasis Renal</fullName>
+                <default>false</default>
+                <label>Urolitiasis Renal</label>
+            </value>
+            <value>
+                <fullName>Cálculo Renal</fullName>
+                <default>false</default>
+                <label>Cálculo Renal</label>
+            </value>
+            <value>
+                <fullName>Hernia Hiatal</fullName>
+                <default>false</default>
+                <label>Hernia Hiatal</label>
+            </value>
+            <value>
+                <fullName>Hernia Inguinal</fullName>
+                <default>false</default>
+                <label>Hernia Inguinal</label>
+            </value>
+            <value>
+                <fullName>Epicondilitis</fullName>
+                <default>false</default>
+                <label>Epicondilitis</label>
+            </value>
+            <value>
+                <fullName>Miomatosis Uterina</fullName>
+                <default>false</default>
+                <label>Miomatosis Uterina</label>
+            </value>
+            <value>
+                <fullName>Hernia Umbilical</fullName>
+                <default>false</default>
+                <label>Hernia Umbilical</label>
+            </value>
+            <value>
+                <fullName>Artrosis de Cadera</fullName>
+                <default>false</default>
+                <label>Artrosis de Cadera</label>
+            </value>
+            <value>
+                <fullName>Displasia de Cadera</fullName>
+                <default>false</default>
+                <label>Displasia de Cadera</label>
+            </value>
+            <value>
+                <fullName>Hernia Cervical</fullName>
+                <default>false</default>
+                <label>Hernia Cervical</label>
+            </value>
+            <value>
+                <fullName>Lumbago</fullName>
+                <default>false</default>
+                <label>Lumbago</label>
+            </value>
+            <value>
+                <fullName>Otitis</fullName>
+                <default>false</default>
+                <label>Otitis</label>
+            </value>
+            <value>
+                <fullName>Sinovitis</fullName>
+                <default>false</default>
+                <label>Sinovitis</label>
+            </value>
+            <value>
+                <fullName>Pie Bot</fullName>
+                <default>false</default>
+                <label>Pie Bot</label>
+            </value>
+            <value>
+                <fullName>Pie Cavo</fullName>
+                <default>false</default>
+                <label>Pie Cavo</label>
+            </value>
+            <value>
+                <fullName>Adenoides</fullName>
+                <default>false</default>
+                <label>Adenoides</label>
+            </value>
+            <value>
+                <fullName>Alergia Atópica</fullName>
+                <default>false</default>
+                <label>Alergia Atópica</label>
+            </value>
+            <value>
+                <fullName>Artritis Reumatoidea</fullName>
+                <default>false</default>
+                <label>Artritis Reumatoidea</label>
+            </value>
+            <value>
+                <fullName>Artritis Psoriasica</fullName>
+                <default>false</default>
+                <label>Artritis Psoriasica</label>
+            </value>
+            <value>
+                <fullName>Enfermedad de Crohn</fullName>
+                <default>false</default>
+                <label>Enfermedad de Crohn</label>
+            </value>
+            <value>
+                <fullName>Cataratas</fullName>
+                <default>false</default>
+                <label>Cataratas</label>
+            </value>
+            <value>
+                <fullName>Criptorquidea</fullName>
+                <default>false</default>
+                <label>Criptorquidea</label>
+            </value>
+            <value>
+                <fullName>Hernia Diafragmatica</fullName>
+                <default>false</default>
+                <label>Hernia Diafragmatica</label>
+            </value>
+            <value>
+                <fullName>Neumotórax</fullName>
+                <default>false</default>
+                <label>Neumotórax</label>
+            </value>
+            <value>
+                <fullName>Crisis de Pánico</fullName>
+                <default>false</default>
+                <label>Crisis de Pánico</label>
+            </value>
+            <value>
+                <fullName>Trastorno Bipolar</fullName>
+                <default>false</default>
+                <label>Trastorno Bipolar</label>
+            </value>
+            <value>
+                <fullName>Pielonefritis</fullName>
+                <default>false</default>
+                <label>Pielonefritis</label>
+            </value>
+            <value>
+                <fullName>Desprendimiento de Retina</fullName>
+                <default>false</default>
+                <label>Desprendimiento de Retina</label>
+            </value>
+            <value>
+                <fullName>Esófago de Barret</fullName>
+                <default>false</default>
+                <label>Esófago de Barret</label>
+            </value>
+            <value>
+                <fullName>Gota</fullName>
+                <default>false</default>
+                <label>Gota</label>
+            </value>
+            <value>
+                <fullName>Bursitis</fullName>
+                <default>false</default>
+                <label>Bursitis</label>
+            </value>
+            <value>
+                <fullName>Fibromialgia</fullName>
+                <default>false</default>
+                <label>Fibromialgia</label>
+            </value>
+            <value>
+                <fullName>Glaucoma</fullName>
+                <default>false</default>
+                <label>Glaucoma</label>
+            </value>
+            <value>
+                <fullName>Endometriosis</fullName>
+                <default>false</default>
+                <label>Endometriosis</label>
+            </value>
+            <value>
+                <fullName>Ovarios Poliquisticos</fullName>
+                <default>false</default>
+                <label>Ovarios Poliquisticos</label>
+            </value>
+            <value>
+                <fullName>Cirugía Bariatrica</fullName>
+                <default>false</default>
+                <label>Cirugía Bariatrica</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>[JN][SFCLP-1016] Tabla de requisitos medicos</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AtributosReqMedicosSeleccionado&quot; : &quot;{\&quot;EdadMedio\&quot;:\&quot;21\&quot;,\&quot;RangoHasta\&quot;:\&quot;10\&quot;,\&quot;EdadSuperiorRangoSobre\&quot;:\&quot;32\&quot;,\&quot;EdadInferiorRangoSobre\&quot;:\&quot;20\&quot;,\&quot;EdadMedioRangoHasta\&quot;:\&quot;22\&quot;,\&quot;RangoEntre3\&quot;:\&quot;13\&quot;,\&quot;EdadInferiorRangoEntre3\&quot;:\&quot;19\&quot;,\&quot;EdadSuperiorRangoHasta\&quot;:\&quot;28\&quot;,\&quot;EdadSuperiorRangoEntre1\&quot;:\&quot;29\&quot;,\&quot;RangoSobre\&quot;:\&quot;14\&quot;,\&quot;RangoEntre1\&quot;:\&quot;11\&quot;,\&quot;RangoEntre2\&quot;:\&quot;12\&quot;,\&quot;EdadInferiorRangoEntre2\&quot;:\&quot;18\&quot;,\&quot;EdadInferiorRangoHasta\&quot;:\&quot;16\&quot;,\&quot;EdadSuperior\&quot;:\&quot;27\&quot;,\&quot;EdadMedioRangoEntre1\&quot;:\&quot;23\&quot;,\&quot;EdadMedioRangoEntre2\&quot;:\&quot;24\&quot;,\&quot;EdadMedioRangoSobre\&quot;:\&quot;26\&quot;,\&quot;EdadSuperiorRangoEntre2\&quot;:\&quot;30\&quot;,\&quot;EdadInferior\&quot;:\&quot;15\&quot;,\&quot;EdadSuperiorRangoEntre3\&quot;:\&quot;31\&quot;,\&quot;EdadMedioRangoEntre3\&quot;:\&quot;25\&quot;}&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TransformarJsonReqMedicos</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformarJsonReqMedicosCustom4523</globalKey>
+        <inputFieldName>salida</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformarJsonReqMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>salida</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:AtributosReqMedicosSeleccionado DESERIALIZE</formulaConverted>
+        <formulaExpression>DESERIALIZE(AtributosReqMedicosSeleccionado)</formulaExpression>
+        <formulaResultPath>salida</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>TransformarJsonReqMedicosCustom8688</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformarJsonReqMedicos</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TransformarJsonReqMedicos_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

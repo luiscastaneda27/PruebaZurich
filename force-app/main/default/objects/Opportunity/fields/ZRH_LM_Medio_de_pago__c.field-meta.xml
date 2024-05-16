@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_LM_Medio_de_pago__c</fullName>
+    <externalId>false</externalId>
+    <label>Medio de pago</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Crédito</fullName>
+                <default>false</default>
+                <label>Crédito</label>
+            </value>
+            <value>
+                <fullName>Débito</fullName>
+                <default>false</default>
+                <label>Débito</label>
+            </value>
+            <value>
+                <fullName>PAC</fullName>
+                <default>false</default>
+                <label>PAC</label>
+            </value>
+            <value>
+                <fullName>PAT</fullName>
+                <default>true</default>
+                <label>PAT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

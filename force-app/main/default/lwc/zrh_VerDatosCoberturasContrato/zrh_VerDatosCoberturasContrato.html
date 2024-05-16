@@ -1,0 +1,16 @@
+<!-- helloBinding.html -->
+<template>
+    <template for:each={attributesToDisplay} for:item="section" >
+        <lightning-accordion allow-multiple-sections-open key={section.category} active-section-name="name">
+            <lightning-accordion-section name="name" class="slds-form-element_compound slds-accordion__summary-heading" label={section.category}>
+                <div class="slds-grid slds-form__row">
+                    <template for:each={section.attributes} for:item="attribute">
+                        <lightning-input name="textield" class=" slds-col slds-size_6-of-12" type="text" label={attribute.label} value={attribute.value} key={attribute.code} readonly="true"></lightning-input>
+                    </template>
+                    
+                </div>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </template>
+    
+</template>

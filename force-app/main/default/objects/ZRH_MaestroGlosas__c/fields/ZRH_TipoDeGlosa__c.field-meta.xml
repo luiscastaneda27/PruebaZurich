@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_TipoDeGlosa__c</fullName>
+    <description>Puede ser una Glosa Estándar o una Glosa Condicional o Manual</description>
+    <externalId>false</externalId>
+    <label>Tipo de Glosa</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>G-001</fullName>
+                <default>false</default>
+                <label>Estándar</label>
+            </value>
+            <value>
+                <fullName>G-002</fullName>
+                <default>false</default>
+                <label>Condicional</label>
+            </value>
+            <value>
+                <fullName>G-003</fullName>
+                <default>false</default>
+                <label>Particular (Manual)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

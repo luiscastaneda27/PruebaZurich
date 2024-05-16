@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_Movil12Digitos</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(MobilePhone)),
+    LEN(MobilePhone) &lt;&gt; 12
+)</errorConditionFormula>
+    <errorMessage>Debe tener 12 dígitos con la siguiente nomenclatura: &quot;+&quot; / Código país: &quot;xx&quot;/ Número:&quot;xxxxxxxxx&quot;</errorMessage>
+</ValidationRule>

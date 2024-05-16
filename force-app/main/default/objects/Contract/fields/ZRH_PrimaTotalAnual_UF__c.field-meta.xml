@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_PrimaTotalAnual_UF__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Campo para obtener la prima anual</description>
+    <externalId>false</externalId>
+    <label>Prima Total Anual UF</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

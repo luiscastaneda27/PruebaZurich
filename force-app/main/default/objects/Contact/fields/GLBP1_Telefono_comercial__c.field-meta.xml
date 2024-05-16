@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Telefono_comercial__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Nomenclatura:  &quot;+&quot; / Código país: &quot;xx&quot;/ Número:&quot;xxxxxxxxx&quot;</inlineHelpText>
+    <label>Teléfono comercial</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Phone</type>
+</CustomField>

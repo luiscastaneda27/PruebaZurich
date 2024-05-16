@@ -1,0 +1,478 @@
+<!--/*********************************************************************************
+Project      : Zurich 
+Created By   : Deloitte
+Created Date : 05/02/2024
+Description  : HTML - Table to display values from JSON Topes
+History      :
+**************************ACRONYM OF AUTHORS************************************
+AUTHOR                         ACRONYM
+Josue Alejandro Aguilar        JAA
+********************************************************************************
+VERSION  AUTHOR         DATE            Description
+1.0       JAA	     05/02/2024		  initial version
+********************************************************************************/-->
+<template >
+
+    <lightning-card if:true={topeGrupoCobertura}>
+        <lightning-card if:false={recordId} title="Topes de Grupo de Cobertura Configurados">
+            <lightning-button slot="actions" variant="brand" label="Agregar Tope" onclick={onclickNewTopes}>
+            </lightning-button>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Tope</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Agrupación</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Rol</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Grupo de Cobertura</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="1">
+                    <div class="header-column">
+                        <p><b>Nro. Prestaciones Anual</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="1">
+                    <div class="header-column">
+                        <p><b>Valor (UF)</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="1">
+                    <div class="header-column">
+                        <p><b>Valor Deducible</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="1">
+                </lightning-layout-item>
+            </lightning-layout>
+            <template for:each={TopesList} for:item="record">
+                <lightning-layout key={record.Id}>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.TopeLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.AgrupacionLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.RolLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.GrupoCoberturaLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="1">
+                        <div class="header-column">
+                            <p>{record.NroPrestAnuales}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="1">
+                        <div class="header-column">
+                            <p>{record.Valor}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="1">
+                        <div class="header-column">
+                            <p>{record.ValorDeducible}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="1">
+                        <div class="header-column">
+                            <a name={record.Id} onclick={onclickShow}>Editar</a>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </lightning-card>
+    </lightning-card>
+    <lightning-card if:true={topePoliza}>
+        <lightning-card if:false={recordId} title="Topes de Póliza Configurados">
+            <lightning-button slot="actions" variant="brand" label="Agregar Tope" onclick={onclickNewTopes}>
+            </lightning-button>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Tope</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Agrupación</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Rol</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Valor (UF)</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Valor Deducible</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="1">
+                </lightning-layout-item>
+            </lightning-layout>
+            <template for:each={TopesList} for:item="record">
+                <lightning-layout key={record.Id}>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.TopeLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.AgrupacionLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.RolLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.Valor}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.ValorDeducible}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="1">
+                        <div class="header-column">
+                            <a name={record.Id} onclick={onclickShow}>Editar</a>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </lightning-card>
+    </lightning-card>
+    <lightning-card if:true={topeAdicional}>
+        <lightning-card if:false={recordId} title="Topes Adicionales Configurados">
+            <lightning-button slot="actions" variant="brand" label="Agregar Tope" onclick={onclickNewTopes}>
+            </lightning-button>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small" size="3">
+                    <div class="header-column">
+                        <p><b>Tope</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="3">
+                    <div class="header-column">
+                        <p><b>Alternativa</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="3">
+                    <div class="header-column">
+                        <p><b>Rol</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <p><b>Valor (UF)</b></p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="1">
+                </lightning-layout-item>
+            </lightning-layout>
+            <template for:each={TopesList} for:item="record">
+                <lightning-layout key={record.Id}>
+                    <lightning-layout-item padding="around-small" size="3">
+                        <div class="header-column">
+                            <p>{record.TopeLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                        <div class="header-column">
+                            <p>{record.Alternativa}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="3">
+                        <div class="header-column">
+                            <p>{record.RolLabel}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="2">
+                        <div class="header-column">
+                            <p>{record.Valor}</p>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="1">
+                        <div class="header-column">
+                            <a name={record.Id} onclick={onclickShow}>Editar</a>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </lightning-card>
+    </lightning-card>
+    <hr>
+
+    <lightning-card if:true={data.showTopes}>
+        <lightning-card if:true={topeGrupoCobertura} title="Editar Tope de Grupo de Cobertura">
+            <lightning-layout vertical-align="stretch" multiple-rows="true">
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="tope" onchange={handleChange} value={data.TopeLabel} label="Tope" readonly></lightning-input>
+                </lightning-layout-item>
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="agrupacion" onchange={handleChange} value={data.AgrupacionLabel} label="Agrupación" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="rol" onchange={handleChange} value={data.RolLabel} label="Rol" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="grupo-cobertura" onchange={handleChange} value={data.GrupoCoberturaLabel} label="Grupo de Cobertura" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="number" name="nro-prestaciones" onchange={handleChange} value={data.NroPrestAnuales} label="Nro. Prestaciones Anuales"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="number" name="valor" onchange={handleChange} value={data.Valor} label="Valor (UF)"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="text" name="valor-deducible" step=".01" onchange={handleChange} value={data.ValorDeducible} label="Valor Deducible" pattern="^-?\d+(\.\d+)?$" ></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" >
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" title="Cancelar" onclick={onclickCancel} variant="neutral" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                        <lightning-button label="Eliminar" title="Eliminar" onclick={onclickDeleteTopes} variant="destructive" class="slds-m-left_x-small" >
+                        </lightning-button>
+                        <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveTopes} variant="brand" class="slds-m-left_x-small">
+                        </lightning-button>
+                    </footer>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </lightning-card>
+        <lightning-card if:true={topePoliza} title="Editar Tope de Póliza">
+            <lightning-layout vertical-align="stretch" multiple-rows="true">
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="tope" onchange={handleChange} value={data.TopeLabel} label="Tope" readonly></lightning-input>
+                </lightning-layout-item>
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="agrupacion" onchange={handleChange} value={data.AgrupacionLabel} label="Agrupación" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="text" name="rol" onchange={handleChange} value={data.RolLabel} label="Rol" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="number" name="valor" onchange={handleChange} value={data.Valor} label="Valor (UF)"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="text" name="valor-deducible" step="0.01" onchange={handleChange} value={data.ValorDeducible} label="Valor Deducible" pattern="^-?\d+(\.\d+)?$"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" >
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" title="Cancelar" onclick={onclickCancel} variant="neutral" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                        <lightning-button label="Eliminar" title="Eliminar" onclick={onclickDeleteTopes} variant="destructive" class="slds-m-left_x-small" >
+                        </lightning-button>
+                        <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveTopes} variant="brand" class="slds-m-left_x-small">
+                        </lightning-button>
+                    </footer>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </lightning-card>
+        <lightning-card if:true={topeAdicional} title="Editar Tope Adicional">
+            <lightning-layout vertical-align="stretch" multiple-rows="true">
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="tope" onchange={handleChange} value={data.TopeLabel} label="Tope" readonly></lightning-input>
+                </lightning-layout-item>
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="alternativa" onchange={handleChange} value={data.Alternativa} label="Alternativa" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="text" name="rol" onchange={handleChange} value={data.RolLabel} label="Rol" readonly></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-input type="number" name="valor" onchange={handleChange} value={data.Valor} label="Valor (UF)"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" >
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" title="Cancelar" onclick={onclickCancel} variant="neutral" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                        <lightning-button label="Eliminar" title="Eliminar" onclick={onclickDeleteTopes} variant="destructive" class="slds-m-left_x-small" >
+                        </lightning-button>
+                        <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveTopes} variant="brand" class="slds-m-left_x-small">
+                        </lightning-button>
+                    </footer>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </lightning-card>
+    </lightning-card>
+
+    <lightning-card if:true={data.isNew}>
+        <lightning-card if:true={topeGrupoCobertura} title="Nuevo Tope de Grupo de Cobertura">
+            <lightning-layout vertical-align="stretch" multiple-rows="true">
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="tope" options={optionsTopes} onchange={handleChange} label="Tope" required>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="agrupacion" options={optionsAgrupacion} onchange={handleChange} label="Agrupación" required>
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="rol" options={optionsRoles} onchange={handleChange} label="Rol" required>
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="grupo-cobertura" options={optionsGrupoCobertura} onchange={handleChange} label="Grupo de Cobertura" required>
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="number" name="nro-prestaciones" onchange={handleChange} label="Nro. Prestaciones Anual" required></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="number" name="valor" onchange={handleChange} label="Valor (UF)" required></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="text" name="valor-deducible" step=".01" onchange={handleChange} label="Valor Deducible" pattern="^-?\d+(\.\d+)?$" required></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" >
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" title="Cancelar" onclick={onclickCancel} variant="neutral" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                        <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveTopes} variant="brand" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                    </footer>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </lightning-card>
+        <lightning-card if:true={topePoliza} title="Nuevo Tope de Póliza">
+            <lightning-layout vertical-align="stretch" multiple-rows="true">
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="tope" options={optionsTopes} onchange={handleChange} label="Tope" >
+                    </lightning-combobox>
+                </lightning-layout-item>
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="agrupacion" options={optionsAgrupacion} onchange={handleChange} label="Agrupación" >
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-combobox name="rol" options={optionsRoles} onchange={handleChange} label="Rol" >
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="number" name="valor" onchange={handleChange} label="Valor (UF)" ></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="4">
+                    <lightning-input type="text" name="valor-deducible" step=".01" onchange={handleChange} label="Valor Deducible" pattern="^-?\d+(\.\d+)?$" ></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" >
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" title="Cancelar" onclick={onclickCancel} variant="neutral" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                        <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveTopes} variant="brand" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                    </footer>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </lightning-card>
+        <lightning-card if:true={topeAdicional} title="Nuevo Tope Adicional">
+            <lightning-layout vertical-align="stretch" multiple-rows="true">
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="tope" options={optionsTopesAdicionales} onchange={handleChange} label="Tope" value={data.Tope} >
+                    </lightning-combobox>
+                </lightning-layout-item>
+                
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="alternativa" options={optionsAlternativa} onchange={handleChange} label="Alternativa" >
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="6">
+                    <lightning-combobox name="rol" options={optionsRoles} onchange={handleChange} label="Rol" >
+                    </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item if:true={showValue} padding="around-small" size="6">
+                    <lightning-input type="number" name="valor" onchange={handleChange} label="Valor (UF)" ></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item padding="around-small" size="12" >
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" title="Cancelar" onclick={onclickCancel} variant="neutral" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                        <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveTopes} variant="brand" class="slds-var-m-left_x-small">
+                        </lightning-button>
+                    </footer>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </lightning-card>
+    </lightning-card>
+        
+    <template if:true={showSpinner}>
+        <div id="activityIndicator" class="slds-spinner_container">
+            <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+                <span class="slds-assistive-text">Cargando, Por favor espere...</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

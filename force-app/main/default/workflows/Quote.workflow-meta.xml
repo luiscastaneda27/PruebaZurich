@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ZRH_AprobacionPendienteConfirmado</fullName>
+        <field>ZRH_AprobacionPendiente__c</field>
+        <literalValue>0</literalValue>
+        <name>Aprobacion Pendiente Confirmado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ZRH_AprobacionPendienteRechazado</fullName>
+        <field>ZRH_AprobacionPendiente__c</field>
+        <literalValue>0</literalValue>
+        <name>Aprobación Pendiente Rechazado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ZRH_EstadoAprobado</fullName>
+        <field>Status</field>
+        <literalValue>E-05</literalValue>
+        <name>Estado Aprobado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ZRH_EstadoDeclinado</fullName>
+        <field>Status</field>
+        <literalValue>E-06</literalValue>
+        <name>Estado Declinado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ZRH_EstadoPendiente</fullName>
+        <field>ZRH_AprobacionPendiente__c</field>
+        <literalValue>1</literalValue>
+        <name>Estado Pendiente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

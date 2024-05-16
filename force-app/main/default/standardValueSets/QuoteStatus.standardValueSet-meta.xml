@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>E-01</fullName>
+        <default>true</default>
+        <label>Reserva</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-02</fullName>
+        <default>false</default>
+        <label>Ingreso</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-03</fullName>
+        <default>false</default>
+        <label>Documentacion Faltante</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-04</fullName>
+        <default>false</default>
+        <label>Documentacion Enviada</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-05</fullName>
+        <default>false</default>
+        <label>Cotizada</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-06</fullName>
+        <default>false</default>
+        <label>Declinada</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-07</fullName>
+        <default>false</default>
+        <label>Enviada al Corredor</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-08</fullName>
+        <default>false</default>
+        <label>Recotizar</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-09</fullName>
+        <default>false</default>
+        <label>Ganada</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>E-10</fullName>
+        <default>false</default>
+        <label>Perdida</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Datos auto</fullName>
+        <default>false</default>
+        <label>Datos auto</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Datos propietario</fullName>
+        <default>false</default>
+        <label>Datos propietario</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Selección plan</fullName>
+        <default>false</default>
+        <label>Selección plan</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Información adicional</fullName>
+        <default>false</default>
+        <label>Información adicional</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Medio de pago</fullName>
+        <default>false</default>
+        <label>Medio de pago</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Firma de documento</fullName>
+        <default>false</default>
+        <label>Firma de documento</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+</StandardValueSet>

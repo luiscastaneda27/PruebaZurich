@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;ExtraerCotizacionDeSolicitud&quot; : null,
+    &quot;ExtraerProductosDeCotizacion&quot; : null,
+    &quot;ActualizarPlanesVidaConTarificacion&quot; : null,
+    &quot;TransformarParaTarificarVida&quot; : null,
+    &quot;ActualizarCoberturasVidaConTarificacion&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;Planes&quot; : {
+    &quot;CapitalAseguradoUF&quot; : &quot;&quot;,
+    &quot;Factor&quot; : &quot;&quot;,
+    &quot;NumeroDeAsegurados&quot; : &quot;&quot;,
+    &quot;NumeroDeTitularesT0&quot; : &quot;&quot;,
+    &quot;NumeroDeTitularesT1&quot; : &quot;&quot;,
+    &quot;NumeroDeTitularesT2OMas&quot; : &quot;&quot;,
+    &quot;PrimaAnualUF&quot; : &quot;&quot;,
+    &quot;PrimaMensualTotal&quot; : &quot;&quot;,
+    &quot;PrimaMensualUF&quot; : &quot;&quot;,
+    &quot;PrimaNetaSugeridaT0&quot; : &quot;&quot;,
+    &quot;PrimaNetaSugeridaT1&quot; : &quot;&quot;,
+    &quot;PrimaNetaSugeridaT2OMas&quot; : &quot;&quot;,
+    &quot;PrimaNetaTotalT0&quot; : &quot;&quot;,
+    &quot;PrimaNetaTotalT1&quot; : &quot;&quot;,
+    &quot;PrimaNetaTotalT2OMas&quot; : &quot;&quot;,
+    &quot;PrimaPropuestaT0&quot; : &quot;&quot;,
+    &quot;PrimaPropuestaT1&quot; : &quot;&quot;,
+    &quot;PrimaPropuestaT2OMas&quot; : &quot;&quot;,
+    &quot;PrimaPropuestaTotal&quot; : &quot;&quot;,
+    &quot;PrimaVigenteT0&quot; : &quot;&quot;,
+    &quot;PrimaVigenteT1&quot; : &quot;&quot;,
+    &quot;PrimaVigenteT2OMas&quot; : &quot;&quot;,
+    &quot;TasaAnual&quot; : &quot;&quot;,
+    &quot;TasaMensual&quot; : &quot;&quot;,
+    &quot;TasaMensualTotal&quot; : &quot;&quot;,
+    &quot;TotalDeCapitalAsegurado&quot; : &quot;&quot;,
+    &quot;TotalDeNumeroDeAsegurados&quot; : &quot;&quot;,
+    &quot;TotalDeNumeroDeTitulares&quot; : &quot;&quot;,
+    &quot;TotalDePrimaNetaTotal&quot; : &quot;&quot;,
+    &quot;TotalDePrimaVigente&quot; : &quot;&quot;,
+    &quot;TotalDeTasaAnual&quot; : &quot;&quot;,
+    &quot;TotalPrimaAnualUF&quot; : &quot;&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhExtraerPlanesDeCotizacionHolding</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;$Vlocity.NULL&quot;</filterValue>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom8514</globalKey>
+        <inputFieldName>vlocity_ins__ParentItemId2__c</inputFieldName>
+        <inputObjectName>QuoteLineItem</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>QuoteLineItem</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom813</globalKey>
+        <inputFieldName>QuoteLineItem:ZRH_Tarifa__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:Tarifa</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:QuoteLineItem:ZRH_Tarifa__c DESERIALIZE</formulaConverted>
+        <formulaExpression>DESERIALIZE(QuoteLineItem:ZRH_Tarifa__c)</formulaExpression>
+        <formulaResultPath>Tarifa</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom6657</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem28</globalKey>
+        <inputFieldName>QuoteLineItem:Product2.ProductCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:CodigoProducto</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem26</globalKey>
+        <inputFieldName>QuoteLineItem:Product2.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:NombreProductoHolding</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>IdCotizacion</filterValue>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem0</globalKey>
+        <inputFieldName>QuoteId</inputFieldName>
+        <inputObjectName>QuoteLineItem</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>QuoteLineItem</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem27</globalKey>
+        <inputFieldName>QuoteLineItem:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:IdPlanHolding</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem1</globalKey>
+        <inputFieldName>QuoteLineItem:vlocity_ins__ParentItemId__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:IdPlanPadreHolding</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem17</globalKey>
+        <inputFieldName>QuoteLineItem:vlocity_ins__ParentItemId2__r.Product2Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:IdProductoPadreHolding</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom9913</globalKey>
+        <inputFieldName>QuoteLineItem:ZRH_TipoTarifa__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:TipoTarifa</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom0jI7500000000dGEAQItem19</globalKey>
+        <inputFieldName>QuoteLineItem:Product2Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:IdProductoHolding</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerPlanesDeCotizacionHoldingCustom7180</globalKey>
+        <inputFieldName>QuoteLineItem:Product2.vlocity_ins__Type__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerPlanesDeCotizacionHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Planes:TipoProducto</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;IdCotizacion&quot; : &quot;0Q075000000EAKGCA4&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>zrhExtraerPlanesDeCotizacionHolding_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

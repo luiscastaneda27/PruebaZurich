@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Propietario</fullName>
+        <default>false</default>
+        <label>Propietario</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operador</fullName>
+        <default>false</default>
+        <label>Operador</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miembro</fullName>
+        <default>false</default>
+        <label>Miembro</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miembro del hogar</fullName>
+        <default>false</default>
+        <label>Miembro del hogar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Beneficiario</fullName>
+        <default>false</default>
+        <label>Beneficiario</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suscriptor</fullName>
+        <default>false</default>
+        <label>Suscriptor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miembro del plan de salud</fullName>
+        <default>false</default>
+        <label>Miembro del plan de salud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Miembro de plan vida</fullName>
+        <default>false</default>
+        <label>Miembro de plan vida</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pagador del acuerdo</fullName>
+        <default>false</default>
+        <label>Pagador del acuerdo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Asegurado/Asegurada</fullName>
+        <default>false</default>
+        <label>Asegurado/Asegurada</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otro</fullName>
+        <default>false</default>
+        <label>Otro</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Titular de la póliza</fullName>
+        <default>false</default>
+        <label>Titular de la póliza</label>
+    </standardValue>
+</StandardValueSet>

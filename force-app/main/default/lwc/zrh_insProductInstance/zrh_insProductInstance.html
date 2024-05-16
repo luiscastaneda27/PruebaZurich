@@ -1,0 +1,722 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <article if:true={product}>
+        <div if:false={isLoaded} class="slds-is-relative">
+            <lightning-spinner alternative-text="Loading" size="medium" class="vloc-ins-spinner"></lightning-spinner>
+        </div>
+
+        <!-- Toggles flyout with list of attributes -->
+        <section onclick={handleDetails} class={sectionClasses}>
+            <div class={mainHeaderClasses}>
+                <div class="slds-m-right_x-large">
+                    <vlocity_ins-ins-product-icon
+                        theme={theme}
+                        component-name={componentName}
+                        product={product}
+                    ></vlocity_ins-ins-product-icon>
+                </div>
+                <div class="vloc-ins-header-content">
+                    <div class="vloc-ins-title-container slds-grid">
+                        <div class={titleContainerClasses}>                        
+                            <h2 class={headingClasses}><a href={quoteLineItemLink}>{productName} {product.ProductCode}</a></h2>
+                            <span class="vloc-ins-bold">
+                                <template if:true={roles.length}>
+                                    <span class="vloc-ins-separator slds-p-horizontal_xx-small">|</span>
+                                    <template for:each={roles} for:item="role">
+                                        <span key={role} class="vloc-ins-separator-container">
+                                            {role}
+                                            <span class="vloc-ins-separator slds-p-horizontal_xx-small">|</span>
+                                        </span>
+                                    </template>
+                                </template>
+                            </span>
+                        </div>
+                        <div
+                            if:true={repriceMessage}
+                            class="vloc-ins-reprice-message slds-grid slds-text-color_error slds-text-title_bold"
+                        >
+                            <vlocity_ins-icon
+                                class="vloc-ins-warning-icon"
+                                icon-name="utility:warning"
+                                theme={theme}
+                                size="xx-small"
+                                extraclass="slds-icon-text-error slds-m-right_xx-small"
+                            ></vlocity_ins-icon>
+                            <span>{labels.InsInsuredItemsReRate}</span>
+                        </div>
+                    </div>
+                    <template if:true={contactFields}>
+                        <div class="vloc-ins-attribute-preview slds-p-bottom_x-small">
+                            <template if:true={accountFields.length}>
+                                <template for:each={accountFields} for:item="account">
+                                    <span key={account} class="vloc-ins-separator-container">
+                                        {account}<span class="vloc-ins-separator slds-p-horizontal_xx-small">|</span>
+                                    </span>
+                                </template>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={hideAttributePreview}>
+                        <template if:true={previewAttrs}>
+                            <div class="vloc-ins-attribute-preview">
+                                <template if:true={displayAttributes}>
+                                    <template for:each={displayAttributes} for:item="attr">
+                                        <span key={attr.attributeId} class="vloc-ins-separator-container">
+                                            {attr.label}: {attr.userValues}
+                                            <span class="vloc-ins-separator slds-p-horizontal_xx-small">|</span>
+                                        </span>
+                                    </template>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
+                    <p if:true={rootLevelCoverages} class="vloc-ins-label">
+                        {product.coverageCount} {labels.InsPolicyLevelCoverages}
+                    </p>
+                    <!-- Grandchild insured items -->
+                    <div if:false={isRootProduct} class="slds-m-top_x-small">
+                        <!-- Associated grandchild instances -->
+                        <template if:true={associatedProducts.length}>
+                            <template if:true={options.isReadonly}>
+                                <ul class="slds-button-group-row" onclick={stopPropagation}>
+                                    <template for:each={associatedProducts} for:item="product">
+                                        <li key={product.Id} class="slds-button-group-item">
+                                            <button
+                                                class="vloc-ins-policy-grandchild-indicator slds-button slds-button_neutral"
+                                                data-grand-child-id={product.Id}
+                                                onclick={editGrandchild}
+                                            >
+                                                {product.label}
+                                            </button>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </template>
+                            <template if:false={options.isReadonly}>
+                                <template for:each={associatedProducts} for:item="product">
+                                    <vlocity_ins-menu
+                                        key={product.Id}
+                                        label={product.label}
+                                        onclick={stopPropagation}
+                                        variant="neutral"
+                                        icon-name=""
+                                        class="slds-m-right_xx-small slds-m-bottom_xx-small"
+                                    >
+                                        <vlocity_ins-menu-item
+                                            record={labels.InsEditDetailsRecord}
+                                            data-grand-child-id={product.Id}
+                                            onclick={editGrandchild}
+                                        ></vlocity_ins-menu-item>
+                                        <vlocity_ins-menu-item
+                                            if:true={isDeletable}
+                                            record={labels.removeGrandChildRecord}
+                                            data-grand-child-id={product.Id}
+                                            onclick={unassociateProduct}
+                                        ></vlocity_ins-menu-item>
+                                        <template if:true={product.isInsuredPartySpec}>
+                                            <vlocity_ins-menu-item
+                                                if:false={product.isPrimaryChild}
+                                                record={labels.InsSetAsPrimaryRecord}
+                                                data-grand-child-id={product.Id}
+                                                onclick={setPrimary}
+                                            ></vlocity_ins-menu-item>
+                                        </template>
+                                    </vlocity_ins-menu>
+                                </template>
+                            </template>
+                        </template>
+                        <!-- Unassociated grandchild instances -->
+                        <template if:true={isEditGrandchildren}>
+                            <template for:each={grandChildItems} for:item="grandChildItem">
+                                <vlocity_ins-menu
+                                    key={grandChildItem.productId}
+                                    theme={theme}
+                                    label={grandChildItem.name}
+                                    onclick={stopPropagation}
+                                    icon-position="left"
+                                    icon-name="utility:add"
+                                    variant="neutral"
+                                    class="slds-m-right_xx-small slds-m-bottom_xx-small"
+                                >
+                                    <template if:true={grandChildItem.unassociatedProducts.length}>
+                                        <template for:each={grandChildItem.unassociatedProducts} for:item="product">
+                                            <vlocity_ins-menu-item
+                                                key={product.childLineId}
+                                                label={product.label}
+                                                data-grand-child-id={product.Id}
+                                                onclick={associateProduct}
+                                            >
+                                            </vlocity_ins-menu-item>
+                                        </template>
+                                    </template>
+                                    <lightning-menu-divider></lightning-menu-divider>
+                                    <vlocity_ins-menu-item
+                                        label={labels.InsProductInstanceCreateNew}
+                                        data-grand-child-id={grandChildItem.productId}
+                                        onclick={addGrandchild}
+                                    ></vlocity_ins-menu-item>
+                                </vlocity_ins-menu>
+                            </template>
+                        </template>
+                    </div>
+                    <div if:true={enableGroupClasses} class="slds-p-top_medium">
+                        <c-zrh_ins-quote-group-classes
+                            theme={theme}
+                            root-channel={rootChannel}
+                            product={product}
+                            onclick={stopPropagation}
+                            is-readonly={options.isReadonly}
+                            unsaved-root-items={unsavedRootItems} 
+                            unsaved-child-items={unsavedChildItems}
+                        ></c-zrh_ins-quote-group-classes>
+                    </div>
+                </div>
+            </div>
+            <div class={leftHeaderClasses}>
+                <template if:false={isInsuredItems}>
+                    <div if:true={displayPrice} class="slds-text-align_right">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-end">
+                            <div class="slds-is-relative slds-m-right_xx-small">
+                                <vlocity_ins-button
+                                    icon-name="utility:info"
+                                    icon-variant={priceIconVariant}
+                                    icon-size="xx-small"
+                                    extraclass="slds-button_icon slds-m-bottom_xxx-small"
+                                    class="vloc-ins-price-icon"
+                                >
+                                </vlocity_ins-button>
+                                <div
+                                    class="slds-popover slds-popover_tooltip slds-nubbin_bottom-right slds-is-absolute vloc-ins-price-tooltip slds-text-align_left"
+                                    role="tooltip"
+                                    id="price"
+                                >
+                                    <div class="slds-popover__body">
+                                        <template if:true={product.needReprice}
+                                            >{labels.InsProductHelpTextRating}</template
+                                        >
+                                        <template if:false={product.needReprice}>
+                                            <div class="slds-grid slds-grid_align-spread">
+                                                <div class="slds-m-right_small">
+                                                    {labels.InsProductInstancePremium}:
+                                                </div>
+                                                <lightning-formatted-number
+                                                    value={product.Price}
+                                                    format-style="currency"
+                                                    currency-code={currency.code}
+                                                ></lightning-formatted-number>
+                                            </div>
+                                            <div if:true={product.taxAmount} class="slds-grid slds-grid_align-spread">
+                                                <div class="slds-m-right_small">{labels.InsProductInstanceTaxes}:</div>
+                                                <lightning-formatted-number
+                                                    value={product.taxAmount}
+                                                    format-style="currency"
+                                                    currency-code={currency.code}
+                                                ></lightning-formatted-number>
+                                            </div>
+                                            <div if:true={product.feeAmount} class="slds-grid slds-grid_align-spread">
+                                                <div class="slds-m-right_small">{labels.InsProductInstanceFees}:</div>
+                                                <lightning-formatted-number
+                                                    value={product.feeAmount}
+                                                    format-style="currency"
+                                                    currency-code={currency.code}
+                                                ></lightning-formatted-number>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                            <div aria-describedby="price" class={priceClasses}>
+                                <template if:true={isRootProduct}> {labels.TotalCapitalized}: </template>
+                                <lightning-formatted-number
+                                    value={productPrice}
+                                    format-style="currency"
+                                    currency-code={currency.code}
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                        </div>
+                        <p if:true={totalTaxFeeAmount} class="slds-p-top_x-small vloc-ins-label">
+                            {labels.Includes}&nbsp;
+                            <lightning-formatted-number
+                                value={totalTaxFeeAmount}
+                                format-style="currency"
+                                currency-code={currency.code}
+                            >
+                            </lightning-formatted-number>
+                            &nbsp;{labels.InsTaxesAndFees}
+                        </p>
+                        <p if:true={showRateButton} class="slds-p-top_x-small">
+                            <vlocity_ins-button
+                                variant="brand"
+                                theme={theme}
+                                label={labels.InsProductInstanceRateNow}
+                                onclick={priceRootItem}
+                                disabled={disableRate}
+                            >
+                            </vlocity_ins-button>
+                        </p>
+                    </div>
+                    <!-- Product actions -->
+                    <div class="vloc-ins-icon-container slds-m-left_medium">
+                        <template if:true={displayMultiRootMenu}>
+                            <div class="slds-m-left_x-large">
+                                <lightning-button-menu
+                                    if:true={showMenu}
+                                    variant="border-filled"
+                                    disabled={menuDisabled}
+                                    menu-alignment="right"
+                                    onclick={stopPropagation}
+                                >
+                                    <lightning-menu-item
+                                        if:true={enableClone}
+                                        label={labels.InsClone}
+                                        disabled={options.isReadonly}
+                                        onclick={cloneRootLine}
+                                    >
+                                    </lightning-menu-item>
+                                    
+                                    <lightning-menu-item
+                                        if:true={allowDelete}
+                                        label={labels.InsProductInstanceRemoveFromQuote}
+                                        onclick={confirmDelete}
+                                    >
+                                    </lightning-menu-item>
+                                   
+                                    <lightning-menu-item
+                                        label="Gestionar BMI"
+                                        if:true={verBMI}
+                                        onclick={onClickBMI}
+                                    >
+                                    </lightning-menu-item>
+                                   
+                                    <lightning-menu-item
+                                        label="Gestionar Convenios"
+                                        if:true={verConvenios}
+                                        onclick={onClickConvenios}
+                                    >
+                                    </lightning-menu-item>
+
+                                    <lightning-menu-item
+                                        label="Gestionar Requisitos de Asegurabilidad"
+                                        if:true={verRequisitosAsegurabilidad}
+                                        onclick={onClickRequisitosAsegurabilidad} 
+                                    >
+                                    </lightning-menu-item>
+                                    
+                                    <lightning-menu-item
+                                        label="Gestionar Tabla Requisitos Medicos"
+                                         if:true={verRequisitosMedicos}
+                                        onclick={onClickRequisitosMedicos} 
+                                    >
+                                    </lightning-menu-item>
+
+                                    <lightning-menu-item
+                                        label="Gestionar Topes de Grupo de Cobertura"
+                                         if:true={verTopeCobertura}
+                                        onclick={onClickTopeCobertura} 
+                                    >
+                                    </lightning-menu-item>
+
+                                    <lightning-menu-item
+                                        label="Gestionar Topes de Póliza"
+                                         if:true={verTopePoliza}
+                                        onclick={onClickTopePoliza} 
+                                    >
+                                    </lightning-menu-item>
+
+                                    <lightning-menu-item
+                                        label="Gestionar Topes Adicionales"
+                                         if:true={verTopeAdicional}
+                                        onclick={onClickTopeAdicional} 
+                                    >
+                                    </lightning-menu-item>
+                                    
+                                    <lightning-menu-item
+                                        label="Tarificar"
+                                        if:true={verTarificacion}
+                                        onclick={onClickTarificacion} 
+                                    >
+                                    </lightning-menu-item>
+
+                                    <lightning-menu-item
+                                        label="Activar Glosas"
+                                        if:true={verGlosas}
+                                        onclick={onClickGloss} 
+                                    ></lightning-menu-item>
+
+                                    <lightning-menu-item
+                                        label="Clonar Plan"
+                                        if:true={verClonacion}
+                                        onclick={onClickClonacion}
+                                    >
+                                    </lightning-menu-item>
+                                    
+                                    <template if:true={insuredItems}>
+                                        <template for:each={insuredItems} for:item="item">
+                                            <lightning-menu-item
+                                                key={item.productId}
+                                                data-child-product-id={item.productId}
+                                                label={item.label}
+                                                disabled={options.isReadonly}
+                                                onclick={getInsuredItemSpec}
+                                            >
+                                            </lightning-menu-item>
+                                        </template>
+                                    </template>
+                                </lightning-button-menu>
+                            </div>
+                        </template>
+                        <template if:false={displayMultiRootMenu}>
+                            <vlocity_ins-button
+                                if:true={allowDelete}
+                                theme={theme}
+                                variant="icon"
+                                icon-name="utility:delete"
+                                icon-size="x-small"
+                                onclick={confirmDelete}
+                            >
+                            </vlocity_ins-button>
+                            <vlocity_ins-button
+                                if:true={showModal}
+                                theme={theme}
+                                variant="icon"
+                                icon-name="utility:edit"
+                                icon-size="x-small"
+                                onclick={editPrimary}
+                            >
+                            </vlocity_ins-button>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={isInsuredItems}>
+                    <template if:false={options.isReadonly}>
+                        <vlocity_ins-icon icon-name="utility:edit" theme={theme} size="x-small" onclick={editPrimary}></vlocity_ins-icon>
+                    </template>
+                </template>
+            </div>
+        </section>
+
+        <!-- Flyout with list of attributes -->
+        <section if:true={expandCard}>
+            <div class={attributeClasses}>
+                <div class="vloc-ins-divider"></div>
+
+                <vlocity_ins-ins-attribute-category-list
+                    root-channel={rootChannel}
+                    theme={theme}
+                    currency={currency}
+                    options={expandCardOptions}
+                    product={product}
+                    rule-context={ruleContext}
+                >
+                </vlocity_ins-ins-attribute-category-list>
+
+            </div>
+        </section>
+
+        <!-- Toggles flyout with list of coverages -->
+        <div
+            onclick={toggleCoverages}
+            if:true={displayCoverages}
+            class="vloc-ins-coverages-banner slds-align_absolute-center"
+        >
+            <vlocity_ins-icon
+                icon-name={chevronName}
+                theme={theme}
+                size="xx-small"
+                color="#4D6792"
+                extraclass="slds-m-right_xx-small"
+            ></vlocity_ins-icon>
+            <span>{showCoveragesLabel}</span>
+        </div>
+
+        <!-- Flyout contains list of product coverages -->
+        <section if:true={detailsFetched}>
+            <div class={coverageDetailsClasses}>
+                <div class="vloc-ins-divider"></div>
+                <template if:true={displayCoverages}>
+                    <template if:true={childProducts}>
+                        <template if:true={isPolicy}>
+                            <vlocity_ins-ins-policy-coverage-list
+                                child-products={childProducts}
+                                currency={currency}
+                                root-channel={rootChannel}
+                                theme={theme}
+                                rule-context={ruleContext}
+                            >
+                            </vlocity_ins-ins-policy-coverage-list>
+                        </template>
+                        <template if:false={isPolicy}>
+                            <!-- Used by Quote and Contract records -->
+                            <c-zrh_ins-quote-coverage-list
+                                child-products={childProducts}
+                                currency={currency}
+                                root-channel={rootChannel}
+                                theme={theme}
+                                rule-context={ruleContext}
+                                options={options}
+                            >
+                            </c-zrh_ins-quote-coverage-list>
+                        </template>
+                    </template>
+                </template>
+                <template if:true={isInsuredItems}>
+                    <template if:true={attributeCategories}>
+                        <template for:each={attributeCategories} for:item="attributeCategory">
+                            <div key={attributeCategory.id}>
+                                <vlocity_ins-ins-attribute-category
+                                    display-category-name
+                                    col-width="2"
+                                    currency={currency}
+                                    attribute-category={attributeCategory}
+                                    is-readonly
+                                    root-channel={rootChannel}
+                                >
+                                </vlocity_ins-ins-attribute-category>
+                            </div>
+                        </template>
+                    </template>
+                </template>
+            </div>
+        </section>
+
+        <template if:false={isPolicy}>
+            <vlocity_ins-modal size="small" title={labels.InsQuoteDeleteQLITitle}>
+                <div slot="content">
+                    <div class="slds-align_absolute-center">{labels.InsQuoteDeleteQLI}</div>
+                </div>
+                <div slot="footer">
+                    <vlocity_ins-button
+                        variant="reset"
+                        label={labels.InsButtonCancel}
+                        onclick={closeDeleteModal}
+                        extraclass="slds-m-vertical_small"
+                    >
+                    </vlocity_ins-button>
+                    <vlocity_ins-button
+                        variant="brand"
+                        label={labels.Delete}
+                        onclick={deleteProduct}
+                        extraclass="slds-m-left_medium"
+                    >
+                    </vlocity_ins-button>
+                </div>
+            </vlocity_ins-modal>
+        </template>
+    </article>
+
+    <template if:true={popRequisitosAsegurabilidad}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h1 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"> Requisitos de Asegurabilidad
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-gestionar-requisitos-asegurabilidad--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-gestionar-requisitos-asegurabilidad--seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+    <template if:true={popRequisitosMedicos}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h1 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate"> Requisitos Medicos
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-requisitos-medicos--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-requisitos-medicos--seguros-colectivos-spanish>
+        
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+    <template if:true={popBMI}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h1 id="modal-heading-03" class="slds-text-heading_medium slds-hyphenate"> Gestionar BMI
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-gestionar-b-m-i--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-gestionar-b-m-i--seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+    <template if:true={popTarificacion}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container modal-tarificacion">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-04" class="slds-text-heading_medium slds-hyphenate"> Tarificar
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-tarificacion-planes-seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-tarificacion-planes-seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+    <template if:true={popConvenios}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-05" class="slds-text-heading_medium slds-hyphenate"> Gestionar Convenios
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-gestionar-convenios-seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-gestionar-convenios-seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+
+    <template if:true={popGloss}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                        onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h1 id="modal-heading-06" class="slds-text-heading_medium slds-hyphenate">Activar Glosas para el plan {product.Name} {product.ProductCode}</h1>
+                </div>
+                <c-zrh_-active-gloss record-id={product.quoteLineItemId}></c-zrh_-active-gloss>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <template if:true={popClonacion}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-07" class="slds-text-heading_medium slds-hyphenate"> Clonación de Plan
+                    </h1>
+                </div>
+                <div class="slds-modal__content overflow-modal">
+                    <c-zrh-clonacion-planes--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-clonacion-planes--seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+
+    <template if:true={popTopeCobertura}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-08" class="slds-text-heading_medium slds-hyphenate"> Gestionar Topes de Grupo de Cobertura
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-gestionar-topes--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-gestionar-topes--seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+
+    <template if:true={popTopePoliza}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-09" class="slds-text-heading_medium slds-hyphenate"> Gestionar Topes de Póliza
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-gestionar-topes--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-gestionar-topes--seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+
+    <template if:true={popTopeAdicional}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancelar}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-10" class="slds-text-heading_medium slds-hyphenate"> Gestionar Topes Adicionales
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-gestionar-topes--seguros-colectivos-spanish prefill={perfil} layout="lightning"></c-zrh-gestionar-topes--seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+
+</template>

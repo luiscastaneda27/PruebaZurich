@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_TipoCotizacion__c</fullName>
+    <description>Identifica si la cotización es de un Holding o una empresa Contratante</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(ZRH_CotizacionHolding__c), &quot;Holding&quot;, &quot;Contratante&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tipo Cotización</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

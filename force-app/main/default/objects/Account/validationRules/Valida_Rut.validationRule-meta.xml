@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_Rut</fullName>
+    <active>false</active>
+    <description>Verifica que el Rut ingresado sea válido en módulo 11</description>
+    <errorConditionFormula>AND(
+IF(GLBP1_Calculo_DV_Rut__c = 10, NOT(UPPER(mid( GLBP1_Rut__c, len(GLBP1_Rut__c), 1 )) = &quot;K&quot;), IF(GLBP1_Calculo_DV_Rut__c = 11, NOT(VALUE(mid( GLBP1_Rut__c, len(GLBP1_Rut__c), 1 )) = 0), NOT(GLBP1_Calculo_DV_Rut__c = VALUE(mid( GLBP1_Rut__c, len(GLBP1_Rut__c), 1 ))))),
+NOT( GLBP1_Rut__c= &quot;99999999-0&quot;)
+				)</errorConditionFormula>
+    <errorDisplayField>GLBP1_Rut__c</errorDisplayField>
+    <errorMessage>El Rut ingresado no es válido</errorMessage>
+</ValidationRule>

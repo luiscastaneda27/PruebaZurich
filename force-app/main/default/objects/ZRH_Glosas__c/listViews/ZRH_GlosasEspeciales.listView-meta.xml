@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_GlosasEspeciales</fullName>
+    <columns>NAME</columns>
+    <columns>ZRH_IDGlosa__c</columns>
+    <columns>ZRH_TipoDeGlosa__c</columns>
+    <columns>ZRH_Activo__c</columns>
+    <columns>ZRH_DestinoTipoPDF__c</columns>
+    <columns>ZRH_Titulo__c</columns>
+    <columns>ZRH_ContenidoGlosa__c</columns>
+    <columns>ZRH_Plan__c</columns>
+    <columns>ZRH_LocalizacionCondicionado__c</columns>
+    <columns>ZRH_Quote__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ZRH_TipoDeGlosa__c</field>
+        <operation>equals</operation>
+        <value>G-003</value>
+    </filters>
+    <label>Glosas Especiales</label>
+</ListView>

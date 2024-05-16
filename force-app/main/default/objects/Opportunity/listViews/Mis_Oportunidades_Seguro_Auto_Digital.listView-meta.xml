@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mis_Oportunidades_Seguro_Auto_Digital</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>ZRH_LM_Marca__c</columns>
+    <columns>ZRH_LM_Modelo__c</columns>
+    <columns>ZRH_LM_Valor_UF__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.ZRH_LM_Seguro_Auto_Digital</value>
+    </filters>
+    <label>Mis Oportunidades- Seguro Auto Digital</label>
+</ListView>

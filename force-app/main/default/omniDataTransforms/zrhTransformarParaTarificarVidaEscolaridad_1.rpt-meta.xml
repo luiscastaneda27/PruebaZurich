@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;PlanesVida&quot; : [ {
+    &quot;instanceKey&quot; : &quot;Escolaridad&quot;,
+    &quot;currencyCode&quot; : &quot;CLF&quot;,
+    &quot;vlocity_ins__ProductName__c&quot; : &quot;Escolaridad&quot;,
+    &quot;Id&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+    &quot;CreatedDate&quot; : &quot;2022-11-02T19:02:26.000+0000&quot;,
+    &quot;TotalPrice&quot; : 0,
+    &quot;vlocity_ins__NeedReprice__c&quot; : false,
+    &quot;vlocity_ins__RelationshipType__c&quot; : &quot;Child&quot;,
+    &quot;Price&quot; : 0,
+    &quot;Product2Id&quot; : &quot;01t3C000007DMi6QAG&quot;,
+    &quot;UnitPrice&quot; : 0,
+    &quot;needReprice&quot; : false,
+    &quot;currencySymbol&quot; : &quot;CLF&quot;,
+    &quot;recordType&quot; : &quot;Product&quot;,
+    &quot;ProductCode&quot; : &quot;501&quot;,
+    &quot;productId&quot; : &quot;01t3C000007DMi6QAG&quot;,
+    &quot;quoteLineItemId&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+    &quot;vlocity_ins__ProductChildItemSequence__c&quot; : 0,
+    &quot;hasCoverages&quot; : true,
+    &quot;displaySequence&quot; : 0,
+    &quot;hasAttributes&quot; : false,
+    &quot;vlocity_ins__TotalAmount__c&quot; : 0,
+    &quot;Name&quot; : &quot;Escolaridad&quot;,
+    &quot;vlocity_ins__ItemName__c&quot; : &quot;Escolaridad&quot;,
+    &quot;LineNumber&quot; : &quot;00000032&quot;,
+    &quot;productName&quot; : &quot;Escolaridad&quot;,
+    &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;Product&quot;,
+    &quot;coverageCount&quot; : 1,
+    &quot;QuoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+    &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+    &quot;LastModifiedDate&quot; : &quot;2022-11-02T19:02:26.000+0000&quot;,
+    &quot;lineRecordType&quot; : &quot;Product&quot;,
+    &quot;childProducts&quot; : {
+      &quot;actions&quot; : {
+        &quot;getCandidateChildProducts&quot; : {
+          &quot;remote&quot; : {
+            &quot;params&quot; : {
+              &quot;prodRecordType&quot; : &quot;CoverageSpec&quot;,
+              &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+              &quot;methodName&quot; : &quot;getListChildProducts&quot;
+            }
+          },
+          &quot;client&quot; : {
+            &quot;params&quot; : { }
+          },
+          &quot;rest&quot; : {
+            &quot;params&quot; : { },
+            &quot;link&quot; : null,
+            &quot;method&quot; : null
+          }
+        },
+        &quot;updateAllCoverageAttribute&quot; : {
+          &quot;remote&quot; : {
+            &quot;params&quot; : {
+              &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+              &quot;reprice&quot; : true,
+              &quot;methodName&quot; : &quot;updateAllChildLines&quot;
+            }
+          },
+          &quot;client&quot; : {
+            &quot;params&quot; : { }
+          },
+          &quot;rest&quot; : {
+            &quot;params&quot; : { },
+            &quot;link&quot; : null,
+            &quot;method&quot; : null
+          }
+        }
+      },
+      &quot;records&quot; : [ {
+        &quot;actions&quot; : {
+          &quot;updateChildLine&quot; : {
+            &quot;remote&quot; : {
+              &quot;params&quot; : {
+                &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+                &quot;reprice&quot; : true,
+                &quot;methodName&quot; : &quot;updateChildLine&quot;,
+                &quot;quoteLineId&quot; : &quot;0QL3C000000KfRaWAK&quot;
+              }
+            },
+            &quot;client&quot; : {
+              &quot;params&quot; : { }
+            },
+            &quot;rest&quot; : {
+              &quot;params&quot; : { },
+              &quot;link&quot; : null,
+              &quot;method&quot; : null
+            }
+          }
+        },
+        &quot;currencyCode&quot; : &quot;CLF&quot;,
+        &quot;vlocity_ins__ProductName__c&quot; : &quot;Fallecimiento&quot;,
+        &quot;Id&quot; : &quot;0QL3C000000KfRaWAK&quot;,
+        &quot;CreatedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+        &quot;TotalPrice&quot; : 0,
+        &quot;vlocity_ins__NeedReprice__c&quot; : false,
+        &quot;vlocity_ins__RelationshipType__c&quot; : &quot;Child&quot;,
+        &quot;Price&quot; : 0,
+        &quot;Product2Id&quot; : &quot;01t3C000007DMiGQAW&quot;,
+        &quot;UnitPrice&quot; : 0,
+        &quot;needReprice&quot; : false,
+        &quot;isOptional&quot; : false,
+        &quot;currencySymbol&quot; : &quot;CLF&quot;,
+        &quot;attributeCategories&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Name&quot; : &quot;Valores Cobertura&quot;,
+            &quot;Code__c&quot; : &quot;1234&quot;,
+            &quot;id&quot; : &quot;a1c3C000000eK3yQAE&quot;,
+            &quot;displaySequence&quot; : 1000,
+            &quot;productAttributes&quot; : {
+              &quot;records&quot; : [ {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 0,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARM8QAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje de Reembolso bono por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembBonAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 1,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMNQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje Reembolso sin prevision por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembSinPrevAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 2,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMDQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje  de Reembolso libre eleccion por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembLibElecAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 3,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMcQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TOPEMaxPrestAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 4,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMhQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TOPEMaxPrestGrpFam&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 5,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNJQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Póliza&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPPP&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 6,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNTQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo anual elección - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMAEA&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 7,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNiQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo anual elección - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMAEGF&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 8,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNnQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEA&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 9,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNxQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEGF&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 10,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARO7QAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Póliza&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEP&quot;,
+                &quot;filterable&quot; : true
+              } ],
+              &quot;totalSize&quot; : 11
+            }
+          } ],
+          &quot;totalSize&quot; : 1
+        },
+        &quot;ProductCode&quot; : &quot;1&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiGQAW&quot;,
+        &quot;quoteLineItemId&quot; : &quot;0QL3C000000KfRaWAK&quot;,
+        &quot;vlocity_ins__SubParentItemId__c&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+        &quot;vlocity_ins__ParentItemId2__c&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+        &quot;vlocity_ins__ProductChildItemSequence__c&quot; : 5,
+        &quot;isSelected&quot; : true,
+        &quot;displaySequence&quot; : 5,
+        &quot;vlocity_ins__TotalAmount__c&quot; : 0,
+        &quot;Name&quot; : &quot;Fallecimiento&quot;,
+        &quot;LineNumber&quot; : &quot;00000033&quot;,
+        &quot;productName&quot; : &quot;Fallecimiento&quot;,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1PQAW&quot;,
+        &quot;vlocity_ins__ParentItemId__c&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+        &quot;QuoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;LastModifiedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+        &quot;lineRecordType&quot; : &quot;CoverageSpec&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Accidental&quot;,
+        &quot;productName&quot; : &quot;Invalidez Accidental&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1MQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 2,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;83&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkWQAW&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Permanente&quot;,
+        &quot;productName&quot; : &quot;Invalidez Permanente&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1NQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 3,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;80&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkbQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Pago Mensual por Incapacidad&quot;,
+        &quot;productName&quot; : &quot;Pago Mensual por Incapacidad&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1OQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 4,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;27&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkgQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Muerte Accidental&quot;,
+        &quot;productName&quot; : &quot;Muerte Accidental&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1QQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 6,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;3&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiQQAW&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Permanente 2/3&quot;,
+        &quot;productName&quot; : &quot;Invalidez Permanente 2/3&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1LQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 1,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;82&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiaQAG&quot;
+      } ],
+      &quot;totalSize&quot; : 6
+    }
+  }, {
+    &quot;instanceKey&quot; : &quot;Vida&quot;,
+    &quot;currencyCode&quot; : &quot;CLF&quot;,
+    &quot;vlocity_ins__ProductName__c&quot; : &quot;Vida&quot;,
+    &quot;Id&quot; : &quot;0QL3C000000KfRbWAK&quot;,
+    &quot;CreatedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+    &quot;TotalPrice&quot; : 0,
+    &quot;vlocity_ins__NeedReprice__c&quot; : false,
+    &quot;vlocity_ins__RelationshipType__c&quot; : &quot;Child&quot;,
+    &quot;Price&quot; : 0,
+    &quot;Product2Id&quot; : &quot;01t3C000007DJ0aQAG&quot;,
+    &quot;UnitPrice&quot; : 0,
+    &quot;needReprice&quot; : false,
+    &quot;currencySymbol&quot; : &quot;CLF&quot;,
+    &quot;recordType&quot; : &quot;Product&quot;,
+    &quot;ProductCode&quot; : &quot;500&quot;,
+    &quot;productId&quot; : &quot;01t3C000007DJ0aQAG&quot;,
+    &quot;quoteLineItemId&quot; : &quot;0QL3C000000KfRbWAK&quot;,
+    &quot;vlocity_ins__ProductChildItemSequence__c&quot; : 0,
+    &quot;hasCoverages&quot; : true,
+    &quot;displaySequence&quot; : 0,
+    &quot;hasAttributes&quot; : false,
+    &quot;vlocity_ins__TotalAmount__c&quot; : 0,
+    &quot;Name&quot; : &quot;Vida&quot;,
+    &quot;vlocity_ins__ItemName__c&quot; : &quot;Vida&quot;,
+    &quot;LineNumber&quot; : &quot;00000034&quot;,
+    &quot;productName&quot; : &quot;Vida&quot;,
+    &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;Product&quot;,
+    &quot;coverageCount&quot; : 1,
+    &quot;QuoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+    &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+    &quot;LastModifiedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+    &quot;lineRecordType&quot; : &quot;Product&quot;,
+    &quot;childProducts&quot; : {
+      &quot;actions&quot; : {
+        &quot;getCandidateChildProducts&quot; : {
+          &quot;remote&quot; : {
+            &quot;params&quot; : {
+              &quot;prodRecordType&quot; : &quot;CoverageSpec&quot;,
+              &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+              &quot;methodName&quot; : &quot;getListChildProducts&quot;
+            }
+          },
+          &quot;client&quot; : {
+            &quot;params&quot; : { }
+          },
+          &quot;rest&quot; : {
+            &quot;params&quot; : { },
+            &quot;link&quot; : null,
+            &quot;method&quot; : null
+          }
+        },
+        &quot;updateAllCoverageAttribute&quot; : {
+          &quot;remote&quot; : {
+            &quot;params&quot; : {
+              &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+              &quot;reprice&quot; : true,
+              &quot;methodName&quot; : &quot;updateAllChildLines&quot;
+            }
+          },
+          &quot;client&quot; : {
+            &quot;params&quot; : { }
+          },
+          &quot;rest&quot; : {
+            &quot;params&quot; : { },
+            &quot;link&quot; : null,
+            &quot;method&quot; : null
+          }
+        }
+      },
+      &quot;records&quot; : [ {
+        &quot;actions&quot; : {
+          &quot;updateChildLine&quot; : {
+            &quot;remote&quot; : {
+              &quot;params&quot; : {
+                &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+                &quot;reprice&quot; : true,
+                &quot;methodName&quot; : &quot;updateChildLine&quot;,
+                &quot;quoteLineId&quot; : &quot;0QL3C000000KfRcWAK&quot;
+              }
+            },
+            &quot;client&quot; : {
+              &quot;params&quot; : { }
+            },
+            &quot;rest&quot; : {
+              &quot;params&quot; : { },
+              &quot;link&quot; : null,
+              &quot;method&quot; : null
+            }
+          }
+        },
+        &quot;currencyCode&quot; : &quot;CLF&quot;,
+        &quot;vlocity_ins__ProductName__c&quot; : &quot;Fallecimiento&quot;,
+        &quot;Id&quot; : &quot;0QL3C000000KfRcWAK&quot;,
+        &quot;CreatedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+        &quot;TotalPrice&quot; : 0,
+        &quot;vlocity_ins__NeedReprice__c&quot; : false,
+        &quot;vlocity_ins__RelationshipType__c&quot; : &quot;Child&quot;,
+        &quot;Price&quot; : 0,
+        &quot;Product2Id&quot; : &quot;01t3C000007DMiGQAW&quot;,
+        &quot;UnitPrice&quot; : 0,
+        &quot;needReprice&quot; : false,
+        &quot;isOptional&quot; : false,
+        &quot;currencySymbol&quot; : &quot;CLF&quot;,
+        &quot;attributeCategories&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Name&quot; : &quot;Valores Cobertura&quot;,
+            &quot;Code__c&quot; : &quot;1234&quot;,
+            &quot;id&quot; : &quot;a1c3C000000eK3yQAE&quot;,
+            &quot;displaySequence&quot; : 1000,
+            &quot;productAttributes&quot; : {
+              &quot;records&quot; : [ {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 0,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARM8QAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje de Reembolso bono por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembBonAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 1,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMNQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje Reembolso sin prevision por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembSinPrevAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 2,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMDQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje  de Reembolso libre eleccion por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembLibElecAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 3,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMcQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TOPEMaxPrestAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 4,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMhQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TOPEMaxPrestGrpFam&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 5,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNJQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Póliza&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPPP&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 6,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNTQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo anual elección - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMAEA&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 7,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNiQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo anual elección - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMAEGF&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 8,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNnQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEA&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 9,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNxQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEGF&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 10,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARO7QAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Póliza&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEP&quot;,
+                &quot;filterable&quot; : true
+              } ],
+              &quot;totalSize&quot; : 11
+            }
+          } ],
+          &quot;totalSize&quot; : 1
+        },
+        &quot;ProductCode&quot; : &quot;1&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiGQAW&quot;,
+        &quot;quoteLineItemId&quot; : &quot;0QL3C000000KfRcWAK&quot;,
+        &quot;vlocity_ins__SubParentItemId__c&quot; : &quot;0QL3C000000KfRbWAK&quot;,
+        &quot;vlocity_ins__ParentItemId2__c&quot; : &quot;0QL3C000000KfRbWAK&quot;,
+        &quot;vlocity_ins__ProductChildItemSequence__c&quot; : 5,
+        &quot;isSelected&quot; : true,
+        &quot;displaySequence&quot; : 5,
+        &quot;vlocity_ins__TotalAmount__c&quot; : 0,
+        &quot;Name&quot; : &quot;Fallecimiento&quot;,
+        &quot;LineNumber&quot; : &quot;00000035&quot;,
+        &quot;productName&quot; : &quot;Fallecimiento&quot;,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1JQAW&quot;,
+        &quot;vlocity_ins__ParentItemId__c&quot; : &quot;0QL3C000000KfRbWAK&quot;,
+        &quot;QuoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;LastModifiedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+        &quot;lineRecordType&quot; : &quot;CoverageSpec&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Permanente 2/3&quot;,
+        &quot;productName&quot; : &quot;Invalidez Permanente 2/3&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1LQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 1,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;82&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiaQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Accidental&quot;,
+        &quot;productName&quot; : &quot;Invalidez Accidental&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1MQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 2,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;83&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkWQAW&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Permanente&quot;,
+        &quot;productName&quot; : &quot;Invalidez Permanente&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1NQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 3,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;80&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkbQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Pago Mensual por Incapacidad&quot;,
+        &quot;productName&quot; : &quot;Pago Mensual por Incapacidad&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1OQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 4,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;27&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkgQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Muerte Accidental&quot;,
+        &quot;productName&quot; : &quot;Muerte Accidental&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1QQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 6,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;3&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiQQAW&quot;
+      } ],
+      &quot;totalSize&quot; : 6
+    }
+  } ],
+  &quot;totalSize&quot; : 2
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;CoberturasEsc&quot; : [ {
+    &quot;NombreCobEsc&quot; : &quot;FALLECIMIENTO&quot;,
+    &quot;NivelesEsc&quot; : [ {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    } ]
+  }, {
+    &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;,
+    &quot;NivelesEsc&quot; : [ {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    } ]
+  }, {
+    &quot;NombreCobEsc&quot; : &quot;(NOVGTE)INVALIDEZ PERMANENTE 2/3&quot;,
+    &quot;NivelesEsc&quot; : [ {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    } ]
+  }, {
+    &quot;NombreCobEsc&quot; : &quot;PAGO MENSUAL POR INCAPACIDAD&quot;,
+    &quot;NivelesEsc&quot; : [ {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    } ]
+  }, {
+    &quot;NombreCobEsc&quot; : &quot;MUERTE ACCIDENTAL&quot;,
+    &quot;NivelesEsc&quot; : [ {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    } ]
+  }, {
+    &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE 80&quot;,
+    &quot;NivelesEsc&quot; : [ {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+    }, {
+      &quot;NivelEsc&quot; : &quot;KINDER&quot;
+    } ]
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarParaTarificarVidaEscolaridad</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaTarificarVidaEscolaridadCustom9556</globalKey>
+        <inputFieldName>ListaCoberturas:IdProductoCotizacion</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaTarificarVidaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CoberturasEsc:IdCoberturaEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaTarificarVidaEscolaridadCustom9683</globalKey>
+        <inputFieldName>ListaCoberturas:CodigoCobertura</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaTarificarVidaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CoberturasEsc:CodigoCobertura</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaTarificarVidaEscolaridadCustom9428</globalKey>
+        <inputFieldName>ListaCoberturas:NombreCobertura</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaTarificarVidaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CoberturasEsc:NombreCobEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaTarificarVidaEscolaridadCustom4011</globalKey>
+        <inputFieldName>NivelesEscolaridad</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaTarificarVidaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CoberturasEsc:Niveles</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;NivelesEscolaridad&quot; : [ {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;
+  }, {
+    &quot;NivelEsc&quot; : &quot;KINDER&quot;
+  } ],
+  &quot;PlanesVida&quot; : [ {
+    &quot;instanceKey&quot; : &quot;Escolaridad&quot;,
+    &quot;currencyCode&quot; : &quot;CLF&quot;,
+    &quot;vlocity_ins__ProductName__c&quot; : &quot;Escolaridad&quot;,
+    &quot;Id&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+    &quot;CreatedDate&quot; : &quot;2022-11-02T19:02:26.000+0000&quot;,
+    &quot;TotalPrice&quot; : 0,
+    &quot;vlocity_ins__NeedReprice__c&quot; : false,
+    &quot;vlocity_ins__RelationshipType__c&quot; : &quot;Child&quot;,
+    &quot;Price&quot; : 0,
+    &quot;Product2Id&quot; : &quot;01t3C000007DMi6QAG&quot;,
+    &quot;UnitPrice&quot; : 0,
+    &quot;needReprice&quot; : false,
+    &quot;currencySymbol&quot; : &quot;CLF&quot;,
+    &quot;recordType&quot; : &quot;Product&quot;,
+    &quot;ProductCode&quot; : &quot;501&quot;,
+    &quot;productId&quot; : &quot;01t3C000007DMi6QAG&quot;,
+    &quot;quoteLineItemId&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+    &quot;vlocity_ins__ProductChildItemSequence__c&quot; : 0,
+    &quot;hasCoverages&quot; : true,
+    &quot;displaySequence&quot; : 0,
+    &quot;hasAttributes&quot; : false,
+    &quot;vlocity_ins__TotalAmount__c&quot; : 0,
+    &quot;Name&quot; : &quot;Escolaridad&quot;,
+    &quot;vlocity_ins__ItemName__c&quot; : &quot;Escolaridad&quot;,
+    &quot;LineNumber&quot; : &quot;00000032&quot;,
+    &quot;productName&quot; : &quot;Escolaridad&quot;,
+    &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;Product&quot;,
+    &quot;coverageCount&quot; : 1,
+    &quot;QuoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+    &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+    &quot;LastModifiedDate&quot; : &quot;2022-11-02T19:02:26.000+0000&quot;,
+    &quot;lineRecordType&quot; : &quot;Product&quot;,
+    &quot;childProducts&quot; : {
+      &quot;actions&quot; : {
+        &quot;getCandidateChildProducts&quot; : {
+          &quot;remote&quot; : {
+            &quot;params&quot; : {
+              &quot;prodRecordType&quot; : &quot;CoverageSpec&quot;,
+              &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+              &quot;methodName&quot; : &quot;getListChildProducts&quot;
+            }
+          },
+          &quot;client&quot; : {
+            &quot;params&quot; : { }
+          },
+          &quot;rest&quot; : {
+            &quot;params&quot; : { },
+            &quot;link&quot; : null,
+            &quot;method&quot; : null
+          }
+        },
+        &quot;updateAllCoverageAttribute&quot; : {
+          &quot;remote&quot; : {
+            &quot;params&quot; : {
+              &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+              &quot;reprice&quot; : true,
+              &quot;methodName&quot; : &quot;updateAllChildLines&quot;
+            }
+          },
+          &quot;client&quot; : {
+            &quot;params&quot; : { }
+          },
+          &quot;rest&quot; : {
+            &quot;params&quot; : { },
+            &quot;link&quot; : null,
+            &quot;method&quot; : null
+          }
+        }
+      },
+      &quot;records&quot; : [ {
+        &quot;actions&quot; : {
+          &quot;updateChildLine&quot; : {
+            &quot;remote&quot; : {
+              &quot;params&quot; : {
+                &quot;quoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+                &quot;reprice&quot; : true,
+                &quot;methodName&quot; : &quot;updateChildLine&quot;,
+                &quot;quoteLineId&quot; : &quot;0QL3C000000KfRaWAK&quot;
+              }
+            },
+            &quot;client&quot; : {
+              &quot;params&quot; : { }
+            },
+            &quot;rest&quot; : {
+              &quot;params&quot; : { },
+              &quot;link&quot; : null,
+              &quot;method&quot; : null
+            }
+          }
+        },
+        &quot;currencyCode&quot; : &quot;CLF&quot;,
+        &quot;vlocity_ins__ProductName__c&quot; : &quot;Fallecimiento&quot;,
+        &quot;Id&quot; : &quot;0QL3C000000KfRaWAK&quot;,
+        &quot;CreatedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+        &quot;TotalPrice&quot; : 0,
+        &quot;vlocity_ins__NeedReprice__c&quot; : false,
+        &quot;vlocity_ins__RelationshipType__c&quot; : &quot;Child&quot;,
+        &quot;Price&quot; : 0,
+        &quot;Product2Id&quot; : &quot;01t3C000007DMiGQAW&quot;,
+        &quot;UnitPrice&quot; : 0,
+        &quot;needReprice&quot; : false,
+        &quot;isOptional&quot; : false,
+        &quot;currencySymbol&quot; : &quot;CLF&quot;,
+        &quot;attributeCategories&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Name&quot; : &quot;Valores Cobertura&quot;,
+            &quot;Code__c&quot; : &quot;1234&quot;,
+            &quot;id&quot; : &quot;a1c3C000000eK3yQAE&quot;,
+            &quot;displaySequence&quot; : 1000,
+            &quot;productAttributes&quot; : {
+              &quot;records&quot; : [ {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 0,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARM8QAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje de Reembolso bono por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembBonAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 1,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMNQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje Reembolso sin prevision por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembSinPrevAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;number&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 2,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMDQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Porcentaje  de Reembolso libre eleccion por Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;percentage&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;PRCTGReembLibElecAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 3,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMcQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TOPEMaxPrestAseg&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 4,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARMhQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TOPEMaxPrestGrpFam&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 5,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNJQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por prestación - Póliza&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPPP&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 6,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNTQA4&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo anual elección - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMAEA&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 7,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNiQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo anual elección - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMAEGF&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 8,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNnQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Asegurado&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEA&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 9,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARNxQAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Grupo Familiar&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEGF&quot;,
+                &quot;filterable&quot; : true
+              }, {
+                &quot;isNotAssetizable&quot; : false,
+                &quot;userValues&quot; : null,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : 10,
+                &quot;readonly&quot; : false,
+                &quot;hasRules&quot; : false,
+                &quot;multiselect&quot; : false,
+                &quot;attributeId&quot; : &quot;a1d3C000001ARO7QAO&quot;,
+                &quot;required&quot; : false,
+                &quot;cloneable&quot; : true,
+                &quot;label&quot; : &quot;Tope máximo por evento - Póliza&quot;,
+                &quot;isNotTranslatable&quot; : false,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;readonly&quot; : false
+                } ],
+                &quot;hidden&quot; : false,
+                &quot;code&quot; : &quot;TMPEP&quot;,
+                &quot;filterable&quot; : true
+              } ],
+              &quot;totalSize&quot; : 11
+            }
+          } ],
+          &quot;totalSize&quot; : 1
+        },
+        &quot;ProductCode&quot; : &quot;1&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiGQAW&quot;,
+        &quot;quoteLineItemId&quot; : &quot;0QL3C000000KfRaWAK&quot;,
+        &quot;vlocity_ins__SubParentItemId__c&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+        &quot;vlocity_ins__ParentItemId2__c&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+        &quot;vlocity_ins__ProductChildItemSequence__c&quot; : 5,
+        &quot;isSelected&quot; : true,
+        &quot;displaySequence&quot; : 5,
+        &quot;vlocity_ins__TotalAmount__c&quot; : 0,
+        &quot;Name&quot; : &quot;Fallecimiento&quot;,
+        &quot;LineNumber&quot; : &quot;00000033&quot;,
+        &quot;productName&quot; : &quot;Fallecimiento&quot;,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1PQAW&quot;,
+        &quot;vlocity_ins__ParentItemId__c&quot; : &quot;0QL3C000000KfRZWA0&quot;,
+        &quot;QuoteId&quot; : &quot;0Q03C000000fIcBSAU&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;LastModifiedDate&quot; : &quot;2022-11-02T19:02:30.000+0000&quot;,
+        &quot;lineRecordType&quot; : &quot;CoverageSpec&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Accidental&quot;,
+        &quot;productName&quot; : &quot;Invalidez Accidental&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1MQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 2,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;83&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkWQAW&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Permanente&quot;,
+        &quot;productName&quot; : &quot;Invalidez Permanente&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1NQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 3,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;80&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkbQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Pago Mensual por Incapacidad&quot;,
+        &quot;productName&quot; : &quot;Pago Mensual por Incapacidad&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1OQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 4,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;27&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMkgQAG&quot;
+      }, {
+        &quot;Name&quot; : &quot;Muerte Accidental&quot;,
+        &quot;productName&quot; : &quot;Muerte Accidental&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1QQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 6,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;3&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiQQAW&quot;
+      }, {
+        &quot;Name&quot; : &quot;Invalidez Permanente 2/3&quot;,
+        &quot;productName&quot; : &quot;Invalidez Permanente 2/3&quot;,
+        &quot;isOptional&quot; : true,
+        &quot;vlocity_ins__RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+        &quot;pciId&quot; : &quot;a5n3C000000ZY1LQAW&quot;,
+        &quot;isSelected&quot; : false,
+        &quot;displaySequence&quot; : 1,
+        &quot;recordType&quot; : &quot;CoverageSpec&quot;,
+        &quot;ProductCode&quot; : &quot;82&quot;,
+        &quot;vlocity_ins__Type__c&quot; : &quot;Vida&quot;,
+        &quot;productId&quot; : &quot;01t3C000007DMiaQAG&quot;
+      } ],
+      &quot;totalSize&quot; : 6
+    }
+  } ],
+  &quot;totalSize&quot; : 2
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarParaTarificarVidaEscolaridad_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

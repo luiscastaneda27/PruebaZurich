@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_FechaExclusionReqEnExclusion</fullName>
+    <active>true</active>
+    <description>La fecha de exclusion es requerida en la exclusion</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(ZRH_TipoMovimiento__c, &quot;Exclusión&quot;),
+  ISNULL(ZRH_FechaExclusion__c) 
+)</errorConditionFormula>
+    <errorMessage>El tipo de movimiento Exclusión debe tener una fecha de exclusión definida</errorMessage>
+</ValidationRule>

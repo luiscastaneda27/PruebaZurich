@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_NombreCortoCuenta__c</fullName>
+    <description>Muestra los primeros 20 caracteres de la cuenta relacionada.</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot;+ AccountId ,IF( LEN(Account.Name) &lt; 21, Account.Name,  LEFT(Account.Name, 20)  ), &quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nombre Corto Cuenta</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,51 @@
+{
+  "TarifaEscolaridad": [
+    {
+      "CodigoCobertura": "80",
+      "NombreCobEsc": "INVALIDEZ PERMANENTE (80)",
+      "Niveles": [
+        {
+          "PrimaMensualEsc": 0.4408,
+          "CodigoNivel": "0",
+          "DescripcionNivel": "SIN NIVEL ESCOLARIDAD",
+          "TasaAnualEsc": 43,
+          "TasaMensualEsc": 3.58,
+          "PrimaAnualEsc": 5.289,
+          "NAseguradosEsc": "25",
+          "CapAsegEsc": 123
+        },
+        {
+          "PrimaMensualEsc": 0.4408,
+          "DescripcionNivel": "TOTAL",
+          "PrimaAnualEsc": 5.289,
+          "NAseguradosEsc": 23,
+          "CapAsegEsc": 123
+        }
+      ]
+    },
+    {
+      "CodigoCobertura": "1",
+      "NombreCobEsc": "FALLECIMIENTO",
+      "Niveles": [
+        {
+          "PrimaMensualEsc": 0.2007,
+          "CodigoNivel": "0",
+          "DescripcionNivel": "SIN NIVEL ESCOLARIDAD",
+          "TasaAnualEsc": 56,
+          "TasaMensualEsc": 4.67,
+          "PrimaAnualEsc": 2.408,
+          "NAseguradosEsc": 23,
+          "CapAsegEsc": 43
+        },
+        {
+          "PrimaMensualEsc": 0.2007,
+          "DescripcionNivel": "TOTAL",
+          "PrimaAnualEsc": 2.408,
+          "NAseguradosEsc": 23,
+          "CapAsegEsc": 43
+        }
+      ]
+    }
+  ],
+  "IdTipoTarifa": "6"
+}

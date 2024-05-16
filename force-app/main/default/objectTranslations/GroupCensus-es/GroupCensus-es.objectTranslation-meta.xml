@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nómina de Asegurados</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Nóminas de Asegurados</value>
+    </caseValues>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins_fsc__CustomerCommunityFLSCheckFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins_fsc__StandardFieldset</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+</CustomObjectTranslation>

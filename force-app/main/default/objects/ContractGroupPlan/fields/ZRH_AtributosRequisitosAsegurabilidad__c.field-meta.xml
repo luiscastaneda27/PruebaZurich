@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_AtributosRequisitosAsegurabilidad__c</fullName>
+    <description>Se almacena los atributos gestionados de Requisitos de Asegurabilidad.</description>
+    <externalId>false</externalId>
+    <label>Atributos Requisitos de Asegurabilidad.</label>
+    <length>98304</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

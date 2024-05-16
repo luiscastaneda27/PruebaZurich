@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-modal__content slds-p-around_medium ">
+        <div class="slds-form slds-form_compound slds-align--absolute-left">
+            <fieldset class="slds-form-element">
+                <div class="slds-modal__content slds-p-around--medium">
+                    <h2 >{message}</h2>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Activar" title="Activar" variant="brand" onclick={activeGloss}
+                        disabled={disabledButton}>
+                    </lightning-button>
+                </footer>
+            </fieldset>
+        </div>
+    </div>
+    <template if:true={showSpinner}>
+        <div id="activityIndicator" class="slds-spinner_container">
+            <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+                <span class="slds-assistive-text"></span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

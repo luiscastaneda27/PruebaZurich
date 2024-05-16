@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>GLB_P1_EjecutivoVenta__c</columns>
+    <columns>GLB_P1_OportunidadesAsignadas__c</columns>
+    <columns>GLB_P1_Activo__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todos</label>
+</ListView>

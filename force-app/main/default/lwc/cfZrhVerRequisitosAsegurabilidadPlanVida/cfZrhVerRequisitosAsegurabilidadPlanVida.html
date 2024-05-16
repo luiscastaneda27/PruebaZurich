@@ -1,0 +1,51 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <vlocity_ins-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </vlocity_ins-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <vlocity_ins-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_ins-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              No tienes los permisos necesarios para realizar esta acción
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                      <vlocity_ins-flex-card-state   data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_ins-output-field data-style-id="state0element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BFilaNombreAsistencia%7D%3C/div%3E"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element1" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_ins-flex-datatable data-style-id="state0element1_child"   card={card}  record={record}  issearchavailable="false"  issortavailable="true"  cell-level-edit="true"  pagelimit="3"  group-order="asc"  row-delete-dependent-column=""  pagesize=""  extraclass=""  columns='\[{"fieldName":"NombreCobertura","label":"Cobertura","searchable":false,"sortable":true,"type":"text"},{"fieldName":"EdadMinimaIngreso","label":"Edad Mínima Ingreso","searchable":false,"sortable":true,"type":"number"},{"fieldName":"EdadTopeIngreso","label":"Edad Tope Ingreso","searchable":false,"sortable":true,"type":"number"},{"fieldName":"EdadSalida","label":"Edad Salida","searchable":false,"sortable":true,"type":"number"},{"fieldName":"DPSCapitalIgualMayor","label":"DPS para Capital igual o mayor a","searchable":false,"sortable":true,"type":"number"},{"fieldName":"EdadDPS","label":"Edad DPS","searchable":false,"sortable":true,"type":"number"}]'  records={records}  theme="slds"  ></vlocity_ins-flex-datatable>
+      </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                </template>
+                <template if:false={hasRecords}>
+                      <vlocity_ins-flex-card-state   data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_ins-output-field data-style-id="state0element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3E%7BFilaNombreAsistencia%7D%3C/div%3E"  theme="slds"  ></vlocity_ins-output-field>
+      </div><div data-style-id="state0element1" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><vlocity_ins-flex-datatable data-style-id="state0element1_child"   card={card}  record={record}  issearchavailable="false"  issortavailable="true"  cell-level-edit="true"  pagelimit="3"  group-order="asc"  row-delete-dependent-column=""  pagesize=""  extraclass=""  columns='\[{"fieldName":"NombreCobertura","label":"Cobertura","searchable":false,"sortable":true,"type":"text"},{"fieldName":"EdadMinimaIngreso","label":"Edad Mínima Ingreso","searchable":false,"sortable":true,"type":"number"},{"fieldName":"EdadTopeIngreso","label":"Edad Tope Ingreso","searchable":false,"sortable":true,"type":"number"},{"fieldName":"EdadSalida","label":"Edad Salida","searchable":false,"sortable":true,"type":"number"},{"fieldName":"DPSCapitalIgualMayor","label":"DPS para Capital igual o mayor a","searchable":false,"sortable":true,"type":"number"},{"fieldName":"EdadDPS","label":"Edad DPS","searchable":false,"sortable":true,"type":"number"}]'  records={records}  theme="slds"  ></vlocity_ins-flex-datatable>
+      </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_ins-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </vlocity_ins-action>
+  
+            <vlocity_ins-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </vlocity_ins-action>
+            </div>
+          </template>

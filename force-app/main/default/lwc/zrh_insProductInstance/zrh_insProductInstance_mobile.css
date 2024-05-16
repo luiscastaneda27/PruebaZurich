@@ -1,0 +1,158 @@
+.vloc-ins-spinner {
+    top: 4rem;
+}
+
+.vloc-ins-product-name {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.vloc-ins-product-summary {
+    cursor: pointer;
+}
+
+.vloc-ins-product-summary:hover {
+    background-color: #ebf3fc;
+}
+
+.vloc-ins-coverages-banner {
+    min-height: 2.5rem;
+    color: #4D6792;
+    background-color: #F5F6F9;
+}
+
+.vloc-ins-coverages-banner:hover {
+    background-color: #EEF1F6;
+    cursor:pointer;
+}
+
+.vloc-ins-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vloc-ins-label {
+    color: #7c7c7c;
+}
+
+.vloc-ins-helptext {
+    position: relative;
+    top: -0.25rem;
+}
+
+.vloc-ins-price-tooltip {
+    width: 10rem;
+    bottom: 2rem;
+    right: -1rem;
+    display: none;
+}
+
+.vloc-ins-price-icon:hover + .vloc-ins-price-tooltip {
+    display: block;
+}
+
+.vloc-ins-bold {
+    font-weight: 700;
+}
+
+.vloc-ins-inline {
+    display: inline;
+}
+
+.vloc-ins-menu-container {
+    width: 2rem;
+    height: 2rem;
+}
+
+.vloc-ins-divider {
+    height: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 5px -5px #f6f6f6;
+}
+
+.vloc-ins-policy-grandchild-indicator {
+    color: #005fb2;
+    background-color: #ffffff;
+}
+
+.vloc-ins-reprice-message {
+    font-size: 0.8rem;
+}
+
+.vloc-ins-attribute-preview {
+    color: #7c7c7c;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.vloc-ins-header-content {
+    width: 100%;
+}
+
+.vloc-ins-title-container  {
+    line-height: 2rem;
+}
+
+.vloc-ins-separator {
+    font-weight: 100;
+}
+
+.vloc-ins-separator-container:last-child .vloc-ins-separator {
+    display: none;
+}
+
+.vloc-ins-warning-icon {
+    position: relative;
+    top: -0.15rem;
+}
+
+@media screen and (max-width: 480px) {
+    .vloc-ins-attribute-preview .vloc-ins-attribute-container:nth-child(even) {
+        text-align: right;
+    }
+
+    .vloc-ins-rate-btn {
+        font-size: 0.8rem;
+        padding-top: 0;
+    }
+
+    .vloc-ins-product-summary {
+        padding-left: var(--lwc-spacingSmall, 0.75rem);
+        padding-right: var(--lwc-spacingSmall, 0.75rem);
+    }
+    .vloc-ins-section {
+        padding-left: var(--lwc-spacingSmall, 0.75rem);
+        padding-right: var(--lwc-spacingSmall, 0.75rem);
+    }
+
+    .vloc-ins-reprice-message {
+        line-height: var(--lwc-lineHeightReset, 1);
+        font-weight: 600;
+    }
+
+    .vloc-ins-product-name {
+        font-size: 1.1rem;
+    }
+
+    .vloc-ins-product-price {
+        font-size: 1rem;
+    }
+
+    .vloc-ins-attribute-preview {
+        font-size: 0.8rem;
+    }
+
+    .vloc-ins-attr-value {
+        color:#080707;
+    }
+
+    .vloc-ins-attr-label{
+       color: #706e6b;
+    }
+
+    .vloc-ins-label {
+        padding-bottom: var(--lwc-spacingMedium,1rem);
+    }
+}

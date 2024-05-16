@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AccountId&quot; : &quot;1&quot;,
+  &quot;ContractName&quot; : &quot;2&quot;,
+  &quot;records&quot; : &quot;3&quot;,
+  &quot;QuoteId&quot; : &quot;4&quot;,
+  &quot;Status&quot; : &quot;5&quot;,
+  &quot;DatosCotizacion&quot; : {
+    &quot;AccountId&quot; : &quot;0018B00000RNoSgQAL&quot;,
+    &quot;ZRH_AtributosAsistenciasSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosConveniosLineaSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosConveniosSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosSobreprimasSeleccionados__c&quot; : null,
+    &quot;ZRH_CoberturaEnElExterior__c&quot; : &quot;Si&quot;,
+    &quot;ZRH_ComisionCorredor__c&quot; : 100,
+    &quot;ZRH_ConsideraTopePreexistencias__c&quot; : null,
+    &quot;ZRH_CotizacionHolding__c&quot; : &quot;0Q08B000000HcNBSA0&quot;,
+    &quot;vlocity_ins__AgencyBrokerageId__c&quot; : &quot;0017800000Nq5fvAAB&quot;,
+    &quot;ZRH_CualesPreexistencias__c&quot; : null,
+    &quot;ZRH_CualesPreexistenciasLectura__c&quot; : null,
+    &quot;ZRH_CubreTodasPreexistencias__c&quot; : null,
+    &quot;ZRH_FondoLibreDisposicion__c&quot; : &quot;No&quot;,
+    &quot;ZRH_CubrePreexistencias__c&quot; : null,
+    &quot;ZRH_Holding__c&quot; : &quot;0018B00000RNoSCQA1&quot;,
+    &quot;ZRH_Moneda__c&quot; : &quot;UF&quot;,
+    &quot;ZRH_MontoAnualFondo__c&quot; : null,
+    &quot;ZRH_MontoTopePreexistencias__c&quot; : null,
+    &quot;ZRH_CuentasDEF__c&quot; : null,
+    &quot;ZRH_NivelAsistencia__c&quot; : null,
+    &quot;ZRH_NivelDeCoberturaEnElExterior__c&quot; : null,
+    &quot;ZRH_NivelConvenioLinea__c&quot; : null,
+    &quot;ZRH_NivelConvenio__c&quot; : null,
+    &quot;ZRH_NivelFondoLibreDisposicion__c&quot; : &quot;Grupo de Negocio&quot;,
+    &quot;ZRH_NivelPreexistencia__c&quot; : &quot;Contratante&quot;,
+    &quot;ZRH_NivelSobreprima__c&quot; : null,
+    &quot;ZRH_NombreCorredor__c&quot; : &quot;MERCER CORREDORES DE SEGUROS LTDA.&quot;,
+    &quot;ZRH_NombreCortoCuenta__c&quot; : &quot;&lt;a href=\&quot;/0018B00000RNoSg\&quot; target=\&quot;_self\&quot;&gt;Grande 1&lt;/a&gt;&quot;,
+    &quot;ZRH_NumeroDiasLibrePreexistencias__c&quot; : null,
+    &quot;ZRH_PrimaTotalAnual_UF__c&quot; : 0,
+    &quot;ZRH_PrimaTotalAnualUF_Vida__c&quot; : 0,
+    &quot;ZRH_PrimaTotalAnualUF_Salud__c&quot; : 0,
+    &quot;vlocity_ins__ProducerId__c&quot; : &quot;0037800000IuXU3AAN&quot;,
+    &quot;ZRH_TipoTopePreexistencias__c&quot; : null,
+    &quot;ZRH_TopeDeCobertura__c&quot; : null,
+    &quot;ZRH_TopeTodasPreexistencias__c&quot; : null,
+    &quot;vlocity_ins__UnderwriterId__c&quot; : null,
+    &quot;Id&quot; : &quot;0Q08B000000HcNESA0&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;AccountId&quot; : &quot;1&quot;,
+  &quot;ContractName&quot; : &quot;2&quot;,
+  &quot;records&quot; : &quot;3&quot;,
+  &quot;QuoteId&quot; : &quot;4&quot;,
+  &quot;Status&quot; : &quot;5&quot;,
+  &quot;additionalFields&quot; : {
+    &quot;AccountId&quot; : &quot;0018B00000RNoSgQAL&quot;,
+    &quot;ZRH_AtributosAsistenciasSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosConveniosLineaSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosConveniosSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosSobreprimasSeleccionados__c&quot; : null,
+    &quot;ZRH_CoberturaEnElExterior__c&quot; : &quot;Si&quot;,
+    &quot;ZRH_ComisionCorredor__c&quot; : 100,
+    &quot;ZRH_ConsideraTopePreexistencias__c&quot; : null,
+    &quot;ZRH_CotizacionHolding__c&quot; : &quot;0Q08B000000HcNBSA0&quot;,
+    &quot;vlocity_ins__AgencyBrokerageId__c&quot; : &quot;0017800000Nq5fvAAB&quot;,
+    &quot;ZRH_CualesPreexistencias__c&quot; : null,
+    &quot;ZRH_CualesPreexistenciasLectura__c&quot; : null,
+    &quot;ZRH_CubreTodasPreexistencias__c&quot; : null,
+    &quot;ZRH_FondoLibreDisposicion__c&quot; : &quot;No&quot;,
+    &quot;ZRH_CubrePreexistencias__c&quot; : null,
+    &quot;ZRH_Holding__c&quot; : &quot;0018B00000RNoSCQA1&quot;,
+    &quot;ZRH_Moneda__c&quot; : &quot;UF&quot;,
+    &quot;ZRH_MontoAnualFondo__c&quot; : null,
+    &quot;ZRH_MontoTopePreexistencias__c&quot; : null,
+    &quot;ZRH_CuentasDEF__c&quot; : null,
+    &quot;ZRH_NivelAsistencia__c&quot; : null,
+    &quot;ZRH_NivelDeCoberturaEnElExterior__c&quot; : null,
+    &quot;ZRH_NivelConvenioLinea__c&quot; : null,
+    &quot;ZRH_NivelConvenio__c&quot; : null,
+    &quot;ZRH_NivelFondoLibreDisposicion__c&quot; : &quot;Grupo de Negocio&quot;,
+    &quot;ZRH_NivelPreexistencia__c&quot; : &quot;Contratante&quot;,
+    &quot;ZRH_NivelSobreprima__c&quot; : null,
+    &quot;ZRH_NombreCorredor__c&quot; : &quot;MERCER CORREDORES DE SEGUROS LTDA.&quot;,
+    &quot;ZRH_NombreCortoCuenta__c&quot; : &quot;&lt;a href=\&quot;/0018B00000RNoSg\&quot; target=\&quot;_self\&quot;&gt;Grande 1&lt;/a&gt;&quot;,
+    &quot;ZRH_NumeroDiasLibrePreexistencias__c&quot; : null,
+    &quot;ZRH_PrimaTotalAnual_UF__c&quot; : 0,
+    &quot;ZRH_PrimaTotalAnualUF_Vida__c&quot; : 0,
+    &quot;ZRH_PrimaTotalAnualUF_Salud__c&quot; : 0,
+    &quot;vlocity_ins__ProducerId__c&quot; : &quot;0037800000IuXU3AAN&quot;,
+    &quot;ZRH_TipoTopePreexistencias__c&quot; : null,
+    &quot;ZRH_TopeDeCobertura__c&quot; : null,
+    &quot;ZRH_TopeTodasPreexistencias__c&quot; : null,
+    &quot;vlocity_ins__UnderwriterId__c&quot; : null,
+    &quot;Id&quot; : &quot;0Q08B000000HcNESA0&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarParaCrearContrato</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8996</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_Moneda__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_Moneda__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom6514</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_MontoAnualFondo__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_MontoAnualFondo__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom3534</globalKey>
+        <inputFieldName>ContractName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:DatosCotizacion:AccountId</formulaConverted>
+        <formulaExpression>%DatosCotizacion:AccountId%</formulaExpression>
+        <formulaResultPath>ContractName</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>zrhTransformarParaCrearContratoCustom3868</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom3962</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelPreexistencia__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelPreexistencia__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom1681</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NombreCorredor__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NombreCorredor__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8991</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8709</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelAsistencia__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelAsistencia__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom2182</globalKey>
+        <inputFieldName>QuoteId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom3858</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelSobreprima__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelSobreprima__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom3686</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_MontoTopePreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_MontoTopePreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom4438</globalKey>
+        <inputFieldName>StartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:StartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom610</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelConvenio__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelConvenio__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom9146</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NumeroDiasLibrePreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NumeroDiasLibrePreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom4496</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NombreCortoCuenta__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NombreCortoCuenta__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom7537</globalKey>
+        <inputFieldName>QuoteId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:SourceQuoteId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom3006</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_TopeTodasPreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_TopeTodasPreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom4422</globalKey>
+        <inputFieldName>DatosCotizacion:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom4353</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelConvenioLinea__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelConvenioLinea__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>StartDate</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>zrhTransformarParaCrearContratoCustom6307</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom4883</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_PrimaTotalAnualUF_Salud__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_PrimaTotalAnualUF_Salud__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8658</globalKey>
+        <inputFieldName>ContractTerm</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>additionalFields:ContractTerm</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom5863</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_PrimaTotalAnual_UF__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_PrimaTotalAnual_UF__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8762</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_PrimaTotalAnualUF_Vida__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_PrimaTotalAnualUF_Vida__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>12</formulaConverted>
+        <formulaExpression>12</formulaExpression>
+        <formulaResultPath>ContractTerm</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>zrhTransformarParaCrearContratoCustom8563</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom2361</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_TipoTopePreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_TipoTopePreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom6586</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_TopeDeCobertura__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_TopeDeCobertura__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8173</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_AtributosAsistenciasSeleccionados__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_AtributosAsistenciasSeleccionados__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom1950</globalKey>
+        <inputFieldName>DatosCotizacion:vlocity_ins__AgencyBrokerageId__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:vlocity_ins__AgencyBrokerageId__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom253</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_AtributosConveniosLineaSeleccionados__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_AtributosConveniosLineaSeleccionados__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom5890</globalKey>
+        <inputFieldName>DatosCotizacion:vlocity_ins__UnderwriterId__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:vlocity_ins__UnderwriterId__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom46</globalKey>
+        <inputFieldName>records</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>productConfigurationDetail:records</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom7006</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CualesPreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CualesPreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom5631</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CotizacionHolding__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CotizacionHolding__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom2540</globalKey>
+        <inputFieldName>DatosCotizacion:vlocity_ins__ProducerId__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:vlocity_ins__ProducerId__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom9415</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CubrePreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CubrePreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom3974</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CubreTodasPreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CubreTodasPreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom7058</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CualesPreexistenciasLectura__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CualesPreexistenciasLectura__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom1415</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CoberturaEnElExterior__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CoberturaEnElExterior__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom7221</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_ComisionCorredor__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_ComisionCorredor__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom6625</globalKey>
+        <inputFieldName>productConfigurationDetail:records</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>productConfigurationDetail:records</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom967</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_AtributosConveniosSeleccionados__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_AtributosConveniosSeleccionados__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom9377</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_CuentasDEF__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_CuentasDEF__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom4231</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_FondoLibreDisposicion__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_FondoLibreDisposicion__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8993</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_ConsideraTopePreexistencias__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_ConsideraTopePreexistencias__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom5213</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelFondoLibreDisposicion__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelFondoLibreDisposicion__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom1047</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_Holding__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_Holding</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;1&quot;</formulaConverted>
+        <formulaExpression>&quot;1&quot;</formulaExpression>
+        <formulaResultPath>Status</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarParaCrearContratoCustom3457</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom8672</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_AtributosSobreprimasSeleccionados__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_AtributosSobreprimasSeleccionados__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearContratoCustom974</globalKey>
+        <inputFieldName>DatosCotizacion:ZRH_NivelDeCoberturaEnElExterior__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearContrato</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalFields:ZRH_NivelDeCoberturaEnElExterior__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AccountId&quot; : &quot;1&quot;,
+  &quot;ContractName&quot; : &quot;2&quot;,
+  &quot;records&quot; : &quot;3&quot;,
+  &quot;QuoteId&quot; : &quot;4&quot;,
+  &quot;Status&quot; : &quot;5&quot;,
+  &quot;DatosCotizacion&quot; : {
+    &quot;AccountId&quot; : &quot;0018B00000RNoSgQAL&quot;,
+    &quot;ZRH_AtributosAsistenciasSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosConveniosLineaSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosConveniosSeleccionados__c&quot; : null,
+    &quot;ZRH_AtributosSobreprimasSeleccionados__c&quot; : null,
+    &quot;ZRH_CoberturaEnElExterior__c&quot; : &quot;Si&quot;,
+    &quot;ZRH_ComisionCorredor__c&quot; : 100,
+    &quot;ZRH_ConsideraTopePreexistencias__c&quot; : null,
+    &quot;ZRH_CotizacionHolding__c&quot; : &quot;0Q08B000000HcNBSA0&quot;,
+    &quot;vlocity_ins__AgencyBrokerageId__c&quot; : &quot;0017800000Nq5fvAAB&quot;,
+    &quot;ZRH_CualesPreexistencias__c&quot; : null,
+    &quot;ZRH_CualesPreexistenciasLectura__c&quot; : null,
+    &quot;ZRH_CubreTodasPreexistencias__c&quot; : null,
+    &quot;ZRH_FondoLibreDisposicion__c&quot; : &quot;No&quot;,
+    &quot;ZRH_CubrePreexistencias__c&quot; : null,
+    &quot;ZRH_Holding__c&quot; : &quot;0018B00000RNoSCQA1&quot;,
+    &quot;ZRH_Moneda__c&quot; : &quot;UF&quot;,
+    &quot;ZRH_MontoAnualFondo__c&quot; : null,
+    &quot;ZRH_MontoTopePreexistencias__c&quot; : null,
+    &quot;ZRH_CuentasDEF__c&quot; : null,
+    &quot;ZRH_NivelAsistencia__c&quot; : null,
+    &quot;ZRH_NivelDeCoberturaEnElExterior__c&quot; : null,
+    &quot;ZRH_NivelConvenioLinea__c&quot; : null,
+    &quot;ZRH_NivelConvenio__c&quot; : null,
+    &quot;ZRH_NivelFondoLibreDisposicion__c&quot; : &quot;Grupo de Negocio&quot;,
+    &quot;ZRH_NivelPreexistencia__c&quot; : &quot;Contratante&quot;,
+    &quot;ZRH_NivelSobreprima__c&quot; : null,
+    &quot;ZRH_NombreCorredor__c&quot; : &quot;MERCER CORREDORES DE SEGUROS LTDA.&quot;,
+    &quot;ZRH_NombreCortoCuenta__c&quot; : &quot;&lt;a href=\&quot;/0018B00000RNoSg\&quot; target=\&quot;_self\&quot;&gt;Grande 1&lt;/a&gt;&quot;,
+    &quot;ZRH_NumeroDiasLibrePreexistencias__c&quot; : null,
+    &quot;ZRH_PrimaTotalAnual_UF__c&quot; : 0,
+    &quot;ZRH_PrimaTotalAnualUF_Vida__c&quot; : 0,
+    &quot;ZRH_PrimaTotalAnualUF_Salud__c&quot; : 0,
+    &quot;vlocity_ins__ProducerId__c&quot; : &quot;0037800000IuXU3AAN&quot;,
+    &quot;ZRH_TipoTopePreexistencias__c&quot; : null,
+    &quot;ZRH_TopeDeCobertura__c&quot; : null,
+    &quot;ZRH_TopeTodasPreexistencias__c&quot; : null,
+    &quot;vlocity_ins__UnderwriterId__c&quot; : null,
+    &quot;Id&quot; : &quot;0Q08B000000HcNESA0&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarParaCrearContrato_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

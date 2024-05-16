@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>mine_suscriptor</fullName>
+    <columns>QUOTE.NAME</columns>
+    <columns>QUOTE.QUOTENUMBER</columns>
+    <columns>ZRH_CotizacionDelHolding__c</columns>
+    <columns>ZRH_AprobacionPendiente__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>vlocity_ins__ProducerId__c</columns>
+    <columns>vlocity_ins__UnderwriterId__c</columns>
+    <columns>vlocity_ins__AgencyBrokerageId__c</columns>
+    <columns>ZRH_PrimaTarget__c</columns>
+    <columns>QUOTE.STATUS</columns>
+    <columns>ZRH_EjecutivoPropietario__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ZRHCreadoSuscriptor__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Mis cotizaciones por Suscriptor</label>
+</ListView>

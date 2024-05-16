@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Calculo_DV_Rut__c</fullName>
+    <externalId>false</externalId>
+    <formula>11- MOD(
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 2, 1 )) *2 +
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 3, 1 )) *3 +
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 4, 1 )) *4 +
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 5, 1 )) *5 +
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 6, 1 )) *6 +
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 7, 1 )) *7 +
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 8, 1 )) *2 +
+IF( LEN(GLBP1_Rut__c) = 10,
+VALUE (mid ( GLBP1_Rut__c, len(GLBP1_Rut__c) - 9, 1 )) *3
+, 0)
+, 11)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cálculo DV Rut</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

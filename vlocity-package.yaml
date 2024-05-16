@@ -1,0 +1,9 @@
+projectPath: vlocity
+# ignoreLWCActivationOS: true 
+queries: 
+  - OmniScript
+  - IntegrationProcedure
+  - DataRaptor
+  - VlocityCard
+  - VlocityUILayout
+  - VlocityUITemplate

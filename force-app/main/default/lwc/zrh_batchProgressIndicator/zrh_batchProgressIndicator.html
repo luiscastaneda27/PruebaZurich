@@ -1,0 +1,14 @@
+<template>
+    <lightning-progress-bar 
+      value={jobProgress}
+      aria-label="Progress bar showing 50 percent progress"
+      size="medium"
+      variant="base"
+    ></lightning-progress-bar>
+    <div>
+      {jobItemsProcessed} de {totalJobItems} procesados.
+    </div>
+    <template lwc:if={errorsFound}>
+      <div class="msg-alert">Se han encontrado errores. Por favor contactar al Administrador del sistema.</div>
+    </template>
+</template>

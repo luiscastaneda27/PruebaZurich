@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ContractGroupPlan$ZRH_NumeroDePoliza__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Name</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_CodigoProducto__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.vlocity_ins__AgencyBrokerageId__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.vlocity_ins__AgencyBrokerageId__c.ZRH_Rut__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.ZRH_NombreCortoCuenta__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.ZRH_Holding__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.ZRH_Holding__c.ZRH_CodigoGrupoNegocio__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_UsuarioAsignado__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.CreatedDate</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$EffectiveStartDate</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_FechaOficializacion__c</field>
+    </columns>
+    <currency>CLF</currency>
+    <description>Cantidad de pólizas por rango de fecha</description>
+    <filter>
+        <criteriaItems>
+            <column>ContractGroupPlan$ZRH_NumeroDePoliza__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2024 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>12/31/2024 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2024 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>12/31/2024 12:00 AM</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>CGP 2: Cantidad Pólizas por Rango Fecha</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ZRH_PolizasDatosCotizacion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ContractGroupPlan$ZRH_NumeroDePoliza__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>ContractGroupPlan$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

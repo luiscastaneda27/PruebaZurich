@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_FechaCaducidad__c</fullName>
+    <description>Campo para calculo de fecha de caducidad a partir de la fecha de creación</description>
+    <externalId>false</externalId>
+    <formula>IF(
+
+ISPICKVAL( ZRH_Origen__c , &quot;Reserva&quot;)
+
+,
+
+CASE( WEEKDAY(DATEVALUE(CreatedDate)) ,
+2,	
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 4,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 2,
+ DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1))),
+3 ,  
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 3 &amp;&amp; VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &lt; 9,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 2, 
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 8,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 4, 
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)))),
+4,
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 2 &amp;&amp; VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &lt; 8,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 2, 
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 7,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 4, 
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)))),
+5,
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 1 &amp;&amp; VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &lt; 7,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 2, 
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 6,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 4, 
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)))),
+6,
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &lt; 6 &amp;&amp; VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) != 0,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 2, 
+	if(VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) &gt; 5,
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)) + 4, 
+	DATEVALUE(CreatedDate) + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 10 + VALUE(LEFT($Label.ZRH_FechaCaducidad , 1)) * 4 + VALUE(RIGHT($Label.ZRH_FechaCaducidad , 1)))),
+DATEVALUE(CreatedDate))  
+
+,
+
+DATEVALUE(CreatedDate) + 365
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fecha Caducidad</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

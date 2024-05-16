@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>zrhModificarGlosasEspecialesNuevaSegurosColectivos</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DRCargarGlosaPendiente</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%GlosaPendiente% == false&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContractGroupPlan&quot; : &quot;%ContractGroupPlan%&quot;,
+    &quot;GlosaPendiente&quot; : true
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCargarGlosaPendiente&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>New</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;Tipo&quot; : &quot;G-003&quot;,
+    &quot;ContractGroupPlan&quot; : &quot;%ContractGroupPlan%&quot;,
+    &quot;Plan&quot; : &quot;%Plan%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;DefaultOmniScriptEditBlock&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;sobjectMapping&quot; : [ {
+      &quot;osElement&quot; : &quot;Id&quot;,
+      &quot;sObjectField&quot; : &quot;Id&quot;,
+      &quot;duplicateKey&quot; : true
+    }, {
+      &quot;osElement&quot; : &quot;Titulo&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_Titulo__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Contenido&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_ContenidoGlosa__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Plan&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_Plan__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Nombre&quot;,
+      &quot;sObjectField&quot; : &quot;Name&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;ContractGroupPlan&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_PlanDelContrato__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Tipo&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_TipoDeGlosa__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Destino&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_DestinoTipoPDF__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Activo&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_Activo__c&quot;,
+      &quot;duplicateKey&quot; : false
+    }, {
+      &quot;osElement&quot; : &quot;Nombre&quot;,
+      &quot;sObjectField&quot; : &quot;ZRH_NombreArticulo__c&quot;,
+      &quot;duplicateKey&quot; : false
+    } ],
+    &quot;selectSobject&quot; : &quot;ZRH_Glosas__c&quot;,
+    &quot;useQueueableApexRemoting&quot; : false,
+    &quot;ignoreCache&quot; : false,
+    &quot;vlcClass&quot; : &quot;DefaultOmniScriptEditBlock&quot;,
+    &quot;useContinuation&quot; : false
+  },
+  &quot;remoteMethod&quot; : &quot;new&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessKey>zrhModificarGlosasEspecialesNueva_SegurosColectivos</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>SegurosColectivos</subType>
+    <type>zrhModificarGlosasEspecialesNueva</type>
+    <uniqueName>zrhModificarGlosasEspecialesNueva_SegurosColectivos_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>4a1ca68a-85e3-712e-b0db-562d1fe9e775</webComponentKey>
+</OmniIntegrationProcedure>

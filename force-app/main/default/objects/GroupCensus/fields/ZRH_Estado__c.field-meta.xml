@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Estado__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Proceso de Carga Finalizado</fullName>
+                <default>false</default>
+                <label>Proceso de Carga Finalizado</label>
+            </value>
+            <value>
+                <fullName>Proceso de Carga Rechazado</fullName>
+                <default>false</default>
+                <label>Proceso de Carga Rechazado</label>
+            </value>
+            <value>
+                <fullName>Incompleto</fullName>
+                <default>false</default>
+                <label>Incompleto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

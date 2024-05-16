@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ZRH_ConfirmRefundRequest</label>
+    <protected>false</protected>
+    <values>
+        <field>ZRH_HttpRequestNamedCredential__c</field>
+        <value xsi:type="xsd:string">ZRH_CREDENTIALS_FOR_BOT</value>
+    </values>
+    <values>
+        <field>ZRH_RequestHttpMethod__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>ZRH_RequestHttpTimeout__c</field>
+        <value xsi:type="xsd:double">120000.0</value>
+    </values>
+    <values>
+        <field>ZRH_ServicePrefix__c</field>
+        <value xsi:type="xsd:string">2?</value>
+    </values>
+    <values>
+        <field>ZRH_ServiceRequested__c</field>
+        <value xsi:type="xsd:string">ConfirmarSolicitudReembolso</value>
+    </values>
+    <values>
+        <field>ZRH_ServiceSuffix__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

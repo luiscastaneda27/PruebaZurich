@@ -1,0 +1,9 @@
+<template>
+    <template if:true={coverageSpecs.length}>
+        <template for:each={coverageSpecs} for:item="coverage">
+            <div key={coverage.pciId} class="vloc-ins-coverage">
+                <c-zrh_ins-quote-coverage root-channel={rootChannel} theme={theme} currency={currency} options={options} coverage={coverage} rule-context={ruleContext}></c-zrh_ins-quote-coverage>
+            </div>
+        </template>
+    </template>
+</template>

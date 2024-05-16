@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>BANCO DE CHILE</label>
+    </customValue>
+    <customValue>
+        <fullName>57</fullName>
+        <default>false</default>
+        <label>BANCO PARIS</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>BANCO INTERNACIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>55</fullName>
+        <default>false</default>
+        <label>BANCO CONSORCIO</label>
+    </customValue>
+    <customValue>
+        <fullName>672</fullName>
+        <default>false</default>
+        <label>COOPEUCH</label>
+    </customValue>
+    <customValue>
+        <fullName>16</fullName>
+        <default>false</default>
+        <label>BANCO BCI - TBANC</label>
+    </customValue>
+    <customValue>
+        <fullName>11</fullName>
+        <default>false</default>
+        <label>BANCO DRESDNER</label>
+    </customValue>
+    <customValue>
+        <fullName>12</fullName>
+        <default>false</default>
+        <label>BANCO ESTADO</label>
+    </customValue>
+    <customValue>
+        <fullName>14</fullName>
+        <default>false</default>
+        <label>SCOTIABANK</label>
+    </customValue>
+    <customValue>
+        <fullName>27</fullName>
+        <default>false</default>
+        <label>CORP BANCA</label>
+    </customValue>
+    <customValue>
+        <fullName>28</fullName>
+        <default>false</default>
+        <label>BANCO BICE</label>
+    </customValue>
+    <customValue>
+        <fullName>17</fullName>
+        <default>false</default>
+        <label>BANCO DO BRASIL S.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>18</fullName>
+        <default>false</default>
+        <label>BANCO CENTRAL DE CHILE</label>
+    </customValue>
+    <customValue>
+        <fullName>31</fullName>
+        <default>false</default>
+        <label>HSBC BANK (CHILE)</label>
+    </customValue>
+    <customValue>
+        <fullName>32</fullName>
+        <default>false</default>
+        <label>BANK OF AMERICA</label>
+    </customValue>
+    <customValue>
+        <fullName>38</fullName>
+        <default>false</default>
+        <label>BANCO EXTERIOR S.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>41</fullName>
+        <default>false</default>
+        <label>JP MORGAN CHASE BANK, N. A.</label>
+    </customValue>
+    <customValue>
+        <fullName>42</fullName>
+        <default>false</default>
+        <label>AMERICAN EXPRESS BANK LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>37</fullName>
+        <default>false</default>
+        <label>BANCO SANTANDER</label>
+    </customValue>
+    <customValue>
+        <fullName>43</fullName>
+        <default>false</default>
+        <label>BANCO DE LA NACION ARGENTINA</label>
+    </customValue>
+    <customValue>
+        <fullName>39</fullName>
+        <default>false</default>
+        <label>BANCO ITAU</label>
+    </customValue>
+    <customValue>
+        <fullName>504</fullName>
+        <default>false</default>
+        <label>SKOTIA-AZUL (EX BBVA)</label>
+    </customValue>
+    <customValue>
+        <fullName>507</fullName>
+        <default>false</default>
+        <label>BANCO DEL DESARROLLO</label>
+    </customValue>
+    <customValue>
+        <fullName>716</fullName>
+        <default>false</default>
+        <label>CORPORACION FINANCIERA ATLAS</label>
+    </customValue>
+    <customValue>
+        <fullName>52</fullName>
+        <default>false</default>
+        <label>DEUTSCHE BANK</label>
+    </customValue>
+    <customValue>
+        <fullName>54</fullName>
+        <default>false</default>
+        <label>RABOBANK</label>
+    </customValue>
+    <customValue>
+        <fullName>56</fullName>
+        <default>false</default>
+        <label>BANCO PENTA</label>
+    </customValue>
+    <customValue>
+        <fullName>49</fullName>
+        <default>false</default>
+        <label>BANCO SECURITY</label>
+    </customValue>
+    <customValue>
+        <fullName>999</fullName>
+        <default>false</default>
+        <label>SERVICIO CAJA SERVIPAG</label>
+    </customValue>
+    <customValue>
+        <fullName>51</fullName>
+        <default>false</default>
+        <label>BANCO FALABELLA</label>
+    </customValue>
+    <customValue>
+        <fullName>53</fullName>
+        <default>false</default>
+        <label>BANCO RIPLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>996</fullName>
+        <default>false</default>
+        <label>ZURICH CHILE ASSET MANAGEMENT AGF S.A.</label>
+    </customValue>
+    <masterLabel>ZRH Bancos</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

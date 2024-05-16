@@ -1,0 +1,58 @@
+<!-- /*********************************************************************************
+Project      : Zurich 
+Created By   : Deloitte
+Created Date : 11/05/2023
+Description  : Javascript - Table to display values from SObject
+History      :
+**************************ACRONYM OF AUTHORS************************************
+AUTHOR                         ACRONYM
+Mateo Long                        ML
+********************************************************************************
+VERSION  AUTHOR         DATE            Description
+1.0       ML	     20/04/2023		  initial version
+********************************************************************************/ -->
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_1-of-3">
+            <label for="filter">Filtrar:</label>
+            <lightning-input type="text" id="filter" onchange={handleFilterChange}></lightning-input>
+        </div>
+    </div>
+    <div if:true={isLoading} class="spinner-holder">
+        <lightning-spinner variant="brand" size="large" alternative-text="Loading"> </lightning-spinner>
+    </div>
+    <div if:false={isLoading}>
+        <div class="table-container">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th scope="col" class="slds-size_6-of-12">
+                            <div class="slds-truncate" title="Record ID">Nombre</div>
+                        </th>
+                        <th scope="col" class="slds-size_4-of-12">
+                            <div class="slds-truncate" title="Código">Código</div>
+                        </th>
+                        <th scope="col" class="slds-size_2-of-12">
+                            <div class="slds-truncate" title="Select">Seleccionar</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={filteredData} for:item="record">
+                        <tr key={record.Id}>
+                            <td data-label="Record ID" class="slds-size_6-of-12">
+                                <div class="slds-truncate" title={record.Name}>{record.Name}</div>
+                            </td>
+                            <td data-label="Código" class="slds-size_4-of-12">
+                                <div class="slds-truncate" title={record.ZRH_Codigo__c}>{record.ZRH_Codigo__c}</div>
+                            </td>
+                            <td data-label="Select" class="slds-size_2-of-12">
+                                <lightning-input type="checkbox"  checked={record.selected} data-id={record.Id} data-name={record.Name} onchange={handleCheckboxChange}></lightning-input>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>    
+        </div>
+    </div>
+</template>

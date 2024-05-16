@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ZRH_ErrorUsoInferior</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ErrorUsoInferior</shortDescription>
+        <value>El campo Uso Inferior (%) no debe superar el 100%.</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_ErrorUsoInferiorCamposRequerido</fullName>
+        <categories>Gestionar BMI</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>error campo obligatorio uso inferior</shortDescription>
+        <value>Debe completar todos los campos.</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_ErrorUsoInferiorMenosCero</fullName>
+        <categories>Gestionar BMI</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>error porcentaje negativo campo uso inferior</shortDescription>
+        <value>El campo Uso Inferior (%) debe superar el  0%.</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_FechaCaducidad</fullName>
+        <categories>ZRH COTIZACIÓN</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_FechaCaducidad</shortDescription>
+        <value>14</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_MensajeExitoGlosas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_MensajeExitoGlosas</shortDescription>
+        <value>¡Atención! Ha finalizado el proceso de activación de glosas. La cantidad de glosas asociadas al plan son:</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_MensajeInicialConGlosas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_MensajeInicialConGlosas</shortDescription>
+        <value>y se eliminará la siguiente cantidad de glosas</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_MensajeInicialGlosas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_MensajeInicialGlosas</shortDescription>
+        <value>¡Atención! Al presionar el botón, comenzará el proceso de activación de glosas</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_MensajeProcesoErrorGlosas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_MensajeProcesoErrorGlosas</shortDescription>
+        <value>Ha ocurrido un error al generar las glosas, por favor contacte su administrador.</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_MensajeProcesoExitoGlosas</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_MensajeProcesoExitoGlosas</shortDescription>
+        <value>Proceso de activación de glosas finalizado.</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_NumeroBMIPorPlan</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Numero BMI Por Plan</shortDescription>
+        <value>3</value>
+    </labels>
+	<labels>
+        <fullName>ZRH_NumeroConveniosPorPlan</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Número Convenios Por Plan</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_NumeroPlanesCotizacion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Maximo número de planes para carga simple en componente planes cotización</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>ZRH_ValorIVA</fullName>
+        <categories>PDF Cotización</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ZRH_ValorIVA</shortDescription>
+        <value>0.19</value>
+    </labels>
+</CustomLabels>

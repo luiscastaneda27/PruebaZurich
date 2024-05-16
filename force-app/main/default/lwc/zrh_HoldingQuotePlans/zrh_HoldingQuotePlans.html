@@ -1,0 +1,53 @@
+<!-- wireGetRelatedListRecords.html -->
+<template>
+    <lightning-card>
+      <template lwc:if={records}>
+        <div class="slds-m-around_medium">
+          <template for:each={records} for:item="rec">
+            <div key={rec.fields.Id.value} class="slds-grid slds-grid_align-spread slds-p-around_x-large vloc-ins-product vloc-ins-product-summary">
+                <!-- datos -->
+                <div class="slds-grid slds-grid_align-start slds-size_1-of-2 slds-small-size_2-of-3">                    
+                    <div class="slds-m-right_x-large  slds-p-top_small">
+                            <lightning-icon size="large" icon-name="standard:document_reference"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body vloc-ins-header-content">
+                        <div class="vloc-ins-title-container slds-grid">
+                            <h2 class="slds-text-heading_medium vloc-ins-product-name slds-p-top_small vloc-ins-bold">{rec.fields.vlocity_ins__ProductName__c.value}</h2>
+                        </div>
+                        <div class="vloc-ins-label">Código: {rec.fields.ZRH_CodigoProducto__c.value}</div>
+                        <div class="vloc-ins-label">Tipo tarifa: {rec.fields.ZRH_TipoTarifa__c.value}</div>
+                    </div>
+                </div>
+                <!-- boton -->
+                <div class="slds-grid slds-grid_align-end slds-size_1-of-2 slds-small-size_1-of-3">
+                    <div class="vloc-ins-icon-container slds-m-left_medium">
+                        <lightning-button if:true={seeRate} variant="base" label="Tarifa" onclick={onClickTarificacion} data-rec={rec.fields.Id.value} class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </div>
+            </div>
+          </template>
+        </div>
+      </template>
+    </lightning-card>
+    <template if:true={popTarificacion}>
+        <div role="dialog" tabindex="-1" aria-labelledby="header43"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={cancel}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Cerrar</span>
+                    </button>
+                    <h1 id="modal-heading-04" class="slds-text-heading_medium slds-hyphenate"> Tarificar
+                    </h1>
+                </div>
+                <div class="slds-modal__content">
+                    <c-zrh-tarificar-holding-seguros-colectivos-spanish prefill={perfill} layout="lightning"></c-zrh-tarificar-holding-seguros-colectivos-spanish>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </template>
+  </template>

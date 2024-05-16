@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Negocio existente</fullName>
+        <default>false</default>
+        <label>Negocio existente</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nuevo negocio</fullName>
+        <default>false</default>
+        <label>Nuevo negocio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Aprobación</fullName>
+        <default>false</default>
+        <label>Aprobación</label>
+    </standardValue>
+</StandardValueSet>

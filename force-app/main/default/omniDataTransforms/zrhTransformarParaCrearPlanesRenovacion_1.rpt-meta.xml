@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;productInfo&quot; : {
+    &quot;Name&quot; : &quot;Salud&quot;,
+    &quot;Id&quot; : &quot;01t8B000009blwaQAA&quot;,
+    &quot;ProductCode&quot; : &quot;600&quot;
+  },
+  &quot;LoopBlockIterationIndex&quot; : 1,
+  &quot;planCode&quot; : &quot;11008706-3&quot;,
+  &quot;quoteInfo&quot; : {
+    &quot;Estado&quot; : &quot;E-02&quot;,
+    &quot;IdOportunidad&quot; : &quot;0068B000008nvDuQAI&quot;,
+    &quot;versionCotizacion&quot; : 1,
+    &quot;Id&quot; : &quot;0Q08B000000Hi4dSAC&quot;,
+    &quot;Pricebook2Id&quot; : &quot;01s5f000009eqZJAAY&quot;,
+    &quot;NumeroCotizacion&quot; : &quot;00000525&quot;,
+    &quot;Rut&quot; : &quot;11008706-3&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;Product2Id&quot; : &quot;01t8B000009blwaQAA&quot;,
+  &quot;planCode&quot; : &quot;11008706-3&quot;,
+  &quot;Estado&quot; : &quot;E-02&quot;,
+  &quot;IdOportunidad&quot; : &quot;0068B000008nvDuQAI&quot;,
+  &quot;versionCotizacion&quot; : 1,
+  &quot;Id&quot; : &quot;0Q08B000000Hi4dSAC&quot;,
+  &quot;Pricebook2Id&quot; : &quot;01s5f000009eqZJAAY&quot;,
+  &quot;NumeroCotizacion&quot; : &quot;00000525&quot;,
+  &quot;Rut&quot; : &quot;11008706-3&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarParaCrearPlanesRenovacion</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom9446</globalKey>
+        <inputFieldName>pricebookInfo:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PricebookEntryId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>1</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom8065</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>UnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom561</globalKey>
+        <inputFieldName>productInfo:ProductCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ProductCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom587</globalKey>
+        <inputFieldName>quoteInfo:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>1</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom3570</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom7759</globalKey>
+        <inputFieldName>folio</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Folio</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom8037</globalKey>
+        <inputFieldName>periodo</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Periodo</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom6820</globalKey>
+        <inputFieldName>productInfo:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Product2Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarParaCrearPlanesRenovacionCustom861</globalKey>
+        <inputFieldName>quoteInfo:Pricebook2Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarParaCrearPlanesRenovacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Pricebook2Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>[ {
+  &quot;productInfo&quot; : {
+    &quot;Name&quot; : &quot;Salud&quot;,
+    &quot;Id&quot; : &quot;01t8B000009blwaQAA&quot;,
+    &quot;ProductCode&quot; : &quot;600&quot;
+  },
+  &quot;LoopBlockIterationIndex&quot; : 1,
+  &quot;planCode&quot; : &quot;11008706-3&quot;,
+  &quot;quoteInfo&quot; : {
+    &quot;Estado&quot; : &quot;E-02&quot;,
+    &quot;IdOportunidad&quot; : &quot;0068B000008nvDuQAI&quot;,
+    &quot;versionCotizacion&quot; : 1,
+    &quot;Id&quot; : &quot;0Q08B000000Hi4dSAC&quot;,
+    &quot;Pricebook2Id&quot; : &quot;01s5f000009eqZJAAY&quot;,
+    &quot;NumeroCotizacion&quot; : &quot;00000525&quot;,
+    &quot;Rut&quot; : &quot;11008706-3&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;productInfo&quot; : {
+    &quot;Name&quot; : &quot;Vida&quot;,
+    &quot;Id&quot; : &quot;01t78000008YjgKAAS&quot;,
+    &quot;ProductCode&quot; : &quot;500&quot;
+  },
+  &quot;LoopBlockIterationIndex&quot; : 2,
+  &quot;planCode&quot; : &quot;11008706-3&quot;,
+  &quot;quoteInfo&quot; : {
+    &quot;Estado&quot; : &quot;E-02&quot;,
+    &quot;IdOportunidad&quot; : &quot;0068B000008nvDuQAI&quot;,
+    &quot;versionCotizacion&quot; : 1,
+    &quot;Id&quot; : &quot;0Q08B000000Hi4dSAC&quot;,
+    &quot;Pricebook2Id&quot; : &quot;01s5f000009eqZJAAY&quot;,
+    &quot;NumeroCotizacion&quot; : &quot;00000525&quot;,
+    &quot;Rut&quot; : &quot;11008706-3&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;productInfo&quot; : {
+    &quot;Name&quot; : &quot;Salud&quot;,
+    &quot;Id&quot; : &quot;01t8B000009blwaQAA&quot;,
+    &quot;ProductCode&quot; : &quot;600&quot;
+  },
+  &quot;LoopBlockIterationIndex&quot; : 3,
+  &quot;planCode&quot; : &quot;7800916-0&quot;,
+  &quot;quoteInfo&quot; : {
+    &quot;Estado&quot; : &quot;E-02&quot;,
+    &quot;IdOportunidad&quot; : &quot;0068B000008nvDvQAI&quot;,
+    &quot;versionCotizacion&quot; : 1,
+    &quot;Id&quot; : &quot;0Q08B000000Hi4eSAC&quot;,
+    &quot;Pricebook2Id&quot; : &quot;01s5f000009eqZJAAY&quot;,
+    &quot;NumeroCotizacion&quot; : &quot;00000526&quot;,
+    &quot;Rut&quot; : &quot;7800916-0&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;productInfo&quot; : {
+    &quot;Name&quot; : &quot;Vida&quot;,
+    &quot;Id&quot; : &quot;01t78000008YjgKAAS&quot;,
+    &quot;ProductCode&quot; : &quot;500&quot;
+  },
+  &quot;LoopBlockIterationIndex&quot; : 4,
+  &quot;planCode&quot; : &quot;7800916-0&quot;,
+  &quot;quoteInfo&quot; : {
+    &quot;Estado&quot; : &quot;E-02&quot;,
+    &quot;IdOportunidad&quot; : &quot;0068B000008nvDvQAI&quot;,
+    &quot;versionCotizacion&quot; : 1,
+    &quot;Id&quot; : &quot;0Q08B000000Hi4eSAC&quot;,
+    &quot;Pricebook2Id&quot; : &quot;01s5f000009eqZJAAY&quot;,
+    &quot;NumeroCotizacion&quot; : &quot;00000526&quot;,
+    &quot;Rut&quot; : &quot;7800916-0&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarParaCrearPlanesRenovacion_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

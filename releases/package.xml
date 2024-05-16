@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>PreconfiguredLightningServiceConsole</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>ZRH_Servicio</members>
+		<name>Group</name>
+	</types>
+	<types>
+		<members>Account.IDTipoRegistro__c</members>
+		<members>Case.GLB_P1_TiempoRestante__c</members>
+		<members>Case.GLB_P1_SLAGeneral__c</members>
+		<members>Case.GLB_P1_SLANuevo__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Consola_de_Servicio_Zurich_Chile_UtilityBar</members>
+		<name>Flexipage</name>
+	</types>
+	<types>
+		<members>Ejecutivo Back Office Contact Center</members>
+		<members>Ejecutivo Call Center</members>
+		<members>Ejecutivo de Back Offices interno cierre</members>
+		<members>Ejecutivo de Back Offices interno creación - cierre</members>
+		<members>Ejecutivo de sucursal</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>ZRH_Casos_con_Actividades</members>
+		<members>ZRH_Casos_con_correos_electr_nicos_custom</members>
+		<name>ReportType</name>
+	</types>
+	<version>58.0</version>
+</Package>

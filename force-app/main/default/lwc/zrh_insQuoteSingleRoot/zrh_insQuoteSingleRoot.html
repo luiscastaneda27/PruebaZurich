@@ -1,0 +1,72 @@
+<template>
+    <div if:false={isLoaded}>
+        <lightning-spinner alternative-text="Loading" size="medium"> </lightning-spinner>
+    </div>
+    <div if:false={isMultiRoot} class="vloc-ins-actions slds-grid slds-grid_align-end slds-wrap slds-p-vertical_medium">
+        <div if:true={showActions}
+            class="vloc-ins-action-container slds-grid slds-wrap slds-border_right slds-p-right_small slds-m-right_small">
+            <vlocity_ins-ins-create-version class="vloc-ins-action slds-p-right_xx-small" theme={theme}
+                record-id={recordId} title={labels.InsCreateVersion}>
+            </vlocity_ins-ins-create-version>
+            <vlocity_ins-ins-version-history class="vloc-ins-action slds-p-right_xx-small"
+                if:true={isDeviceSizeSupported} record-id={recordId} label={labels.VersionHistory}>
+            </vlocity_ins-ins-version-history>
+            <vlocity_ins-button if:true={showDebugMode} class="vloc-ins-action slds-p-right_xx-small"
+                onclick={debugMode} extraclass="slds-size_1-of-1" label={labelDebugButton} variant="neutral">
+            </vlocity_ins-button>
+        </div>
+        <template if:false={isMultiRoot}>
+            <template if:true={insuredItemSpec}>
+                <template if:false={displayDropdown}>
+                    <template for:each={insuredItemSpec} for:item="itemSpec">
+                        <vlocity_ins-button key={itemSpec.productId}
+                            class="vloc-ins-action slds-p-right_xx-small slds-p-bottom_xx-small" theme={theme}
+                            onclick={getPrimarySpec} data-child-product-id={itemSpec.productId}
+                            disabled={options.isReadonly} extraclass="slds-size_1-of-1 slds-truncate"
+                            label={itemSpec.label} variant="neutral">
+                        </vlocity_ins-button>
+                    </template>
+                </template>
+                <vlocity_ins-combobox if:true={displayDropdown} options={insuredItemSpecOptions}
+                    placeholder={labels.InsQuoteSelectInsuredItem} onchange={getPrimarySpec}
+                    disabled={options.isReadonly}>
+                </vlocity_ins-combobox>
+            </template>
+        </template>
+    </div>
+    <template if:true={rootLineItem}>
+        <template if:true={saveChangesButton}>
+            <vlocity_ins-button class="vloc-ins-action"
+                onclick={saveAttributeChanges} variant="neutral" icon-name="utility:save"
+                disabled={invalidAttributeValues}>
+            </vlocity_ins-button>
+        </template>
+        <span class={invalidAttributeClasses}>Por favor revisar que todos los campos cumplan con los formatos debidos para poder guardar.</span>
+        <div class="slds-m-bottom_large slds-box vloc-ins-product save-padding">
+            <c-zrh_ins-product-instance root-channel={rootChannel} enable-group-classes={enableGroupClasses}
+                product={rootLineItem} theme={theme} enable-clone={enableClone} enable-delete={enableDelete} disable-reprice={disableReprice}
+                is-multi-root={isMultiRoot} data-product-id={rootLineItem.quoteLineItemId} rule-context={ruleContext}
+                display-details={editPanelMode} insured-items={insuredItemSpec} options={options} unsaved-root-items={hasUnsavedRootItems} unsaved-child-items={hasUnsavedChildItems}>
+            </c-zrh_ins-product-instance>
+        </div>
+        <template if:true={rootLineItem.childProducts}>
+            <template if:true={rootLineItem.childProducts.records}>
+                <template for:each={rootLineItem.childProducts.records} for:item="childLineItem">
+                    <template if:true={childLineItem.isPrimary}>
+                        <div key={childLineItem.quoteLineItemId} class="slds-m-bottom_large slds-box vloc-ins-product">
+                            <c-zrh_ins-product-instance root-channel={rootChannel} product={childLineItem} theme={theme}
+                                is-multi-root={isMultiRoot} data-product-id={childLineItem.quoteLineItemId}
+                                insured-items={insuredItemSpec} rule-context={ruleContext}
+                                display-details={editPanelMode} options={options}>
+                            </c-zrh_ins-product-instance>
+                        </div>
+                    </template>
+                </template>
+            </template>
+        </template>
+    </template>
+    <vlocity_ins-ins-record-editor class="vloc-ins-record-editor" in-debug-mode={inDebugMode} rule-context={ruleContext}
+        root-channel={rootChannel} title={recordEditorTitle} editor-config={editorConfig} record-id={recordId}
+        theme={theme} is-readonly={options.isReadonly}>
+    </vlocity_ins-ins-record-editor>
+</template>

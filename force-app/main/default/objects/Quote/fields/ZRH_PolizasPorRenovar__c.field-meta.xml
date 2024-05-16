@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_PolizasPorRenovar__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Se marca una vez que el llamado al API Oficialización Polizas Renovación sea satisfactorio.</description>
+    <externalId>false</externalId>
+    <label>Exito Ofic. Pólizas Renovación</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Poliza_de_seguro__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Póliza de seguro</label>
+    <referenceTo>InsurancePolicy</referenceTo>
+    <relationshipLabel>Planes de pago (Póliza de seguro)</relationshipLabel>
+    <relationshipName>Planes_de_pago1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

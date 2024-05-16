@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins_fsc__PrimaryProducerId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Primary Producer for this Quote.</description>
+    <externalId>false</externalId>
+    <label>Primary Producer</label>
+    <referenceTo>Producer</referenceTo>
+    <relationshipLabel>Primary Producer for Quote</relationshipLabel>
+    <relationshipName>QuotePrimaryProducers</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

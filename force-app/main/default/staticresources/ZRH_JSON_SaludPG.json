@@ -1,0 +1,19 @@
+[
+{"field":"PeriodoGracia",
+"fieldJSON":"vlocity_ins__AttributeSelectedValues__c",
+"typeCondition":"<>",
+"sourceObject":"QuoteLineItem",
+"typeObject":"atribute",
+"typeOperation":"condition",
+"value":"00"
+  },
+  {"field":"PeriodoGracia",
+"fieldJSON":"vlocity_ins__AttributeSelectedValues__c",
+"typeCondition":"",
+"sourceObject":"QuoteLineItem",
+"typeObject":"atribute",
+"typeOperation":"replace",
+"value":"%PeriodoGracia%",
+"glosaExcepcional":"PeriodoDeGracia"
+}
+]

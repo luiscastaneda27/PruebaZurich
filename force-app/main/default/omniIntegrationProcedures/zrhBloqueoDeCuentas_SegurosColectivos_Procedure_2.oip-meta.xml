@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;TipoHolding&quot;: &quot;Cerrado&quot;,
+    &quot;EmpresasContratantesHoldingCerrado&quot;: [
+        {
+            &quot;IdEmpresaHoldingCerrada&quot;: &quot;0017500000LOBtWAAX&quot;,
+            &quot;ReservarEmpresaContratanteCerrada&quot;: true,
+            &quot;EsPipelineEmpresaContratanteCerrada&quot;: false,
+            &quot;NombreEmpresaContratanteCerrada&quot;: &quot;CHILQUINTA TRANSMISIÓN S.A.&quot;,
+            &quot;IdEmpresaContratanteCerrada&quot;: &quot;0017500000LOC2aAAH&quot;
+        },
+        {
+            &quot;ReservarEmpresaContratanteCerrada&quot;: true,
+            &quot;EsPipelineEmpresaContratanteCerrada&quot;: false,
+            &quot;IdEmpresaHoldingCerrada&quot;: &quot;0017500000LOBtWAAX&quot;,
+            &quot;NombreEmpresaContratanteCerrada&quot;: &quot;ENERQUINTA S.A.&quot;,
+            &quot;IdEmpresaContratanteCerrada&quot;: &quot;0017500000LOC2GAAX&quot;
+        },
+        {
+            &quot;ReservarEmpresaContratanteCerrada&quot;: true,
+            &quot;EsPipelineEmpresaContratanteCerrada&quot;: false,
+            &quot;IdEmpresaHoldingCerrada&quot;: &quot;0017500000LOBtWAAX&quot;,
+            &quot;NombreEmpresaContratanteCerrada&quot;: &quot;CHILQUINTA DISTRIBUCIÓN S.A.&quot;,
+            &quot;IdEmpresaContratanteCerrada&quot;: &quot;0017500000LOC39AAH&quot;
+        },
+        {
+            &quot;ReservarEmpresaContratanteCerrada&quot;: true,
+            &quot;EsPipelineEmpresaContratanteCerrada&quot;: false,
+            &quot;IdEmpresaHoldingCerrada&quot;: &quot;0017500000LOBtWAAX&quot;,
+            &quot;NombreEmpresaContratanteCerrada&quot;: &quot;CHILQUINTA ENERGIA S.A.&quot;,
+            &quot;IdEmpresaContratanteCerrada&quot;: &quot;0017500000LOC2pAAH&quot;
+        }
+    ],
+    &quot;EmpresasContratantes&quot;: [
+        null,
+        null,
+        null,
+        null
+    ],
+    &quot;IdCuenta&quot;: &quot;0017500000LOBtWAAX&quot;,
+    &quot;IdCorredorActual&quot;: &quot;0017500000LOD7eAAH&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>zrhBloqueoDeCuentasSegurosColectivos</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtraerCotizacionesAbiertas</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;IdCuenta&quot; : &quot;%IdCuenta%&quot;
+  },
+  &quot;additionalOutput&quot; : {
+    &quot;ReservasConCarta&quot; : &quot;=FILTER(LIST(%ExtraerCotizacionesAbiertas:Cotizaciones%), &apos;%CartaDeExclusividad% == $Vlocity.TRUE &amp;&amp; %Origen% == \&quot;Reserva\&quot;&apos;)&quot;,
+    &quot;ReservasSinCarta&quot; : &quot;=FILTER(LIST(%ExtraerCotizacionesAbiertas:Cotizaciones%), &apos;%CartaDeExclusividad% == $Vlocity.FALSE &amp;&amp; %Origen% == \&quot;Reserva\&quot;&apos;)&quot;,
+    &quot;ListaCuentas&quot; : &quot;=FILTER(LIST(%EmpresasContratantes%), &apos;%ReservarEmpresaContratante% == $Vlocity.TRUE&apos;)&quot;,
+    &quot;ListaCuentasParaVerSiHayPipeline&quot; : &quot;=IF(ISNOTBLANK(%EmpresasContratantes|1:IdEmpresaHolding%),FILTER(LIST(%EmpresasContratantes%),&apos;%ReservarEmpresaContratante% == $Vlocity.TRUE &amp;&amp; %EsPipelineEmpresaContratante% == $Vlocity.TRUE&apos;),FILTER(LIST(%EmpresasContratantesHoldingCerrado%),&apos;%EsPipelineEmpresaContratanteCerrada% == $Vlocity.TRUE&apos;))&quot;,
+    &quot;ExistenCuentasPipelineSeleccionadas&quot; : &quot;=ISNOTBLANK(IF(ISNOTBLANK(%EmpresasContratantes|1:IdEmpresaHolding%),FILTER(LIST(%EmpresasContratantes%),&apos;%ReservarEmpresaContratante% == $Vlocity.TRUE &amp;&amp; %EsPipelineEmpresaContratante% == $Vlocity.TRUE&apos;),FILTER(LIST(%EmpresasContratantesHoldingCerrado%),&apos;%EsPipelineEmpresaContratanteCerrada% == $Vlocity.TRUE&apos;)))&quot;
+  },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhExtraerCotizacionesVigentesDeCuenta&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <description>Verifico si alguna de las cuentas seleccionadas para reservar tiene cotizacion vigente con carta.</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ListaCuentasConCartaAReservar</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;&quot; : &quot;&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : true,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;ExtraerCotizacionesAbiertas:ListaCuentas&quot;,
+    &quot;matchingPath&quot; : &quot;IdEmpresaContratante&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;matchingPath&quot; : &quot;IdCuenta&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;,
+    &quot;listKey&quot; : &quot;ExtraerCotizacionesAbiertas:ReservasConCarta&quot;
+  } ],
+  &quot;mergeFields&quot; : [ &quot;IdCuenta&quot; ],
+  &quot;allowMergeNulls&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;ExtraerCotizacionesAbiertas:ListaCuentas&quot;, &quot;ExtraerCotizacionesAbiertas:ReservasConCarta&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <description>Verifico si alguna de las cuentas seleccionadas para reservar tiene cotizacion vigente con carta.</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ListaCuentasConReservaOCotizacionMismoCorredor</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;&quot; : &quot;&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : true,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;ExtraerCotizacionesAbiertas:ListaCuentas&quot;,
+    &quot;matchingPath&quot; : &quot;IdEmpresaContratante&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;matchingPath&quot; : &quot;IdCuenta&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;,
+    &quot;listKey&quot; : &quot;ExtraerCotizacionesAbiertas:Cotizaciones&quot;
+  } ],
+  &quot;mergeFields&quot; : [ &quot;IdCuenta&quot; ],
+  &quot;allowMergeNulls&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;ExtraerCotizacionesAbiertas:ListaCuentas&quot;, &quot;ExtraerCotizacionesAbiertas:Cotizaciones&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <description>Verifico si alguna de las cuentas seleccionadas para reservar tiene cotizacion vigente sin carta.</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ListaCuentasSinCartaAReservar</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : true,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;ExtraerCotizacionesAbiertas:ListaCuentas&quot;,
+    &quot;matchingPath&quot; : &quot;IdEmpresaContratante&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;listKey&quot; : &quot;ExtraerCotizacionesAbiertas:ReservasSinCarta&quot;,
+    &quot;matchingPath&quot; : &quot;IdCuenta&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  } ],
+  &quot;mergeFields&quot; : [ &quot;IdCuenta&quot; ],
+  &quot;allowMergeNulls&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;ExtraerCotizacionesAbiertas:ListaCuentas&quot;, &quot;ExtraerCotizacionesAbiertas:ReservasSinCarta&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RespuestaHoldingAbierto</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;SolicitudVigenteConCartaOtroCorredor&quot; : &quot;=ISNOTBLANK(FILTER(LIST(%ListaCuentasConCartaAReservar%), &apos;(ISNOTBLANK(%IdEmpresaContratante%) &amp;&amp; ISNOTBLANK(%IdCuenta%)) &amp;&amp; %IdCorredor% != \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;))&quot;,
+    &quot;SolicitudVigenteSinCartaOtroCorredor&quot; : &quot;=ISNOTBLANK(FILTER(LIST(%ListaCuentasSinCartaAReservar%), &apos;(ISNOTBLANK(%IdEmpresaContratante%) &amp;&amp; ISNOTBLANK(%IdCuenta%)) &amp;&amp; %IdCorredor% != \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;))&quot;,
+    &quot;SolicitudVigenteMismoCorredor&quot; : &quot;=ISNOTBLANK(FILTER(LIST(%ListaCuentasConReservaOCotizacionMismoCorredor%), &apos;(ISNOTBLANK(%IdEmpresaContratante%) &amp;&amp; ISNOTBLANK(%IdCuenta%)) &amp;&amp; %IdCorredor% == \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;))&quot;,
+    &quot;ExistenCuentasPipelineSeleccionadas&quot; : &quot;%ExtraerCotizacionesAbiertas:ExistenCuentasPipelineSeleccionadas%&quot;,
+    &quot;ListaSolicitudVigenteSinCartaOtroCorredor&quot; : &quot;=FILTER(LIST(%ListaCuentasSinCartaAReservar%), &apos;(ISNOTBLANK(%IdEmpresaContratante%) &amp;&amp; ISNOTBLANK(%IdCuenta%)) &amp;&amp; %IdCorredor% != \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;)&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Response Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>HoldingAbierto</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%TipoHolding% == \&quot;Abierto\&quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RespuestaHoldingCerrado</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%TipoHolding% != \&quot;Abierto\&quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;SolicitudVigenteConCartaOtroCorredor&quot; : &quot;=ISNOTBLANK(FILTER(LIST(%ExtraerCotizacionesAbiertas:ReservasConCarta%), &apos;%IdCorredor% != \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;))&quot;,
+    &quot;SolicitudVigenteSinCartaOtroCorredor&quot; : &quot;=ISNOTBLANK(FILTER(LIST(%ExtraerCotizacionesAbiertas:ReservasSinCarta%), &apos;%IdCorredor% != \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;))&quot;,
+    &quot;SolicitudVigenteMismoCorredor&quot; : &quot;=ISNOTBLANK(FILTER(LIST(%ExtraerCotizacionesAbiertas:Cotizaciones%), &apos;%IdCorredor% == \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;))&quot;,
+    &quot;ExistenCuentasPipelineSeleccionadas&quot; : &quot;%ExtraerCotizacionesAbiertas:ExistenCuentasPipelineSeleccionadas%&quot;,
+    &quot;ListaSolicitudVigenteSinCartaOtroCorredor&quot; : &quot;=FILTER(LIST(%ExtraerCotizacionesAbiertas:ReservasSinCarta%), &apos;%IdCorredor% != \&quot;&apos; + IdCorredorActual + &apos;\&quot;&apos;)&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>zrhBloqueoDeCuentas_SegurosColectivos</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>SegurosColectivos</subType>
+    <type>zrhBloqueoDeCuentas</type>
+    <uniqueName>zrhBloqueoDeCuentas_SegurosColectivos_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>af3a784b-cc01-04e2-7f8a-8bfe0bdbd78c</webComponentKey>
+</OmniIntegrationProcedure>

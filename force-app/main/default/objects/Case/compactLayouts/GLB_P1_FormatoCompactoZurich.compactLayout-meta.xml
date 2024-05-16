@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_FormatoCompactoZurich</fullName>
+    <fields>Subject</fields>
+    <fields>Status</fields>
+    <fields>CaseNumber</fields>
+    <fields>GLB_P1_IDExternoCaso__c</fields>
+    <fields>OwnerId</fields>
+    <label>Formato Compacto Zurich</label>
+</CompactLayout>

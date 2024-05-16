@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_LineaNegocios__c</fullName>
+    <externalId>false</externalId>
+    <label>Línea de Negocios</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Colectivo</fullName>
+                <default>false</default>
+                <label>Colectivo</label>
+            </value>
+            <value>
+                <fullName>Fondos Mutuos</fullName>
+                <default>false</default>
+                <label>Fondos Mutuos</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Miscelaneos</fullName>
+                <default>false</default>
+                <label>Miscelaneos</label>
+            </value>
+            <value>
+                <fullName>Motors</fullName>
+                <default>false</default>
+                <label>Motors</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Protección Familiar</fullName>
+                <default>false</default>
+                <label>Protección Familiar</label>
+            </value>
+            <value>
+                <fullName>RC - Varios</fullName>
+                <default>false</default>
+                <label>RC - Varios</label>
+            </value>
+            <value>
+                <fullName>Renta Vitalicia</fullName>
+                <default>false</default>
+                <label>Renta Vitalicia</label>
+            </value>
+            <value>
+                <fullName>S. Desgravamen</fullName>
+                <default>false</default>
+                <label>S. Desgravamen</label>
+            </value>
+            <value>
+                <fullName>SOAP</fullName>
+                <default>false</default>
+                <label>SOAP</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+            <value>
+                <fullName>Linea 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Linea 1</label>
+            </value>
+            <value>
+                <fullName>Linea 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Linea 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+        <members>ZRH_PanelesCotizacion</members>
+		<members>ZRH_PanelesCotizacion/ZRH_DashboardCotizaciones1</members>
+		<members>ZRH_PanelesPoliza</members>
+		<members>ZRH_PanelesPoliza/ZRH_DashboardPolizas</members>
+		<members>ZRH_PanelesPoliza/ZRH_DashboardPorVencerGWPRenewalRatio</members>
+		<members>Servicio</members>
+		<members>Servicio/gvtuFgmjgWYTCcJvcQynZuYaHqILIZ</members>
+		<name>Dashboard</name>
+	</types>
+	<types>
+		<members>ZRH_ZurichInformes/AreaOperaciones</members>
+        <members>ZRH_ZurichInformes/AreaOperaciones/ZRH_PackDePolizas</members>
+        <members>ZRH_EstadoDePoliza</members>
+        <members>ZRH_EstadoDePoliza/ZRH_PolizasAnuladas</members>
+        <members>ZRH_EstadoDePoliza/ZRH_PolizasNoOficializadas</members>
+        <members>ZRH_EstadoDePoliza/ZRH_PolizasOficializadas</members>
+        <members>ZRH_EstadoDePoliza/ZRH_PolizasRenovadas</members>
+        <members>ZRH_InformesCotizacion</members>
+		<members>ZRH_InformesCotizacion/ZRH_CotizacionesPendientes</members>
+		<members>ZRH_InformesCotizacion/ZRH_CotizacionesPerdidas</members>
+		<members>ZRH_InformesCotizacion/ZRH_EfectividadSolicitudes</members>
+		<members>ZRH_InformesCotizacion/ZRH_Solicitudes</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesCerradas</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesCotizadas</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesDeclinadas</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesGanadas</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesMesAgrupadas</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesMesCotizada</members>
+		<members>ZRH_InformesCotizacion/ZRH_SolicitudesRecotizadas</members>
+		<members>ZRH_InformesPoliza</members>
+		<members>ZRH_InformesPoliza/ZRH_CantidadMovimientoGrupoNegocio</members>
+		<members>ZRH_InformesPoliza/ZRH_DiasPromedioPolizasContratante</members>
+		<members>ZRH_InformesPoliza/ZRH_DiasPromedioPolizasGrupoNeg</members>
+		<members>ZRH_InformesPoliza/ZRH_DiasPromedioPolizasUsuario</members>
+		<members>ZRH_InformesPoliza/ZRH_PolizasPendientesContratante</members>
+		<members>ZRH_InformesPoliza/ZRH_PolizasPendientesGrupoNegocio</members>
+		<members>ZRH_InformesPoliza/ZRH_CantidadMovimientosUsuarioEstado</members>
+		<members>ZRH_InformesPoliza/ZRH_CantidadPolizasOficializadas</members>
+		<members>ZRH_InformesPoliza/ZRH_CantidadPolizasPendientes</members>
+		<members>ZRH_InformesPoliza/ZRH_CantidadPolizasRangoFecha</members>
+		<members>ZRH_InformesPoliza/ZRH_DiasPromedioPolizas</members>
+		<members>ZRH_InformesPoliza/ZRH_TiempoPromedioPolizas</members>
+        <members>ZRH_InformesPoliza/ZRH_GWPCorredora</members>
+		<members>ZRH_InformesPoliza/ZRH_GWPEstadosCuentas</members>
+		<members>ZRH_InformesPoliza/ZRH_GWPOperaciones</members>
+		<members>ZRH_InformesPoliza/ZRH_HoldingsRenewalRatioGWP</members>
+		<members>ZRH_InformesPoliza/ZRH_PolizasVencidasCorredor</members>
+		<members>ZRH_InformesPoliza/ZRH_PolizasVencidasOperaciones</members>
+		<members>ZRH_InformesPoliza/ZRH_RenewalRatioCorredora</members>
+		<members>ZRH_InformesPoliza/ZRH_RenewalRatioOperaciones</members>
+        <members>ZRH_ZurichInformes</members>
+	    <!-- GLOBANT -->
+		<members>Servicio</members>
+		<members>Servicio/acum_SLA_mensual_y_acum_Geren_o4O</members>
+		<members>Servicio/Casos_abiertos_versus_cerrados_HSL</members>
+		<members>Servicio/Casos_con_Actividades_1hu</members>
+		<members>Servicio/Casos_con_correos_custom_vne</members>
+		<members>Servicio/cumplimiento_por_ejecutivo_y_etapa_yHj</members>
+		<members>Servicio/cumplimiento_SLA_acumulado_tvB</members>
+		<members>Servicio/cumplimiento_SLA_x_tipificacin_Bjz</members>
+		<members>Servicio/Top_10_motivos_de_atencin_x_origen_jTe</members>
+		<members>Servicio/Total_de_Casos_vwB</members>
+		<members>Servicio/Total_de_Casos_x_Equipo_h2m</members>
+		<members>Servicio/y_cant_x_canal_origen_acumulado_y_mens_UQ7</members>
+		<members>Servicio/y_cant_x_lnea_negocio_gerencia_y_equi_Hjx</members>
+		<members>Servicio/y_cant_x_lnea_negocio_mensual_o1n</members>
+		<members>Servicio/y_cant_x_origen_gerencia_y_equipo_py5</members>
+		<name>Report</name>
+	</types>
+	<version>58.0</version>
+</Package>
+
+<!--
+    Pasos Manuales:
+    1. Despues del despliegue ingresar al tab de Paneles.
+    2. Buscar la Carpeta "Paneles Poliza" e ingresar.
+    3. Ingresar en el panel "Dashboard Polizas".
+    4. Dar click en el boton "Modificar", y marcar la casilla "Utilizar configuración de gráfico de informe" en cada widget que utiliza un grafico.
+    5. Guardar
+    ///////////////////////////////////////////////////////////////
+    1. Despues del despliegue ingresar al tab de Paneles.
+    2. Buscar la Carpeta "Paneles Poliza" e ingresar.
+    3. Ingresar en el panel "Dashboard Polizas".
+    4. Dar click en el boton "Modificar", y asignar los labels a los filtros segun ambiente QA.
+    5. Guardar
+    ///////////////////////////////////////////////////////////////
+    1. Despues del despliegue ingresar al tab de Paneles.
+    2. Buscar la Carpeta "Paneles Cotizacion" e ingresar.
+    3. Ingresar en el panel "Dashboard Cotizacion".
+    4. Dar click en el boton "Modificar", y asignar los labels a los filtros segun ambiente QA.
+    5. Guardar
+-->

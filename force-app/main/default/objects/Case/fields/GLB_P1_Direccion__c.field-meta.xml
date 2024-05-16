@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_Direccion__c</fullName>
+    <externalId>false</externalId>
+    <formula>Account.ShippingStreet &amp; &quot; ,&quot; &amp;  Account.ShippingCity &amp; &quot; -&quot; &amp;   Account.ShippingCountry</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Domicilio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

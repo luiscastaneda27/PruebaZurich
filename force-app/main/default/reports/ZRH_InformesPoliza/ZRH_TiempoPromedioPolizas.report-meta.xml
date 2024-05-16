@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CDF1:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Promedio de días entre la recepción de la póliza y su oficialización.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Promedio Días Recepción/Oficialización</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>ContractGroupPlan$ZRH_NumeroDePoliza__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Name</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_UsuarioAsignado__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.CreatedDate</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$EffectiveStartDate</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_FechaOficializacion__c</field>
+    </columns>
+    <currency>CLF</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF (
+    OR(
+        ISBLANK(ContractGroupPlan.Contract.SourceQuote.CreatedDate),
+        ISBLANK(ContractGroupPlan.ZRH_FechaOficializacion__c)
+    ),
+    0,
+    ContractGroupPlan.ZRH_FechaOficializacion__c - DATEVALUE(ContractGroupPlan.Contract.SourceQuote.CreatedDate)
+)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Diferencia Días Recepción/Oficialización</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>ContractGroupPlan$ZRH_Estado__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$ZRH_NumeroDePoliza__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CGP 5: Tiempo promedio polizas</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ZRH_PolizasDatosCotizacion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ContractGroupPlan$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

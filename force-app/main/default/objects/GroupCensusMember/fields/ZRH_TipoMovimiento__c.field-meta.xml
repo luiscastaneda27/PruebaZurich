@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_TipoMovimiento__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de movimiento</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inclusión</fullName>
+                <default>false</default>
+                <label>Inclusión</label>
+            </value>
+            <value>
+                <fullName>Exclusión</fullName>
+                <default>false</default>
+                <label>Exclusión</label>
+            </value>
+            <value>
+                <fullName>Modificación</fullName>
+                <default>false</default>
+                <label>Modificación</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

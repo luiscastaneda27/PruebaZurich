@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_BloquearDuranteSyncRenovacion</fullName>
+    <active>true</active>
+    <description>Bloquea los planes de la cotización de renovación mientras se sincroniza con AS400.</description>
+    <errorConditionFormula>AND(
+    /*Si es cotizacion renovacion*/
+    Quote.ZRH_RenovacionFlag__c,
+    /*Y no tiene permisos para sync*/
+    NOT($Permission.ZRH_SincronizarPolizasRenovacion),
+    /*Fue oficializada la renovacion*/
+    Quote.ZRH_PolizasPorRenovar__c,
+    /*Y no esta terminada la sync*/
+    NOT(Quote.ZRH_RenovacionSincronizada__c),
+    /*Y quiere editar algun campo -&gt; ERROR */
+    OR(
+        ISNEW(),
+        ISCHANGED(ZRH_AtributosRequisitosAsegurabilidad__c),
+        ISCHANGED(ZRH_TipoTarifaPrevia__c),
+        ISCHANGED(ZRH_TipoTarifa__c),
+        ISCHANGED(ZRH_TarifaModificada__c),
+        ISCHANGED(ZRH_Tarifa__c),
+        ISCHANGED(ZRH_Periodo__c),
+        ISCHANGED(ZRH_GrupoDeCobertura__c),
+        ISCHANGED(ZRH_Folio__c),
+        ISCHANGED(ZRH_CodigoProducto__c),
+        ISCHANGED(ZRH_ClonePlan__c),
+        ISCHANGED(ZRH_AtributosReqMedicosSeleccionado__c),
+        ISCHANGED(ZRH_AtributosConvenios__c),
+        ISCHANGED(ZRH_AtributosBMI__c),
+        ISCHANGED(vlocity_ins__Type__c),
+        ISCHANGED(vlocity_ins__TotalSumInsured__c),
+        ISCHANGED(vlocity_ins__TotalAmount__c),
+        ISCHANGED(vlocity_ins__TaxAmount__c),
+        ISCHANGED(vlocity_ins__SubscriptionId__c),
+        ISCHANGED(vlocity_ins__SubParentItemId__c),
+        ISCHANGED(vlocity_ins__SubAction__c),
+        ISCHANGED(vlocity_ins__SourceSystemIdentifier__c),
+        ISCHANGED(vlocity_ins__RootItemId__c),
+        ISCHANGED(vlocity_ins__RenewSourcePlanId__c),
+        ISCHANGED(vlocity_ins__RelationshipType__c),
+        ISCHANGED(vlocity_ins__RecordTypeName__c),
+        ISCHANGED(vlocity_ins__RatingType__c),
+        ISCHANGED(vlocity_ins__RateBandId__c),
+        ISCHANGED(vlocity_ins__ProvisioningStatus__c),
+        ISCHANGED(vlocity_ins__ProviderNetworkId__c),
+        ISCHANGED(vlocity_ins__ProductName__c),
+        ISCHANGED(vlocity_ins__ProductHierarchyPath__c),
+        ISCHANGED(vlocity_ins__ProductChildItemSequence__c),
+        ISCHANGED(vlocity_ins__ProductChildItemId__c),
+        ISCHANGED(vlocity_ins__PrimaryChildLineItemId__c),
+        ISCHANGED(vlocity_ins__PricingSource__c),
+        ISCHANGED(vlocity_ins__PricingLogData__c),
+        ISCHANGED(vlocity_ins__ParentItemId__c),
+        ISCHANGED(vlocity_ins__ParentItemId2__c),
+        ISCHANGED(vlocity_ins__NeedReprice__c),
+        ISCHANGED(vlocity_ins__LineNumber__c),
+        ISCHANGED(vlocity_ins__JurisdictionId__c),
+        ISCHANGED(vlocity_ins__JSONAttribute__c),
+        ISCHANGED(vlocity_ins__ItemName__c),
+        ISCHANGED(vlocity_ins__IsProductTrackAgreement__c),
+        ISCHANGED(vlocity_ins__InsurableItemId__c),
+        ISCHANGED(vlocity_ins__InCartQuantityMap__c),
+        ISCHANGED(vlocity_ins__ImageId__c),
+        ISCHANGED(vlocity_ins__Image__c),
+        ISCHANGED(vlocity_ins__GroupClassName__c),
+        ISCHANGED(vlocity_ins__GroupClassId__c),
+        ISCHANGED(vlocity_ins__GroupCensusId__c),
+        ISCHANGED(vlocity_ins__FormularyId__c),
+        ISCHANGED(vlocity_ins__FeeAmount__c),
+        ISCHANGED(vlocity_ins__EnrollmentWaitingPeriod__c),
+        ISCHANGED(vlocity_ins__EnrollmentStartDate__c),
+        ISCHANGED(vlocity_ins__EnrollmentEndDate__c),
+        ISCHANGED(vlocity_ins__ContractCode__c),
+        ISCHANGED(vlocity_ins__CommissionAmount__c),
+        ISCHANGED(vlocity_ins__ClassCodes__c),
+        ISCHANGED(vlocity_ins__CalculatedPriceJSON__c),
+        ISCHANGED(vlocity_ins__AttributeSelectedValues__c),
+        ISCHANGED(vlocity_ins__AttributeMetadataChanges__c),
+        ISCHANGED(UnitPrice),
+        ISCHANGED(QuoteId),
+        ISCHANGED(Quantity),
+        ISCHANGED(Product2Id),
+        ISCHANGED(Discount),
+        ISCHANGED(Description)
+)
+)</errorConditionFormula>
+    <errorMessage>Esta cotización se encuentra en sincronización con AS400. No puedes editarla.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_LM_OF_Casa_Dpto__c</fullName>
+    <externalId>false</externalId>
+    <label>OF/Casa/Dpto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oficina</fullName>
+                <default>false</default>
+                <label>Oficina</label>
+            </value>
+            <value>
+                <fullName>Casa</fullName>
+                <default>false</default>
+                <label>Casa</label>
+            </value>
+            <value>
+                <fullName>Departamento</fullName>
+                <default>false</default>
+                <label>Departamento</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

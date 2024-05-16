@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_PlanDeGrupoDeContrato</fullName>
+    <fields>Name</fields>
+    <fields>ContractId</fields>
+    <fields>ZRH_Folio__c</fields>
+    <fields>ZRH_Periodo__c</fields>
+    <fields>ZRH_Estado__c</fields>
+    <fields>ZRH_EsRenovacion__c</fields>
+    <label>Plan de grupo de contrato</label>
+</CompactLayout>

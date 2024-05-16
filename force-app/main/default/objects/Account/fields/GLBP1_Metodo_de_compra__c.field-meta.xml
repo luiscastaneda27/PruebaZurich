@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Metodo_de_compra__c</fullName>
+    <externalId>false</externalId>
+    <label>Método de compra</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>B2B</fullName>
+                <default>false</default>
+                <label>B2B</label>
+            </value>
+            <value>
+                <fullName>Chilecompra</fullName>
+                <default>false</default>
+                <label>Chilecompra</label>
+            </value>
+            <value>
+                <fullName>OC</fullName>
+                <default>false</default>
+                <label>OC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

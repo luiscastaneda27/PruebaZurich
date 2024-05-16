@@ -1,0 +1,313 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div if:false={isHidden} class={containerClasses}>
+        <div if:false={isLabelHidden} class={labelContainerClasses}>
+            <div class={labelClasses}>
+                {attribute.label}<abbr if:true={attribute.required} class="slds-required">*</abbr>
+                <span if:true={attribute.max}> ({attribute.min} - {attribute.max})</span>
+                <span class="slds-text-body_small nds-text-body_small" if:true={inDebugMode}>({uniqueCode})</span>
+            </div>
+            <template if:false={isReadonly} for:each={messages} for:item="message">
+                <div key={message.id} class={message.styles}>{message.message}</div>
+            </template>
+        </div>
+        <div class={valueContainerClasses}>
+            <template if:true={isReadonly}>
+                <div class={readonlyValueClasses}>{displayValue}</div>
+            </template>
+            <template if:false={isReadonly}>
+                <template if:true={isInputNumber}>
+                    <vlocity_ins-masked-input
+                        if:true={isCurrency}
+                        disabled={isDisabled}
+                        type="currency"
+                        currency={currency.code}
+                        theme={theme}
+                        value={userValues}
+                        onblur={handleValueChange}
+                    ></vlocity_ins-masked-input>
+                    <span if:true={isPercentage}>
+                        <vlocity_ins-masked-input
+                            imask={imaskNumberAttributes}
+                            disabled={isDisabled}
+                            theme={theme}
+                            value={userValues}
+                            onblur={handleValueChange}
+                            pattern="^(0|[1-9][0-9]?(\.[0-9]{1,2})?|100(\.00?)?)$"
+                            message-when-pattern-mismatch="Por favor, ingresa un valor entre 0 y 100, con un máximo de dos decimales."
+                        ></vlocity_ins-masked-input>
+                    </span>
+                    <vlocity_ins-masked-input
+                        if:true={isPlainNumber}
+                        imask={imaskNumberAttributes}   
+                        disabled={isDisabled}
+                        theme={theme}
+                        value={userValues}
+                        onblur={handleValueChange}
+                    ></vlocity_ins-masked-input>
+                </template>
+
+                <template if:true={isInputText}>
+                    <vlocity_ins-input
+                        disabled={isDisabled}
+                        type="text"
+                        value={userValues}
+                        theme={theme}
+                        onchange={handleValueChange}
+                    ></vlocity_ins-input>
+                </template>
+
+                <!-- <template if:false={esRut}>
+                    <template if:true={isInputText}>
+                        <vlocity_ins-input
+                            disabled={isDisabled}
+                            type="text"
+                            value={userValues}
+                            theme={theme}
+                            onchange={handleValueChange}
+                        ></vlocity_ins-input>
+                    </template>
+                </template>
+                
+                <template if:true={esRut}>
+                    <vlocity_ins-input
+                        disabled={isDisabled}
+                        type="text"
+                        value={userValues}
+                        theme={theme}
+                        onblur={handleRutChange}
+                    ></vlocity_ins-input>
+                </template>
+                <div if:true={noCumpleConRut} class="slds-form-element__help">No cumple con formato de RUT</div> -->
+
+                <template if:true={isInputTextarea}>
+                    <vlocity_ins-input
+                        disabled={isDisabled}
+                        type="textarea"
+                        value={userValues}
+                        theme={theme}
+                        onchange={handleValueChange}
+                    ></vlocity_ins-input>
+                </template>
+                <template if:true={isInputCheckbox}>
+                    <vlocity_ins-input
+                        disabled={isDisabled}
+                        type="checkbox"
+                        checked={userValues}
+                        theme={theme}
+                        onchange={handleValueChange}
+                    ></vlocity_ins-input>
+                </template>
+                <template if:true={isInputDropdown}>
+                    <vlocity_ins-combobox
+                        disabled={isDisabled}
+                        options={attribute.values}
+                        value={userValues}
+                        theme={theme}
+                        onchange={handleValueChange}
+                        variant="label-hidden"
+                    ></vlocity_ins-combobox>
+                </template>
+                <template if:true={isInputRange}>
+                    <div class="slds-is-relative slds-form-element nds-is-relative nds-form-element">
+                        <div class="slds-form-element__control nds-form-element__control">
+                            <div class="slds-slider nds-slider">
+                                <input
+                                    disabled={isDisabled}
+                                    type="range"
+                                    step={attributeStep}
+                                    min={attribute.min}
+                                    max={attribute.max}
+                                    class="slds-slider__range nds-slider__range"
+                                    onchange={handleValueChange}
+                                    value={userValues}
+                                />
+                                <span class="slds-slider__value slds-p-right_none nds-slider__value nds-p-right_none"
+                                    >{userValues}<span if:true={isPercentage}></span></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isDate}>
+                    <template if:true={isLegacyDateFormat}>
+                        <vlocity_ins-input
+                            disabled={isDisabled}
+                            type="date"
+                            theme={theme}
+                            format={dateFormat}
+                            output-format="MM/DD/YYYY"
+                            onchange={handleValueChange}
+                            value={userValues}
+                        ></vlocity_ins-input>
+                    </template>
+                    <template if:false={isLegacyDateFormat}>
+                        <vlocity_ins-input
+                            disabled={isDisabled}
+                            type="date"
+                            theme={theme}
+                            output-format="YYYY-MM-DD"
+                            onchange={handleValueChange}
+                            value={userValues}
+                        ></vlocity_ins-input>
+                    </template>
+                </template>
+                <template
+                    if:true={isDateTime}
+                    class="slds-grid slds-grid_vertical-align-center nds-grid nds-grid_vertical-align-center"
+                >
+                    <vlocity_ins-input
+                        disabled={isDisabled}
+                        type="datetime"
+                        theme={theme}
+                        date-format={dateFormat}
+                        time-format="hh:mm A"
+                        output-format="MM/DD/YYYY HH:mm:ss"
+                        onchange={handleValueChange}
+                        date-placeholder=""
+                        time-placeholder=""
+                        date-label=""
+                        time-label=""
+                        value={userValues}
+                    ></vlocity_ins-input>
+                </template>
+                <template if:true={isInputMultiSelectDropdown}>
+                    <div class="slds-form-element nds-form-element">
+                        <div class="slds-form-element__control nds-form-element__control">
+                            <div class="slds-combobox_container nds-combobox_container">
+                                <div class={comboboxDropdownClasses} onclick={toggleMultiDropdown}>
+                                    <div
+                                        class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right nds-combobox__form-element nds-input-has-icon nds-input-has-icon_right"
+                                        role="none"
+                                    >
+                                        <input
+                                            disabled={isDisabled}
+                                            class="slds-input slds-combobox__input slds-combobox__input-value nds-input nds-combobox__input nds-combobox__input-value"
+                                            value={multiSelectLabel}
+                                            type="text"
+                                            role="textbox"
+                                        />
+                                        <span
+                                            class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right nds-icon_container nds-icon-utility-down nds-input__icon nds-input__icon_right"
+                                        >
+                                            <vlocity_ins-icon
+                                                icon-name="utility:chevrondown"
+                                                extraclass="slds-icon slds-icon-text-default nds-icon nds-icon-text-default"
+                                                size="xx-small"
+                                                theme={theme}
+                                            >
+                                            </vlocity_ins-icon>
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="slds-dropdown slds-dropdown_fluid slds-dropdown_left nds-dropdown nds-dropdown_fluid nds-dropdown_left vloc-ins-attribute-component-dropdown-items"
+                                    >
+                                        <ul
+                                            class="slds-listbox slds-listbox_vertical nds-listbox nds-listbox_vertical"
+                                            role="menu"
+                                        >
+                                            <template if:true={attribute.values}>
+                                                <template for:each={attribute.values} for:item="value">
+                                                    <li
+                                                        role="presentation"
+                                                        key={value.id}
+                                                        class="slds-listbox__item nds-listbox__item"
+                                                        onclick={handleValueChange}
+                                                        data-value={value.value}
+                                                    >
+                                                        <div
+                                                            id={value.id}
+                                                            class="slds-is-selected slds-media slds-listbox__option slds-listbox__option_plain slds-media_small nds-is-selected nds-media nds-listbox__option nds-listbox__option_plain nds-media_small"
+                                                            role="option"
+                                                        >
+                                                            <span
+                                                                if:true={value.checked}
+                                                                class="slds-media__figure nds-media__figure"
+                                                            >
+                                                                <vlocity_ins-icon
+                                                                    icon-name="utility:check"
+                                                                    size="xx-small"
+                                                                    extraclass="slds-listbox__icon-selected nds-listbox__icon-selected"
+                                                                    theme={theme}
+                                                                ></vlocity_ins-icon>
+                                                            </span>
+                                                            <span
+                                                                if:false={value.checked}
+                                                                class="slds-media__figure nds-media__figure vloc-ins-icon-hide"
+                                                            >
+                                                                <vlocity_ins-icon
+                                                                    icon-name="utility:check"
+                                                                    size="xx-small"
+                                                                    theme={theme}
+                                                                >
+                                                                </vlocity_ins-icon>
+                                                            </span>
+                                                            <span class="slds-media__body nds-media__body">
+                                                                <span class="slds-truncate nds-truncate"
+                                                                    >{value.label}</span
+                                                                >
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                </template>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template if:true={isInputMultiSelectCheckbox}>
+                    <fieldset class="slds-form-element nds-form-element">
+                        <div class="slds-form-element__control nds-form-element__control">
+                            <template if:true={attribute.values}>
+                                <template for:each={attribute.values} for:item="value">
+                                    <span class="slds-checkbox nds-checkbox" key={value.id}>
+                                        <input
+                                            disabled={isDisabled}
+                                            type="checkbox"
+                                            name="checkboxOptions"
+                                            id={value.checkboxId}
+                                            value={value.value}
+                                            checked={value.checked}
+                                            onclick={handleValueChange}
+                                        />
+                                        <label class="slds-checkbox__label nds-checkbox__label" for={value.checkboxId}>
+                                            <span class="slds-checkbox_faux nds-checkbox_faux"></span>
+                                            <span class="slds-form-element__label nds-form-element__label"
+                                                >{value.label}</span
+                                            >
+                                        </label>
+                                    </span>
+                                </template>
+                            </template>
+                        </div>
+                    </fieldset>
+                </template>
+                <template if:true={isInputRadio}>
+                    <div
+                        class="slds-max-small-size_5-of-12 slds-is-relative nds-max-small-size_5-of-12 nds-is-relative"
+                    >
+                        <vlocity_ins-radio-group
+                            disabled={isDisabled}
+                            name={uniqueOptionsName}
+                            value={userValues}
+                            options={attribute.values}
+                            theme={theme}
+                            onchange={handleValueChange}
+                        ></vlocity_ins-radio-group>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </div>
+    <div if:true={isLabelHidden} class="slds-size_1-of-1 nds-size_1-of-1">
+        <template for:each={messages} for:item="message">
+            <div key={message.id} class={message.styles}>{message.message}</div>
+        </template>
+    </div>
+    <template if:true={inDebugMode}>
+        <vlocity_ins-ins-rules-debugger attribute={attribute} rules-debug={rulesDebug}></vlocity_ins-ins-rules-debugger>
+    </template>
+</template>

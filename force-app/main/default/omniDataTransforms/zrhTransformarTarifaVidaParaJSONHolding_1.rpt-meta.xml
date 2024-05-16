@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a2GAC&quot;,
+  &quot;SubtarifasSalud&quot; : &quot;&quot;,
+  &quot;TarificacionVida&quot; : {
+    &quot;TarifaVida&quot; : [ {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a3GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;1&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13FAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;FALLECIMIENTO&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a4GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;3&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13PAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;MUERTE ACCIDENTAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a5GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;82&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13UAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a6GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;83&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13ZAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ ACCIDENTAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 83.33,
+      &quot;PrimaAnualUF&quot; : 100,
+      &quot;PrimaMensualUF&quot; : 8.33,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a7GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;27&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13eAAC&quot;,
+      &quot;NombreCobertura&quot; : &quot;PAGO MENSUAL POR INCAPACIDAD TEMPORAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 1000
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a8GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;80&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13jAAC&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ PERMANENTE (80)&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    } ],
+    &quot;TotalesCobertura&quot; : {
+      &quot;TotalCapitalAseguradoUF&quot; : 600,
+      &quot;TotalTasaAnual&quot; : 1500,
+      &quot;TotalTasaMensual&quot; : 124.98,
+      &quot;TotalPrimaAnualUF&quot; : 150,
+      &quot;TotalPrimaMensualUF&quot; : 12.48
+    }
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a2GAC&quot;,
+  &quot;SubtarifasSalud&quot; : &quot;&quot;,
+  &quot;TarificacionVida&quot; : {
+    &quot;TarifaVida&quot; : [ {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a3GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;1&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13FAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;FALLECIMIENTO&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a4GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;3&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13PAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;MUERTE ACCIDENTAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a5GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;82&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13UAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a6GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;83&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13ZAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ ACCIDENTAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 83.33,
+      &quot;PrimaAnualUF&quot; : 100,
+      &quot;PrimaMensualUF&quot; : 8.33,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a7GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;27&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13eAAC&quot;,
+      &quot;NombreCobertura&quot; : &quot;PAGO MENSUAL POR INCAPACIDAD TEMPORAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 1000
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a8GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;80&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13jAAC&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ PERMANENTE (80)&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    } ],
+    &quot;TotalesCobertura&quot; : {
+      &quot;TotalCapitalAseguradoUF&quot; : 600,
+      &quot;TotalTasaAnual&quot; : 1500,
+      &quot;TotalTasaMensual&quot; : 124.98,
+      &quot;TotalPrimaAnualUF&quot; : 150,
+      &quot;TotalPrimaMensualUF&quot; : 12.48
+    }
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem6</globalKey>
+        <inputFieldName>TotalesCobertura:TotalNumeroAsegurados</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:NumeroAsegurados</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem7</globalKey>
+        <inputFieldName>TotalesCobertura:TotalTasaAnual</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:TasaAnual</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>TotalesCobertura</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom2798</globalKey>
+        <inputFieldName>TotalesCobertura:TotalPrimaAnualVigenteUF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:TotalPrimaAnualVigenteUF</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom6409</globalKey>
+        <inputFieldName>TotalesCobertura:TotalTasaAnualVigente</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:TotalTasaAnualVigente</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom3005</globalKey>
+        <inputFieldName>TotalesCobertura:TotalPrimaMensualVigenteUF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:TotalPrimaMensualVigenteUF</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom5310</globalKey>
+        <inputFieldName>TotalesCobertura:TotalTasaMensualVigente</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:TotalTasaMensualVigente</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem4</globalKey>
+        <inputFieldName>TotalesCobertura:TotalCapitalAseguradoUF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:CapitalAseguradoUF</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem5</globalKey>
+        <inputFieldName>TotalesCobertura:TotalTasaMensual</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:TasaMensual</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;TOTAL&quot;</formulaConverted>
+        <formulaExpression>&quot;TOTAL&quot;</formulaExpression>
+        <formulaResultPath>Total</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem1</globalKey>
+        <inputFieldName>TotalesCobertura:TotalPrimaAnualUF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:PrimaAnualUF</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem2</globalKey>
+        <inputFieldName>TotalesCobertura:TotalPrimaMensualUF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:PrimaMensualUF</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaVidaParaJSONHoldingCustom0jI7500000000dpEAAItem3</globalKey>
+        <inputFieldName>Total</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaVidaParaJSONHolding</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalesCobertura:NombreCobertura</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a2GAC&quot;,
+  &quot;SubtarifasSalud&quot; : &quot;&quot;,
+  &quot;TarificacionVida&quot; : {
+    &quot;TarifaVida&quot; : [ {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a3GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;1&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13FAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;FALLECIMIENTO&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a4GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;3&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13PAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;MUERTE ACCIDENTAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a5GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;82&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13UAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a6GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;83&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13ZAAS&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ ACCIDENTAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    }, {
+      &quot;TasaMensual&quot; : 83.33,
+      &quot;PrimaAnualUF&quot; : 100,
+      &quot;PrimaMensualUF&quot; : 8.33,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a7GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;27&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13eAAC&quot;,
+      &quot;NombreCobertura&quot; : &quot;PAGO MENSUAL POR INCAPACIDAD TEMPORAL&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 1000
+    }, {
+      &quot;TasaMensual&quot; : 8.33,
+      &quot;PrimaAnualUF&quot; : 10,
+      &quot;PrimaMensualUF&quot; : 0.83,
+      &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6a8GAC&quot;,
+      &quot;CodigoCobertura&quot; : &quot;80&quot;,
+      &quot;IdCobertura&quot; : &quot;01t75000001H13jAAC&quot;,
+      &quot;NombreCobertura&quot; : &quot;INVALIDEZ PERMANENTE (80)&quot;,
+      &quot;NumeroAsegurados&quot; : 100,
+      &quot;CapitalAseguradoUF&quot; : 100,
+      &quot;TasaAnual&quot; : 100
+    } ],
+    &quot;TotalesCobertura&quot; : {
+      &quot;TotalCapitalAseguradoUF&quot; : 600,
+      &quot;TotalTasaAnual&quot; : 1500,
+      &quot;TotalTasaMensual&quot; : 124.98,
+      &quot;TotalPrimaAnualUF&quot; : 150,
+      &quot;TotalPrimaMensualUF&quot; : 12.48
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarTarifaVidaParaJSONHolding_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

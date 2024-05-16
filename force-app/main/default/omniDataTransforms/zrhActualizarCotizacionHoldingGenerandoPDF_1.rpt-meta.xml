@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : &quot;&quot;,
+  &quot;QuoteHoldingPDF&quot; : &quot;&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhActualizarCotizacionHoldingGenerandoPDF</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhActualizarCotizacionHoldingGenerandoPDFCustom6759</globalKey>
+        <inputFieldName>QuoteHoldingPDF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhActualizarCotizacionHoldingGenerandoPDF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_GenerandoPDF__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhActualizarCotizacionHoldingGenerandoPDFCustom2989</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhActualizarCotizacionHoldingGenerandoPDF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>zrhActualizarCotizacionHoldingGenerandoPDFCustom3411</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>zrhActualizarCotizacionHoldingGenerandoPDF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;0Q08B000000HaeSSAS&quot;,
+  &quot;timeStamp&quot; : &quot;2023-10-12T23:50:37.652Z&quot;,
+  &quot;userProfile&quot; : &quot;Administrador del sistema&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Santiago&quot;,
+  &quot;userTimeZone&quot; : &quot;-180&quot;,
+  &quot;userCurrencyCode&quot; : &quot;CLF&quot;,
+  &quot;userName&quot; : &quot;jaguilars@deloitte.devdtt5&quot;,
+  &quot;userId&quot; : &quot;0058B000003BvvsQAC&quot;,
+  &quot;omniProcessId&quot; : &quot;0jN8B000000GqWeUAK&quot;,
+  &quot;localTimeZoneName&quot; : &quot;America/Tegucigalpa&quot;,
+  &quot;ValidacionPDF&quot; : { },
+  &quot;QuoteContratante&quot; : {
+    &quot;Id&quot; : &quot;0Q08B000000HaeTSAS&quot;,
+    &quot;Number&quot; : &quot;C-00174-V1&quot;,
+    &quot;Status&quot; : &quot;Ingreso&quot;
+  },
+  &quot;QuoteNoCotizada&quot; : &quot;C-00174-V1&quot;,
+  &quot;QuoteHoldingPDF&quot; : true,
+  &quot;DRId_Quote&quot; : &quot;0Q08B000000HaeSSAS&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>zrhActualizarCotizacionHoldingGenerandoPDF_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

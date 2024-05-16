@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Como_quiere_ser_atendida__c</fullName>
+    <externalId>false</externalId>
+    <label>¿Cómo quiere ser atendida?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email vencimiento 3 meses</fullName>
+                <default>false</default>
+                <label>Email vencimiento 3 meses</label>
+            </value>
+            <value>
+                <fullName>Email vencimiento 1 mes</fullName>
+                <default>false</default>
+                <label>Email vencimiento 1 mes</label>
+            </value>
+            <value>
+                <fullName>Atención presencial</fullName>
+                <default>false</default>
+                <label>Atención presencial</label>
+            </value>
+            <value>
+                <fullName>Atención remota</fullName>
+                <default>false</default>
+                <label>Atención remota</label>
+            </value>
+            <value>
+                <fullName>Atención online</fullName>
+                <default>false</default>
+                <label>Atención online</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

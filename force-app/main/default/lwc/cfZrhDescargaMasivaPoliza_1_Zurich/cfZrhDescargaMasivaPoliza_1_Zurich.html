@@ -1,0 +1,67 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <vlocity_ins-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </vlocity_ins-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <vlocity_ins-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></vlocity_ins-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              No tienes los permisos necesarios para realizar esta acción
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <vlocity_ins-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-p-around_small " style="background-color:#ffffff;      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-text-link_reset  slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small  slds-size_12-of-12  " data-rindex={rindex} style="     border-top: #cccccc 1px solid;border-right: #cccccc 1px solid;border-bottom: #cccccc 1px solid;border-left: #cccccc 1px solid; 
+         " >
+    <vlocity_ins-block data-style-id="state0element0_child"  card={card}  record={record}  label=""  collapsible="false"  collapsed-by-default="false"  action='\{"label":"Action","iconName":"standard-default","eventType":"onclick","actionList":[{"key":"1688041633608-e6b5nv03n","label":"Crear Polizas","draggable":false,"isOpen":true,"card":"{card}","stateAction":{"id":"flex-action-1699227713259","type":"OmniScript","displayName":"Action","vlocityIcon":"standard-default","openUrlIn":"New Tab/Window","layoutType":"lightning","omniType":{"Name":"zrhCrearPolizas/SegurosColectivos/Spanish","Id":"0jN8B000000GqbQUAS","isLwcOs":true},"isLwcOS":true,"tabLabel":"Crear Pólizas","hasExtraParams":true,"extraParams":{"c__ContextId":"{recordId}"},"tabIcon":"utility:quote"},"actionIndex":0}],"showSpinner":"false"}'  extraclass=" slds-text-link_reset"  theme="slds"  onclick={executeAction} data-element-label="bloquepolizas" data-action-key="state0element0" onkeydown={executeActionWithKeyboard} tabindex="0"><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><vlocity_ins-flex-icon data-style-id="state0element0block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:quote"  size="medium"  extraclass="slds-icon slds-m-around_xx-small "  variant="default"  imgsrc=""  color="#0176D3"  theme="slds"  ></vlocity_ins-flex-icon>
+      </div><div data-style-id="state0element0block_element1" class="slds-col  slds-p-around_x-small slds-text-heading_small slds-size_11-of-12  " data-rindex={rindex} style="      
+         " ><vlocity_ins-output-field data-style-id="state0element0block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3ECrear%20P&oacute;lizas%3C/div%3E"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <vlocity_ins-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-p-around_small " style="background-color:#ffffff;      
+         ">
+          <div data-style-id="state0element0" class="slds-col   slds-text-link_reset  slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_xx-small  slds-size_12-of-12  " data-rindex={rindex} style="     border-top: #cccccc 1px solid;border-right: #cccccc 1px solid;border-bottom: #cccccc 1px solid;border-left: #cccccc 1px solid; 
+         " >
+    <vlocity_ins-block data-style-id="state0element0_child"  card={card}  record={record}  label=""  collapsible="false"  collapsed-by-default="false"  action='\{"label":"Action","iconName":"standard-default","eventType":"onclick","actionList":[{"key":"1688041633608-e6b5nv03n","label":"Crear Polizas","draggable":false,"isOpen":true,"card":"{card}","stateAction":{"id":"flex-action-1699227713259","type":"OmniScript","displayName":"Action","vlocityIcon":"standard-default","openUrlIn":"New Tab/Window","layoutType":"lightning","omniType":{"Name":"zrhCrearPolizas/SegurosColectivos/Spanish","Id":"0jN8B000000GqbQUAS","isLwcOs":true},"isLwcOS":true,"tabLabel":"Crear Pólizas","hasExtraParams":true,"extraParams":{"c__ContextId":"{recordId}"},"tabIcon":"utility:quote"},"actionIndex":0}],"showSpinner":"false"}'  extraclass=" slds-text-link_reset"  theme="slds"  onclick={executeAction} data-element-label="bloquepolizas" data-action-key="state0element0" onkeydown={executeActionWithKeyboard} tabindex="0"><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-size_1-of-12  " data-rindex={rindex} style="" ><vlocity_ins-flex-icon data-style-id="state0element0block_element0_child"   card={card}  record={record}  icon-type="Salesforce SVG"  icon-name="utility:quote"  size="medium"  extraclass="slds-icon slds-m-around_xx-small "  variant="default"  imgsrc=""  color="#0176D3"  theme="slds"  ></vlocity_ins-flex-icon>
+      </div><div data-style-id="state0element0block_element1" class="slds-col  slds-p-around_x-small slds-text-heading_small slds-size_11-of-12  " data-rindex={rindex} style="      
+         " ><vlocity_ins-output-field data-style-id="state0element0block_element1_child"   card={card}  record={record}  merge-field="%3Cdiv%3ECrear%20P&oacute;lizas%3C/div%3E"  theme="slds"  ></vlocity_ins-output-field>
+      </div>
+        </div></vlocity_ins-block>
+    </div>
+        </div>
+      </vlocity_ins-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <vlocity_ins-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </vlocity_ins-action>
+  
+            <vlocity_ins-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </vlocity_ins-action>
+            </div>
+          </template>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>[JN][BUG -880] Checkbox preexistencias</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CualesPreexistencias&quot; : [ &quot;Diabetes&quot;, &quot;Hipertensión Arterial&quot;, &quot;Hipotiroidismo&quot;, &quot;Hipertiroidismo&quot;, &quot;Tiroiditis&quot;, &quot;Bocio&quot;, &quot;Resistencia a la Insulina&quot;, &quot;Intolerancia a la Glucosa&quot;, &quot;Depresión&quot;, &quot;Dermatitis&quot;, &quot;Asma&quot;, &quot;Psoriasis&quot;, &quot;Estrabismo&quot;, &quot;Escoliosis&quot;, &quot;Hernia Lumbar&quot;, &quot;Hernia Nucleo Pulposo&quot;, &quot;Vitiligo&quot;, &quot;Acné&quot;, &quot;Rosácea&quot;, &quot;Reflujo Gastroesofágico&quot;, &quot;Soplos&quot;, &quot;Rinitis&quot;, &quot;Varices Extremidades Inferiores&quot;, &quot;Tendinitis&quot;, &quot;Discopatía Lumbar&quot;, &quot;Enfermedad Diverticular&quot;, &quot;Varicoceles&quot;, &quot;Osteopenia&quot;, &quot;Osteoporosis&quot;, &quot;Colitis Ulcerosa&quot;, &quot;Labio Leporino&quot;, &quot;Fisura Palatina&quot;, &quot;Urolitiasis Renal&quot;, &quot;Cálculo Renal&quot;, &quot;Hernia Hiatal&quot;, &quot;Hernia Inguinal&quot;, &quot;Epicondilitis&quot;, &quot;Miomatosis Uterina&quot;, &quot;Hernia Umbilical&quot;, &quot;Artrosis de Cadera&quot;, &quot;Displasia de Cadera&quot;, &quot;Hernia Cervical&quot;, &quot;Lumbago&quot;, &quot;Otitis&quot;, &quot;Sinovitis&quot;, &quot;Pie Bot&quot;, &quot;Pie Cavo&quot;, &quot;Adenoides&quot;, &quot;Alergia Atópica&quot;, &quot;Artritis Reumatoidea&quot;, &quot;Artritis Psoriasica&quot;, &quot;Enfermedad de Crohn&quot;, &quot;Cataratas&quot;, &quot;Criptorquidea&quot;, &quot;Hernia Diafragmatica&quot;, &quot;Neumotórax&quot;, &quot;Crisis de Pánico&quot;, &quot;Trastorno Bipolar&quot;, &quot;Pielonefritis&quot;, &quot;Desprendimiento de Retina&quot;, &quot;Esófago de Barret&quot;, &quot;Gota&quot;, &quot;Bursitis&quot;, &quot;Fibromialgia&quot;, &quot;Glaucoma&quot;, &quot;Endometriosis&quot;, &quot;Ovarios Poliquisticos&quot;, &quot;Cirugía Bariatrica&quot; ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarCualesPreexistencias</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CualesPreexistencias SERIALIZE</formulaConverted>
+        <formulaExpression>SERIALIZE(CualesPreexistencias)</formulaExpression>
+        <formulaResultPath>salida2</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarCualesPreexistenciasCustom4123</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCualesPreexistencias</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCualesPreexistenciasCustom1275</globalKey>
+        <inputFieldName>CualesPreexistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCualesPreexistencias</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Multi-Select</outputFieldFormat>
+        <outputFieldName>CualesPreexistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CualesPreexistencias&quot; : [ &quot;Diabetes&quot;, &quot;Hipertensión Arterial&quot;, &quot;Hipotiroidismo&quot;, &quot;Hipertiroidismo&quot;, &quot;Tiroiditis&quot;, &quot;Bocio&quot;, &quot;Resistencia a la Insulina&quot;, &quot;Intolerancia a la Glucosa&quot;, &quot;Depresión&quot;, &quot;Dermatitis&quot;, &quot;Asma&quot;, &quot;Psoriasis&quot;, &quot;Estrabismo&quot;, &quot;Escoliosis&quot;, &quot;Hernia Lumbar&quot;, &quot;Hernia Nucleo Pulposo&quot;, &quot;Vitiligo&quot;, &quot;Acné&quot;, &quot;Rosácea&quot;, &quot;Reflujo Gastroesofágico&quot;, &quot;Soplos&quot;, &quot;Rinitis&quot;, &quot;Varices Extremidades Inferiores&quot;, &quot;Tendinitis&quot;, &quot;Discopatía Lumbar&quot;, &quot;Enfermedad Diverticular&quot;, &quot;Varicoceles&quot;, &quot;Osteopenia&quot;, &quot;Osteoporosis&quot;, &quot;Colitis Ulcerosa&quot;, &quot;Labio Leporino&quot;, &quot;Fisura Palatina&quot;, &quot;Urolitiasis Renal&quot;, &quot;Cálculo Renal&quot;, &quot;Hernia Hiatal&quot;, &quot;Hernia Inguinal&quot;, &quot;Epicondilitis&quot;, &quot;Miomatosis Uterina&quot;, &quot;Hernia Umbilical&quot;, &quot;Artrosis de Cadera&quot;, &quot;Displasia de Cadera&quot;, &quot;Hernia Cervical&quot;, &quot;Lumbago&quot;, &quot;Otitis&quot;, &quot;Sinovitis&quot;, &quot;Pie Bot&quot;, &quot;Pie Cavo&quot;, &quot;Adenoides&quot;, &quot;Alergia Atópica&quot;, &quot;Artritis Reumatoidea&quot;, &quot;Artritis Psoriasica&quot;, &quot;Enfermedad de Crohn&quot;, &quot;Cataratas&quot;, &quot;Criptorquidea&quot;, &quot;Hernia Diafragmatica&quot;, &quot;Neumotórax&quot;, &quot;Crisis de Pánico&quot;, &quot;Trastorno Bipolar&quot;, &quot;Pielonefritis&quot;, &quot;Desprendimiento de Retina&quot;, &quot;Esófago de Barret&quot;, &quot;Gota&quot;, &quot;Bursitis&quot;, &quot;Fibromialgia&quot;, &quot;Glaucoma&quot;, &quot;Endometriosis&quot;, &quot;Ovarios Poliquisticos&quot;, &quot;Cirugía Bariatrica&quot; ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarCualesPreexistencias_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

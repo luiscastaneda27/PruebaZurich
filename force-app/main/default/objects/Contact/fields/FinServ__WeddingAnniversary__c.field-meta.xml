@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__WeddingAnniversary__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date of wedding anniversary.</description>
+    <externalId>false</externalId>
+    <label>Wedding Anniversary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

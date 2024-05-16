@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValidacionAutoridadesSuscriptor</fullName>
+    <active>false</active>
+    <description>Regla para validar si suscriptor cumple con la autoridad requerida para pasar a estado cotizada.</description>
+    <errorConditionFormula>/* Aplica solo a empresa holding o empresa no pertenenciente a un holding*/
+ISBLANK(Opportunity.Account.ParentId) &amp;&amp;
+
+ISPICKVAL(Status,&quot;E-05&quot;) &amp;&amp; 
+
+((ZRH_PrimaTotalAnual_UF__c &gt; 0
+&amp;&amp; $User.ZRH_AutoridadSuscripcion__c &lt;  ZRH_PrimaTotalAnual_UF__c) ||
+
+(ZRH_PrimaTotalAnualUF_Salud__c &gt; 0
+&amp;&amp; $User.ZRH_AutoridadSuscripcion__c &lt;  ZRH_PrimaTotalAnualUF_Salud__c) ||
+
+(ZRH_PrimaTotalAnualUF_Vida__c &gt; 0
+&amp;&amp; $User.ZRH_AutoridadSuscripcion__c &lt;  ZRH_PrimaTotalAnualUF_Vida__c))</errorConditionFormula>
+    <errorMessage>No cumples con la autoridad para cambiar a estado cotizada, necesitas aprobación.</errorMessage>
+</ValidationRule>

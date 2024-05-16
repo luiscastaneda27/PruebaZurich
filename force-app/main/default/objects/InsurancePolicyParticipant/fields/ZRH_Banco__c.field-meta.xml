@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Banco__c</fullName>
+    <externalId>false</externalId>
+    <label>Banco</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+<valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>AMERICAN EXPRESS BANK LTD</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>BANCO BCI - TBANC</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>BANCO BICE</label>
+            </value>
+            <value>
+                <fullName>18</fullName>
+                <default>false</default>
+                <label>BANCO CENTRAL DE CHILE</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>BANCO CONSORCIO</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>BANCO DE CHILE</label>
+            </value>
+            <value>
+                <fullName>43</fullName>
+                <default>false</default>
+                <label>BANCO DE LA NACION ARGENTINA</label>
+            </value>
+            <value>
+                <fullName>507</fullName>
+                <default>false</default>
+                <label>BANCO DEL DESARROLLO</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>BANCO DO BRASIL S.A.</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>BANCO DRESDNER</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>BANCO ESTADO</label>
+            </value>
+            <value>
+                <fullName>38</fullName>
+                <default>false</default>
+                <label>BANCO EXTERIOR S.A.</label>
+            </value>
+            <value>
+                <fullName>51</fullName>
+                <default>false</default>
+                <label>BANCO FALABELLA</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>BANCO INTERNACIONAL</label>
+            </value>
+            <value>
+                <fullName>39</fullName>
+                <default>false</default>
+                <label>BANCO ITAU</label>
+            </value>
+            <value>
+                <fullName>57</fullName>
+                <default>false</default>
+                <label>BANCO PARIS</label>
+            </value>
+            <value>
+                <fullName>56</fullName>
+                <default>false</default>
+                <label>BANCO PENTA</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>BANCO RIPLEY</label>
+            </value>
+            <value>
+                <fullName>37</fullName>
+                <default>false</default>
+                <label>BANCO SANTANDER</label>
+            </value>
+            <value>
+                <fullName>49</fullName>
+                <default>false</default>
+                <label>BANCO SECURITY</label>
+            </value>
+            <value>
+                <fullName>32</fullName>
+                <default>false</default>
+                <label>BANK OF AMERICA</label>
+            </value>
+            <value>
+                <fullName>672</fullName>
+                <default>false</default>
+                <label>COOPEUCH</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>CORP BANCA</label>
+            </value>
+            <value>
+                <fullName>716</fullName>
+                <default>false</default>
+                <label>CORPORACION FINANCIERA ATLAS</label>
+            </value>
+            <value>
+                <fullName>52</fullName>
+                <default>false</default>
+                <label>DEUTSCHE BANK</label>
+            </value>
+            <value>
+                <fullName>31</fullName>
+                <default>false</default>
+                <label>HSBC BANK (CHILE)</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>JP MORGAN CHASE BANK, N. A.</label>
+            </value>
+            <value>
+                <fullName>54</fullName>
+                <default>false</default>
+                <label>RABOBANK</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>SCOTIABANK</label>
+            </value>
+            <value>
+                <fullName>999</fullName>
+                <default>false</default>
+                <label>SERVICIO CAJA SERVIPAG</label>
+            </value>
+            <value>
+                <fullName>504</fullName>
+                <default>false</default>
+                <label>SKOTIA-AZUL (EX BBVA)</label>
+            </value>
+            <value>
+                <fullName>996</fullName>
+                <default>false</default>
+                <label>ZURICH CHILE ASSET MANAGEMENT AGF S.A.</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>ESTADO AHORRO</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>BANCO SANTIAGO (EX-O&apos;OHIGGINS)</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>BANCO SANTANDER (EX-OSORNO)</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>BANESTO CHILE BANK</label>
+            </value>
+            <value>
+                <fullName>29</fullName>
+                <default>false</default>
+                <label>NO VIGENTE:EX EDWARDS</label>
+            </value>
+            <value>
+                <fullName>33</fullName>
+                <default>false</default>
+                <label>NO VIGENTE:EX CITIBANK</label>
+            </value>
+            <value>
+                <fullName>34</fullName>
+                <default>false</default>
+                <label>BANCO REAL</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>BANCO DO ESTADO DE SAO PAULO S.A.</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>BANCO SUDAMERIS</label>
+            </value>
+            <value>
+                <fullName>44</fullName>
+                <default>false</default>
+                <label>CHICAGO CONTINENTAL BANK</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>THE BANK OF TOKIO LTD</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>RBS (EX ABN AMRO BANK)</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>CENTROBANCO</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>THE HONGKONG AND SHANGHAY BANKING CORP.</label>
+            </value>
+            <value>
+                <fullName>101</fullName>
+                <default>false</default>
+                <label>BANCO DE CHILE (N.Y.)</label>
+            </value>
+            <value>
+                <fullName>102</fullName>
+                <default>false</default>
+                <label>LEHMAN BROTHERS</label>
+            </value>
+            <value>
+                <fullName>103</fullName>
+                <default>false</default>
+                <label>STATE STREET</label>
+            </value>
+            <value>
+                <fullName>104</fullName>
+                <default>false</default>
+                <label>MERRIL LYNCH (DEUTSCHE BANKERSTRUST)</label>
+            </value>
+            <value>
+                <fullName>105</fullName>
+                <default>false</default>
+                <label>C.S.LONDRES</label>
+            </value>
+            <value>
+                <fullName>106</fullName>
+                <default>false</default>
+                <label>C.S.MIAMI</label>
+            </value>
+            <value>
+                <fullName>107</fullName>
+                <default>false</default>
+                <label>WACHOVIA</label>
+            </value>
+            <value>
+                <fullName>108</fullName>
+                <default>false</default>
+                <label>C.S.CAYMAN</label>
+            </value>
+            <value>
+                <fullName>109</fullName>
+                <default>false</default>
+                <label>PERSHING</label>
+            </value>
+            <value>
+                <fullName>110</fullName>
+                <default>false</default>
+                <label>BROWN BROTHERS HARRIMAN</label>
+            </value>
+            <value>
+                <fullName>722</fullName>
+                <default>false</default>
+                <label>FINANCIERA FUSA S.A.</label>
+            </value>
+            <value>
+                <fullName>733</fullName>
+                <default>false</default>
+                <label>FINANCIERA CONDELL S.A.</label>
+            </value>
+            <value>
+                <fullName>734</fullName>
+                <default>false</default>
+                <label>FINANCIERA CONOSUR</label>
+            </value>
+            <value>
+                <fullName>997</fullName>
+                <default>false</default>
+                <label>BANCOESTADO</label>
+            </value>
+            <value>
+                <fullName>998</fullName>
+                <default>false</default>
+                <label>MV SERVICES S.A.</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>BANCO SANTIAGO</label>
+            </value>
+            <value>
+                <fullName>562</fullName>
+                <default>false</default>
+                <label>BANEFE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

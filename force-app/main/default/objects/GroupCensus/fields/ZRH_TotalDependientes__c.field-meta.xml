@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_TotalDependientes__c</fullName>
+    <description>Cuenta total de dependientes en el censo</description>
+    <externalId>false</externalId>
+    <label>Total Dependientes</label>
+    <summaryFilterItems>
+        <field>GroupCensusMember.RelationshipToPrimaryMember</field>
+        <operation>notEqual</operation>
+        <value>Titular</value>
+    </summaryFilterItems>
+    <summaryForeignKey>GroupCensusMember.GroupCensusId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

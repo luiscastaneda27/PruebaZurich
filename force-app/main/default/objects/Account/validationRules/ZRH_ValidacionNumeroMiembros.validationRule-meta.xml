@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValidacionNumeroMiembros</fullName>
+    <active>true</active>
+    <errorConditionFormula>vlocity_ins__NumberOfMembers__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>vlocity_ins__NumberOfMembers__c</errorDisplayField>
+    <errorMessage>El número debe ser mayor o igual que cero.</errorMessage>
+</ValidationRule>

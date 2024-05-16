@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_LocalizacionCondicionado__c</fullName>
+    <description>Ubicación de la glosa en el Condicionado Particular. Por ejemplo, si la &quot;Localización en Condicionado&quot; es igual a 3, quiere decir que esta debería corresponder a la tercera glosa ordenada secuencialmente desde la primera glosa al inicio de la página. Es importante notar que para la glosa del ejemplo anterior, no necesariamente existen dos glosas antes de ella. La razón de esto porque existen Glosas Condicionales que pueden activarse o no. Si una glosa Condicional hubiese tenido &quot;Localización en Condicionado! igual a dos, tendrá que aparecer en la posición 2 solo en caso de activarse, pero de no ser así , entonces la Glosa Estándar del ejemplo con posición igual a 3 habrá ocupado el espacio asignado de la 2. en resumen, este campo identifica el orden de aparición.</description>
+    <externalId>false</externalId>
+    <label>Localizacion en Condicionado</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Número de Titulares</label>
+    <protected>false</protected>
+    <values>
+        <field>ZRH_Campo__c</field>
+        <value xsi:type="xsd:string">ZRH_Tarifa__c</value>
+    </values>
+    <values>
+        <field>ZRH_Estructura__c</field>
+        <value xsi:type="xsd:string">Tarifa</value>
+    </values>
+    <values>
+        <field>ZRH_Objeto__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+    <values>
+        <field>ZRH_Orden__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>ZRH_Plan__c</field>
+        <value xsi:type="xsd:string">600;601;602;603;604;605;606</value>
+    </values>
+    <values>
+        <field>ZRH_SubEstructura__c</field>
+        <value xsi:type="xsd:string">Salud - Por Tipo De Integrantes;Salud - Por Numero De Integrantes;Salud - Tarifa Promedio;Salud - Por Numero De Integrantes Por Edad;Salud - Por Tipo De Integrantes Por Edad</value>
+    </values>
+    <values>
+        <field>ZRH_Tag__c</field>
+        <value xsi:type="xsd:string">TarifaSaludNT</value>
+    </values>
+    <values>
+        <field>ZRH_TraduccionFuncional__c</field>
+        <value xsi:type="xsd:string">Número de Titulares</value>
+    </values>
+</CustomMetadata>

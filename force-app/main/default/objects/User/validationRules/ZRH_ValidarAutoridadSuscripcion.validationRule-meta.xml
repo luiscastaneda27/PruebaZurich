@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValidarAutoridadSuscripcion</fullName>
+    <active>true</active>
+    <description>Validación para poder evitar que usuarios que no sean el Suscriptor, Jefe de Suscripción o Subgerente de Suscripción puedan modificar este campo.</description>
+    <errorConditionFormula>AND(
+	ISCHANGED(ZRH_AutoridadSuscripcion__c),
+	NOT($UserRole.DeveloperName = &apos;ZRH_JefeSuscripcion&apos;),
+	NOT($UserRole.DeveloperName = &apos;ZRH_SubgerenteSuscripcion&apos;),
+	NOT($UserRole.DeveloperName = &apos;ZRH_Suscriptor&apos;),
+	NOT($Profile.Name = &apos;System Administrator&apos;),
+	NOT($Profile.Name = &apos;Administrador del sistema&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>ZRH_AutoridadSuscripcion__c</errorDisplayField>
+    <errorMessage>Solo Suscriptor, Jefe de Suscripción y Subgerente Suscripción pueden modificar este campo.</errorMessage>
+</ValidationRule>

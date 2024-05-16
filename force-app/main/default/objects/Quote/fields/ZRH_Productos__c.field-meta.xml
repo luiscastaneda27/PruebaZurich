@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Productos__c</fullName>
+    <description>Campo para indicar aquellos Productos que deban contemplarse para la cotización</description>
+    <externalId>false</externalId>
+    <label>Productos</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>500</fullName>
+                <default>false</default>
+                <label>Vida</label>
+            </value>
+            <value>
+                <fullName>501</fullName>
+                <default>false</default>
+                <label>Vida Escolaridad</label>
+            </value>
+            <value>
+                <fullName>502</fullName>
+                <default>false</default>
+                <label>Vida Protección Familiar</label>
+            </value>
+            <value>
+                <fullName>600</fullName>
+                <default>false</default>
+                <label>Salud</label>
+            </value>
+            <value>
+                <fullName>601</fullName>
+                <default>false</default>
+                <label>Oncológico</label>
+            </value>
+            <value>
+                <fullName>602</fullName>
+                <default>false</default>
+                <label>Catastrófico</label>
+            </value>
+            <value>
+                <fullName>603</fullName>
+                <default>false</default>
+                <label>Gasto Médico Mayor</label>
+            </value>
+            <value>
+                <fullName>604</fullName>
+                <default>false</default>
+                <label>Salud Stop Loss</label>
+            </value>
+            <value>
+                <fullName>605</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>606</fullName>
+                <default>false</default>
+                <label>Dental Stop Loss</label>
+            </value>
+            <value>
+                <fullName>700</fullName>
+                <default>false</default>
+                <label>Accidentes Personales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

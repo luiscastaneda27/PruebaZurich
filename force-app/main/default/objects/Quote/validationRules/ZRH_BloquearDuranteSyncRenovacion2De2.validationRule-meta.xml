@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_BloquearDuranteSyncRenovacion2De2</fullName>
+    <active>true</active>
+    <description>Bloquea la cotización de renovación mientras se sincroniza con AS400.</description>
+    <errorConditionFormula>AND(
+    /*Si es cotizacion renovacion*/
+    ZRH_RenovacionFlag__c,
+    /*Y no tiene permisos para sync*/
+    NOT($Permission.ZRH_SincronizarPolizasRenovacion),
+    /*Fue oficializada la renovacion*/
+    ZRH_PolizasPorRenovar__c,
+    /*Fue oficializada la renovacion*/
+    NOT(ISCHANGED(ZRH_PolizasPorRenovar__c)),
+    /*Y no esta terminada la sync*/
+    NOT(ZRH_RenovacionSincronizada__c),
+    /*Y quiere editar algun campo -&gt; ERROR */
+    OR(
+        ISCHANGED(ZRH_Productos__c),
+        ISCHANGED(ZRH_QuoteGanada__c),
+        ISCHANGED(ZRH_RegistroAvanceActivarGlosas__c),
+        ISCHANGED(ZRH_RegistroAvanceAntecedentesGenerales__c),
+        ISCHANGED(ZRH_RegistroAvanceBMI__c),
+        ISCHANGED(ZRH_RegistroAvanceCapitalCoberturas__c),
+        ISCHANGED(ZRH_RegistroAvanceCoberturaExterior__c),
+        ISCHANGED(ZRH_RegistroAvanceCondicionesEspeciales__c),
+        ISCHANGED(ZRH_RegistroAvanceConfiguracionCobertura__c),
+        ISCHANGED(ZRH_RegistroAvanceContributoriedad__c),
+        ISCHANGED(ZRH_RegistroAvanceConvenios__c),
+        ISCHANGED(ZRH_RegistroAvanceDeducibles__c),
+        ISCHANGED(ZRH_RegistroAvanceFondoLibreDisposicion__c),
+        ISCHANGED(ZRH_RegistroAvancePaqueteConveniosLinea__c),
+        ISCHANGED(ZRH_RegistroAvancePaquetesDeAsistencias__c),
+        ISCHANGED(ZRH_RegistroAvancePaquetesDeConvenios__c),
+        ISCHANGED(ZRH_RegistroAvancePlanes__c),
+        ISCHANGED(ZRH_RegistroAvancePreexistencias__c),
+        ISCHANGED(ZRH_RegistroAvanceRequisitosAsegurabilid__c),
+        ISCHANGED(ZRH_RegistroAvanceRoles__c),
+        ISCHANGED(ZRH_RegistroAvanceSobreprima__c),
+        ISCHANGED(ZRH_RegistroAvanceTablaRequisitosMedicos__c),
+        ISCHANGED(ZRH_RegistroAvanceTarificacion__c),
+        ISCHANGED(ZRH_RenovacionFlag__c),
+        ISCHANGED(ZRH_SolicitudCorredorCliente__c),
+        ISCHANGED(ZRH_SubEstado__c),
+        ISCHANGED(ZRH_SuscriptorAsignado__c),
+        ISCHANGED(ZRH_TipoCotizacion__c),
+        ISCHANGED(ZRH_TipoTopePreexistencias__c),
+        ISCHANGED(ZRH_TopeDeCobertura__c),
+        ISCHANGED(ZRH_TopeTodasPreexistencias__c),
+        ISCHANGED(ZRH_ValoresEstado__c),
+        ISCHANGED(ZRH_ValoresSubEstado__c),
+        ISCHANGED(ZRH_VigenciaInicio__c),
+        ISCHANGED(ZRH_VigenciaTermino__c)
+      )
+)</errorConditionFormula>
+    <errorMessage>Esta cotización se encuentra en sincronización con AS400. No puedes editarla.</errorMessage>
+</ValidationRule>

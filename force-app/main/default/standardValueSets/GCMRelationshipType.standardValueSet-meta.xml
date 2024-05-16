@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Self</fullName>
+        <default>false</default>
+        <label>Titular</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Otros</fullName>
+        <default>false</default>
+        <label>Otros</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Beneficiario</fullName>
+        <default>false</default>
+        <label>Beneficiario</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Convivente civil</fullName>
+        <default>false</default>
+        <label>Convivente civil</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cónyuge</fullName>
+        <default>false</default>
+        <label>Cónyuge</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cónyuge (M)</fullName>
+        <default>false</default>
+        <label>Cónyuge (M)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Desgravamen</fullName>
+        <default>false</default>
+        <label>Desgravamen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Empresa</fullName>
+        <default>false</default>
+        <label>Empresa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hijastro(a)</fullName>
+        <default>false</default>
+        <label>Hijastro(a)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hijo (TM)</fullName>
+        <default>false</default>
+        <label>Hijo (TM)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hijo(a)</fullName>
+        <default>false</default>
+        <label>Hijo(a)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hijos duplos</fullName>
+        <default>false</default>
+        <label>Hijos duplos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nieto(a)</fullName>
+        <default>false</default>
+        <label>Nieto(a)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sobrino(a)</fullName>
+        <default>false</default>
+        <label>Sobrino(a)</label>
+    </standardValue>
+</StandardValueSet>

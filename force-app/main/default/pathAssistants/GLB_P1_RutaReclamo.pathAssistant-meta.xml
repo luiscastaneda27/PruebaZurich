@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Reclamo</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>GLB_P1_EquipoAsignadoAutor__c</fieldNames>
+        <fieldNames>GLB_P1_PlazoArea3__c</fieldNames>
+        <fieldNames>GLB_P1_ExpiraEn3__c</fieldNames>
+        <picklistValueName>Asignado al autor</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>GLB_P1_EquipoAsignadoArea__c</fieldNames>
+        <fieldNames>GLB_P1_PlazoArea1__c</fieldNames>
+        <fieldNames>GLB_P1_ExpiraEn1__c</fieldNames>
+        <picklistValueName>Asignado al área</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>GLB_P1_EquipoAsignadoArea2__c</fieldNames>
+        <fieldNames>GLB_P1_PlazoArea2__c</fieldNames>
+        <fieldNames>GLB_P1_ExpiraEn2__c</fieldNames>
+        <picklistValueName>Asignado al área 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>GLB_P1_SLAGeneral__c</fieldNames>
+        <fieldNames>GLB_P1_SlaReal__c</fieldNames>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>GLB_P1_Reclamo</recordTypeName>
+</PathAssistant>

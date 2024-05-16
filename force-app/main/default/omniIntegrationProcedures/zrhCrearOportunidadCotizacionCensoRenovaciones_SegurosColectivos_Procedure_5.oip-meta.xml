@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;PolizasSeleccionadas&quot;: [
+        {
+            &quot;planCode&quot;: &quot;602&quot;,
+            &quot;folio&quot;: &quot;179123-5&quot;,
+            &quot;accountRut&quot;: &quot;97036000-K&quot;,
+            &quot;period&quot;: 19
+        }
+    ],
+    &quot;Productos&quot;: [
+        {
+            &quot;Name&quot;: &quot;PRODUCTO PRUEBA 291223&quot;,
+            &quot;Id&quot;: &quot;01t8B00000AJJgiQAH&quot;,
+            &quot;ProductCode&quot;: &quot;609&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Salud Stop Loss&quot;,
+            &quot;Id&quot;: &quot;01t8B000009blkqQAA&quot;,
+            &quot;ProductCode&quot;: &quot;604&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Salud&quot;,
+            &quot;Id&quot;: &quot;01t8B000009blwaQAA&quot;,
+            &quot;ProductCode&quot;: &quot;600&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Salud (viejo)&quot;,
+            &quot;Id&quot;: &quot;01t8B000009bZ5dQAE&quot;,
+            &quot;ProductCode&quot;: &quot;6000&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Vida Escolaridad&quot;,
+            &quot;Id&quot;: &quot;01t78000008Y9dbAAC&quot;,
+            &quot;ProductCode&quot;: &quot;501&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Salud Stop Loss (viejo)&quot;,
+            &quot;Id&quot;: &quot;01t78000008YSdcAAG&quot;,
+            &quot;ProductCode&quot;: &quot;604(viejo)&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Accidentes Personales&quot;,
+            &quot;Id&quot;: &quot;01t78000008YaojAAC&quot;,
+            &quot;ProductCode&quot;: &quot;700&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Dental&quot;,
+            &quot;Id&quot;: &quot;01t78000008YjgDAAS&quot;,
+            &quot;ProductCode&quot;: &quot;605&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Gasto Médico Mayor&quot;,
+            &quot;Id&quot;: &quot;01t78000008YjgIAAS&quot;,
+            &quot;ProductCode&quot;: &quot;603&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Catastrófico&quot;,
+            &quot;Id&quot;: &quot;01t78000008YjgJAAS&quot;,
+            &quot;ProductCode&quot;: &quot;602&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Vida&quot;,
+            &quot;Id&quot;: &quot;01t78000008YjgKAAS&quot;,
+            &quot;ProductCode&quot;: &quot;500&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Vida Protección Familiar&quot;,
+            &quot;Id&quot;: &quot;01t78000008YjgLAAS&quot;,
+            &quot;ProductCode&quot;: &quot;502&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Dental Stop Loss&quot;,
+            &quot;Id&quot;: &quot;01t78000008YjgMAAS&quot;,
+            &quot;ProductCode&quot;: &quot;606&quot;
+        },
+        {
+            &quot;Name&quot;: &quot;Oncológico&quot;,
+            &quot;Id&quot;: &quot;01t78000008Y7GCAA0&quot;,
+            &quot;ProductCode&quot;: &quot;601&quot;
+        }
+    ],
+    &quot;EmpresasContratantes&quot;: [
+        {
+            &quot;IdEmpresaContratante&quot;: &quot;0017800000NskLZAAZ&quot;,
+            &quot;IdEmpresaHolding&quot;: &quot;0017800000NskL6AAJ&quot;,
+            &quot;EsPipelineEmpresaContratante&quot;: false,
+            &quot;NombreEmpresaContratante&quot;: &quot;BIENESTAR BANCO SANTANDER CHILE Y FILIALES&quot;,
+            &quot;RutEmpresaContratante&quot;: &quot;97036000-K&quot;,
+            &quot;Renovacion&quot;: true
+        }
+    ],
+    &quot;idCuenta&quot;: &quot;0017800000NskL6AAJ&quot;,
+    &quot;CartaDeExclusividad&quot;: &quot;&quot;,
+    &quot;NombreCuentaHolding&quot;: &quot;BANCO SANTANDER&quot;,
+    &quot;IdCorredor&quot;: &quot;0017800000Nq5fyAAB&quot;,
+    &quot;IdContacto&quot;: &quot;0037800000IuXTsAAN&quot;,
+    &quot;EsReserva&quot;: &quot;&apos;0&apos;&quot;,
+    &quot;NombreCorredor&quot;: &quot;AON RISK SERVICES ( CHILE ) S.A.&quot;,
+    &quot;EsLicitacion&quot;: &quot;0&quot;,
+    &quot;EsPipeline&quot;: &quot;&quot;,
+    &quot;FechaLimitePregunta&quot;: &quot;&quot;,
+    &quot;FechaSolicitudEntrega&quot;: &quot;2024-02-14&quot;,
+    &quot;vigenciaInicio&quot;: &quot;2024-02-21&quot;,
+    &quot;vigenciaTermino&quot;: &quot;2025-02-19&quot;,
+    &quot;moneda&quot;: &quot;uf&quot;,
+    &quot;numeroAsegurados&quot;: 10,
+    &quot;primaTarget&quot;: &quot;10&quot;,
+    &quot;comisionCorredor&quot;: 10,
+    &quot;observaciones&quot;: &quot;11&quot;,
+    &quot;tipoSolicitud&quot;: &quot;&apos;0&apos;&quot;,
+    &quot;ListaSolicitudVigenteSinCartaOtroCorredor&quot;: &quot;&quot;,
+    &quot;adicionales&quot;: &quot;&quot;,
+    &quot;productosSeleccionados&quot;: [
+        {
+            &quot;Id&quot;: &quot;01t8B00000AJJgiQAH&quot;,
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Name&quot;: &quot;PRODUCTO PRUEBA 291223&quot;,
+            &quot;ProductCode&quot;: &quot;609&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t8B000009blkqQAA&quot;,
+            &quot;Name&quot;: &quot;Salud Stop Loss&quot;,
+            &quot;ProductCode&quot;: &quot;604&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t8B000009blwaQAA&quot;,
+            &quot;Name&quot;: &quot;Salud&quot;,
+            &quot;ProductCode&quot;: &quot;600&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t8B000009bZ5dQAE&quot;,
+            &quot;Name&quot;: &quot;Salud (viejo)&quot;,
+            &quot;ProductCode&quot;: &quot;6000&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008Y9dbAAC&quot;,
+            &quot;Name&quot;: &quot;Vida Escolaridad&quot;,
+            &quot;ProductCode&quot;: &quot;501&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YSdcAAG&quot;,
+            &quot;Name&quot;: &quot;Salud Stop Loss (viejo)&quot;,
+            &quot;ProductCode&quot;: &quot;604(viejo)&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YaojAAC&quot;,
+            &quot;Name&quot;: &quot;Accidentes Personales&quot;,
+            &quot;ProductCode&quot;: &quot;700&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YjgDAAS&quot;,
+            &quot;Name&quot;: &quot;Dental&quot;,
+            &quot;ProductCode&quot;: &quot;605&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YjgIAAS&quot;,
+            &quot;Name&quot;: &quot;Gasto Médico Mayor&quot;,
+            &quot;ProductCode&quot;: &quot;603&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YjgJAAS&quot;,
+            &quot;Name&quot;: &quot;Catastrófico&quot;,
+            &quot;ProductCode&quot;: &quot;602&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YjgKAAS&quot;,
+            &quot;Name&quot;: &quot;Vida&quot;,
+            &quot;ProductCode&quot;: &quot;500&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YjgLAAS&quot;,
+            &quot;Name&quot;: &quot;Vida Protección Familiar&quot;,
+            &quot;ProductCode&quot;: &quot;502&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008YjgMAAS&quot;,
+            &quot;Name&quot;: &quot;Dental Stop Loss&quot;,
+            &quot;ProductCode&quot;: &quot;606&quot;
+        },
+        {
+            &quot;SeleccionarProducto&quot;: false,
+            &quot;Id&quot;: &quot;01t78000008Y7GCAA0&quot;,
+            &quot;Name&quot;: &quot;Oncológico&quot;,
+            &quot;ProductCode&quot;: &quot;601&quot;
+        }
+    ],
+    &quot;CargaCartaDeExclusividad&quot;: &quot;&quot;,
+    &quot;ArchivosAdjuntos&quot;: &quot;&quot;,
+    &quot;DocumentoLicitacion&quot;: &quot;&quot;
+}</customJavaScript>
+    <description>Crear Censo modelo armonizado</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>zrhCrearOportunidadCotizacionCensoRenovaciones</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ActualizarNombreCotizacionesCreadas</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;ExtraerCotizacionesCreadas&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearActualizarCotizacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AdjuntarArchivosAdjuntos</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ArchivosAdjuntos|1:data% != $Vlocity.NULL &quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;LinkedEntityId&quot; : &quot;%CrearCotizacionHolding:Quote_1:Id%&quot;,
+    &quot;ListaDocumentos&quot; : &quot;=LIST(%ArchivosAdjuntos%)&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearDocumentosAdjuntosEnCotizacionHolding&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction8&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AdjuntarCartaExclusividad</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%CargaCartaDeExclusividad|1:data% != $Vlocity.NULL&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;LinkedEntityId&quot; : &quot;%CrearCotizacionHolding:Quote_1:Id%&quot;,
+    &quot;ListaDocumentos&quot; : &quot;%CargaCartaDeExclusividad%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearDocumentosAdjuntosEnCotizacionHolding&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction8&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AdjuntarDocumentosLicitacion</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%DocumentoLicitacion|1:data% != $Vlocity.NULL&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;LinkedEntityId&quot; : &quot;%CrearCotizacionHolding:Quote_1:Id%&quot;,
+    &quot;ListaDocumentos&quot; : &quot;=LIST(%DocumentoLicitacion%)&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearDocumentosAdjuntosEnCotizacionHolding&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction8&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CrearCensosContratantes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : {
+    &quot;Censos&quot; : &quot;%CrearCensosContratantes:GroupCensus_1%&quot;
+  },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TransformarParaRegistrosContratantes&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearActualizarGroupCensus&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CrearCotizacionesContratantes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TransformarListaParaCotizacionesContratantes&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearCotizacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CrearOportunidadesContratantes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : {
+    &quot;Oportunidades&quot; : &quot;%CrearOportunidadesContratantes:Opportunity_1%&quot;
+  },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TransformarParaRegistrosContratantes&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearActualizarOportunidad&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>MergearParaCrearCotizacionesContratantes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : true,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;CrearOportunidadesContratantes:Oportunidades&quot;,
+    &quot;matchingPath&quot; : &quot;AccountId&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;listKey&quot; : &quot;TransformarListaCensos&quot;,
+    &quot;matchingPath&quot; : &quot;vlocity_ins__GroupId__c&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;listKey&quot; : &quot;TransformarParaRegistrosContratantes&quot;,
+    &quot;matchingPath&quot; : &quot;IdCuenta&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  } ],
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;CrearOportunidadesContratantes:Oportunidades&quot;, &quot;TransformarListaCensos&quot;, &quot;TransformarParaRegistrosContratantes&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TransformarListaCensos</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;CrearCensosContratantes:Censos&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhTransformarListaDeCensos&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorTransformAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TransformarListaParaCotizacionesContratantes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;MergearParaCrearCotizacionesContratantes&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhTransformarParaCotizacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorTransformAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TransformarParaRegistrosContratantes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;Empresas&quot; : &quot;=LIST(%EmpresasContratantes%)&quot;,
+    &quot;FechaCierre&quot; : &quot;=$Vlocity.N_DAYS_FROM_NOW:365&quot;,
+    &quot;EtapaOportunidad&quot; : &quot;Draft&quot;,
+    &quot;IdCorredor&quot; : &quot;%IdCorredor%&quot;,
+    &quot;IdContacto&quot; : &quot;%IdContacto%&quot;,
+    &quot;CartaDeExclusividad&quot; : &quot;%CartaDeExclusividad%&quot;,
+    &quot;Origen&quot; : &quot;=IF(%EsReserva% == \&quot;1\&quot;, \&quot;Reserva\&quot;, \&quot;Cotización\&quot;)&quot;,
+    &quot;count&quot; : 0,
+    &quot;EstadoCenso&quot; : &quot;Active&quot;,
+    &quot;IdPricebook&quot; : &quot;$Vlocity.StandardPricebookId&quot;,
+    &quot;IdCuentaHolding&quot; : &quot;%idCuenta%&quot;,
+    &quot;TipoSolicitud&quot; : &quot;%tipoSolicitud%&quot;,
+    &quot;Observaciones&quot; : &quot;%observaciones%&quot;,
+    &quot;ComisionCorredor&quot; : &quot;%comisionCorredor%&quot;,
+    &quot;PrimaTarget&quot; : &quot;%primaTarget%&quot;,
+    &quot;NumeroAsegurados&quot; : &quot;%numeroAsegurados%&quot;,
+    &quot;Moneda&quot; : &quot;%moneda%&quot;,
+    &quot;VigenciaTermino&quot; : &quot;%vigenciaTermino%&quot;,
+    &quot;VigenciaInicio&quot; : &quot;%vigenciaInicio%&quot;,
+    &quot;FechaSolicitudEntrega&quot; : &quot;%FechaSolicitudEntrega%&quot;,
+    &quot;FechaLimitePregunta&quot; : &quot;%FechaLimitePregunta%&quot;,
+    &quot;EsLicitacion&quot; : &quot;%EsLicitacion%&quot;,
+    &quot;IdCotizacionHolding&quot; : &quot;%CrearCotizacionHolding:Quote_1:Id%&quot;,
+    &quot;Adicionales&quot; : &quot;%adicionales%&quot;,
+    &quot;ProductosSeleccionados&quot; : &quot;=FUNCTION(&apos;ZRH_FunctionsHelper&apos;, &apos;replace&apos;, TOSTRING(%ExtraerTiposDeRegistro:ProductosSeleccionados:ProductCode%), &apos;, &apos;, &apos;;&apos;)&quot;,
+    &quot;EstadoCotizacion&quot; : &quot;=IF(%EsReserva% == \&quot;1\&quot;, \&quot;E-01\&quot;, \&quot;E-02\&quot;)&quot;,
+    &quot;IdTipoRegistroCotizacion&quot; : &quot;%ExtraerTiposDeRegistro:IdTipoRegistroCotizacion%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhTransformarParaOppCensoCotizacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Contratantes</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CrearCotizacionHolding</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;IdCuenta&quot; : &quot;%idCuenta%&quot;,
+    &quot;Nombre&quot; : &quot;%NombreCuentaHolding%&quot;,
+    &quot;IdOportunidad&quot; : &quot;%CrearOportunidadHolding:Opportunity_1:Id%&quot;,
+    &quot;IdPricebook&quot; : &quot;$Vlocity.StandardPricebookId&quot;,
+    &quot;Origen&quot; : &quot;=IF(%EsReserva% == \&quot;1\&quot;, \&quot;Reserva\&quot;, \&quot;Cotización\&quot;)&quot;,
+    &quot;TipoSolicitud&quot; : 0,
+    &quot;Observaciones&quot; : &quot;%observaciones%&quot;,
+    &quot;ComisionCorredor&quot; : &quot;%comisionCorredor%&quot;,
+    &quot;PrimaTarget&quot; : &quot;%primaTarget%&quot;,
+    &quot;NumeroAsegurados&quot; : &quot;%numeroAsegurados%&quot;,
+    &quot;Moneda&quot; : &quot;%moneda%&quot;,
+    &quot;VigenciaTermino&quot; : &quot;%vigenciaTermino%&quot;,
+    &quot;VigenciaInicio&quot; : &quot;%vigenciaInicio%&quot;,
+    &quot;FechaSolicitudEntrega&quot; : &quot;%FechaSolicitudEntrega%&quot;,
+    &quot;FechaLimitePregunta&quot; : &quot;%FechaLimitePregunta%&quot;,
+    &quot;EsLicitacion&quot; : &quot;%EsLicitacion%&quot;,
+    &quot;CartaDeExclusividad&quot; : &quot;%CartaDeExclusividad%&quot;,
+    &quot;IdCorredor&quot; : &quot;%IdCorredor%&quot;,
+    &quot;IdContacto&quot; : &quot;%IdContacto%&quot;,
+    &quot;count&quot; : 0,
+    &quot;Adicionales&quot; : &quot;%adicionales%&quot;,
+    &quot;ProductosSeleccionados&quot; : &quot;=FUNCTION(&apos;ZRH_FunctionsHelper&apos;, &apos;replace&apos;, TOSTRING(%ExtraerTiposDeRegistro:ProductosSeleccionados:ProductCode%), &apos;, &apos;, &apos;;&apos;)&quot;,
+    &quot;EstadoCotizacion&quot; : &quot;=IF(%EsReserva% == \&quot;1\&quot;, \&quot;E-01\&quot;, \&quot;E-02\&quot;)&quot;,
+    &quot;IdTipoRegistroCotizacion&quot; : &quot;%ExtraerTiposDeRegistro:IdTipoRegistroCotizacion%&quot;,
+    &quot;Renovacion&quot; : true
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearCotizacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction10&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CrearOportunidadHolding</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;IdCuenta&quot; : &quot;%idCuenta%&quot;,
+    &quot;FechaCierre&quot; : &quot;=$Vlocity.N_DAYS_FROM_NOW:365&quot;,
+    &quot;Nombre&quot; : &quot;%NombreCuentaHolding%&quot;,
+    &quot;EtapaOportunidad&quot; : &quot;Draft&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearActualizarOportunidad&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction11&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CrearPlanesDeCotizacionesRenovacion</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;TransformarInformacionPlanes&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhCrearPlanesCotizacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorPostAction7&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>13.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtraerCotizacionesCreadas</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;IdCotizacion&quot; : &quot;%CrearCotizacionHolding:Quote_1:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhExtraerGrupoDeCotizaciones&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorExtractAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtraerListaPrecioProductos</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;IdListaPrecios&quot; : &quot;=$Vlocity.StandardPricebookId&quot;,
+    &quot;IdProductos&quot; : &quot;%Productos:Id%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhExtraerListaPrecioProductos&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorTurboAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>DataRaptor Turbo Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtraerTiposDeRegistro</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;TipoDeRegistro&quot; : [ {
+      &quot;Objeto&quot; : &quot;Quote&quot;,
+      &quot;Nombre&quot; : &quot;LargeGroupQuote&quot;
+    }, {
+      &quot;Objeto&quot; : &quot;vlocity_ins__GroupCensus__c&quot;,
+      &quot;Nombre&quot; : &quot;LargeGroup&quot;
+    } ]
+  },
+  &quot;additionalOutput&quot; : {
+    &quot;ProductosSeleccionados&quot; : &quot;=FILTER(LIST(%productosSeleccionados%), &apos;%SeleccionarProducto% == $Vlocity.TRUE&apos;)&quot;,
+    &quot;EmpresasContratantesReservadas&quot; : &quot;=FILTER(LIST(%EmpresasContratantes%),&apos;%ReservarEmpresaContratante% == $Vlocity.TRUE&apos;)&quot;
+  },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhExtraerTiposDeRegistro&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorExtractAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>MergearInformacionPlanes</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;loopList&quot; : &quot;PolizasSeleccionadas&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;loopOutput&quot; : {
+    &quot;quoteInfo&quot; : &quot;=FILTER(LIST(%ExtraerCotizacionesCreadas%),&apos;Rut == \&quot;&apos; + %PolizasSeleccionadas:accountRut% + &apos;\&quot;&apos;)&quot;,
+    &quot;productInfo&quot; : &quot;=FILTER(LIST(%Productos%),&apos;ProductCode == \&quot;&apos; + %PolizasSeleccionadas:planCode% + &apos;\&quot;&apos;)&quot;,
+    &quot;pricebookInfo&quot; : &quot;=FILTER(LIST(%ExtraerListaPrecioProductos:PricebookEntry%),&apos;ProductCode == \&quot;&apos; + %PolizasSeleccionadas:planCode% + &apos;\&quot;&apos;)&quot;,
+    &quot;folio&quot; : &quot;%PolizasSeleccionadas:folio%&quot;,
+    &quot;periodo&quot; : &quot;=SUM(%PolizasSeleccionadas:period%,1)&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;LoopBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Loop Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponderHolding</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;IdCotizacionHolding&quot; : &quot;%CrearCotizacionHolding:Quote_1:Id%&quot;,
+    &quot;DocumentoLicitacion&quot; : &quot;%DocumentoLicitacion%&quot;,
+    &quot;ArchivosAdjuntos&quot; : &quot;%ArchivosAdjuntos%&quot;,
+    &quot;CargaCartaDeExclusividad&quot; : &quot;%CargaCartaDeExclusividad%&quot;,
+    &quot;ListaDocumentos&quot; : &quot;=LIST(%CargaCartaDeExclusividad%, %ArchivosAdjuntos%, %DocumentoLicitacion%)&quot;,
+    &quot;Cotizaciones&quot; : &quot;%ExtraerCotizacionesCreadas%&quot;,
+    &quot;jsonBodyOficializacionRenovacion&quot; : &quot;%TransformarParaEnvioAServicioOficializacion%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;Cotizaciones&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>14.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TransformarInformacionPlanes</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;MergearInformacionPlanes&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;zrhTransformarParaCrearPlanesRenovacion&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataRaptorTransformAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessKey>zrhCrearOportunidadCotizacionCensoRenovaciones_SegurosColectivos</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>SegurosColectivos</subType>
+    <type>zrhCrearOportunidadCotizacionCensoRenovaciones</type>
+    <uniqueName>zrhCrearOportunidadCotizacionCensoRenovaciones_SegurosColectivos_Procedure_5</uniqueName>
+    <versionNumber>5.0</versionNumber>
+    <webComponentKey>b20c61e9-edc0-d437-8c3a-654bfac318c0</webComponentKey>
+</OmniIntegrationProcedure>

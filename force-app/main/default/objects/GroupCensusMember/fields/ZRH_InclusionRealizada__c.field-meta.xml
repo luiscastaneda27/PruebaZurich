@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_InclusionRealizada__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identifica si el asegurado ya fue inscripto.</description>
+    <externalId>false</externalId>
+    <label>Inclusión Realizada</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

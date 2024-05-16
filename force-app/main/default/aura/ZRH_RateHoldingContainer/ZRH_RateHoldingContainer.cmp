@@ -1,0 +1,27 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,flexipage:availableForAllPageTypes" controller="ZRH_HoldingRatesController">
+    <aura:attribute name="progress" type="Integer" default="0"/>
+    <aura:attribute name="apexJob" type="AsyncApexJob"/>
+    <aura:attribute name="isButtonDisabled" type="Boolean" default="false"/>
+
+    <div class="slds-text-align_center slds-var-m-around_small">
+        <h2 class="slds-text-heading_medium">Calcular Tarifas</h2>
+    </div>
+    <div class="slds-text-align_center slds-var-m-around_small">
+        Al presionar el botón, se recalculan las tarifas.
+    </div>
+    <div class="slds-text-align_center slds-var-m-top_small slds-var-m-bottom_medium">
+        <lightning:button variant="brand" label="Calcular" title="Calcular" onclick="{!c.executeBatch}" disabled="{!v.isButtonDisabled}"/>
+    </div>
+
+    <aura:if isTrue="{!v.apexJob != null}">
+        <aura:if isTrue="{!v.apexJob.JobItemsProcessed != v.apexJob.TotalJobItems}">
+            <div>Procesando...</div>
+        </aura:if>
+        <aura:if isTrue="{!v.apexJob.Status == 'Completed'}">
+            <div>Completado con {!v.apexJob.NumberOfErrors} errores.</div>
+        </aura:if>
+        <div>
+            <lightning:progressBar value="{!v.progress}" size="large" variant="circular"/>
+        </div>
+    </aura:if> 
+</aura:component>

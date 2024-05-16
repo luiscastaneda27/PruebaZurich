@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValidacionLogica</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( TEXT(ZRH_TipoDeGlosa__c) == &quot;G-002&quot;,  TEXT( ZRH_LogicaCondiciones__c ) = null)</errorConditionFormula>
+    <errorDisplayField>ZRH_LogicaCondiciones__c</errorDisplayField>
+    <errorMessage>Por el tipo de glosa debe llenar este campo</errorMessage>
+</ValidationRule>

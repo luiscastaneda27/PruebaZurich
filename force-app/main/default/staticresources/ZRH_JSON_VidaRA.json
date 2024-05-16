@@ -1,0 +1,42 @@
+[
+  {
+    "EdadMinimaIngreso": 23,
+    "EdadDPS": 23,
+    "IdCobertura": "01t78000008YAelAAG",
+    "EdadTopeIngreso": 23,
+    "CodigoCobertura": "27",
+    "EdadSalida": 2,
+    "IdProductoCotizacion": "0QL8B000000Hm1FWAS",
+    "NombreCobertura": "PAGO MENSUAL POR INCAPACIDAD TEMPORAL",
+    "DPSCapitalIgualMayor": 3
+  },
+  {
+    "EdadMinimaIngreso": 3,
+    "EdadDPS": 32,
+    "IdCobertura": "01t78000008YAemAAG",
+    "EdadTopeIngreso": 23,
+    "CodigoCobertura": "80",
+    "EdadSalida": 3,
+    "IdProductoCotizacion": "0QL8B000000Hm1GWAS",
+    "NombreCobertura": "INVALIDEZ PERMANENTE (80)",
+    "DPSCapitalIgualMayor": 2
+  },
+  {
+    "IdCobertura": "01t78000008YAenAAG",
+    "CodigoCobertura": "83",
+    "IdProductoCotizacion": "0QL8B000000Hm1HWAS",
+    "NombreCobertura": "INVALIDEZ ACCIDENTAL"
+  },
+  {
+    "IdCobertura": "01t78000008YAepAAG",
+    "CodigoCobertura": "3",
+    "IdProductoCotizacion": "0QL8B000000Hm1IWAS",
+    "NombreCobertura": "MUERTE ACCIDENTAL"
+  },
+  {
+    "IdCobertura": "01t78000008YAesAAG",
+    "CodigoCobertura": "1",
+    "IdProductoCotizacion": "0QL8B000000Hm1JWAS",
+    "NombreCobertura": "FALLECIMIENTO"
+  }
+]

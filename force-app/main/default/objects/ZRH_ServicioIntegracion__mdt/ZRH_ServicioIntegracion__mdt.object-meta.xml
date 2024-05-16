@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ZRH Servicio Integracion</label>
+    <pluralLabel>ZRH Servicio Integraciones</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_Region__c</fullName>
+    <externalId>false</externalId>
+    <label>Región</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Región del Maule</fullName>
+                <default>false</default>
+                <label>Región del Maule</label>
+            </value>
+            <value>
+                <fullName>Región del Ñuble</fullName>
+                <default>false</default>
+                <label>Región del Ñuble</label>
+            </value>
+            <value>
+                <fullName>Región del Biobío</fullName>
+                <default>false</default>
+                <label>Región del Biobío</label>
+            </value>
+            <value>
+                <fullName>Región de La Araucanía</fullName>
+                <default>false</default>
+                <label>Región de La Araucanía</label>
+            </value>
+            <value>
+                <fullName>Región de Los Ríos</fullName>
+                <default>false</default>
+                <label>Región de Los Ríos</label>
+            </value>
+            <value>
+                <fullName>Región de Los Lagos</fullName>
+                <default>false</default>
+                <label>Región de Los Lagos</label>
+            </value>
+            <value>
+                <fullName>Región de Aysén</fullName>
+                <default>false</default>
+                <label>Región de Aysén</label>
+            </value>
+            <value>
+                <fullName>Región de Magallanes</fullName>
+                <default>false</default>
+                <label>Región de Magallanes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,167 @@
+<!--/*********************************************************************************
+Project      : Zurich 
+Created By   : Deloitte
+Created Date : 23/08/2023
+Description  : HTML - Table to display values from JSON Convenios
+History      :
+**************************ACRONYM OF AUTHORS************************************
+AUTHOR                         ACRONYM
+Mateo Long                        ML
+********************************************************************************
+VERSION  AUTHOR         DATE            Description
+1.0       ML	     20/09/2023		  initial version
+********************************************************************************/-->
+<template>
+    <div if:false={recordId} class="slds-var-m-bottom_xx-large slds-text-heading_medium">
+        <div if:false={noPlansAvailable}>
+            Planes Disponibles: {availablePlansLabel}
+        </div>
+        <div if:true={noPlansAvailable}>
+            No hay más planes disponibles para configurar
+        </div>
+    </div>
+    <template if:true={accountsDEF}>
+        <template for:each={accountsDEF} for:item="account">
+            <div key={account.Id}>
+                <!-- account DEF -->
+                <div class="slds-grid slds-var-m-bottom_large slds-var-m-top_large">
+                    <div class="slds-col slds-size_4-of-12 slds-text-heading_small">
+                        <p>{account.nameDEF}</p>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                        Fecha creación: 
+                        <div>{account.createdDate}</div>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                        Última actualizacion: 
+                        <div>{account.lastModifiedDate}</div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                        <lightning-button 
+                            variant="base" 
+                            label="Ver" 
+                            data-account-id={account.Id} 
+                            onclick={toggleDEF} 
+                            class="slds-m-left_x-small"
+                        >
+                        </lightning-button>
+                    </div>
+                    <div if:false={recordId} class="slds-col slds-size_1-of-12">
+                        <lightning-button 
+                            variant="base" 
+                            label="Eliminar" 
+                            data-account-id={account.Id} 
+                            onclick={deleteDEF} 
+                            class="slds-m-left_x-small"
+                        >
+                        </lightning-button>
+                    </div>
+                    <div if:false={recordId} class="slds-col slds-size_1-of-12">
+                        <div if:true={account.unsavedChanges} class="red-text">hay cambios por guardar</div>
+                    </div>
+                </div>    
+                <div if:true={account.isVisible} class="slds-grid">
+                    <!-- Selected Plans -->
+                    <div if:false={recordId} class="slds-col slds-size_2-of-12">
+                        <div>
+                            <strong>Planes</strong>
+                        </div>
+                        <div>                        
+                            <lightning-dual-listbox 
+                                name="Planes"
+                                options={planOptions}
+                                value={account.Planes}
+                                onchange={handlePlanChange}
+                                data-account-id={account.Id}
+                                min={min}
+                                message-when-range-underflow="Seleccionar al menos un plan"
+                            >
+                            </lightning-dual-listbox>
+                        </div>
+                    </div>
+                    <div if:false={recordId} class="slds-col slds-size_1-of-12"></div>
+                    <!-- DEF Fields -->      
+                    <div class="slds-col slds-size_8-of-12">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_6-of-12 slds-text-body-medium"><strong>Campos</strong></div>
+                            <div class="slds-col slds-size_2-of-12 slds-text-body-medium"><strong>Aplica</strong></div>
+                            <div class="slds-col slds-size_2-of-12 slds-text-body-medium"><strong>Valor</strong></div>
+                        </div>
+                        <template for:each={account.CamposDEF} for:item="field">
+                            <div class="slds-grid slds-gutters" key={field.Campo}>
+                                <div class="slds-col slds-size_6-of-12 slds-var-m-top_large">{field.Campo}</div>
+                                <div class="slds-col slds-size_2-of-12">
+                                    <lightning-combobox 
+                                        name={field.Campo} 
+                                        disabled={isReadOnly}
+                                        options={applicableOptions} 
+                                        onchange={handleAplicaChange}
+                                        value={field.Aplica}
+                                        data-account-id={account.Id}
+                                    >
+                                    </lightning-combobox>
+                                </div>
+                                <div if:true={field.isNumber} class="slds-col slds-size_4-of-12">
+                                    <lightning-input
+                                        if:true={field.isVisibleValor}
+                                        disabled={isReadOnly}
+                                        type="number"
+                                        name={field.Campo}
+                                        value={field.Valor}
+                                        onchange={handleValorChange}
+                                        data-account-id={account.Id}
+                                        >
+                                    </lightning-input>
+                                </div>
+                                <div if:true={field.isPercent} class="slds-col slds-size_4-of-12">
+                                    <lightning-input
+                                        if:true={field.isVisibleValor}
+                                        disabled={isReadOnly}
+                                        type="number"
+                                        name={field.Campo}
+                                        value={field.Valor}
+                                        formatter="percent-fixed"
+                                        step=".01"
+                                        min="0"
+                                        message-when-range-underflow="Ingresar un valor entre 0 y 100"
+                                        message-when-range-overflow="Ingresar un valor entre 0 y 100"
+                                        max="100"
+                                        onchange={handleValorChange}
+                                        data-account-id={account.Id}
+                                    >
+                                    </lightning-input>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                    <div if:false={recordId} class="slds-col slds-size_1-of-12">
+                        <lightning-button
+                            disabled={account.plansSelected}
+                            variant="brand"
+                            label="Guardar"
+                            onclick={saveDEF}
+                            data-account-id={account.Id}
+                        >
+                        </lightning-button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </template>
+    <lightning-button
+        if:false={recordId}
+        label="Agregar DEF"
+        onclick={addNewDEF}
+        disabled={disableNewDEF}
+    >
+    </lightning-button>
+    <template if:true={showSpinner}>
+        <div id="activityIndicator" class="slds-spinner_container">
+            <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+                <span class="slds-assistive-text">Loading, Please Wait...</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>45.0</apiVersion>
+  <isExposed>true</isExposed>
+  <masterLabel>zrh Vlocity Insurance Quote</masterLabel>
+  <targets>
+    <target>lightning__RecordPage</target>
+    <target>lightning__AppPage</target>
+    <target>lightning__HomePage</target>
+    <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage">
+      <property name="enableDebugMode" type="Boolean" label="Enable Debug Mode" description="Show Rules Log for Attribute"/>
+      <property name="priceQuoteAsync" type="Boolean" label="Enable Async Price Quote" description="Use LWCDatasource async for higher volume Apex Remote calls"/>
+      <property name="showActions" type="Boolean" label="Show Actions" description="Show Actions for Quote"/>
+      <property name="showProductButton" type="Boolean" label="Show Product Button" description="Show Product Button for Quote"/>
+      <property name="enableClone" type="Boolean" label="Enable Product Cloning" description="Enable Product Cloning"/>
+      <property name="enableDelete" type="Boolean" label="Enable Product Deleting" description="Enable Product Deleting"/>
+      <property name="editPanelMode" type="Boolean" label="Edit Panel Mode" description="Display Product Details with Side Panel View"/>
+      <property name="enableGroupClasses" type="Boolean" label="Enable Group Classes" description="Enable Group Classes"/>
+      <property name="isMultiRoot" type="Boolean" label="Is Multi-Root Product" description="Enable Multi-root View"/>
+      <property name="useRatingFact" type="Boolean" label="Use Rating Fact" description="Use Rating Fact"/>
+      <property name="isBatchMode" type="Boolean" label="Enable Batch Mode" description="Enable Batch Mode if Rating Fact is Used"/>
+      <property name="showCoverageDescriptions" type="Boolean" label="Show Coverage Descriptions" description="Display Coverage Descriptions if set under the 'Product Description' field on the Coverage Product Detail Page"/>
+      <supportedFormFactors>
+        <supportedFormFactor type="Small"/>
+        <supportedFormFactor type="Large"/>
+      </supportedFormFactors>
+    </targetConfig>
+    <targetConfig targets="lightningCommunity__Default">
+      <property name="recordId" type="String" label="Record ID" default="{!recordId}" description="Should be Set to {!recordId} in Community"/>
+      <property name="enableDebugMode" type="Boolean" label="Enable Debug Mode" description="Show Rules Log for Attribute"/>
+      <property name="priceQuoteAsync" type="Boolean" label="Enable Async Price Quote" description="Use LWCDatasource async for higher volume Apex Remote calls"/>
+      <property name="showActions" type="Boolean" label="Show Actions" description="Show Actions for Quote"/>
+      <property name="showProductButton" type="Boolean" label="Show Product Button" description="Show Product Button for Quote"/>
+      <property name="enableClone" type="Boolean" label="Enable Product Cloning" description="Enable Product Cloning"/>
+      <!--<property name="enableDelete" type="Boolean" label="Enable Product Deleting" description="Enable Product Deleting"/> -->
+      <property name="editPanelMode" type="Boolean" label="Edit Panel Mode" description="Display Product Details with Side Panel View"/>
+      <property name="enableGroupClasses" type="Boolean" label="Enable Group Classes" description="Enable Group Classes"/>
+      <property name="isMultiRoot" type="Boolean" label="Is Multi-Root Product" description="Enable Multi-root View"/>
+      <property name="useRatingFact" type="Boolean" label="Use Rating Fact" description="Use Rating Fact"/>
+      <property name="isBatchMode" type="Boolean" label="Enable Batch Mode" description="Enable Batch Mode if Rating Fact is Used"/>
+      <property name="showCoverageDescriptions" type="Boolean" label="Show Coverage Descriptions" description="Display Coverage Descriptions if set under the 'Product Description' field on the Coverage Product Detail Page"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

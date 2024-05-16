@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla de solicitud para aprobación de autoridades de suscripción</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Plantilla aprobaciones</name>
+    <style>none</style>
+    <subject>Solicitud de aprobación</subject>
+    <textOnly>Se ha solicitado su aprobación para la siguiente cotización: {!Quote.Link}  Haga clic en este vínculo para aprobar o rechazar este registro.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

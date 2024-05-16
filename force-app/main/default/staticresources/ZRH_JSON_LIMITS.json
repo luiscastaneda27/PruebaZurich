@@ -1,0 +1,43 @@
+{
+  "TopesGrupoCobertura": [
+    {
+      "Id": 1,
+      "Tope": "TMA",
+      "TopeLabel": "Tope Máximo Anual",
+      "Agrupacion": "A",
+      "AgrupacionLabel": "Asegurado",
+      "Rol": "a488B000000DaeFQAS",
+      "RolLabel": null,
+      "GrupoCobertura": "2",
+      "GrupoCoberturaLabel": "MATERNIDAD",
+      "Valor": "1",
+      "ValorDeducible": "3",
+      "NroPrestAnuales": "1"
+    }
+  ],
+  "TopesPoliza": [
+    {
+      "Id": 2,
+      "Tope": "TME",
+      "TopeLabel": "Tope Máximo por Evento",
+      "Agrupacion": "G",
+      "AgrupacionLabel": "Grupo Familiar",
+      "Rol": "a488B000000DaeFQAS",
+      "RolLabel": null,
+      "Valor": "1",
+      "ValorDeducible": "2",
+      "NroPrestAnuales": "2"
+    }
+  ],
+  "TopesAdicional": [
+    {
+      "Id": 1,
+      "Tope": "494",
+      "TopeLabel": "494 - KINESIOLOGIA IMED",
+      "Alternativa": "Si",
+      "Rol": "a488B000000DaeFQAS",
+      "RolLabel": null,
+      "Valor": 1
+    }
+  ]
+}

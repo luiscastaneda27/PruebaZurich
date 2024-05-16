@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom Metadata Type que almacena las traducciones funcionales de los JSON tags de los campos ZRH_Tarifa__c, ZRH_AtributosRequisitosAsegurabilidad__c,  ZRH_AtributosReqMedicosSeleccionado__c.
+,</description>
+    <label>Configuración de Traducción</label>
+    <pluralLabel>Configuración de Traducción</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

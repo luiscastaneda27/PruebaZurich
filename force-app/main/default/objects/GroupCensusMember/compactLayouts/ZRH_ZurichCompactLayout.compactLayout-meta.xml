@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ZurichCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>FirstName</fields>
+    <fields>Lastname</fields>
+    <fields>ZRH_Estado__c</fields>
+    <fields>RelationshipToPrimaryMember</fields>
+    <label>Zurich Compact Layout</label>
+</CompactLayout>

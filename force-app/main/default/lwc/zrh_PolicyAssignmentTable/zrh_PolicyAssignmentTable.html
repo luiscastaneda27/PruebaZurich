@@ -1,0 +1,18 @@
+<template>
+    <div class="policy-table">
+      <!-- sldsValidatorIgnoreNextLine -->
+      <lightning-datatable
+        key-field="id"
+        show-row-number-column
+        columns={columns}
+        data={data}
+        onrowselection={onRowSelection}
+      ></lightning-datatable>
+    </div>
+    <lightning-button 
+      variant="brand"
+      label="Asignar" 
+      onclick={handleClick} 
+      disabled={noSelectedRows}
+    ></lightning-button>
+</template>

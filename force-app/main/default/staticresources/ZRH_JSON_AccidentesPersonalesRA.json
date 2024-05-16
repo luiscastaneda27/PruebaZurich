@@ -1,0 +1,43 @@
+[
+  {
+    "Parentesco": "Titular",
+    "EdadMinimaIngresoP": 12,
+    "EdadSalidaP": 45,
+    "DPSCapitalIgualMayorP": 45,
+    "EdadDPSP": 45,
+    "EdadTopeIngresoP": 52
+  },
+  {
+    "Parentesco": "Hijo/a"
+  },
+  {
+    "Parentesco": "Hijos Duplos"
+  },
+  {
+    "Parentesco": "Cónyuge"
+  },
+  {
+    "Parentesco": "Beneficiario"
+  },
+  {
+    "Parentesco": "Empresa"
+  },
+  {
+    "Parentesco": "Hijastro (a)"
+  },
+  {
+    "Parentesco": "Nieto"
+  },
+  {
+    "Parentesco": "Otros"
+  },
+  {
+    "Parentesco": "Padres"
+  },
+  {
+    "Parentesco": "Sobrino (a)"
+  },
+  {
+    "Parentesco": "Conviviente Civil"
+  }
+]

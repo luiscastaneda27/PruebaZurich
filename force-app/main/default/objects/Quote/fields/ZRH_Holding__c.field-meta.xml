@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Holding__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Campo relación a cuenta Holding</description>
+    <externalId>false</externalId>
+    <label>Holding</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Quotes (Holding)</relationshipLabel>
+    <relationshipName>Quotes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

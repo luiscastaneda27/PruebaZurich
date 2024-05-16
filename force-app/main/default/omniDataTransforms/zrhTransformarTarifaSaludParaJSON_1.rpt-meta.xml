@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;SubtarifasSalud&quot; : {
+    &quot;SubtarifaSalud&quot; : [ {
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;CodigoSubtipoTarifa&quot; : 0,
+      &quot;DescTarifaSalud&quot; : &quot;EMPRESA&quot;,
+      &quot;TarifaSaludNT&quot; : 1,
+      &quot;TarifaSaludPV&quot; : 1,
+      &quot;TarifaSaludPP&quot; : 1
+    } ],
+    &quot;TotalTarifaSalud&quot; : {
+      &quot;TotalTarifaSaludNT&quot; : 0,
+      &quot;TotalTarifaSaludPV&quot; : 0,
+      &quot;TotalTarifaSaludPP&quot; : 0
+    },
+    &quot;IngresoAlgunValorATarifaSalud&quot; : false,
+    &quot;IdTipoTarifa&quot; : &quot;1&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;SubtarifasSalud&quot; : {
+    &quot;SubtarifaSalud&quot; : [ {
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;CodigoSubtipoTarifa&quot; : 0,
+      &quot;DescTarifaSalud&quot; : &quot;EMPRESA&quot;,
+      &quot;TarifaSaludNT&quot; : 1,
+      &quot;TarifaSaludPV&quot; : 1,
+      &quot;TarifaSaludPP&quot; : 1
+    }, {
+      &quot;EdadInicio1&quot; : null,
+      &quot;EdadTermino1&quot; : null,
+      &quot;CodigoSubtipoTarifa1&quot; : 0,
+      &quot;DescTarifaSalud1&quot; : &quot;EMPRESA&quot;,
+      &quot;TarifaSaludNT1&quot; : 1,
+      &quot;TarifaSaludPV1&quot; : 1,
+      &quot;TarifaSaludPP1&quot; : 1
+    } ]
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarTarifaSaludParaJSON</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom4586</globalKey>
+        <inputFieldName>SubtarifasSalud:TotalTarifaSalud:TotalTarifaSaludNT</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaSalud:TarifaSaludNT</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom3373</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>TotalTarifaSalud</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom3551</globalKey>
+        <inputFieldName>SubtarifasSalud:TotalTarifaSalud:TotalTarifaSaludPP</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaSalud:TarifaSaludPP</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom5690</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:TarifaSaludPV</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:TarifaSaludPV</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom2808</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:DescTarifaSalud</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:DescTarifaSalud</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom9303</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:EdadTermino</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:EdadTermino</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom3477</globalKey>
+        <inputFieldName>SubtarifasSalud:TotalTarifaSalud:TotalTarifaSaludPV</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaSalud:TarifaSaludPV</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom3692</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:EdadInicio</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:EdadInicio</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom1809</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:CodigoSubtipoTarifa</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:CodigoSubtipoTarifa</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom6291</globalKey>
+        <inputFieldName>Total</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaSalud:DescTarifaSalud</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom6038</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:TarifaSaludNT</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:TarifaSaludNT</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;TOTAL&quot;</formulaConverted>
+        <formulaExpression>&quot;TOTAL&quot;</formulaExpression>
+        <formulaResultPath>Total</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom6305</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaSaludParaJSONCustom8316</globalKey>
+        <inputFieldName>SubtarifasSalud:TarifaSalud:TarifaSaludPP</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaSaludParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaSalud:TarifaSaludPP</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SubtarifasSalud&quot; : {
+    &quot;IdTipoTarifa&quot; : &quot;1&quot;,
+    &quot;IngresoAlgunValorATarifaSalud&quot; : true,
+    &quot;TarifaSalud&quot; : [ {
+      &quot;CodigoSubtipoTarifa&quot; : 0,
+      &quot;EdadInicio&quot; : null,
+      &quot;TarifaSaludPV&quot; : 1,
+      &quot;TarifaSaludNT&quot; : 1,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;EMPRESA&quot;,
+      &quot;TarifaSaludPP&quot; : 1
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 1,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;TITULAR&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 2,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;CONYUGE&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 3,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;HIJO&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 4,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;OTRO&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 5,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;CONYUGE (M)&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 6,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;HIJO (TM)&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 7,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;PADRE/MADRE DEL TITULAR&quot;
+    }, {
+      &quot;CodigoSubtipoTarifa&quot; : 9,
+      &quot;EdadInicio&quot; : null,
+      &quot;EdadTermino&quot; : null,
+      &quot;DescTarifaSalud&quot; : &quot;NIETO&quot;
+    } ],
+    &quot;TotalTarifaSalud&quot; : {
+      &quot;TotalTarifaSaludPP&quot; : 1,
+      &quot;TotalTarifaSaludPV&quot; : 1,
+      &quot;TotalTarifaSaludNT&quot; : 1
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarTarifaSaludParaJSON_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

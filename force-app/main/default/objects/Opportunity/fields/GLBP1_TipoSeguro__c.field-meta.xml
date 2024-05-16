@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_TipoSeguro__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de seguro</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Seguro de Vida.</fullName>
+                <default>false</default>
+                <label>Seguro de Vida.</label>
+            </value>
+            <value>
+                <fullName>Seguro de vida con ahorro (SVA)</fullName>
+                <default>false</default>
+                <label>Seguro de vida con ahorro (SVA)</label>
+            </value>
+            <value>
+                <fullName>Seguro de Vida con Ahorro Previsional Voluntario (APV o APVC)</fullName>
+                <default>false</default>
+                <label>Seguro de Vida con Ahorro Previsional Voluntario (APV o APVC)</label>
+            </value>
+            <value>
+                <fullName>Rentas Vitalicias Previsionales.</fullName>
+                <default>false</default>
+                <label>Rentas Vitalicias Previsionales.</label>
+            </value>
+            <value>
+                <fullName>Seguro de Salud.</fullName>
+                <default>false</default>
+                <label>Seguro de Salud.</label>
+            </value>
+            <value>
+                <fullName>Seguro de Accidentes Personales.</fullName>
+                <default>false</default>
+                <label>Seguro de Accidentes Personales.</label>
+            </value>
+            <value>
+                <fullName>Seguro Obligatorio de Accidentes Personales (SOAP)</fullName>
+                <default>false</default>
+                <label>Seguro Obligatorio de Accidentes Personales (SOAP)</label>
+            </value>
+            <value>
+                <fullName>TS1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TS1</label>
+            </value>
+            <value>
+                <fullName>TS2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TS2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

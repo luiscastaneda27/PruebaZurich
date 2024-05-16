@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Producto_recomendado__c</fullName>
+    <externalId>false</externalId>
+    <label>Producto recomendado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Producto 3</fullName>
+                <default>false</default>
+                <label>Producto 3</label>
+            </value>
+            <value>
+                <fullName>Elige tu hogar</fullName>
+                <default>false</default>
+                <label>Elige tu hogar</label>
+            </value>
+            <value>
+                <fullName>Seguro Hogar Contenido</fullName>
+                <default>false</default>
+                <label>Seguro Hogar Contenido</label>
+            </value>
+            <value>
+                <fullName>Bolso Protegido</fullName>
+                <default>false</default>
+                <label>Bolso Protegido</label>
+            </value>
+            <value>
+                <fullName>Sala Urgencia</fullName>
+                <default>false</default>
+                <label>Sala Urgencia</label>
+            </value>
+            <value>
+                <fullName>Seguro Multiasistencia</fullName>
+                <default>false</default>
+                <label>Seguro Multiasistencia</label>
+            </value>
+            <value>
+                <fullName>Resp. Civil VEHICULO PARTICULAR</fullName>
+                <default>false</default>
+                <label>Resp. Civil VEHICULO PARTICULAR</label>
+            </value>
+            <value>
+                <fullName>Resp. Civil + Pérdida total VEHICULO PARTICULAR</fullName>
+                <default>false</default>
+                <label>Resp. Civil + Pérdida total VEHICULO PARTICULAR</label>
+            </value>
+            <value>
+                <fullName>Resp. Civil VEHICULO COMERCIAL</fullName>
+                <default>false</default>
+                <label>Resp. Civil VEHICULO COMERCIAL</label>
+            </value>
+            <value>
+                <fullName>Resp. Civil + Pérdida total VEHICULO COMERCIAL</fullName>
+                <default>false</default>
+                <label>Resp. Civil + Pérdida total VEHICULO COMERCIAL</label>
+            </value>
+            <value>
+                <fullName>AUTO ELÍGELO PREFERENTE VEHÍCULO COMERCIAL</fullName>
+                <default>false</default>
+                <label>AUTO ELÍGELO PREFERENTE VEHÍCULO COMERCIAL</label>
+            </value>
+            <value>
+                <fullName>AUTO ELÍGELO MARCA VEHÍCULO COMERCIAL</fullName>
+                <default>false</default>
+                <label>AUTO ELÍGELO MARCA VEHÍCULO COMERCIAL</label>
+            </value>
+            <value>
+                <fullName>AUTO ELÍGELO MULTIMARCA VEHÍCULO COMERCIAL</fullName>
+                <default>false</default>
+                <label>AUTO ELÍGELO MULTIMARCA VEHÍCULO COMERCIAL</label>
+            </value>
+            <value>
+                <fullName>AUTO ELÍGELO PREFERENTE VEHÍCULO PARTICULAR</fullName>
+                <default>false</default>
+                <label>AUTO ELÍGELO PREFERENTE VEHÍCULO PARTICULAR</label>
+            </value>
+            <value>
+                <fullName>AUTO ELÍGELO MARCA VEHÍCULO PARTICULAR</fullName>
+                <default>false</default>
+                <label>AUTO ELÍGELO MARCA VEHÍCULO PARTICULAR</label>
+            </value>
+            <value>
+                <fullName>AUTO ELÍGELO MULTIMARCA VEHÍCULO PARTICULAR</fullName>
+                <default>false</default>
+                <label>AUTO ELÍGELO MULTIMARCA VEHÍCULO PARTICULAR</label>
+            </value>
+            <value>
+                <fullName>Producto 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Producto 1</label>
+            </value>
+            <value>
+                <fullName>Producto 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Producto 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

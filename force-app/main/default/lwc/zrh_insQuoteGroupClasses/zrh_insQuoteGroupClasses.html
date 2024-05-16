@@ -1,0 +1,37 @@
+<template>
+    <div if:false={isLoaded}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </div>
+    <template for:each={groupClasses} for:item="groupClass">
+        <vlocity_ins-menu
+            key={groupClass.Id}
+            label={groupClass.Name}
+            onclick={stopPropagation}
+            variant="neutral"
+            icon-name=""
+            class="slds-m-right_xx-small slds-m-bottom_xx-small"
+        >
+            <vlocity_ins-menu-item
+                if:false={isReadonly}
+                label={labels.removeGroupClass}
+                data-group-class-id={groupClass.Id}
+                onclick={removeQliGroupClass}
+            ></vlocity_ins-menu-item>
+        </vlocity_ins-menu>
+    </template>
+    <vlocity_ins-button
+        theme={theme}
+        variant="neutral"
+        icon-name="utility:add"
+        icon-position="left"
+        label={labels.InsQuotesGroupClass}
+        class="slds-m-right_xx-small slds-m-bottom_xx-small"
+        onclick={openModal}
+        if:false={isReadonly}
+    ></vlocity_ins-button>
+    <vlocity_ins-ins-quote-group-classes-modal
+        class="vloc-ins-group-classes-modal"
+        theme={theme}
+        onassociategroupclasses={associateGroupClassesToLine}
+    ></vlocity_ins-ins-quote-group-classes-modal>
+</template>

@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;TarifaEscolaridad&quot; : {
+    &quot;Niveles&quot; : {
+      &quot;GrupoEscolaridad&quot; : &quot;Text&quot;,
+      &quot;TasaMensualEsc&quot; : &quot;Text&quot;,
+      &quot;PrimaMensualEsc&quot; : &quot;Text&quot;,
+      &quot;CodigoNivel&quot; : &quot;Text&quot;,
+      &quot;TasaAnualEsc&quot; : &quot;Text&quot;,
+      &quot;NAseguradosEsc&quot; : &quot;Text&quot;,
+      &quot;PrimaAnualEsc&quot; : &quot;Text&quot;,
+      &quot;CapAsegEsc&quot; : &quot;Text&quot;,
+      &quot;DescripcionNivel&quot; : &quot;Text&quot;
+    },
+    &quot;CodigoCobertura&quot; : &quot;Text&quot;,
+    &quot;NombreCobertura&quot; : &quot;Text&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;TarifaEscolaridad&quot; : {
+    &quot;Niveles&quot; : {
+      &quot;GrupoEscolaridad&quot; : &quot;Text&quot;,
+      &quot;TasaMensualEsc&quot; : &quot;Text&quot;,
+      &quot;PrimaMensualEsc&quot; : &quot;Text&quot;,
+      &quot;CodigoNivel&quot; : &quot;Text&quot;,
+      &quot;TasaAnualEsc&quot; : &quot;Text&quot;,
+      &quot;NAseguradosEsc&quot; : &quot;Text&quot;,
+      &quot;PrimaAnualEsc&quot; : &quot;Text&quot;,
+      &quot;CapAsegEsc&quot; : &quot;Text&quot;,
+      &quot;DescripcionNivel&quot; : &quot;Text&quot;
+    },
+    &quot;CodigoCobertura&quot; : &quot;Text&quot;,
+    &quot;NombreCobertura&quot; : &quot;Text&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom2467</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:PrimaAnualVigenteEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:PrimaAnualVigenteEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom8805</globalKey>
+        <inputFieldName>TotalCoberturasPropuesta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalCoberturas:PrimaAnualPropuesta</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom2080</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:TasaAnualVigenteEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:TasaAnualVigenteEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom3423</globalKey>
+        <inputFieldName>TotalCoberturasVigente</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalCoberturas:PrimaAnualVigente</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom7159</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:CapAsegEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:CapAsegEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom7667</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>TarifaEscolaridad:Niveles</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom1654</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>TarifaEscolaridad</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom7366</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:NAseguradosEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:NAseguradosEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom8608</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:DescripcionNivel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:DescripcionNivel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom9725</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:TasaMensualVigenteEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:TasaMensualVigenteEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom846</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:TasaAnualEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:TasaAnualEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom727</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:TasaMensualEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:TasaMensualEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom5226</globalKey>
+        <inputFieldName>TarifaEscolaridad:CodigoCobertura</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:CodigoCobertura</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom8083</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:PrimaAnualEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:PrimaAnualEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom9638</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:PrimaMensualVigenteEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:PrimaMensualVigenteEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom5039</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:PrimaMensualEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:PrimaMensualEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;TOTAL&quot;</formulaConverted>
+        <formulaExpression>&quot;TOTAL&quot;</formulaExpression>
+        <formulaResultPath>Total</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSON02338000506936444</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom4623</globalKey>
+        <inputFieldName>TarifaEscolaridad:NombreCobEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:NombreCobEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTarifaEscolaridadParaJSONCustom7752</globalKey>
+        <inputFieldName>TarifaEscolaridad:Niveles:CodigoNivel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTarifaEscolaridadParaJSON</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TarifaEscolaridad:Niveles:CodigoNivel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Coberturas&quot; : [ {
+    &quot;LoopBlockIterationIndex&quot; : 1,
+    &quot;ArmarTarifaEscolaridadStatus&quot; : true,
+    &quot;TransformarTarifaEscolaridadParaJSONStatus&quot; : true,
+    &quot;LoopBlockIterationStatus&quot; : true,
+    &quot;Niveles&quot; : [ {
+      &quot;PrimaMensualEsc&quot; : 0.83,
+      &quot;CodigoNivel&quot; : &quot;0&quot;,
+      &quot;TasaAnualEsc&quot; : 100,
+      &quot;DescripcionNivel&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+      &quot;TasaMensualEsc&quot; : 8.33,
+      &quot;PrimaAnualEsc&quot; : 10,
+      &quot;CapAsegEsc&quot; : 100,
+      &quot;NAseguradosEsc&quot; : 100,
+      &quot;GrupoEscolaridad&quot; : &quot;Pre Escolar&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;PK&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRE KINDER&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Pre Kinder&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;KI&quot;,
+      &quot;DescripcionNivel&quot; : &quot;KINDER&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Kinder&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;6B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;7B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEPTIMO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;8B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;OCTAVO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;6Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;17&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;27&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;37&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;47&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;57&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;67&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;77&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0.83,
+      &quot;DescripcionNivel&quot; : &quot;TOTAL&quot;,
+      &quot;PrimaAnualEsc&quot; : 10,
+      &quot;CapAsegEsc&quot; : 100,
+      &quot;NAseguradosEsc&quot; : 100
+    } ]
+  }, {
+    &quot;LoopBlockIterationIndex&quot; : 2,
+    &quot;ArmarTarifaEscolaridadStatus&quot; : true,
+    &quot;TransformarTarifaEscolaridadParaJSONStatus&quot; : true,
+    &quot;LoopBlockIterationStatus&quot; : true,
+    &quot;Niveles&quot; : [ {
+      &quot;PrimaMensualEsc&quot; : 3.33,
+      &quot;CodigoNivel&quot; : &quot;0&quot;,
+      &quot;TasaAnualEsc&quot; : 200,
+      &quot;DescripcionNivel&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+      &quot;TasaMensualEsc&quot; : 16.67,
+      &quot;PrimaAnualEsc&quot; : 40,
+      &quot;CapAsegEsc&quot; : 200,
+      &quot;NAseguradosEsc&quot; : 200,
+      &quot;GrupoEscolaridad&quot; : &quot;Pre Escolar&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;PK&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRE KINDER&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Pre Kinder&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;KI&quot;,
+      &quot;DescripcionNivel&quot; : &quot;KINDER&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Kinder&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;6B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;7B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEPTIMO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;8B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;OCTAVO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;6Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;17&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;27&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;37&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;47&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;57&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;67&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;77&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 3.33,
+      &quot;DescripcionNivel&quot; : &quot;TOTAL&quot;,
+      &quot;PrimaAnualEsc&quot; : 40,
+      &quot;CapAsegEsc&quot; : 200,
+      &quot;NAseguradosEsc&quot; : 200
+    } ]
+  }, {
+    &quot;LoopBlockIterationIndex&quot; : 3,
+    &quot;ArmarTarifaEscolaridadStatus&quot; : true,
+    &quot;TransformarTarifaEscolaridadParaJSONStatus&quot; : true,
+    &quot;LoopBlockIterationStatus&quot; : true,
+    &quot;Niveles&quot; : [ {
+      &quot;PrimaMensualEsc&quot; : 7.5,
+      &quot;CodigoNivel&quot; : &quot;0&quot;,
+      &quot;TasaAnualEsc&quot; : 300,
+      &quot;DescripcionNivel&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+      &quot;TasaMensualEsc&quot; : 25,
+      &quot;PrimaAnualEsc&quot; : 90,
+      &quot;CapAsegEsc&quot; : 300,
+      &quot;NAseguradosEsc&quot; : 300,
+      &quot;GrupoEscolaridad&quot; : &quot;Pre Escolar&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;PK&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRE KINDER&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Pre Kinder&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;KI&quot;,
+      &quot;DescripcionNivel&quot; : &quot;KINDER&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Kinder&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;6B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;7B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEPTIMO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;8B&quot;,
+      &quot;DescripcionNivel&quot; : &quot;OCTAVO BASICO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Básica&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4M&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO MEDIO&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Media&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5S&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 5 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;1Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;2Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;3Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;4Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;5Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;6Z&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 6 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;17&quot;,
+      &quot;DescripcionNivel&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;27&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;37&quot;,
+      &quot;DescripcionNivel&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;47&quot;,
+      &quot;DescripcionNivel&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;57&quot;,
+      &quot;DescripcionNivel&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;67&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 0,
+      &quot;CodigoNivel&quot; : &quot;77&quot;,
+      &quot;DescripcionNivel&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;,
+      &quot;TasaMensualEsc&quot; : 0,
+      &quot;PrimaAnualEsc&quot; : 0,
+      &quot;GrupoEscolaridad&quot; : &quot;Superior 7 Años&quot;
+    }, {
+      &quot;PrimaMensualEsc&quot; : 7.5,
+      &quot;DescripcionNivel&quot; : &quot;TOTAL&quot;,
+      &quot;PrimaAnualEsc&quot; : 90,
+      &quot;CapAsegEsc&quot; : 300,
+      &quot;NAseguradosEsc&quot; : 300
+    } ]
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarTarifaEscolaridadParaJSON_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

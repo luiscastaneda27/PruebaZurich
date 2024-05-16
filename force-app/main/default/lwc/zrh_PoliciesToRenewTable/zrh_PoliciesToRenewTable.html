@@ -1,0 +1,65 @@
+<template>
+  <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+    <thead class="header-style">
+      <tr class="slds-line-height_reset">
+        <th class="header-style" scope="col">
+          <lightning-input 
+            type="checkbox"
+            onchange={handleFullSelection}
+          ></lightning-input>
+        </th>
+        <th class="header-style" scope="col">
+          <div class="slds-truncate" title="Opportunity Name">Nombre Contratante</div>
+        </th>
+        <th class="header-style" scope="col">
+          <div class="slds-truncate" title="Account Name">Folio</div>
+        </th>
+        <th class="header-style" scope="col">
+          <div class="slds-truncate" title="Close Date">Período</div>
+        </th>
+        <th class="header-style" scope="col">
+          <div class="slds-truncate" title="Stage">Fecha Fin Vigencia</div>
+        </th>
+        <th class="header-style" scope="col">
+          <div class="slds-truncate" title="Confidence">Cod. Plan</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <template for:each={data} for:item="row">
+        <tr key={row.id} class={row.rowClass}>
+          <td data-label="Selector">
+            <lightning-input 
+            type="checkbox"
+            onchange={handleRowSelection}
+            data-id={row.id}
+            checked={row.checked}
+            ></lightning-input>
+          </td>
+          <td data-label="policyHolderName" scope="row">
+            <div class="slds-truncate">
+              <template if:false={row.isAccount}>
+                <span class="icon-spacing">
+                    <lightning-icon icon-name="utility:contract_doc" size="x-small" alternative-text="Info"></lightning-icon>
+                </span>
+              </template>
+              {row.accountName}
+            </div>
+          </td>
+          <td data-label="folio">
+          <div class="slds-truncate">{row.folio}</div>
+          </td>
+          <td data-label="period">
+            <div class="slds-truncate">{row.period}</div>
+          </td>
+          <td data-label="policyEndDate">
+            <div class="slds-truncate">{row.policyEndDate}</div>
+          </td>
+          <td data-label="plan">
+            <div class="slds-truncate">{row.planCode}</div>
+          </td>
+        </tr>
+      </template>
+      </tbody>
+    </table>
+  </template>

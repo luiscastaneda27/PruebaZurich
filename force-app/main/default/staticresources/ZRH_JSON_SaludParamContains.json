@@ -1,0 +1,18 @@
+[
+  {
+    "field": "ZRH_AtributosBMI__c",
+    "typeCondition": "contains",
+    "sourceObject": "QuoteLineItem",
+    "typeObject": "field",
+    "typeOperation": "condition",
+    "value": "BMI 60%"
+  },
+  {
+    "field": "ZRH_AtributosBMI__c",
+    "typeCondition": "contains",
+    "sourceObject": "QuoteLineItem",
+    "typeObject": "field",
+    "typeOperation": "condition",
+    "value": "Alto Costo"
+  }
+]

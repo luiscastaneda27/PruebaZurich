@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>[JN][SFCLP-1016]Tabla requistos medicos</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Id&quot; : &quot;%ContextId%&quot;,
+  &quot;RangoHasta&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoHasta%&quot;,
+  &quot;RangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoEntre1%&quot;,
+  &quot;RangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoEntre2%&quot;,
+  &quot;RangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoEntre3%&quot;,
+  &quot;RangoSobre&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoSobre%&quot;,
+  &quot;EdadInferior&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferior%&quot;,
+  &quot;EdadInferiorRangoHasta&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoHasta%&quot;,
+  &quot;EdadInferiorRangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoEntre1%&quot;,
+  &quot;EdadInferiorRangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoEntre2%&quot;,
+  &quot;EdadInferiorRangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoEntre3%&quot;,
+  &quot;EdadInferiorRangoSobre&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoSobre%&quot;,
+  &quot;EdadMedio&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedio%&quot;,
+  &quot;EdadMedioRangoHasta&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoHasta%&quot;,
+  &quot;EdadMedioRangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoEntre1%&quot;,
+  &quot;EdadMedioRangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoEntre2%&quot;,
+  &quot;EdadMedioRangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoEntre3%&quot;,
+  &quot;EdadMedioRangoSobre&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoSobre%&quot;,
+  &quot;EdadSuperior&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperior%&quot;,
+  &quot;EdadSuperiorRangoHasta&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoHasta%&quot;,
+  &quot;EdadSuperiorRangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoEntre1%&quot;,
+  &quot;EdadSuperiorRangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoEntre2%&quot;,
+  &quot;EdadSuperiorRangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoEntre3%&quot;,
+  &quot;EdadSuperiorRangoSobre&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoSobre%&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTrasformarDataRequisitosMedicos</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom6519</globalKey>
+        <inputFieldName>EdadInferiorRangoHasta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadInferiorRangoHasta</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom8963</globalKey>
+        <inputFieldName>EdadMedioRangoSobre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadMedioRangoSobre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom5135</globalKey>
+        <inputFieldName>EdadInferiorRangoSobre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadInferiorRangoSobre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom3763</globalKey>
+        <inputFieldName>RangoSobre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:RangoSobre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom1141</globalKey>
+        <inputFieldName>RangoEntre1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:RangoEntre1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom245</globalKey>
+        <inputFieldName>EdadSuperiorRangoEntre1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadSuperiorRangoEntre1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom7149</globalKey>
+        <inputFieldName>EdadSuperiorRangoHasta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadSuperiorRangoHasta</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom63</globalKey>
+        <inputFieldName>EdadMedioRangoHasta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadMedioRangoHasta</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom1942</globalKey>
+        <inputFieldName>EdadInferiorRangoEntre2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadInferiorRangoEntre2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom1366</globalKey>
+        <inputFieldName>EdadSuperiorRangoSobre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadSuperiorRangoSobre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom3509</globalKey>
+        <inputFieldName>EdadInferiorRangoEntre3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadInferiorRangoEntre3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom342</globalKey>
+        <inputFieldName>EdadMedioRangoEntre1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadMedioRangoEntre1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom8623</globalKey>
+        <inputFieldName>RangoEntre2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:RangoEntre2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom4113</globalKey>
+        <inputFieldName>EdadSuperiorRangoEntre2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadSuperiorRangoEntre2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom8945</globalKey>
+        <inputFieldName>EdadMedioRangoEntre2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadMedioRangoEntre2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom7569</globalKey>
+        <inputFieldName>EdadInferior</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadInferior</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom1065</globalKey>
+        <inputFieldName>RangoEntre3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:RangoEntre3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom8783</globalKey>
+        <inputFieldName>RangoHasta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:RangoHasta</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom7174</globalKey>
+        <inputFieldName>EdadMedioRangoEntre3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadMedioRangoEntre3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom4419</globalKey>
+        <inputFieldName>EdadSuperiorRangoEntre3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadSuperiorRangoEntre3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom7984</globalKey>
+        <inputFieldName>EdadMedio</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadMedio</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom5633</globalKey>
+        <inputFieldName>EdadInferiorRangoEntre1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadInferiorRangoEntre1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTrasformarDataRequisitosMedicosCustom5387</globalKey>
+        <inputFieldName>EdadSuperior</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTrasformarDataRequisitosMedicos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RequisitosMedicos:EdadSuperior</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Id&quot; : &quot;%ContextId%&quot;,
+  &quot;RangoHasta&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoHasta%&quot;,
+  &quot;RangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoEntre1%&quot;,
+  &quot;RangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoEntre2%&quot;,
+  &quot;RangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoEntre3%&quot;,
+  &quot;RangoSobre&quot; : &quot;%GestionarRequisitosMedicos:RequisitosMedicosRangos:RangoSobre%&quot;,
+  &quot;EdadInferior&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferior%&quot;,
+  &quot;EdadInferiorRangoHasta&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoHasta%&quot;,
+  &quot;EdadInferiorRangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoEntre1%&quot;,
+  &quot;EdadInferiorRangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoEntre2%&quot;,
+  &quot;EdadInferiorRangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoEntre3%&quot;,
+  &quot;EdadInferiorRangoSobre&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadInferior:EdadInferiorRangoSobre%&quot;,
+  &quot;EdadMedio&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedio%&quot;,
+  &quot;EdadMedioRangoHasta&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoHasta%&quot;,
+  &quot;EdadMedioRangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoEntre1%&quot;,
+  &quot;EdadMedioRangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoEntre2%&quot;,
+  &quot;EdadMedioRangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoEntre3%&quot;,
+  &quot;EdadMedioRangoSobre&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadMedio:EdadMedioRangoSobre%&quot;,
+  &quot;EdadSuperior&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperior%&quot;,
+  &quot;EdadSuperiorRangoHasta&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoHasta%&quot;,
+  &quot;EdadSuperiorRangoEntre1&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoEntre1%&quot;,
+  &quot;EdadSuperiorRangoEntre2&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoEntre2%&quot;,
+  &quot;EdadSuperiorRangoEntre3&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoEntre3%&quot;,
+  &quot;EdadSuperiorRangoSobre&quot; : &quot;%GestionarRequisitosMedicos:BlockEdadSuperior:EdadSuperiorRangoSobre%&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTrasformarDataRequisitosMedicos_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,124 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <article if:true={shouldDisplayCoverage}
+        class="slds-grid slds-p-top_medium slds-p-right_medium slds-p-bottom_large">
+
+        <div onclick={toggleAttributes} if:true={displayAttributes}
+            class="vloc-ins-coverages-banner coverage-toggle">
+            <vlocity_ins-icon icon-name={chevronName} theme={theme} size="x-small" color="#4D6792"
+            ></vlocity_ins-icon>
+        </div>
+        <div class=" slds-p-left_x-small">
+            <img if:true={coverage.ImageId} src={coverageImageSrc} class="vloc-ins-custom-icon" />
+            <vlocity_ins-icon if:false={coverage.ImageId} icon-name="custom:custom91" theme={theme} size="small"
+                color={iconColor}></vlocity_ins-icon>
+        </div>
+        <div class="slds-p-top_xxx-small slds-p-left_x-small vloc-ins-coverages-container">
+            <div class="slds-grid slds-grid_align-spread">
+                <div class="vloc-ins-coverage-name-container slds-grid">
+                    <h3 class="vloc-ins-coverage-name slds-text-heading_small slds-hyphenate slds-p-right_medium">
+                        {coverageName}
+                    </h3>
+                    <h5 class="slds-hyphenate slds-p-right_medium">
+                        {coverageCode}
+                    </h5>
+                    <vlocity_ins-tooltip if:true={displayCoverageDescription} icon-size="x-small"
+                        content={coverageDescription} icon-name="utility:description">
+                    </vlocity_ins-tooltip>
+                </div>
+                <!-- Selected optional coverages -->
+                <div if:true={isSelected}>
+                    <template if:true={displayPrice}>
+                        <p class="slds-grid slds-grid_align-end slds-text-align_right">
+                            <vlocity_ins-tooltip if:true={needReprice} icon-variant="error" arrowposition="bottom-right"
+                                content={labels.InsProductHelpTextRating} class="slds-m-right_xx-small">
+                            </vlocity_ins-tooltip>
+                            <lightning-formatted-number class={priceClasses} value={coveragePrice}
+                                format-style="currency" currency-code={currency.code}>
+                            </lightning-formatted-number>
+                        </p>
+                        <!-- Taxes & Fees - Desktop & Tablet -->
+                        <p if:true={coverage.totalTaxFeeAmount}
+                            class="vloc-ins-label slds-var-p-top_x-small slds-text-align_right slds-show_medium">
+                            {labels.Includes}&nbsp;
+                            <lightning-formatted-number value={coverage.totalTaxFeeAmount} format-style="currency"
+                                currency-code={currency.code}>
+                            </lightning-formatted-number>
+                            &nbsp;{labels.InsTaxesAndFees}
+                        </p>
+                    </template>
+                    <div if:true={coverage.isOptional} class="slds-text-align_right">
+                        <!-- Remove icon - Mobile - align with product name if price is not shown -->
+                        <p if:false={coveragePrice} class="slds-hide_medium">
+                            <lightning-button-icon class="slds-p-left_medium" icon-name="utility:delete"
+                                icon-class="slds-m-bottom_medium" variant="container" disabled={disableRemove}
+                                alternative-text={labels.Remove} onclick={toggleOptionalCoverage}>
+                            </lightning-button-icon>
+                        </p>
+                        <!-- Remove icon - Desktop & Tablet -->
+                        <vlocity_ins-button theme={theme} class="slds-show_medium" disabled={disableRemove}
+                            variant="neutral" label={labels.Remove} onclick={toggleOptionalCoverage}>
+                        </vlocity_ins-button>
+                    </div>
+                </div>
+                <!-- Add Coverage - Mobile -->
+                <!-- <lightning-button-icon
+                    icon-name="utility:add"
+                    if:false={isSelected}
+                    icon-class="slds-hide_medium slds-m-bottom_medium"
+                    variant="container"
+                    disabled={disableAdd}
+                    alternative-text={labels.Add}
+                    onclick={toggleOptionalCoverage}
+                >
+                </lightning-button-icon> -->
+                <!-- Add Coverage - Desktop & Tablet -->
+                <vlocity_ins-button if:false={isSelected} theme={theme} class="slds-show_medium" disabled={disableAdd}
+                    variant="neutral" label={labels.Add} onclick={toggleOptionalCoverage}>
+                </vlocity_ins-button>
+            </div>
+            <div class="slds-hide_medium slds-var-p-top_x-small slds-grid slds-grid_align-spread">
+                <!-- Remove icon, taxes & fees - Mobile -->
+                <template if:true={isSelected}>
+                    <template if:true={coveragePrice}>
+                        <p class="vloc-ins-label">
+                            <template if:true={coverage.totalTaxFeeAmount}>
+                                {labels.Includes}&nbsp;
+                                <lightning-formatted-number value={coverage.totalTaxFeeAmount} format-style="currency"
+                                    currency-code={currency.code}>
+                                </lightning-formatted-number>
+                                &nbsp;{labels.InsTaxesAndFees}
+                            </template>
+                        </p>
+                        <!-- Remove icon - Mobile - align with taxes & fees if price is shown -->
+                        <p if:true={coverage.isOptional}>
+                            <lightning-button-icon class="slds-p-left_medium" icon-name="utility:delete"
+                                icon-class="slds-m-bottom_medium" variant="container" disabled={disableRemove}
+                                alternative-text={labels.Remove} onclick={toggleOptionalCoverage}>
+                            </lightning-button-icon>
+                        </p>
+                    </template>
+                </template>
+            </div>
+            <template if:true={displayRuleMessages}>
+                <template for:each={messages} for:item="message">
+                    <div key={message.id} class={message.styles}>{message.message}</div>
+                </template>
+            </template>
+            <div class={showAttributesClass}>
+                <template if:true={isSelected}>
+                    <template if:false={isCategoryEmpty}>
+                        <template for:each={attributeCategories.records} for:item="attributeCategory">
+                            <!-- Attribute category component -->
+                            <c-zrh_ins-attribute-category key={attributeCategory.id} currency={currency}
+                                attribute-category={attributeCategory} theme={theme} root-channel={rootChannel}
+                                attribute-style="adminCoverage" rule-context={ruleContext} is-readonly={options.isReadonly}>
+                            </c-zrh_ins-attribute-category>
+                        </template>
+                    </template>
+                </template>
+            </div>
+            
+        </div>
+    </article>
+</template>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_NivelEscolaridad__c</fullName>
+    <externalId>false</externalId>
+    <label>Nivel de escolaridad</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>SIN NIVEL ESCOLARIDAD</label>
+            </value>
+            <value>
+                <fullName>PK</fullName>
+                <default>false</default>
+                <label>PRE KINDER</label>
+            </value>
+            <value>
+                <fullName>KI</fullName>
+                <default>false</default>
+                <label>KINDER</label>
+            </value>
+            <value>
+                <fullName>1B</fullName>
+                <default>false</default>
+                <label>PRIMERO BASICO</label>
+            </value>
+            <value>
+                <fullName>2B</fullName>
+                <default>false</default>
+                <label>SEGUNDO BASICO</label>
+            </value>
+            <value>
+                <fullName>3B</fullName>
+                <default>false</default>
+                <label>TERCERO BASICO</label>
+            </value>
+            <value>
+                <fullName>4B</fullName>
+                <default>false</default>
+                <label>CUARTO BASICO</label>
+            </value>
+            <value>
+                <fullName>5B</fullName>
+                <default>false</default>
+                <label>QUINTO BASICO</label>
+            </value>
+            <value>
+                <fullName>6B</fullName>
+                <default>false</default>
+                <label>SEXTO BASICO</label>
+            </value>
+            <value>
+                <fullName>7B</fullName>
+                <default>false</default>
+                <label>SEPTIMO BASICO</label>
+            </value>
+            <value>
+                <fullName>8B</fullName>
+                <default>false</default>
+                <label>OCTAVO BASICO</label>
+            </value>
+            <value>
+                <fullName>1M</fullName>
+                <default>false</default>
+                <label>PRIMERO MEDIO</label>
+            </value>
+            <value>
+                <fullName>2M</fullName>
+                <default>false</default>
+                <label>SEGUNDO MEDIO</label>
+            </value>
+            <value>
+                <fullName>3M</fullName>
+                <default>false</default>
+                <label>TERCERO MEDIO</label>
+            </value>
+            <value>
+                <fullName>4M</fullName>
+                <default>false</default>
+                <label>CUARTO MEDIO</label>
+            </value>
+            <value>
+                <fullName>1S</fullName>
+                <default>false</default>
+                <label>PRIMERO TEC-SUPERIOR 5 AÑOS</label>
+            </value>
+            <value>
+                <fullName>2S</fullName>
+                <default>false</default>
+                <label>SEGUNDO TEC-SUPERIOR 5 AÑOS</label>
+            </value>
+            <value>
+                <fullName>3S</fullName>
+                <default>false</default>
+                <label>TERCERO TEC-SUPERIOR 5 AÑOS</label>
+            </value>
+            <value>
+                <fullName>4S</fullName>
+                <default>false</default>
+                <label>CUARTO TEC-SUPERIOR 5 AÑOS</label>
+            </value>
+            <value>
+                <fullName>5S</fullName>
+                <default>false</default>
+                <label>QUINTO TEC-SUPERIOR 5 AÑOS</label>
+            </value>
+            <value>
+                <fullName>1Z</fullName>
+                <default>false</default>
+                <label>PRIMERO SUPERIOR 6 AÑOS</label>
+            </value>
+            <value>
+                <fullName>2Z</fullName>
+                <default>false</default>
+                <label>SEGUNDO SUPERIOR 6 AÑOS</label>
+            </value>
+            <value>
+                <fullName>3Z</fullName>
+                <default>false</default>
+                <label>TERCERO SUPERIOR 6 AÑOS</label>
+            </value>
+            <value>
+                <fullName>4Z</fullName>
+                <default>false</default>
+                <label>CUARTO SUPERIOR 6 AÑOS</label>
+            </value>
+            <value>
+                <fullName>5Z</fullName>
+                <default>false</default>
+                <label>QUINTO SUPERIOR 6 AÑOS</label>
+            </value>
+            <value>
+                <fullName>6Z</fullName>
+                <default>false</default>
+                <label>SEXTO SUPERIOR 6 AÑOS</label>
+            </value>
+            <value>
+                <fullName>17</fullName>
+                <default>false</default>
+                <label>PRIMERO SUPERIOR 7 AÑOS</label>
+            </value>
+            <value>
+                <fullName>27</fullName>
+                <default>false</default>
+                <label>SEGUNDO SUPERIOR 7 AÑOS</label>
+            </value>
+            <value>
+                <fullName>37</fullName>
+                <default>false</default>
+                <label>TERCERO SUPERIOR 7 AÑOS</label>
+            </value>
+            <value>
+                <fullName>47</fullName>
+                <default>false</default>
+                <label>CUARTO SUPERIOR 7 AÑOS</label>
+            </value>
+            <value>
+                <fullName>57</fullName>
+                <default>false</default>
+                <label>QUINTO SUPERIOR 7 AÑOS</label>
+            </value>
+            <value>
+                <fullName>67</fullName>
+                <default>false</default>
+                <label>SEXTO SUPERIOR 7 AÑOS</label>
+            </value>
+            <value>
+                <fullName>77</fullName>
+                <default>false</default>
+                <label>SEPTIMO SUPERIOR 7 AÑOS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

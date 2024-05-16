@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Validaciones__c</fullName>
+    <description>En caso de tratarse de una Glosa Condicional, es necesario especificar las condiciones que debe validar SalesForce para determinar en que caso se incorpora dicha glosa.</description>
+    <externalId>false</externalId>
+    <label>Validaciones</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

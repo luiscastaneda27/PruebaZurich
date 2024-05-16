@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>[JN][SFCLP-877]multiples sobreprimas</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;blockFamiliar&quot; : [ {
+    &quot;porcSobreprima&quot; : &quot;40&quot;,
+    &quot;deleted&quot; : false,
+    &quot;disableField&quot; : false,
+    &quot;parentesco&quot; : &quot;Hijo/a&quot;,
+    &quot;delBtn&quot; : false,
+    &quot;positionReferenceTitle&quot; : &quot;Sobreprima 1&quot;,
+    &quot;isUpdRef&quot; : false,
+    &quot;position&quot; : 1,
+    &quot;edadSobre&quot; : &quot;10&quot;,
+    &quot;ReferenceType&quot; : &quot;Familiar&quot;,
+    &quot;addBtn&quot; : true,
+    &quot;validate&quot; : false
+  }, {
+    &quot;porcSobreprima&quot; : &quot;60&quot;,
+    &quot;deleted&quot; : false,
+    &quot;parentesco&quot; : &quot;Hijo/a&quot;,
+    &quot;delBtn&quot; : true,
+    &quot;positionReferenceTitle&quot; : &quot;Sobreprima 2&quot;,
+    &quot;position&quot; : 2,
+    &quot;edadSobre&quot; : &quot;10&quot;,
+    &quot;ReferenceType&quot; : &quot;Familiar&quot;,
+    &quot;addBtn&quot; : false,
+    &quot;validate&quot; : false
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarBlockFamiliar</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBlockFamiliarCustom7238</globalKey>
+        <inputFieldName>blockFamiliar:porcSobreprima</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBlockFamiliar</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>blockFamiliar:porcSobreprima</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBlockFamiliarCustom7445</globalKey>
+        <inputFieldName>blockFamiliar:parentesco</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBlockFamiliar</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>blockFamiliar:parentesco</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBlockFamiliarCustom9386</globalKey>
+        <inputFieldName>blockFamiliar:edadSobre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBlockFamiliar</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>blockFamiliar:edadSobre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;blockFamiliar&quot; : [ {
+    &quot;porcSobreprima&quot; : &quot;40&quot;,
+    &quot;deleted&quot; : false,
+    &quot;disableField&quot; : false,
+    &quot;parentesco&quot; : &quot;Hijo/a&quot;,
+    &quot;delBtn&quot; : false,
+    &quot;positionReferenceTitle&quot; : &quot;Sobreprima 1&quot;,
+    &quot;isUpdRef&quot; : false,
+    &quot;position&quot; : 1,
+    &quot;edadSobre&quot; : &quot;10&quot;,
+    &quot;ReferenceType&quot; : &quot;Familiar&quot;,
+    &quot;addBtn&quot; : true,
+    &quot;validate&quot; : false
+  }, {
+    &quot;porcSobreprima&quot; : &quot;60&quot;,
+    &quot;deleted&quot; : false,
+    &quot;parentesco&quot; : &quot;Hijo/a&quot;,
+    &quot;delBtn&quot; : true,
+    &quot;positionReferenceTitle&quot; : &quot;Sobreprima 2&quot;,
+    &quot;position&quot; : 2,
+    &quot;edadSobre&quot; : &quot;10&quot;,
+    &quot;ReferenceType&quot; : &quot;Familiar&quot;,
+    &quot;addBtn&quot; : false,
+    &quot;validate&quot; : false
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarBlockFamiliar_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

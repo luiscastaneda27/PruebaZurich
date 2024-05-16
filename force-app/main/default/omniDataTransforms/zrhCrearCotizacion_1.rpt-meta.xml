@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Creacion de primera version (V1) de cotizaciones</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;Datos Generales&quot; : null,
+    &quot;DatosEmpresa&quot; : null,
+    &quot;DatosCorredor&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;Datos Generales&quot; : {
+    &quot;tipoSolicitud&quot; : null,
+    &quot;tipoNegocio&quot; : null
+  },
+  &quot;DatosEmpresa&quot; : {
+    &quot;TypeAheadBuscarEmpresa-Block&quot; : {
+      &quot;TypeAheadBuscarEmpresa&quot; : null,
+      &quot;Text16&quot; : null,
+      &quot;idCuenta&quot; : null,
+      &quot;nombreCuenta&quot; : null,
+      &quot;rutCuenta&quot; : null
+    },
+    &quot;holding&quot; : null,
+    &quot;TypeAheadBuscarHolding-Block&quot; : {
+      &quot;TypeAheadBuscarHolding&quot; : null,
+      &quot;idCuentaHolding&quot; : null,
+      &quot;nombreHolding&quot; : null
+    }
+  },
+  &quot;DatosCorredor&quot; : {
+    &quot;typeAHeadbuscarAgente-Block&quot; : {
+      &quot;typeAHeadbuscarAgente&quot; : null,
+      &quot;idContacto&quot; : null,
+      &quot;telefonoContacto&quot; : null,
+      &quot;emailContacto&quot; : null,
+      &quot;nombreContacto&quot; : null
+    },
+    &quot;typeAHeadbuscarCorredor-Block&quot; : {
+      &quot;typeAHeadbuscarCorredor&quot; : null,
+      &quot;sucursalCorredor&quot; : null,
+      &quot;idCuentaCorredor&quot; : null,
+      &quot;nombreCorredor&quot; : null,
+      &quot;rutCorredor&quot; : null
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhCrearCotizacion</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem22</globalKey>
+        <inputFieldName>EstadoCotizacion</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem27</globalKey>
+        <inputFieldName>Moneda</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Moneda__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem24</globalKey>
+        <inputFieldName>IdCuenta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem21</globalKey>
+        <inputFieldName>Version</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_VersionQuote__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem26</globalKey>
+        <inputFieldName>IdCenso</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins_fsc__GroupCensusStdId__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem28</globalKey>
+        <inputFieldName>IdPricebook</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Pricebook2Id</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem25</globalKey>
+        <inputFieldName>IdOportunidad</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OpportunityId</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem17</globalKey>
+        <inputFieldName>FechaSolicitudEntrega</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_FechaSolicitudEntrega__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem18</globalKey>
+        <inputFieldName>VigenciaTermino</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_VigenciaTermino__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem19</globalKey>
+        <inputFieldName>ComisionCorredor</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_ComisionCorredor__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem20</globalKey>
+        <inputFieldName>NumeroAsegurados</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_NroAsegurados__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem29</globalKey>
+        <inputFieldName>Adicionales</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Adicionales__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem23</globalKey>
+        <inputFieldName>IdCorredor</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__AgencyBrokerageId__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem11</globalKey>
+        <inputFieldName>Nombre</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem12</globalKey>
+        <inputFieldName>Observaciones</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Observaciones__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem2</globalKey>
+        <inputFieldName>IdTipoRegistroCotizacion</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:count 1 +</formulaConverted>
+        <formulaExpression>%count% + 1</formulaExpression>
+        <formulaResultPath>Version</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem13</globalKey>
+        <inputFieldName>Origen</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Origen__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem14</globalKey>
+        <inputFieldName>CartaDeExclusividad</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_CartaDeExclusividad__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem15</globalKey>
+        <inputFieldName>EsPipeline</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_EsPipeline__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem16</globalKey>
+        <inputFieldName>IdCuentaHolding</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Holding__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem10</globalKey>
+        <inputFieldName>EsLicitacion</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_EsLicitacion__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem7</globalKey>
+        <inputFieldName>PrimaTarget</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_PrimaTarget__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem5</globalKey>
+        <inputFieldName>VigenciaInicio</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_VigenciaInicio__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom2903</globalKey>
+        <inputFieldName>Renovacion</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_RenovacionFlag__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem4</globalKey>
+        <inputFieldName>IdCotizacionHolding</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_CotizacionHolding__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem9</globalKey>
+        <inputFieldName>IdContacto</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__ProducerId__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem6</globalKey>
+        <inputFieldName>FechaLimitePregunta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_FechaLimitePregunta__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearCotizacionCustom0jI7500000000XrEAIItem3</globalKey>
+        <inputFieldName>ProductosSeleccionados</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearCotizacion</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Productos__c</outputFieldName>
+        <outputObjectName>Quote</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>[ {
+  &quot;Adicionales&quot; : &quot;IMED;Farmacia&quot;,
+  &quot;IdContacto&quot; : &quot;0037500000OvOVdAAN&quot;,
+  &quot;ComisionCorredor&quot; : 10,
+  &quot;FechaSolicitudEntrega&quot; : &quot;2023-07-05&quot;,
+  &quot;IdPricebook&quot; : &quot;$Vlocity.StandardPricebookId&quot;,
+  &quot;FechaLimitePregunta&quot; : &quot;2023-07-27&quot;,
+  &quot;Observaciones&quot; : &quot;10&quot;,
+  &quot;IdCuentaHolding&quot; : &quot;0017500000LOBtWAAX&quot;,
+  &quot;EstadoCotizacion&quot; : &quot;E-02&quot;,
+  &quot;TipoSolicitud&quot; : &quot;0&quot;,
+  &quot;EsLicitacion&quot; : &quot;1&quot;,
+  &quot;PrimaTarget&quot; : &quot;10&quot;,
+  &quot;IdCotizacionHolding&quot; : &quot;0Q075000000EAW8CAO&quot;,
+  &quot;CartaDeExclusividad&quot; : false,
+  &quot;IdOportunidad&quot; : &quot;00675000004lEL3AAM&quot;,
+  &quot;Origen&quot; : &quot;Cotización&quot;,
+  &quot;count&quot; : 0,
+  &quot;VigenciaTermino&quot; : &quot;2024-07-08&quot;,
+  &quot;EsPipeline&quot; : false,
+  &quot;IdCenso&quot; : &quot;a46750000006gW8AAI&quot;,
+  &quot;IdCorredor&quot; : &quot;0017500000LOD7eAAH&quot;,
+  &quot;VigenciaInicio&quot; : &quot;2023-07-10&quot;,
+  &quot;NumeroAsegurados&quot; : 100,
+  &quot;Nombre&quot; : &quot;CHILQUINTA TRANSMISIÓN S.A.&quot;
+}, {
+  &quot;Adicionales&quot; : &quot;IMED;Farmacia&quot;,
+  &quot;IdContacto&quot; : &quot;0037500000OvOVdAAN&quot;,
+  &quot;ComisionCorredor&quot; : 10,
+  &quot;FechaSolicitudEntrega&quot; : &quot;2023-07-05&quot;,
+  &quot;IdPricebook&quot; : &quot;$Vlocity.StandardPricebookId&quot;,
+  &quot;FechaLimitePregunta&quot; : &quot;2023-07-27&quot;,
+  &quot;Observaciones&quot; : &quot;10&quot;,
+  &quot;IdCuentaHolding&quot; : &quot;0017500000LOBtWAAX&quot;,
+  &quot;EstadoCotizacion&quot; : &quot;E-02&quot;,
+  &quot;TipoSolicitud&quot; : &quot;0&quot;,
+  &quot;EsLicitacion&quot; : &quot;1&quot;,
+  &quot;PrimaTarget&quot; : &quot;10&quot;,
+  &quot;IdCotizacionHolding&quot; : &quot;0Q075000000EAW8CAO&quot;,
+  &quot;CartaDeExclusividad&quot; : false,
+  &quot;IdOportunidad&quot; : &quot;00675000004lEL4AAM&quot;,
+  &quot;Origen&quot; : &quot;Cotización&quot;,
+  &quot;count&quot; : 0,
+  &quot;VigenciaTermino&quot; : &quot;2024-07-08&quot;,
+  &quot;EsPipeline&quot; : false,
+  &quot;IdCenso&quot; : &quot;a46750000006gW9AAI&quot;,
+  &quot;IdCorredor&quot; : &quot;0017500000LOD7eAAH&quot;,
+  &quot;VigenciaInicio&quot; : &quot;2023-07-10&quot;,
+  &quot;NumeroAsegurados&quot; : 100,
+  &quot;Nombre&quot; : &quot;ENERQUINTA S.A.&quot;
+}, {
+  &quot;Adicionales&quot; : &quot;IMED;Farmacia&quot;,
+  &quot;IdContacto&quot; : &quot;0037500000OvOVdAAN&quot;,
+  &quot;ComisionCorredor&quot; : 10,
+  &quot;FechaSolicitudEntrega&quot; : &quot;2023-07-05&quot;,
+  &quot;IdPricebook&quot; : &quot;$Vlocity.StandardPricebookId&quot;,
+  &quot;FechaLimitePregunta&quot; : &quot;2023-07-27&quot;,
+  &quot;Observaciones&quot; : &quot;10&quot;,
+  &quot;IdCuentaHolding&quot; : &quot;0017500000LOBtWAAX&quot;,
+  &quot;EstadoCotizacion&quot; : &quot;E-02&quot;,
+  &quot;TipoSolicitud&quot; : &quot;0&quot;,
+  &quot;EsLicitacion&quot; : &quot;1&quot;,
+  &quot;PrimaTarget&quot; : &quot;10&quot;,
+  &quot;IdCotizacionHolding&quot; : &quot;0Q075000000EAW8CAO&quot;,
+  &quot;CartaDeExclusividad&quot; : false,
+  &quot;IdOportunidad&quot; : &quot;00675000004lEL5AAM&quot;,
+  &quot;Origen&quot; : &quot;Cotización&quot;,
+  &quot;count&quot; : 0,
+  &quot;VigenciaTermino&quot; : &quot;2024-07-08&quot;,
+  &quot;EsPipeline&quot; : false,
+  &quot;IdCenso&quot; : &quot;a46750000006gWAAAY&quot;,
+  &quot;IdCorredor&quot; : &quot;0017500000LOD7eAAH&quot;,
+  &quot;VigenciaInicio&quot; : &quot;2023-07-10&quot;,
+  &quot;NumeroAsegurados&quot; : 100,
+  &quot;Nombre&quot; : &quot;CHILQUINTA DISTRIBUCIÓN S.A.&quot;
+}, {
+  &quot;Adicionales&quot; : &quot;IMED;Farmacia&quot;,
+  &quot;IdContacto&quot; : &quot;0037500000OvOVdAAN&quot;,
+  &quot;ComisionCorredor&quot; : 10,
+  &quot;FechaSolicitudEntrega&quot; : &quot;2023-07-05&quot;,
+  &quot;IdPricebook&quot; : &quot;$Vlocity.StandardPricebookId&quot;,
+  &quot;FechaLimitePregunta&quot; : &quot;2023-07-27&quot;,
+  &quot;Observaciones&quot; : &quot;10&quot;,
+  &quot;IdCuentaHolding&quot; : &quot;0017500000LOBtWAAX&quot;,
+  &quot;EstadoCotizacion&quot; : &quot;E-02&quot;,
+  &quot;TipoSolicitud&quot; : &quot;0&quot;,
+  &quot;EsLicitacion&quot; : &quot;1&quot;,
+  &quot;PrimaTarget&quot; : &quot;10&quot;,
+  &quot;IdCotizacionHolding&quot; : &quot;0Q075000000EAW8CAO&quot;,
+  &quot;CartaDeExclusividad&quot; : false,
+  &quot;IdOportunidad&quot; : &quot;00675000004lEL6AAM&quot;,
+  &quot;Origen&quot; : &quot;Cotización&quot;,
+  &quot;count&quot; : 0,
+  &quot;VigenciaTermino&quot; : &quot;2024-07-08&quot;,
+  &quot;EsPipeline&quot; : false,
+  &quot;IdCenso&quot; : &quot;a46750000006gWBAAY&quot;,
+  &quot;IdCorredor&quot; : &quot;0017500000LOD7eAAH&quot;,
+  &quot;VigenciaInicio&quot; : &quot;2023-07-10&quot;,
+  &quot;NumeroAsegurados&quot; : 100,
+  &quot;Nombre&quot; : &quot;CHILQUINTA ENERGIA S.A.&quot;
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>zrhCrearCotizacion_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

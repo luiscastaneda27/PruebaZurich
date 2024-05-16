@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CDF1:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Promedio de días entre la recepción de la póliza y su oficialización.</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ContractGroupPlan$Contract.SourceQuote.CreatedDate</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Promedio Días Recepción/Oficialización</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>Line</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ContractGroupPlan$Contract.SourceQuote.CreatedDate</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Promedio Oficialización Pólizas (Días)</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ContractGroupPlan$ZRH_NumeroDePoliza__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Name</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_CodigoProducto__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.vlocity_ins__AgencyBrokerageId__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.ZRH_NombreCortoCuenta__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.ZRH_Holding__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$Contract.SourceQuote.ZRH_Holding__c.ZRH_CodigoGrupoNegocio__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_UsuarioAsignado__c</field>
+    </columns>
+    <columns>
+        <field>ContractGroupPlan$ZRH_FechaOficializacion__c</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <currency>CLF</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF (
+    OR(
+        ISBLANK(ContractGroupPlan.Contract.SourceQuote.CreatedDate),
+        ISBLANK(ContractGroupPlan.ZRH_FechaOficializacion__c)
+    ),
+    0,
+    ContractGroupPlan.ZRH_FechaOficializacion__c - DATEVALUE(ContractGroupPlan.Contract.SourceQuote.CreatedDate)
+)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Días de diferencia entre la fecha de recepción de la póliza y su oficialización.</description>
+        <developerName>CDF1</developerName>
+        <label>Diferencia Días Recepción/Oficialización</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Días Promedio entre la Fecha de Recepción y la Fecha de Oficialización de pólizas</description>
+    <filter>
+        <criteriaItems>
+            <column>ContractGroupPlan$ZRH_Estado__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$ZRH_NumeroDePoliza__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2024 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>12/31/2024 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2024 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ContractGroupPlan$Contract.SourceQuote.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>12/31/2024 12:00 AM</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>ContractGroupPlan$Contract.SourceQuote.CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CGP 1: Días Promedio de Pólizas</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ZRH_PolizasDatosCotizacion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ContractGroupPlan$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

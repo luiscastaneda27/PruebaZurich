@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_SolicitudCorredorCliente__c</fullName>
+    <description>Campo que llena el área comercial al solicitar una recotización con detalles de la solicitud del corredor/cliente</description>
+    <externalId>false</externalId>
+    <label>Solicitud del Corredor/Cliente</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

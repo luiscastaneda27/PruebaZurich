@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_Tipificacion__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipificación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Cotización</fullName>
+                <default>false</default>
+                <label>Cotización</label>
+            </value>
+            <value>
+                <fullName>Genéricas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Genéricas</label>
+            </value>
+            <value>
+                <fullName>Genérica Salesforce</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Genérica Salesforce</label>
+            </value>
+            <value>
+                <fullName>Información del siniestro</fullName>
+                <default>false</default>
+                <label>Información del siniestro</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+            <value>
+                <fullName>Reembolso</fullName>
+                <default>false</default>
+                <label>Reembolso</label>
+            </value>
+            <value>
+                <fullName>Requerimiento</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Requerimiento</label>
+            </value>
+            <value>
+                <fullName>Tipi1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tipi1</label>
+            </value>
+            <value>
+                <fullName>Tipi2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tipi2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

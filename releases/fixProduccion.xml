@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>zrh_insAttribute</members>
+		<members>zrh_insQuoteSingleRoot</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>ZRH_BatchSubmitPolicyProposalAS400</members>
+		<members>ZRH_BatchSubmitPolicyProposalAS400_TEST</members>
+		<members>ZRH_ConditionedTables</members>
+		<members>ZRH_ContractGroupPlansSelector</members>
+		<members>ZRH_PolicyPDFController</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>ZRH_ValidatorUtility</members>
+		<name>StaticResource</name>
+	</types>
+	<version>58.0</version>
+</Package>

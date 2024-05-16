@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_NumeroPolizasPropuestaFallida__c</fullName>
+    <externalId>false</externalId>
+    <label>Numero de Pólizas con Propuesta Fallida</label>
+    <summaryFilterItems>
+        <field>ContractGroupPlan.ZRH_PropuestaPolizaEnviada__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>ContractGroupPlan.ZRH_MensajeRespuestaPropuestaPoliza__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>ContractGroupPlan.ContractId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

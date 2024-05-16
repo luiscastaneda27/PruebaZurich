@@ -1,0 +1,46 @@
+/*.slds-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.slds-table td,
+.slds-table th {
+    border: 1px solid #d9dde2;
+    padding: 0.5rem 0.75rem;
+}
+  
+.slds-table th {
+    background-color: #f2f4f8;
+    font-weight: bold;
+    text-align: left;
+}
+  
+.slds-form-element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+  
+.slds-form-element label {
+    flex: 0 0 30%;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+  
+.slds-form-element lightning-input {
+    flex: 1;
+}
+  
+.slds-form-element .slds-input {
+    width: 100%;
+}
+
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.combobox div {
+    width: 50%;
+}*/

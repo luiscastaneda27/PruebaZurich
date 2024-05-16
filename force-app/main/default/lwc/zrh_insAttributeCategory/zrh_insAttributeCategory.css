@@ -1,0 +1,11 @@
+:host {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+    .vloc-ins-attribute-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

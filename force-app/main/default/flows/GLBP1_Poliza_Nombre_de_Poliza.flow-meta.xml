@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Tiene_Oportunidad</name>
+        <label>¿Tiene Oportunidad?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>No tiene</defaultConnectorLabel>
+        <rules>
+            <name>Si_tiene</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Busca_Oportunidad.Id</leftValueReference>
+                <operator>WasSet</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Asigna_nombre_de_p_liza</targetReference>
+            </connector>
+            <label>Si tiene</label>
+        </rules>
+    </decisions>
+    <description>Asigna nombre a la Póliza</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>forNombrePoliza</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.GLB_P1_NumeroPolizaExterno__c}&amp;&quot;_&quot;&amp;{!$Record.SourceOpportunity.Name}</expression>
+    </formulas>
+    <interviewLabel>Póliza: Nombre de Póliza {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Póliza: Nombre de Póliza</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Busca_Oportunidad</name>
+        <label>Busca Oportunidad</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Tiene_Oportunidad</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SourceOpportunity.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Asigna_nombre_de_p_liza</name>
+        <label>Asigna nombre de póliza</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>GLB_P1_NumeroPolizaExterno__c</field>
+            <value>
+                <elementReference>$Record.GLB_P1_NumeroPolizaExterno__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>$Record.N_Poliza_interno__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PolicyName</field>
+            <value>
+                <elementReference>forNombrePoliza</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Busca_Oportunidad</targetReference>
+        </connector>
+        <object>InsurancePolicy</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

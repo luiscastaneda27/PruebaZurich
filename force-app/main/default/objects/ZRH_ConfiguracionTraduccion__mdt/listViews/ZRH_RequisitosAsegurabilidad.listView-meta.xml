@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_RequisitosAsegurabilidad</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>ZRH_Orden__c</columns>
+    <columns>ZRH_Tag__c</columns>
+    <columns>ZRH_TraduccionFuncional__c</columns>
+    <columns>ZRH_Plan__c</columns>
+    <columns>ZRH_Estructura__c</columns>
+    <columns>ZRH_SubEstructura__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ZRH_Estructura__c</field>
+        <operation>equals</operation>
+        <value>Requisitos de Asegurabilidad</value>
+    </filters>
+    <label>Requisitos de Asegurabilidad</label>
+    <language>es</language>
+</ListView>

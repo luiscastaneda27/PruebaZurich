@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Activo_de_p_liza</fullName>
+    <fields>AssetName</fields>
+    <fields>IsActive</fields>
+    <fields>InsurancePolicyId</fields>
+    <fields>GLBP1_Bien_declarado__c</fields>
+    <fields>N_Poliza_externo__c</fields>
+    <fields>CustomerPropertyId</fields>
+    <fields>vlocity_ins_fsc__TotalAmount__c</fields>
+    <label>Activo de póliza</label>
+</CompactLayout>

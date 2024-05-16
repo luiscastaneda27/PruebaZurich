@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Nuevo problema</fullName>
+        <default>false</default>
+        <label>Nuevo problema</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cotizar un producto (ejecutivo)</fullName>
+        <default>false</default>
+        <label>Cotizar un producto (ejecutivo)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitar reembolso de salud de mi seguro complementario (automática)</fullName>
+        <default>false</default>
+        <label>Solicitar reembolso de salud de mi seguro complementario (automática)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Información con respecto al siniestro de mi auto (Ejecutivo)</fullName>
+        <default>false</default>
+        <label>Información con respecto al siniestro de mi auto (Ejecutivo)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Otras opciones (Ejecutivo)</fullName>
+        <default>false</default>
+        <label>Otras opciones (Ejecutivo)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

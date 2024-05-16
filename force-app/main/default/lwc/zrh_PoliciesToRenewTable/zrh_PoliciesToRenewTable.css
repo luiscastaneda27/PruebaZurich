@@ -1,0 +1,20 @@
+.header-style {
+    background-color: #c0c0c0 !important; 
+}
+
+.policy-holder-row {
+    background-color: #f3f3f3;
+    color: #444444 !important;
+}
+
+.policy-row {
+    color: #444444 !important;
+}
+
+.slds-table .slds-hint-parent:hover {
+    background-color: transparent !important; /* Adjust as needed */
+}
+
+.icon-spacing {
+    margin-right: 0.5rem;
+}

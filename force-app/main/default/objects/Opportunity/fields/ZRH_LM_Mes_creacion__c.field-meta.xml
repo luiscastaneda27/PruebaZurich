@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_LM_Mes_creacion__c</fullName>
+    <description>Retorna el mes de creación de un rango de 1 a 12</description>
+    <externalId>false</externalId>
+    <formula>TEXT(MONTH(DATEVALUE(CreatedDate)))</formula>
+    <label>Mes creacion</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

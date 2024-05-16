@@ -1,0 +1,239 @@
+# Doc: https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html
+image: node:latest
+
+pipelines:
+#pipeline based on Pull Request
+  pull-requests:
+    # master:
+    '**': # name of the branch that's doing the PR
+    - step:
+       name: "Salesforce Deploy Check"
+       script:
+        - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+        - chmod +x ./scripts/check.sh
+        - ./scripts/check.sh
+    - step:
+       name: "Vlocity Test"
+       trigger: manual
+       script:
+        - apt-get -y update && apt-get -y upgrade && apt-get install -y openjdk-11-jdk && npm install sfdx-cli -g && apt-get install jq -y && npm install vlocity -g
+        - chmod +x ./scripts/test.sh
+        - ./scripts/test.sh  
+    - step:
+       name: "Salesforce CodeScan"
+       trigger: manual
+       script:
+        - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && apt-get install -y --no-install-recommends software-properties-common && apt-get install -y openjdk-11-jdk
+        - chmod +x ./scripts/codeScan.sh
+        - ./scripts/codeScan.sh
+        
+#pipeline based on Branch Push "INTEG,QA/UAT,Staging,Master!"
+  branches:
+    INTEG_2: #branch that's been pushed
+      - step:
+          name: SF Deploy
+          deployment: INTEG_2
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure INTEG_2
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${INTEG_CI_SFDX_URL_2} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${INTEG_CI_SFDX_URL_2} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x releases/package.xml --targetusername ${INTEG_CI_SFDX_URL_2} --verbose
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install vlocity -g && apt-get install jq -y
+           - echo ${INTEG_CI_SFDX_URL_2} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${INTEG_CI_SFDX_URL_2} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${INTEG_CI_SFDX_URL_2} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true
+    INTEG_GLB: #branch de globant
+      - step:
+          name: SF Deploy
+          deployment: INTEG_GLB
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure INTEG_GLB
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${INTEG_GLB_SFDX_URL} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${INTEG_GLB_SFDX_URL} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x releases/package.xml --targetusername ${INTEG_GLB_SFDX_URL} --verbose
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install vlocity -g && apt-get install jq -y
+           - echo ${INTEG_GLB_SFDX_URL} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${INTEG_GLB_SFDX_URL} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${INTEG_GLB_SFDX_URL} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true
+    QA_2: #branch that's been pushed
+      - step:
+          name: SF Deploy
+          deployment: QA
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure QA_2
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${QA_SFDX_URL_2} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${QA_SFDX_URL_2} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x manifest/package.xml --targetusername ${QA_SFDX_URL_2} --verbose
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install -global vlocity && apt-get install jq -y
+           - echo ${QA_SFDX_URL_2} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${QA_SFDX_URL_2} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${QA_SFDX_URL_2} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true
+          
+    UAT_2: #branch that's been pushed
+      - step:
+          name: SF Deploy
+          deployment: UAT
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure UAT_2
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${UAT_SFDX_URL_2} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${UAT_SFDX_URL_2} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x manifest/package.xml --targetusername ${UAT_SFDX_URL_2} --verbose -l RunLocalTests
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install -global vlocity && apt-get install jq -y
+           - echo ${UAT_SFDX_URL_2} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${UAT_SFDX_URL_2} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${UAT_SFDX_URL_2} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true
+      
+    UAT_Z: #branch de UAT_Z
+      - step:
+          name: SF Deploy
+          deployment: UAT_Z
+          script:
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${UAT_Z_SFDX_URL} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${UAT_Z_SFDX_URL} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x releases/package.xml --targetusername ${UAT_Z_SFDX_URL} --verbose
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install vlocity -g && apt-get install jq -y
+           - echo ${UAT_Z_SFDX_URL} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${UAT_Z_SFDX_URL} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${UAT_Z_SFDX_URL} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true
+      
+    STAGING: #branch that's been pushed
+      - step:
+          name: SF Deploy
+          deployment: UAT
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure STAGING
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${STAGING_SFDX_URL} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${STAGING_SFDX_URL} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x manifest/package.xml --targetusername ${STAGING_SFDX_URL} --verbose -l RunLocalTests
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install -global vlocity && apt-get install jq -y
+           - echo ${STAGING_SFDX_URL} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${STAGING_SFDX_URL} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${STAGING_SFDX_URL} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true 
+      
+    SUPPORT: #branch that's been pushed
+      - step:
+          name: SF Deploy
+          deployment: UAT
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure SUPPORT
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${SUPPORT_SFDX_URL} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${SUPPORT_SFDX_URL} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x releases/package.xml --targetusername ${SUPPORT_SFDX_URL} --verbose
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install -global vlocity && apt-get install jq -y
+           - echo ${SUPPORT_SFDX_URL} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${SUPPORT_SFDX_URL} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${SUPPORT_SFDX_URL} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true 
+      
+    master: #branch that's been pushed
+      - step:
+          name: SF Deploy
+          deployment: master
+          script:
+            - git remote add azure https://${TOKEN_AZURE}@${REPOSITORY_AZURE}
+            - git push azure master
+            - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+            - echo ${MASTER_SFDX_URL} > env.sfdx
+            - sfdx force:auth:sfdxurl:store -d -a ${MASTER_SFDX_URL} -f env.sfdx
+            - rm -rf env.sfdx
+            - sfdx force:source:deploy -x manifest/package.xml --targetusername ${MASTER_SFDX_URL} --verbose -l RunLocalTests
+      - step:
+          name: Vlocity Deploy
+          trigger: manual
+          script:
+           - apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g && npm install -global vlocity && apt-get install jq -y
+           - echo ${MASTER_SFDX_URL} > env.sfdx
+           - sfdx force:auth:sfdxurl:store -d -a ${MASTER_SFDX_URL} -f env.sfdx
+           - rm -rf env.sfdx
+           - vlocity -sfdx.username ${MASTER_SFDX_URL} -job jobs/deploy.yaml packDeploy --verbose true --simpleLogging true
+#Custom pipelines for manual execution
+  custom:
+    Destructive changes:
+      - parallel:
+        - step:
+            name: "Execute Destructive Changes INTEG"
+            script:
+              - |
+               apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+               echo ${INTEG_CI_SFDX_URL} > AuthCred
+               sfdx auth:sfdxurl:store -f AuthCred -s -a $BITBUCKET_BRANCH
+               sfdx force:mdapi:deploy -d "toDelete" -w -1
+        - step:
+            name: "Execute Destructive Changes QA"
+            script:
+              - |
+               apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+               echo ${QA_UAT_SFDX_URL} > AuthCred
+               sfdx auth:sfdxurl:store -f AuthCred -s -a $BITBUCKET_BRANCH
+               sfdx force:mdapi:deploy -d "toDelete" -w -1
+        - step:
+            name: "Execute Destructive Changes UAT"
+            script:
+            - |
+               apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+               echo ${UAT_SFDX_URL} > AuthCred
+               sfdx auth:sfdxurl:store -f AuthCred -s -a $BITBUCKET_BRANCH
+               sfdx force:mdapi:deploy -d "toDelete" -w -1                  
+    Destructive changes Master:                
+        - step: 
+            name: "Execute Destructive Changes Produccion"
+            script:
+            - |
+               apt-get -y update && apt-get -y upgrade && npm install sfdx-cli -g
+               echo ${MASTER_SFDX_URL} > AuthCred
+               sfdx auth:sfdxurl:store -f AuthCred -s -a $BITBUCKET_BRANCH
+               sfdx force:mdapi:deploy -d "toDelete" -w -1

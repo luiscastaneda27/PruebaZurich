@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permiso para sincronizar las polizas de renovacion.</description>
+    <isLicensed>false</isLicensed>
+    <label>Sincronizar Pólizas Renovación</label>
+</CustomPermission>

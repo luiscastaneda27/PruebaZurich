@@ -1,0 +1,77 @@
+{
+  "input": {
+    "NombreCotizante": "BENEFITS CORREDORES DE SEGUROS LIMITADA",
+    "CotizacionId": "0Q08B000000HbsLSAS",
+    "FechaVigFinCoti": 20241014,
+    "FechaVigIniCoti": 20231016,
+    "Planes": [
+      {
+        "NombrePlan": "Salud",
+        "CodigoPlan": "600",
+        "IdProductoCotizacion": "0QL8B000000Hp9pWAC",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      },
+      {
+        "NombrePlan": "Oncológico",
+        "CodigoPlan": "601",
+        "IdProductoCotizacion": "0QL8B000000HpARWA0",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      },
+      {
+        "NombrePlan": "Catastrófico",
+        "CodigoPlan": "602",
+        "IdProductoCotizacion": "0QL8B000000HpASWA0",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      },
+      {
+        "NombrePlan": "Vida Escolaridad",
+        "CodigoPlan": "501",
+        "IdProductoCotizacion": "0QL8B000000Hp8jWAC",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      },
+      {
+        "NombrePlan": "Vida",
+        "CodigoPlan": "500",
+        "IdProductoCotizacion": "0QL8B000000Hp8kWAC",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      },
+      {
+        "NombrePlan": "Vida Protección Familiar",
+        "CodigoPlan": "502",
+        "IdProductoCotizacion": "0QL8B000000Hp8lWAC",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      },
+      {
+        "NombrePlan": "Vida",
+        "CodigoPlan": "500",
+        "IdProductoCotizacion": "0QL8B000000Hp83WAC",
+        "RutContratante": "12680728-7",
+        "NombreContratante": "INSUMOS FERRARI",
+        "Vigencia": "0 año"
+      }
+    ],
+    "NombreHolding": "VLUZ SPA",
+    "Origen": "salesforce",
+    "Holding": "S",
+    "CodigoSistema": "P002",
+    "NumeroCotizacion": "00000209-V1",
+    "FechaCotizacion": 20231017,
+    "CodigoGrupoNegocio": 12345,
+    "AccountId": "0018B00000RLzgbQAD",
+    "RutCotizante": "76069648-K"
+  },
+  "output": {},
+  "options": {}
+}

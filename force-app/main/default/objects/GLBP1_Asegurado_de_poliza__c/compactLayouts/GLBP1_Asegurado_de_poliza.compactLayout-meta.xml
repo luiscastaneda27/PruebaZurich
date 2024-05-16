@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Asegurado_de_poliza</fullName>
+    <fields>Name</fields>
+    <fields>GLB_P1_CorreoElectronico__c</fields>
+    <fields>GLB_P1_TelefonoMovil__c</fields>
+    <fields>GLB_P1_PolizaSeguro__c</fields>
+    <fields>GLB_P1_NumeroPolizaExterno__c</fields>
+    <label>Asegurado de póliza</label>
+</CompactLayout>

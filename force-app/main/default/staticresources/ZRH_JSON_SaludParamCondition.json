@@ -1,0 +1,51 @@
+[
+  {
+    "fieldJSON": "vlocity_ins__AttributeSelectedValues__c",
+    "sourceObject": "QuoteLineItem",
+    "field": "EmpresaPublica",
+    "typeCondition": "=",
+    "typeObject": "atribute",
+    "typeOperation": "condition",
+    "value": "Si"
+  },
+  {
+    "field": "ZRH_CuentasDEF__c",
+    "glosaExcepcional": null,
+    "fieldJSON": "",
+    "typeCondition": "<>",
+    "sourceObject": "QuoteHolding",
+    "typeObject": "field",
+    "typeOperation": "condition",
+    "value": null
+  },
+  {
+    "field": "ZRH_CuentasDEF__c",
+    "glosaExcepcional": "DEF",
+    "fieldJSON": "",
+    "typeCondition": "<>",
+    "sourceObject": "Quote",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": null
+  },
+  {
+    "field": "ZRH_CuentasDEF__c",
+    "glosaExcepcional": "REQA",
+    "fieldJSON": "",
+    "typeCondition": "<>",
+    "sourceObject": "Quote",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": null
+  },
+  {
+    "field": "ZRH_CuentasDEF__c",
+    "glosaExcepcional": "ReqAse",
+    "fieldJSON": "",
+    "typeCondition": "<>",
+    "sourceObject": "Quote",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": null
+  }
+]

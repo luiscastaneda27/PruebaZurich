@@ -1,0 +1,45 @@
+.vloc-ins-custom-icon {
+    padding: 0.25rem;
+    width: 2rem;
+}
+
+.vloc-ins-coverages-container {
+    width: 100%;
+}
+
+.vloc-ins-label {
+    color: #7c7c7c;
+    font-size: 0.8rem;
+}
+
+.vloc-ins-text-color_info{
+    color: #6187c0;
+}
+
+.vloc-ins-text-color_warn{
+    color: #ffb75d;
+}
+
+.att-cat-container.hidden {
+    display: none;
+}
+
+.coverage-toggle {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .vloc-ins-coverages-container {
+        padding-left: var(--lwc-spacingXxSmall,0.25rem);
+        padding-top: var(--lwc-spacingXxSmall,0.25rem);
+    }
+
+    .vloc-ins-coverage-name-container {
+        padding-right: var(--lwc-spacingXxSmall,0.25rem);
+        width: 100%;
+    }
+
+    .vloc-ins-coverage-name {
+        font-size: 0.9rem;
+    }
+}

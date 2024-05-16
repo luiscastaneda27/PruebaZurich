@@ -1,0 +1,64 @@
+:host {
+    width: 100%;
+}
+
+.vloc-ins-attribute-component {
+    color: #00396b;
+    min-height: 2.25rem;
+}
+
+.vloc-ins-attribute-limit-uservalues {
+    display: flex;
+}
+
+.vloc-ins-attribute-limit-uservalues .vloc-ins-attribute-limit-label{
+    display: flex;
+    align-items: center;
+}
+
+.vloc-ins-text-color_info{
+    color: #6187c0;
+}
+
+.vloc-ins-text-color_warn{
+    color: #ffb75d;
+}
+
+.vloc-ins-icon-hide {
+    opacity: 0;
+}
+
+.vloc-ins-align-items{
+    display: flex;
+    align-items: center;
+}
+
+.vloc-ins-label {
+    font-size: 1rem;
+}
+
+.vloc-ins-admin-text {
+    font-size: 0.7rem;
+    /* letter-spacing: 1px; */
+}
+
+.vloc-ins-admin-label {
+    /* text-transform: uppercase; */
+}
+
+.equal-label-size {
+    height: 50px;
+}
+@media screen and (max-width: 450px) {
+    .vloc-ins-multi-item-toggle-plan-details span{
+        display: block;
+    }
+
+    .vloc-ins-label {
+        word-wrap: break-word;
+    }
+
+    .vloc-ins-admin-label {
+        word-wrap: break-word;
+    }
+}

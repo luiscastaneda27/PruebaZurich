@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_NumeroQuote__c</fullName>
+    <description>Campo para concatenar auto numerico con la version de una quote , para la generacion del valor unico de identificación de la quote</description>
+    <externalId>false</externalId>
+    <formula>ZRH_AutoNumeroQuote__c  &amp; &quot;-V&quot;  &amp;  TEXT(ZRH_VersionQuote__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Número cotización</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

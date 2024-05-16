@@ -1,0 +1,7 @@
+.policy-table {
+    height: 300px;
+}
+
+.policy-table table>thead th{
+    background: grey;
+}

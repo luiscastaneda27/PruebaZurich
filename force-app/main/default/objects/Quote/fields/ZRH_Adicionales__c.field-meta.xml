@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Adicionales__c</fullName>
+    <description>Campo para indicar aquellos Adicionales que deban contemplarse para la cotización</description>
+    <externalId>false</externalId>
+    <label>Adicionales</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DEF</fullName>
+                <default>false</default>
+                <label>DEF</label>
+            </value>
+            <value>
+                <fullName>Ejecutivo Insitu</fullName>
+                <default>false</default>
+                <label>Ejecutivo Insitu</label>
+            </value>
+            <value>
+                <fullName>Liquidador Insitu</fullName>
+                <default>false</default>
+                <label>Liquidador Insitu</label>
+            </value>
+            <value>
+                <fullName>IMED</fullName>
+                <default>false</default>
+                <label>IMED</label>
+            </value>
+            <value>
+                <fullName>Farmacia</fullName>
+                <default>false</default>
+                <label>Farmacia</label>
+            </value>
+            <value>
+                <fullName>Asistencia</fullName>
+                <default>false</default>
+                <label>Asistencia</label>
+            </value>
+            <value>
+                <fullName>Fondo libre disposición</fullName>
+                <default>false</default>
+                <label>Fondo libre disposición</label>
+            </value>
+            <value>
+                <fullName>Costo Marketing</fullName>
+                <default>false</default>
+                <label>Costo Marketing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

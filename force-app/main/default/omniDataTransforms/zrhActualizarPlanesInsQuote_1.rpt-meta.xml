@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhActualizarPlanesInsQuote</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhActualizarPlanesInsQuoteCustom8243</globalKey>
+        <inputFieldName>quoteLineId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhActualizarPlanesInsQuote</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>QuoteLineItem</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhActualizarPlanesInsQuoteCustom9268</globalKey>
+        <inputFieldName>attributeValues</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhActualizarPlanesInsQuote</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__AttributeSelectedValues__c</outputFieldName>
+        <outputObjectName>QuoteLineItem</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>zrhActualizarPlanesInsQuoteCustom7734</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>zrhActualizarPlanesInsQuote</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>QuoteLineItem</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>[ {
+  &quot;quoteLineId&quot; : &quot;0QL75000000E5idGAC&quot;,
+  &quot;attributeValues&quot; : {
+    &quot;TasaSFPXMil&quot; : null,
+    &quot;PorcDelCapital&quot; : null,
+    &quot;MontoCapitalUF&quot; : 123,
+    &quot;TipoDeCapital&quot; : &quot;Mixto&quot;
+  }
+}, {
+  &quot;quoteLineId&quot; : &quot;0QL75000000E5ieGAC&quot;,
+  &quot;attributeValues&quot; : {
+    &quot;VidaCAD&quot; : &quot;320130480&quot;,
+    &quot;TasaSFPXMil&quot; : null,
+    &quot;PorcDelCapital&quot; : null,
+    &quot;MontoCapitalUF&quot; : 2,
+    &quot;TipoDeCapital&quot; : &quot;Mixto&quot;
+  }
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>zrhActualizarPlanesInsQuote_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

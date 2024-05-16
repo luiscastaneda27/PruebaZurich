@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__General</fullName>
+    <active>true</active>
+    <businessProcess>FinServ__Opportunity Process</businessProcess>
+    <label>General</label>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GLBP1_TipoSeguro__c</picklist>
+        <values>
+            <fullName>Rentas Vitalicias Previsionales%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro Obligatorio de Accidentes Personales %28SOAP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro de Accidentes Personales%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro de Salud%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro de Vida con Ahorro Previsional Voluntario %28APV o APVC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro de Vida%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro de vida con ahorro %28SVA%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Aprobación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negocio existente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuevo negocio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ZRH_LM_Cantidad_de_cuotas__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ZRH_LM_Deducible__c</picklist>
+        <values>
+            <fullName>UF 0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UF 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UF 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UF 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UF 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UF 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ZRH_LM_Factura_Guia_Despacho__c</picklist>
+        <values>
+            <fullName>Factura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guía despacho</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ZRH_LM_Medio_de_pago__c</picklist>
+        <values>
+            <fullName>Crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Débito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAT</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ZRH_LM_Quien_es_pagador_seguro__c</picklist>
+        <values>
+            <fullName>Dueño del auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

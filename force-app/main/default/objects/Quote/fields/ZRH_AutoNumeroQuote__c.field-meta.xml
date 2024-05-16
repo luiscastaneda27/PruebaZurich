@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_AutoNumeroQuote__c</fullName>
+    <description>Campo auto incrementador de la Quote para el campo de numero unico de Cotización</description>
+    <displayFormat>C-{00000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Auto Numero Quote</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

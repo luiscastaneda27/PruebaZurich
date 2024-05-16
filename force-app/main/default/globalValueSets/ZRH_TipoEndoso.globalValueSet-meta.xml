@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>E-056</fullName>
+        <default>false</default>
+        <label>Datos de Cobranza</label>
+    </customValue>
+    <customValue>
+        <fullName>E-033</fullName>
+        <default>false</default>
+        <label>Datos Cláusulas Especiales</label>
+    </customValue>
+    <customValue>
+        <fullName>E-035</fullName>
+        <default>false</default>
+        <label>Datos Corredores Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-009</fullName>
+        <default>false</default>
+        <label>Modif. Datos Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-015</fullName>
+        <default>false</default>
+        <label>Datos Cond.Coberturas Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-023</fullName>
+        <default>false</default>
+        <label>Modif. Capital/Renta (Vida)</label>
+    </customValue>
+    <customValue>
+        <fullName>E-042</fullName>
+        <default>false</default>
+        <label>Datos Asegurabilidad Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-043</fullName>
+        <default>false</default>
+        <label>Datos Contribución Empresa Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-055</fullName>
+        <default>false</default>
+        <label>Datos Liquid. Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-101</fullName>
+        <default>false</default>
+        <label>Datos Grales. Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-102</fullName>
+        <default>false</default>
+        <label>Datos Tarifa Salud (Tipo/Número Integrantes) Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-103</fullName>
+        <default>false</default>
+        <label>Datos Tarifa Salud (N° de Integrantes por/Por Tipo de Integrantes por Edad) Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-104</fullName>
+        <default>false</default>
+        <label>Datos Deduc. por Tramo Pólizas</label>
+    </customValue>
+    <customValue>
+        <fullName>E-105</fullName>
+        <default>false</default>
+        <label>Datos Tarifa Escolaridad Pólizas</label>
+    </customValue>
+    <description>Definición del tipo de endoso que se esta realizando</description>
+    <masterLabel>Tipo de Endoso</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

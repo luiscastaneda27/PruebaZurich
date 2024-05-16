@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_FechaHoraRespuestaAPIPDF__c</fullName>
+    <description>Almacena Fecha/hora de la respuesta del servicio de generación de PDF.</description>
+    <externalId>false</externalId>
+    <label>Fecha/Hora Respuesta API PDF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

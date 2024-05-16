@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_FrecuenciaPago__c</fullName>
+    <externalId>false</externalId>
+    <label>Frecuencia de pago</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mensual</fullName>
+                <default>false</default>
+                <label>Mensual</label>
+            </value>
+            <value>
+                <fullName>Trimestral</fullName>
+                <default>false</default>
+                <label>Trimestral</label>
+            </value>
+            <value>
+                <fullName>Semestral</fullName>
+                <default>false</default>
+                <label>Semestral</label>
+            </value>
+            <value>
+                <fullName>Anual</fullName>
+                <default>false</default>
+                <label>Anual</label>
+            </value>
+            <value>
+                <fullName>Unica</fullName>
+                <default>false</default>
+                <label>Unica</label>
+            </value>
+            <value>
+                <fullName>FP 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FP 1</label>
+            </value>
+            <value>
+                <fullName>FP 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FP 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

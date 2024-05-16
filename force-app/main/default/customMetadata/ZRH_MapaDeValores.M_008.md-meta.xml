@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>M-008</label>
+    <protected>false</protected>
+    <values>
+        <field>ZHR_Campo__c</field>
+        <value xsi:type="xsd:string">Status</value>
+    </values>
+    <values>
+        <field>ZRH_Objeto__c</field>
+        <value xsi:type="xsd:string">Quote</value>
+    </values>
+    <values>
+        <field>ZRH_ValorAPI__c</field>
+        <value xsi:type="xsd:string">E-08</value>
+    </values>
+    <values>
+        <field>ZRH_Valor__c</field>
+        <value xsi:type="xsd:string">Recotizar</value>
+    </values>
+</CustomMetadata>

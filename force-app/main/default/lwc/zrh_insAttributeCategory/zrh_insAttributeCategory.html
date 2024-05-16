@@ -1,0 +1,32 @@
+<template>
+    <div if:true={attributeCategory}>
+        <template if:false={hideCategoryLabel}>
+            <div class="slds-section__title slds-m-top_medium nds-section__title nds-m-top_medium">
+                <h3 if:false={attributeCategory.fields} class="slds-text-title_bold nds-text-title_bold">
+                    {attributeCategory.Name}
+                </h3>
+            </div>
+        </template>
+        <div class="slds-grid slds-wrap nds-grid nds-wrap">
+            <template if:true={productAttributes}>
+                <template for:each={productAttributes.records} for:item="attribute">
+                    <div key={attribute.attributeId} class={attribute.classes}>
+                        <div class={attributeInnerContainerClasses}>
+                            <c-zrh_ins-attribute
+                                rule-context={ruleContext}
+                                is-readonly={isReadonly}
+                                key={attribute.attributeId}
+                                currency={currency}
+                                attribute-style={attributeStyle}
+                                attribute={attribute}
+                                theme={theme}
+                                root-channel={rootChannel}
+                                class="slds-p-bottom_xx-small nds-p-bottom_xx-small"
+                            ></c-zrh_ins-attribute>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </div>
+</template>

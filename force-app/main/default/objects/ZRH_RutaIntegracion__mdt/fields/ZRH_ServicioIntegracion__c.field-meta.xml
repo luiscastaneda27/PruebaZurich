@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ServicioIntegracion__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Servicio Integracion</label>
+    <referenceTo>ZRH_ServicioIntegracion__mdt</referenceTo>
+    <relationshipLabel>Rutas Integraciones</relationshipLabel>
+    <relationshipName>RutasIntegraciones</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

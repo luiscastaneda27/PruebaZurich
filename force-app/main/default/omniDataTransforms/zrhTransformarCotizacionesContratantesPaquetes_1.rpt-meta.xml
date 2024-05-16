@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>[JN][SFCLP-32]</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom7457</globalKey>
+        <inputFieldName>QuoteContratantes:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom8096</globalKey>
+        <inputFieldName>ConveniosSeleccionados</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:ConveniosSeleccionados</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom1774</globalKey>
+        <inputFieldName>NivelPaqueteConveniosLinea</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:NivelPaqueteConveniosLinea</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom9512</globalKey>
+        <inputFieldName>GestionarPaqueteAsistencias:NivelAsistencias</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:GestionarPaqueteAsistencias:NivelAsistencias</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom1930</globalKey>
+        <inputFieldName>GestionarPaqueteConvenios:NivelPaqueteConvenios</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:GestionarPaqueteConvenios:NivelPaqueteConvenios</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom4414</globalKey>
+        <inputFieldName>GestionarPaqueteConveniosLineaTransf</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:GestionarPaqueteConveniosLineaTransf</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarCotizacionesContratantesPaquetesCustom3754</globalKey>
+        <inputFieldName>GestionarPaqueteAsistencias:TablaAsistenciasParaPaquetesDePlan</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarCotizacionesContratantesPaquetes</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteContratantes:GestionarPaqueteAsistencias:TablaAsistenciasParaPaquetesDePlan</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;QuoteContratantes&quot; : [ {
+    &quot;Id&quot; : &quot;0Q075000000EAgMCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgOCAW&quot;
+  }, {
+    &quot;Id&quot; : &quot;0Q075000000EAgPCAW&quot;
+  } ],
+  &quot;GestionarPaqueteConveniosLinea&quot; : {
+    &quot;TipoConvenioIMED&quot; : true,
+    &quot;TipoConvenioGERTY&quot; : true,
+    &quot;Franquicias&quot; : &quot;esta es una prueba&quot;,
+    &quot;ConvenioGerty&quot; : &quot;ReembolsosinTramite;BonificacionEnLinea&quot;,
+    &quot;ConvenioFarmacias&quot; : &quot;Cruz Verde;Ahumada;Salcobrand&quot;,
+    &quot;ConveniosEnLinea&quot; : true,
+    &quot;TipoConvenioFarmacia&quot; : true
+  },
+  &quot;NivelPaqueteConveniosLinea&quot; : &quot;Grupo de Negocio&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarCotizacionesContratantesPaquetes_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

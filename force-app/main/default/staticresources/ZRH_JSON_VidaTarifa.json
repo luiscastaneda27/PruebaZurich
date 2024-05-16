@@ -1,0 +1,77 @@
+{
+  "IdTipoTarifa": "6",
+  "TarifaVida": [
+    {
+      "NumeroAsegurados": 1,
+      "PrimaAnualUF": 0.006,
+      "TasaMensual": 0.25,
+      "IdCobertura": "01t78000008YAelAAG",
+      "CapitalAseguradoUF": 2,
+      "PrimaMensualUF": 0,
+      "TasaAnual": 3,
+      "CodigoCobertura": "27",
+      "IdProductoCotizacion": "0QL8B000000HoAqWAK",
+      "NumeroAsegurados700": null,
+      "NombreCobertura": "PAGO MENSUAL POR INCAPACIDAD TEMPORAL"
+    },
+    {
+      "PrimaAnualUF": 0.03,
+      "NumeroAsegurados": 4,
+      "TasaMensual": 0.5,
+      "IdCobertura": "01t78000008YAemAAG",
+      "CapitalAseguradoUF": 5,
+      "PrimaMensualUF": 0,
+      "TasaAnual": 6,
+      "CodigoCobertura": "80",
+      "IdProductoCotizacion": "0QL8B000000HoArWAK",
+      "NumeroAsegurados700": null,
+      "NombreCobertura": "INVALIDEZ PERMANENTE (80)"
+    },
+    {
+      "PrimaAnualUF": 0.072,
+      "NumeroAsegurados": 7,
+      "TasaMensual": 0.75,
+      "IdCobertura": "01t78000008YAenAAG",
+      "CapitalAseguradoUF": 8,
+      "PrimaMensualUF": 0.01,
+      "TasaAnual": 9,
+      "CodigoCobertura": "83",
+      "IdProductoCotizacion": "0QL8B000000HoAsWAK",
+      "NumeroAsegurados700": null,
+      "NombreCobertura": "INVALIDEZ ACCIDENTAL"
+    },
+    {
+      "PrimaAnualUF": 0.132,
+      "NumeroAsegurados": 10,
+      "TasaMensual": 1,
+      "IdCobertura": "01t78000008YAepAAG",
+      "CapitalAseguradoUF": 11,
+      "PrimaMensualUF": 0.01,
+      "TasaAnual": 12,
+      "CodigoCobertura": "3",
+      "IdProductoCotizacion": "0QL8B000000HoAtWAK",
+      "NumeroAsegurados700": null,
+      "NombreCobertura": "MUERTE ACCIDENTAL"
+    },
+    {
+      "PrimaAnualUF": 0.21,
+      "NumeroAsegurados": 13,
+      "TasaMensual": 1.25,
+      "IdCobertura": "01t78000008YAesAAG",
+      "CapitalAseguradoUF": 14,
+      "PrimaMensualUF": 0.02,
+      "TasaAnual": 15,
+      "CodigoCobertura": "1",
+      "IdProductoCotizacion": "0QL8B000000HoAuWAK",
+      "NumeroAsegurados700": null,
+      "NombreCobertura": "FALLECIMIENTO"
+    },
+    {
+      "PrimaAnualUF": 0.45,
+      "NumeroAsegurados": 13,
+      "CapitalAseguradoUF": 40,
+      "PrimaMensualUF": 0.04,
+      "NombreCobertura": "TOTAL"
+    }
+  ]
+}

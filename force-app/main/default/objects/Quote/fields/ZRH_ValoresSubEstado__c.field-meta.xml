@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValoresSubEstado__c</fullName>
+    <description>Campo de Texto que muestra los sub estados de la cotizacion (utilizado en flow &quot;Cambiar Estado Cotizacion&quot;)</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-01&apos;),&apos;Sinestrialidad&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-02&apos;),&apos;Sospecha de Fraude&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-03&apos;),&apos;Apetito de Riesgo&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-04&apos;),&apos;Cuenta Vigente&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-05&apos;),&apos;Reservada por otro corredor&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-06&apos;),&apos;Falta de informacion&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-07&apos;),&apos;Falta de Tiempo UW&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-08&apos;),&apos;Otra&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-09&apos;),&apos;Motivo&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-10&apos;),&apos;Cia que ganó&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-11&apos;),&apos;Prima de cierre&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-12&apos;),&apos;Corredor que ganó&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-13&apos;),&apos;Se cumplió fecha de caducidad&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-14&apos;),&apos;Aceptada por Cliente&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-15&apos;),&apos;Configuración Completada&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-16&apos;),&apos;Renovación Sincronizada&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-17&apos;),&apos;Renovación Sincronizada con Error&apos;,
+IF(ISPICKVAL(ZRH_SubEstado__c,&apos;SE-18&apos;),&apos;Renovación en proceso de Sincronización&apos;,
+
+&quot;&quot;))))))))))))))))))</formula>
+    <label>Valores SubEstado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

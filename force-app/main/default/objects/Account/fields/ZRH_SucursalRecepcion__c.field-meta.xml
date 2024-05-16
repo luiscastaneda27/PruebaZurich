@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_SucursalRecepcion__c</fullName>
+    <description>Campo para en listar las sucursales de las oficinas Zurich</description>
+    <externalId>false</externalId>
+    <label>Sucursal Recepción</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Santiago</fullName>
+                <default>false</default>
+                <label>Santiago</label>
+            </value>
+            <value>
+                <fullName>Rancagua</fullName>
+                <default>false</default>
+                <label>Rancagua</label>
+            </value>
+            <value>
+                <fullName>Concepción</fullName>
+                <default>false</default>
+                <label>Concepción</label>
+            </value>
+            <value>
+                <fullName>Curicó</fullName>
+                <default>false</default>
+                <label>Curicó</label>
+            </value>
+            <value>
+                <fullName>Viña del Mar</fullName>
+                <default>false</default>
+                <label>Viña del Mar</label>
+            </value>
+            <value>
+                <fullName>Talca</fullName>
+                <default>false</default>
+                <label>Talca</label>
+            </value>
+            <value>
+                <fullName>Los Andes</fullName>
+                <default>false</default>
+                <label>Los Andes</label>
+            </value>
+            <value>
+                <fullName>La Serena</fullName>
+                <default>false</default>
+                <label>La Serena</label>
+            </value>
+            <value>
+                <fullName>Antofagasta</fullName>
+                <default>false</default>
+                <label>Antofagasta</label>
+            </value>
+            <value>
+                <fullName>Puerto Montt</fullName>
+                <default>false</default>
+                <label>Puerto Montt</label>
+            </value>
+            <value>
+                <fullName>Iquique</fullName>
+                <default>false</default>
+                <label>Iquique</label>
+            </value>
+            <value>
+                <fullName>Copiapó</fullName>
+                <default>false</default>
+                <label>Copiapó</label>
+            </value>
+            <value>
+                <fullName>Temuco</fullName>
+                <default>false</default>
+                <label>Temuco</label>
+            </value>
+            <value>
+                <fullName>Osorno</fullName>
+                <default>false</default>
+                <label>Osorno</label>
+            </value>
+            <value>
+                <fullName>Valdivia</fullName>
+                <default>false</default>
+                <label>Valdivia</label>
+            </value>
+            <value>
+                <fullName>Chillán</fullName>
+                <default>false</default>
+                <label>Chillán</label>
+            </value>
+            <value>
+                <fullName>Punta Arenas</fullName>
+                <default>false</default>
+                <label>Punta Arenas</label>
+            </value>
+            <value>
+                <fullName>Los Ángeles</fullName>
+                <default>false</default>
+                <label>Los Ángeles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

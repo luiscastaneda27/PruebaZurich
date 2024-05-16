@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhExtraerTiposDeRegistro</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:RecordType:SobjectType &apos;vlocity_ins__GroupCensus__c&apos; == var:RecordType:Id var:null IF</formulaConverted>
+        <formulaExpression>IF(RecordType:SobjectType == &apos;vlocity_ins__GroupCensus__c&apos;, RecordType:Id, null)</formulaExpression>
+        <formulaResultPath>RecordType:CensusRecordTypeId</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>zrhExtraerTiposDeRegistroCustom0jI7500000000XcEAIItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerTiposDeRegistroCustom7983</globalKey>
+        <inputFieldName>RecordType:QuoteRecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IdTipoRegistroCotizacion</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:RecordType:SobjectType &apos;Account&apos; == var:RecordType:Id var:null IF</formulaConverted>
+        <formulaExpression>IF(RecordType:SobjectType == &apos;Account&apos;, RecordType:Id, null)</formulaExpression>
+        <formulaResultPath>RecordType:AccountRecordTypeId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhExtraerTiposDeRegistroCustom0jI7500000000XcEAIItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:RecordType:SobjectType &apos;Contact&apos; == var:RecordType:Id var:null IF</formulaConverted>
+        <formulaExpression>IF(RecordType:SobjectType == &apos;Contact&apos;, RecordType:Id, null)</formulaExpression>
+        <formulaResultPath>RecordType:ContactRecordTypeId</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>zrhExtraerTiposDeRegistroCustom0jI7500000000XcEAIItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>TipoDeRegistro:Nombre</filterValue>
+        <globalKey>zrhExtraerTiposDeRegistroCustom0jI7500000000XcEAIItem1</globalKey>
+        <inputFieldName>DeveloperName</inputFieldName>
+        <inputObjectName>RecordType</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RecordType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>TipoDeRegistro:Objeto</filterValue>
+        <globalKey>zrhExtraerTiposDeRegistroCustom0jI7500000000XcEAIItem2</globalKey>
+        <inputFieldName>SobjectType</inputFieldName>
+        <inputObjectName>RecordType</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RecordType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:RecordType:SobjectType &apos;Quote&apos; == var:RecordType:Id var:null IF</formulaConverted>
+        <formulaExpression>IF(RecordType:SobjectType == &apos;Quote&apos;, RecordType:Id, null)</formulaExpression>
+        <formulaResultPath>RecordType:QuoteRecordTypeId</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>zrhExtraerTiposDeRegistroCustom1352</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhExtraerTiposDeRegistroCustom0jI7500000000XcEAIItem5</globalKey>
+        <inputFieldName>RecordType:CensusRecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhExtraerTiposDeRegistro</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IdTipoRegistroCenso</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;TipoDeRegistro&quot; : [ {
+    &quot;Objeto&quot; : &quot;Quote&quot;,
+    &quot;Nombre&quot; : &quot;LargeGroupQuote&quot;
+  }, {
+    &quot;Objeto&quot; : &quot;vlocity_ins__GroupCensus__c&quot;,
+    &quot;Nombre&quot; : &quot;LargeGroup&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>zrhExtraerTiposDeRegistro_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

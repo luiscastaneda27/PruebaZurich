@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ZRH Consulta Estado de Póliza</label>
+    <protected>false</protected>
+    <values>
+        <field>ZRH_Cabeceras__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>ZRH_Metodo__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>ZRH_RutaURL__c</field>
+        <value xsi:type="xsd:string">/integraciones/api/v1/vida/polizas</value>
+    </values>
+    <values>
+        <field>ZRH_ServicioIntegracion__c</field>
+        <value xsi:type="xsd:string">ZRH_SegurosColectivos</value>
+    </values>
+</CustomMetadata>

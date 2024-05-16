@@ -1,0 +1,7 @@
+projectPath: vlocity
+autoRetryErrors: true
+gitCheck: true
+#gitCheckKey:#Name#
+#postStepApex:
+#    Deploy:
+#        DocumentTemplate: ../ActivateDocumentTemplate.apex

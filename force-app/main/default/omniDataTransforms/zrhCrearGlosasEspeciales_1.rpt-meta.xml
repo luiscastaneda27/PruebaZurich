@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;BlockCreacionGlosa&quot; : {
+    &quot;DestinoTipoPDF&quot; : &quot;D-001;D-002&quot;,
+    &quot;Planes&quot; : &quot;602;603&quot;,
+    &quot;Activo&quot; : true,
+    &quot;NivelGlosa&quot; : &quot;Contratante&quot;,
+    &quot;NombreGlosa&quot; : &quot;Nombre Test&quot;,
+    &quot;Titulo&quot; : &quot;Titulo Test&quot;,
+    &quot;ContenidoGlosa&quot; : &quot;Contenido Test&quot;
+  },
+  &quot;Planes&quot; : [ {
+    &quot;Id&quot; : &quot;0QL78000000DQxlGAG&quot;,
+    &quot;Codigo&quot; : &quot;602&quot;,
+    &quot;QuoteId&quot; : &quot;0Q0780000009VHVCA2&quot;,
+    &quot;Nombre&quot; : &quot;Catastrófico&quot;
+  }, {
+    &quot;Id&quot; : &quot;0QL8B000000HliNWAS&quot;,
+    &quot;Codigo&quot; : &quot;600&quot;,
+    &quot;QuoteId&quot; : &quot;0Q0780000009VHVCA2&quot;,
+    &quot;Nombre&quot; : &quot;Salud&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhCrearGlosasEspeciales</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom3715</globalKey>
+        <inputFieldName>BlockCreacionGlosa:NombreGlosa</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom1588</globalKey>
+        <inputFieldName>BlockCreacionGlosa:NombreGlosa</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_NombreArticulo__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom2357</globalKey>
+        <inputFieldName>BlockCreacionGlosa:Activo</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Activo__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>G-003</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom9497</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_TipoDeGlosa__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom5967</globalKey>
+        <inputFieldName>Planes:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_QuoteLineItem__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom7472</globalKey>
+        <inputFieldName>BlockCreacionGlosa:DestinoTipoPDF</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_DestinoTipoPDF__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom3050</globalKey>
+        <inputFieldName>BlockCreacionGlosa:Titulo</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Titulo__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom5871</globalKey>
+        <inputFieldName>BlockCreacionGlosa:Planes</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Plan__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom7541</globalKey>
+        <inputFieldName>BlockCreacionGlosa:ContenidoGlosa</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_ContenidoGlosa__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>zrhCrearGlosasEspecialesCustom9880</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhCrearGlosasEspecialesCustom4843</globalKey>
+        <inputFieldName>Planes:QuoteId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhCrearGlosasEspeciales</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZRH_Quote__c</outputFieldName>
+        <outputObjectName>ZRH_Glosas__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;BlockCreacionGlosa&quot; : {
+    &quot;DestinoTipoPDF&quot; : &quot;D-001;D-002&quot;,
+    &quot;Planes&quot; : &quot;602;603&quot;,
+    &quot;Activo&quot; : true,
+    &quot;NivelGlosa&quot; : &quot;Contratante&quot;,
+    &quot;NombreGlosa&quot; : &quot;Nombre Test&quot;,
+    &quot;Titulo&quot; : &quot;Titulo Test&quot;,
+    &quot;ContenidoGlosa&quot; : &quot;Contenido Test&quot;
+  },
+  &quot;Planes&quot; : [ {
+    &quot;Id&quot; : &quot;0QL78000000DQxlGAG&quot;,
+    &quot;Codigo&quot; : &quot;602&quot;,
+    &quot;QuoteId&quot; : &quot;0Q0780000009VHVCA2&quot;,
+    &quot;Nombre&quot; : &quot;Catastrófico&quot;
+  }, {
+    &quot;Id&quot; : &quot;0QL8B000000HliNWAS&quot;,
+    &quot;Codigo&quot; : &quot;600&quot;,
+    &quot;QuoteId&quot; : &quot;0Q0780000009VHVCA2&quot;,
+    &quot;Nombre&quot; : &quot;Salud&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>zrhCrearGlosasEspeciales_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

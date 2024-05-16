@@ -1,0 +1,241 @@
+<!--/*********************************************************************************
+Project      : Zurich 
+Created By   : Deloitte
+Created Date : 04/09/2023
+Description  : HTML - Table to display values from JSON Convenios
+History      :
+**************************ACRONYM OF AUTHORS************************************
+AUTHOR                         ACRONYM
+Mateo Long                        ML
+********************************************************************************
+VERSION  AUTHOR         DATE            Description
+1.0       LC	     04/09/2023		  initial version
+********************************************************************************/-->
+<template >
+    <lightning-card if:false={recordId} title="Convenios Seleccionados">
+        <lightning-button slot="actions" variant="brand" label="Agregar otro Convenio" onclick={onclickNewConvenios} disabled={disabledNewConvenio} >
+        </lightning-button>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small" size="5">
+                <div class="header-column">
+                    <p><b>Convenio Preferente</b></p>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="5">
+                <div class="header-column">
+                    <p><b>Convenio 470 - Clínica Dávila / Hospital Clínico U Chile (100%)</b></p>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="2">
+            </lightning-layout-item>
+        </lightning-layout>
+        <template for:each={ConveniosList} for:item="record">
+            <lightning-layout key={record.Id}>
+                <lightning-layout-item padding="around-small" size="5">
+                    <div class="header-column">
+                        <p>{record.ConvPref}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="5">
+                    <div class="header-column">
+                        <p>{record.Conv470ClinicaDVHospCH}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small" size="2">
+                    <div class="header-column">
+                        <a name={record.Id} onclick={onclickShow}>Ver</a>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </lightning-card>
+    <lightning-layout if:true={data.showConvenios} vertical-align="stretch" multiple-rows="true">
+        
+        <lightning-layout-item padding="around-small" size="5">
+            <lightning-combobox name="convenio-preferente" options={optionsConvenios} onchange={handleChange} value={data.ConvPref}>
+            </lightning-combobox>
+        </lightning-layout-item>
+        
+        <lightning-layout-item padding="around-small" size="5">
+            <lightning-combobox name="conv470-clinicaDV-hospCH" options={optionsConvenios} onchange={handleChange} value={data.Conv470ClinicaDVHospCH}>
+            </lightning-combobox>
+        </lightning-layout-item>
+        
+        <lightning-layout-item padding="around-small" size="6" if:false={data.disabledLowerUse}>
+            <label for="filter">Filtrar:</label>
+            <lightning-input type="text" name="filterPreferred" onchange={onchangeFilter} value={data.filterPreferred}>
+            </lightning-input>
+            <div class="table-container">
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">
+                                <div class="slds-truncate" title="Record ID">Prestador Preferente</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Select">Seleccionar</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={preferredProvidersListTable} for:item="record">
+                            <tr key={record.Id}>
+                                <td data-label="Record ID">
+                                    <div class="slds-truncate" title={record.NombreCobertura}>{record.Nombre}</div>
+                                </td>
+                                <td data-label="Select">
+                                    <lightning-input type="checkbox" checked={record.selected} data-id={record.Id}
+                                        id={record.Id} data-name="preferredProviders" onchange={handleCheckboxChange}>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </lightning-layout-item>
+
+        <lightning-layout-item padding="around-small" size="6" if:false={data.disabledLowerUse}>
+            <label for="filter">Filtrar:</label>
+            <lightning-input type="text" name="filterCoverage" onchange={onchangeFilter} value={data.filterCoverage}>
+            </lightning-input>
+            <div class="table-container">
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">
+                                <div class="slds-truncate" title="Record ID">Cobertura</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Select">Seleccionar</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={coveragesListTable} for:item="record">
+                            <tr key={record.Id}>
+                                <td data-label="Record ID">
+                                    <div class="slds-truncate" title={record.NombreCobertura}>{record.Nombre}</div>
+                                </td>
+                                <td data-label="Select">
+                                    <lightning-input type="checkbox" checked={record.selected} data-id={record.Id}
+                                        id={record.Id} data-name="coverage" onchange={handleCheckboxChange}>
+                                    </lightning-input>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </lightning-layout-item>
+
+        <lightning-layout-item padding="around-small" size="12" >
+            <footer class="slds-modal__footer">
+                <lightning-button label="Eliminar" title="Eliminar" onclick={onclickDeleteConvenios} variant="destructive" if:false={data.isNew} class="slds-m-left_x-small" >
+                </lightning-button>
+                <lightning-button label="Guardar" title="Guardar" onclick={onclickSaveConvenios} variant="brand" class="slds-m-left_x-small">
+                </lightning-button>
+            </footer>
+        </lightning-layout-item>
+
+    </lightning-layout>
+
+    <lightning-card if:true={recordId} title="Convenios Seleccionados" icon-name="standard:quotes" >
+        <lightning-layout vertical-align="stretch" multiple-rows="true">
+            <lightning-layout-item padding="around-small" size="12" >
+                <div class="table-container">
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">Convenio Preferente</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Select">Convenio 470 - Clínica Dávila / Hospital Clínico U Chile (100%)</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Select"> Prestadores / Coberturas</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={ConveniosList} for:item="record">
+                                <tr key={record.Id}>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.ConvPref}</div>
+                                    </td>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.Conv470ClinicaDVHospCH}</div>
+                                    </td>
+                                    <td data-label="Record ID">
+                                        <div class="header-column">
+                                            <a name={record.Id} onclick={onclickShowRecord} if:true={record.Conv470ClinicaDVHospCH} >Ver</a>
+                                        </div></div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="stretch" multiple-rows="true">
+            <lightning-layout-item padding="around-small" size="6" if:true={data.Conv470ClinicaDVHospCH} >
+                <div class="table-container">
+                    <b>Convenio Preferente:</b> {data.ConvPref}
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">Prestador Preferente</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={data.ListaPrestadores} for:item="record">
+                                <tr key={record.Id}>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.Nombre}</div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="6" if:true={data.Conv470ClinicaDVHospCH} >
+                <div class="table-container">
+                    <b>Convenio 470 - Clínica Dávila / Hosp. Clínico U Chile (100%):</b> {data.Conv470ClinicaDVHospCH}
+                    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_fixed-layout">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="slds-truncate" title="Record ID">Cobertura</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={data.ListaCoberturas} for:item="record">
+                                <tr key={record.Id}>
+                                    <td data-label="Record ID">
+                                        <div class="slds-truncate" >{record.Nombre}</div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+        
+    <template if:true={showSpinner}>
+        <div id="activityIndicator" class="slds-spinner_container">
+            <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+                <span class="slds-assistive-text">Loading, Please Wait...</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

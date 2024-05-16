@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_ins_fsc__SourcePremiumFrequency__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Premium Frequency of the Source Insurance Policy from which Quote is created.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(vlocity_ins_fsc__SourceInsurancePolicyId__r.PremiumFrequency)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Source Premium Frequency</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

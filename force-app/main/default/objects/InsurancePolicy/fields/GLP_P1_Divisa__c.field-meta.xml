@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLP_P1_Divisa__c</fullName>
+    <externalId>false</externalId>
+    <label>Divisa</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>USD</fullName>
+                <default>false</default>
+                <label>USD</label>
+            </value>
+            <value>
+                <fullName>CLF</fullName>
+                <default>false</default>
+                <label>CLF</label>
+            </value>
+            <value>
+                <fullName>CLP</fullName>
+                <default>false</default>
+                <label>CLP</label>
+            </value>
+            <value>
+                <fullName>EUR</fullName>
+                <default>false</default>
+                <label>EUR</label>
+            </value>
+            <value>
+                <fullName>Dolar aduanero</fullName>
+                <default>false</default>
+                <label>Dolar aduanero</label>
+            </value>
+            <value>
+                <fullName>USRT (Unidad de seguro reajustable trimestralmente)</fullName>
+                <default>false</default>
+                <label>USRT (Unidad de seguro reajustable trimestralmente)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

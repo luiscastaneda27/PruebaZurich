@@ -1,0 +1,42 @@
+<!--
+  @description       : 
+  @author            : jnietom@deloitte.com
+  @group             : 
+  @last modified on  : 05-09-2023
+  @last modified by  : jnietom@deloitte.com
+-->
+
+<template>
+    <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+        <template for:each={listReferencesFamily} for:item="family" for:index="index"> 
+            <div key={family.position}>
+                <lightning-accordion-section name={index} label={family.positionReferenceTitle} >
+                    <lightning-button if:true={family.addBtn} name="addBtn" data-type={family.ReferenceType} data-index={index} variant="base" slot="actions" label="Agregar otra Sobreprima" title="Agregar" class="slds-m-left_x-small" onclick={handleClickButton}></lightning-button>
+                    <lightning-button if:true={family.delBtn} name="delBtn" data-type={family.ReferenceType} data-index={index} variant="base" slot="actions" label="Eliminar" title="Eliminar" class="slds-m-left_x-small" onclick={handleClickButton}></lightning-button>
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-horizontal_medium slds-p-vertical_x-small lgc-bg slds-col slds-size_6-of-12">
+                            <lightning-combobox
+                            class="inputFieldCustom" 
+                            label="Parentesco"
+                            name="parentesco"
+                            value={family.parentesco}
+                            options={optionsFamily}
+                            message-when-value-missing="Requerido"
+                            placeholder=""
+                            onchange={handleChangeFamily} 
+                            required
+                            disabled={family.disableField} 
+                            data-index={index}></lightning-combobox>
+                        </div>
+                            <div class="slds-p-horizontal_medium slds-p-vertical_x-small lgc-bg slds-col slds-size_6-of-12">
+                                <lightning-input class="inputFieldCustom"  type="number"  max="99" label="Edad Sobre" name="edadSobre"  minlength="1" maxlength="3"  message-when-value-missing="Requerido" message-when-too-short="Entrada demasiado corta" message-when-too-long="Entrada demasiado larga"   required  disabled={family.disableField} onblur={handleChangeFamily} data-index={index}></lightning-input>
+                            </div>
+                            <div class="slds-p-horizontal_medium slds-p-vertical_x-small lgc-bg slds-col slds-size_6-of-12">
+                                <lightning-input class="inputFieldCustom"  type="number"  max="100" label="% Sobreprima" name="porcSobreprima" minlength="1" maxlength="3"  message-when-value-missing="Requerido" message-when-too-short="Entrada demasiado corta" message-when-too-long="Entrada demasiado larga"  required disabled={family.disableField} onblur={handleChangeFamily} data-index={index}></lightning-input>
+                            </div>
+                        </div>
+                    </lightning-accordion-section>
+                </div>
+        </template>
+    </lightning-accordion>
+</template>

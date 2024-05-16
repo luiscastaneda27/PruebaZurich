@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_RenovacionFlag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo creado para indicar se la cotizacion se trata de una Renovación o de una Emissión. Usados para procesos técnicos que sincronizaron las pólizas entre Salesforce y el Core</description>
+    <externalId>false</externalId>
+    <label>Renovación</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

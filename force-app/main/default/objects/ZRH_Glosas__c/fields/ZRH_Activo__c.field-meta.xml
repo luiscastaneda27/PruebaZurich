@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Activo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Este campo indica si la glosa esta activa para su asignación al plan, sino esta activo no debe considerarse para las automatizaciones asociadas.</description>
+    <externalId>false</externalId>
+    <label>Activo</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

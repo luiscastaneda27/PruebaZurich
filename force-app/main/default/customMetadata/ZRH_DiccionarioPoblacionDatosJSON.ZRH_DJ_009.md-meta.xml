@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ZRH_DJ_009</label>
+    <protected>false</protected>
+    <values>
+        <field>ZRH_Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ZRH_CampoDestino__c</field>
+        <value xsi:type="xsd:string">ZRH_GWPPeriodoAnterior__c</value>
+    </values>
+    <values>
+        <field>ZRH_CampoJSON__c</field>
+        <value xsi:type="xsd:string">ZRH_Tarifa__c</value>
+    </values>
+    <values>
+        <field>ZRH_CondicionDos__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem.Quote.ZRH_TipoCotizacion__c</value>
+    </values>
+    <values>
+        <field>ZRH_Condicion__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem.vlocity_ins__RecordTypeName__c</value>
+    </values>
+    <values>
+        <field>ZRH_Nodo__c</field>
+        <value xsi:type="xsd:string">TotalCoberturas</value>
+    </values>
+    <values>
+        <field>ZRH_NombreAtributo__c</field>
+        <value xsi:type="xsd:string">PrimaAnualVigente</value>
+    </values>
+    <values>
+        <field>ZRH_Objeto__c</field>
+        <value xsi:type="xsd:string">ContractGroupPlan</value>
+    </values>
+    <values>
+        <field>ZRH_ValorCondicionDos__c</field>
+        <value xsi:type="xsd:string">Contratante</value>
+    </values>
+    <values>
+        <field>ZRH_ValorCondicion__c</field>
+        <value xsi:type="xsd:string">Product</value>
+    </values>
+</CustomMetadata>

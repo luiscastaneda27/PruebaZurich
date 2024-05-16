@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_Contrato</fullName>
+    <fields>ContractNumber</fields>
+    <fields>ZRH_NombreCortoCuenta__c</fields>
+    <fields>ZRH_Holding__c</fields>
+    <fields>Status</fields>
+    <fields>ZRH_TipoContrato__c</fields>
+    <label>Contrato</label>
+</CompactLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_FechaInclusionReqEnInclusion</fullName>
+    <active>true</active>
+    <description>La fecha de inclusion es requerida en la inclusion</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(ZRH_TipoMovimiento__c, &quot;Inclusión&quot;),
+ISNULL(PolicyStartDate)
+)</errorConditionFormula>
+    <errorMessage>El tipo de movimiento Inclusión debe tener una fecha de inclusión definida</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_InicioVigencia__c</fullName>
+    <description>Campo fecha de inicio de vigencia de la cuenta negocio</description>
+    <externalId>false</externalId>
+    <label>Inicio de vigencia</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

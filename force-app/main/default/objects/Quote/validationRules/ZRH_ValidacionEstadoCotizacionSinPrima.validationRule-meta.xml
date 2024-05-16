@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValidacionEstadoCotizacionSinPrima</fullName>
+    <active>false</active>
+    <description>Valida que los campos prima anual, prima vida o prima salud tengan valores</description>
+    <errorConditionFormula>(ISBLANK(Text(ZRH_PrimaTotalAnual_UF__c)) || ZRH_PrimaTotalAnual_UF__c = 0) &amp;&amp; 
+
+(ISBLANK(Text(ZRH_PrimaTotalAnualUF_Salud__c)) || ZRH_PrimaTotalAnualUF_Salud__c = 0) &amp;&amp;
+
+(ISBLANK(Text(ZRH_PrimaTotalAnualUF_Vida__c)) || ZRH_PrimaTotalAnualUF_Vida__c = 0) &amp;&amp;
+
+ISPICKVAL( Status , &quot;E-05&quot;)</errorConditionFormula>
+    <errorMessage>No puedes pasar a estado cotizada porque no se ha tarificado la cotización.</errorMessage>
+</ValidationRule>

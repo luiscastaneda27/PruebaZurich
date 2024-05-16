@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_ValoresEstado__c</fullName>
+    <description>Campo de Texto que muestra los estados de la cotizacion (utilizado en flow &quot;Cambiar Estado Cotizacion&quot;)</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status,&apos;E-01&apos;),&apos;Reserva&apos;,
+		IF(ISPICKVAL(Status,&apos;E-02&apos;),&apos;Ingreso&apos;,
+					IF(ISPICKVAL(Status,&apos;E-03&apos;),&apos;Documentación Faltante&apos;,
+								IF(ISPICKVAL(Status,&apos;E-04&apos;),&apos;Documentación Enviada&apos;,
+											IF(ISPICKVAL(Status,&apos;E-05&apos;),&apos;Cotizada&apos;,
+														IF(ISPICKVAL(Status,&apos;E-06&apos;),&apos;Declinada&apos;,
+																	IF(ISPICKVAL(Status,&apos;E-07&apos;),&apos;Enviada al Corredor&apos;,
+																				IF(ISPICKVAL(Status,&apos;E-08&apos;),&apos;Recotizar&apos;,
+																							IF(ISPICKVAL(Status,&apos;E-09&apos;),&apos;Ganada&apos;,
+																										IF(ISPICKVAL(Status,&apos;E-10&apos;),&apos;Perdida&apos;,
+					&quot;&quot;))))))))))</formula>
+    <label>Valores Estado</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

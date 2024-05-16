@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLBP1_Impide_modificacion_Estado</fullName>
+    <active>true</active>
+    <description>Campo Estado debe ser modificado solo por Administrador, impide modificación por parte de usuario.</description>
+    <errorConditionFormula>AND( $Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;
+   , ISCHANGED( Status ) )</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>No está autorizado para modificar este campo</errorMessage>
+</ValidationRule>

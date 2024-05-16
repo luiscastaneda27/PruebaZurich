@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>ZRH_SubGerenteComercial</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SubGerenteComercial</label>
+        <sharedTo>
+            <role>ZRH_SubgerenteComercial</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>ZRH_SubGerenteProposition</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SubGerenteProposition</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>ZRH_SubgerenteProposition</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>ZRH_SubGerenteSuscripcion</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SubGerenteSuscripcion</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>ZRH_SubgerenteSuscripcion</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

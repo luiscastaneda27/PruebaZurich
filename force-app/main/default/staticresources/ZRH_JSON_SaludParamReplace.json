@@ -1,0 +1,47 @@
+[
+  {
+    "field": "Name",
+    "typeCondition": "",
+    "sourceObject": "User",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": "%NombreEjecutivoComercial%"
+  },
+  {
+    "field": "Email",
+    "typeCondition": "",
+    "sourceObject": "User",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": "%MailEjecutivoComercial%"
+  },
+  {
+    "fieldJSON": "vlocity_ins__AttributeSelectedValues__c",
+    "sourceObject": "QuoteLineItem",
+    "field": "EmpresaPublica",
+    "typeCondition": "=",
+    "typeObject": "atribute",
+    "typeOperation": "condition",
+    "value": "Si"
+  },
+  {
+    "field": "",
+    "glosaExcepcional": "Cobertura",
+    "fieldJSON": "",
+    "typeCondition": "",
+    "sourceObject": "",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": ""
+  },
+  {
+    "field": "",
+    "glosaExcepcional": "CAD",
+    "fieldJSON": "",
+    "typeCondition": "",
+    "sourceObject": "",
+    "typeObject": "field",
+    "typeOperation": "replace",
+    "value": ""
+  }
+]

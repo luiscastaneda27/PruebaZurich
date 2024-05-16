@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;IdEmpresaContratante&quot; : &quot;0013C00000kvE9NQAU&quot;,
+  &quot;NombreEmpresaContratante&quot; : &quot;ABC Corp&quot;,
+  &quot;IdEmpresaHolding&quot; : &quot;0013C00000kw94OQAQ&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;IdEmpresaContratanteCerrada&quot; : &quot;0013C00000kvE9NQAU&quot;,
+  &quot;NombreEmpresaContratanteCerrada&quot; : &quot;ABC Corp&quot;,
+  &quot;IdEmpresaHoldingCerrada&quot; : &quot;0013C00000kw94OQAQ&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarAHoldingCerrado</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarAHoldingCerradoCustom4245</globalKey>
+        <inputFieldName>IdEmpresaContratante</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarAHoldingCerrado</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IdEmpresaContratanteCerrada</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarAHoldingCerradoCustom7154</globalKey>
+        <inputFieldName>NombreEmpresaContratante</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarAHoldingCerrado</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NombreEmpresaContratanteCerrada</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarAHoldingCerradoCustom8823</globalKey>
+        <inputFieldName>EsPipelineEmpresaContratante</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarAHoldingCerrado</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EsPipelineEmpresaContratanteCerrada</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarAHoldingCerradoCustom2432</globalKey>
+        <inputFieldName>IdEmpresaHolding</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarAHoldingCerrado</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IdEmpresaHoldingCerrada</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarAHoldingCerradoCustom3273</globalKey>
+        <inputFieldName>RutEmpresaContratante</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarAHoldingCerrado</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RutEmpresaContratanteCerrada</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;IdEmpresaContratante&quot; : &quot;0013C00000kxsd0QAA&quot;,
+  &quot;NombreEmpresaContratante&quot; : &quot;Agrocorp International Inc&quot;,
+  &quot;IdEmpresaHolding&quot; : &quot;0013C00000kw94OQAQ&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarAHoldingCerrado_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Abonado</fullName>
+        <default>false</default>
+        <label>Abonado</label>
+    </customValue>
+    <customValue>
+        <fullName>Asegurado</fullName>
+        <default>false</default>
+        <label>Asegurado</label>
+    </customValue>
+    <customValue>
+        <fullName>Beneficiario</fullName>
+        <default>false</default>
+        <label>Beneficiario</label>
+    </customValue>
+    <customValue>
+        <fullName>Conductor</fullName>
+        <default>false</default>
+        <label>Conductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Dueño</fullName>
+        <default>false</default>
+        <label>Dueño</label>
+    </customValue>
+    <customValue>
+        <fullName>Miembro</fullName>
+        <default>false</default>
+        <label>Miembro</label>
+    </customValue>
+    <customValue>
+        <fullName>Miembro del hogar</fullName>
+        <default>false</default>
+        <label>Miembro del hogar</label>
+    </customValue>
+    <customValue>
+        <fullName>Miembro del plan de salud</fullName>
+        <default>false</default>
+        <label>Miembro del plan de salud</label>
+    </customValue>
+    <customValue>
+        <fullName>Miembro del Plan de Vida</fullName>
+        <default>false</default>
+        <label>Miembro del Plan de Vida</label>
+    </customValue>
+    <customValue>
+        <fullName>Otro</fullName>
+        <default>false</default>
+        <label>Otro</label>
+    </customValue>
+    <customValue>
+        <fullName>Pagador del acuerdo</fullName>
+        <default>false</default>
+        <label>Pagador del acuerdo</label>
+    </customValue>
+    <masterLabel>Función participante</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

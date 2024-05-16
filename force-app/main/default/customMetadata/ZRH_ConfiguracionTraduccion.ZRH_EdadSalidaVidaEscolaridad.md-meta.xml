@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Edad Salida Vida Escolaridad</label>
+    <protected>false</protected>
+    <values>
+        <field>ZRH_Campo__c</field>
+        <value xsi:type="xsd:string">ZRH_AtributosRequisitosAsegurabilidad__c</value>
+    </values>
+    <values>
+        <field>ZRH_Estructura__c</field>
+        <value xsi:type="xsd:string">Requisitos de Asegurabilidad</value>
+    </values>
+    <values>
+        <field>ZRH_Objeto__c</field>
+        <value xsi:type="xsd:string">QuoteLineItem</value>
+    </values>
+    <values>
+        <field>ZRH_Orden__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+    <values>
+        <field>ZRH_Plan__c</field>
+        <value xsi:type="xsd:string">501;502;700</value>
+    </values>
+    <values>
+        <field>ZRH_SubEstructura__c</field>
+        <value xsi:type="xsd:string">Vida Escolaridad;Vida Protección Familiar;Accidentes Personales</value>
+    </values>
+    <values>
+        <field>ZRH_Tag__c</field>
+        <value xsi:type="xsd:string">EdadSalidaP</value>
+    </values>
+    <values>
+        <field>ZRH_TraduccionFuncional__c</field>
+        <value xsi:type="xsd:string">Edad Salida</value>
+    </values>
+</CustomMetadata>

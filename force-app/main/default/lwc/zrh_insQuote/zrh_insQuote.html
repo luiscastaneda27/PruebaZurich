@@ -1,0 +1,214 @@
+<template>
+    <div if:false={isLoaded}>
+        <lightning-spinner alternative-text="Loading" size="medium"> </lightning-spinner>
+    </div>
+    <div class="slds-p-horizontal_large vloc-ins-quote">
+        <div if:true={headerActions} class="slds-grid slds-grid_align-end slds-wrap slds-p-vertical_medium">
+            <div
+                if:true={rootDetails}
+                class="vloc-ins-action-container slds-size_1-of-1 slds-small-size_1-of-12 slds-col_bump-right"
+            >
+                <vlocity_ins-button
+                    class="vloc-ins-action"
+                    variant="neutral"
+                    icon-name="utility:chevronleft"
+                    label={labels.Back}
+                    icon-position="left"
+                    onclick={toggleRootLine}
+                >
+                </vlocity_ins-button>
+            </div>
+            <div
+                if:true={showActions}
+                class="vloc-ins-action-container slds-grid slds-wrap slds-border_right slds-p-right_small"
+            >
+                <vlocity_ins-ins-create-version
+                    class="vloc-ins-action slds-p-right_xx-small"
+                    record-id={recordId}
+                    theme={theme}
+                    title={labels.InsCreateVersion}
+                >
+                </vlocity_ins-ins-create-version>
+                <vlocity_ins-ins-version-history
+                    if:true={showVersionHistory}
+                    class="vloc-ins-action slds-p-right_xx-small"
+                    record-id={recordId}
+                    label={labels.VersionHistory}
+                    is-multi-root={isMultiRoot}
+                >
+                </vlocity_ins-ins-version-history>
+                <vlocity_ins-button
+                    if:true={showDebugMode}
+                    class="vloc-ins-action slds-p-right_xx-small"
+                    onclick={debugMode}
+                    extraclass="slds-size_1-of-1"
+                    label={labelDebugButton}
+                    variant="neutral"
+                >
+                </vlocity_ins-button>
+            </div>
+            <div 
+                if:true={showProductButton}
+                class="vloc-ins-action-container slds-grid slds-wrap slds-m-left_small">
+                <vlocity_ins-button
+                    class="vloc-ins-action"
+                    theme={theme}
+                    disabled={options.isReadonly}
+                    onclick={openProductList}
+                    extraclass="slds-size_1-of-1"
+                    label={labels.InsQuotesAddProduct}
+                    variant="neutral"
+                >
+                </vlocity_ins-button>
+            </div>
+        </div>
+        <vlocity_ins-ins-policy-management
+            class="vloc-ins-policy-management"
+            record-id={recordId}
+            root-channel={rootChannel}
+            title={labels.InsIssuePolicy}
+            type="quote"
+            quote-type={quoteType}
+        >
+        </vlocity_ins-ins-policy-management>
+        <div if:true={buildQuote} class="slds-has-error slds-m-top_none">
+            <div class="slds-align_absolute-center vloc-add-container vloc-ins-product">
+                <div class="slds-media__figure" onclick={openProductList} if:true={showProductButton}>
+                    <div class="vloc-ins-add-icons">
+                        <div class="vloc-ins-add-icon">
+                            <vlocity_ins-icon size="large" color="white" icon-name="utility:ribbon"> </vlocity_ins-icon>
+                        </div>
+                        <div class="vloc-ins-add-icon">
+                            <vlocity_ins-icon size="small" color="white" icon-name="utility:add"> </vlocity_ins-icon>
+                        </div>
+                    </div>
+                </div>
+                <p class="slds-text-body_regular" if:true={showProductButton}>
+                    <vlocity_ins-button onclick={openProductList} label={labels.InsQuoteAddProduct}> </vlocity_ins-button>
+                    &nbsp;{labels.InsQuoteToStartBuildingQuote}.
+                </p>
+                <div class="slds-media__figure" if:false={showProductButton}>
+                    <div class="vloc-ins-add-icons">
+                        <div class="vloc-ins-add-icon">
+                            <vlocity_ins-icon size="large" color="white" icon-name="utility:ribbon"> </vlocity_ins-icon>
+                        </div>
+                        <div class="vloc-ins-add-icon">
+                            <vlocity_ins-icon size="small" color="white" icon-name="utility:add"> </vlocity_ins-icon>
+                        </div>
+                    </div>
+                </div>
+                <p class="slds-text-body_regular" if:false={showProductButton}>
+                    {labels.InsQuoteAddProduct}&nbsp;{labels.InsQuoteToStartBuildingQuote}.
+                </p>
+            </div>
+        </div>
+        <template if:true={rootLineItems.length}>
+            <div if:true={displayNetPrice} class={netPriceClasses}>
+                <div class="vloc-ins-price-change slds-m-right_medium slds-grid slds-wrap">
+                    <span class="vloc-ins-price-change-label slds-m-right_xx-small"
+                        >{labels.InsQuoteNetPriceChange}:</span
+                    >
+                    <div>
+                        <vlocity_ins-tooltip
+                            if:true={displayTooltip}
+                            content="tooltip"
+                            class="vloc-ins-tooltip slds-p-horizontal_xx-small"
+                        >
+                            <div
+                                if:true={netChange.totalPremiumTermDifference}
+                                class="slds-grid slds-grid_align-spread"
+                            >
+                                <div class="slds-m-right_small">{labels.InsProductInstancePremium}:</div>
+                                <lightning-formatted-number
+                                    value={netChange.totalPremiumTermDifference}
+                                    format-style="currency"
+                                    currency-code={currency.code}
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                            <div if:true={netChange.totalTaxTermDifference} class="slds-grid slds-grid_align-spread">
+                                <div class="slds-m-right_small">{labels.InsProductInstanceTaxes}:</div>
+                                <lightning-formatted-number
+                                    value={netChange.totalTaxTermDifference}
+                                    format-style="currency"
+                                    currency-code={currency.code}
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                            <div if:true={netChange.totalFeeTermDifference} class="slds-grid slds-grid_align-spread">
+                                <div class="slds-m-right_small">{labels.InsProductInstanceFees}:</div>
+                                <lightning-formatted-number
+                                    value={netChange.totalFeeTermDifference}
+                                    format-style="currency"
+                                    currency-code={currency.code}
+                                >
+                                </lightning-formatted-number>
+                            </div>
+                        </vlocity_ins-tooltip>
+                        <span if:true={netChange.isNetPositive}>+</span>
+                        <lightning-formatted-number
+                            value={netChange.priceNetDifference}
+                            format-style="currency"
+                            currency-code={currency.code}
+                        >
+                        </lightning-formatted-number>
+                    </div>
+                </div>
+                <span class="vloc-ins-light"
+                    >{netChange.daysRemaining} ({netChange.effectiveDate} - {netChange.endDate})
+                </span>
+            </div>
+            <template iterator:rootline={rootLineItems}>
+                <div key={rootline.value.quoteLineItemId}>
+                    <template if:false={editPanelMode}>
+                        <div if:false={rootline.first} class="slds-p-top_large"></div>
+                    </template>
+                    <c-zrh_ins-quote-single-root
+                        key={rootline.value.quoteLineItemId}
+                        class={rootLineItemsClass}
+                        enable-group-classes={enableGroupClasses}
+                        product={rootline.value}
+                        options={options}
+                        is-multi-root={isMultiRoot}
+                        record-id={recordId}
+                        enable-clone={enableClone}
+                        enable-delete={enableDelete}
+                        edit-panel-mode={editPanelMode}
+                        root-quote-channel={rootQuoteChannel}
+                        price-quote-async={priceQuoteAsync}
+                        in-debug-mode={inDebugMode}
+                        enable-debug-mode={enableDebugMode}
+                        show-actions={showActions}
+                        use-rating-fact={useRatingFact}
+                        is-batch-mode={isBatchMode}
+                        user-profile={userProfile}
+                    >
+                    </c-zrh_ins-quote-single-root>
+                    <vlocity_ins-ins-quote-large-group
+                        data-index={rootline.index}
+                        if:true={rootline.value.renderDetails}
+                        class="vloc-ins-large-group"
+                        enable-group-classes={enableGroupClasses}
+                        root-prod-id={rootProdId}
+                        in-debug-mode={inDebugMode}
+                        options={options}
+                        root-quote-channel={rootQuoteChannel}
+                        line-id={lineId}
+                        root-line={rootline.value}
+                        need-reprice={rootline.value.needReprice}
+                        use-rating-fact={useRatingFact}
+                        is-batch-mode={isBatchMode}
+                    >
+                    </vlocity_ins-ins-quote-large-group>
+                </div>
+            </template>
+        </template>
+    </div>
+    <vlocity_ins-ins-quote-product-list
+        is-multi-root={isMultiRoot}
+        class="vloc-ins-product-list"
+        record-id={recordId}
+        root-channel={rootQuoteChannel}
+    >
+    </vlocity_ins-ins-quote-product-list>
+</template>

@@ -1,0 +1,48 @@
+.vloc-ins-product {
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.has-error {
+    color: var(--slds-g-color-error-base-40, var(--lwc-colorTextError,rgb(234, 0, 30)));
+    display: none;
+    padding-left: 0.5rem;
+}
+
+.has-error-on {
+    display: inline;
+} 
+
+.save-padding {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .vloc-ins-quote {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .vloc-ins-action {
+        width: 50%;
+        margin-bottom: var(--lwc-spacingXxSmall,0.25rem);
+        padding-left: var(--lwc-spacingXxSmall,0.25rem);
+        padding-right: var(--lwc-spacingXxSmall,0.25rem);
+    }
+
+    .vloc-ins-actions {
+        justify-content: start
+    }
+
+    .vloc-ins-action-container {
+        padding-left: 0;
+        padding-right: 0;
+        padding: 0 0 var(--lwc-spacingMedium,1rem) 0;
+        margin-left: 0;
+        margin-right: 0;
+        border: none;
+        width: 100%;
+    }
+}

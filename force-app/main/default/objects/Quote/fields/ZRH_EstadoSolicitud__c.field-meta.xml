@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_EstadoSolicitud__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status,&apos;E-08&apos;),&quot;Recotizar&quot;,IF(ISPICKVAL(Status,&apos;E-05&apos;),&quot;Cotizada&quot;,IF(ISPICKVAL(Status,&apos;E-06&apos;),&quot;Declinada&quot;,IF(OR(ISPICKVAL(Status,&apos;E-02&apos;),ISPICKVAL(Status,&apos;E-03&apos;),ISPICKVAL(Status,&apos;E-04&apos;)),&quot;Pendiente de Cotizar&quot;,IF(ISPICKVAL(Status,&apos;E-09&apos;),&quot;Ganada&quot;,&quot;Perdida&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Estado Solicitud</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

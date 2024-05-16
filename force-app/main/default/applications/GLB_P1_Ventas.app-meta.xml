@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_QuoteRecordPage</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Quote</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_QuoteRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Quote</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLBP1_Contacto</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLBP1_Contacto</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_PartidaCotizacion</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>QuoteLineItem</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_PartidaCotizacion</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>QuoteLineItem</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_ProductoOportunidad</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>OpportunityLineItem</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_ProductoOportunidad</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>OpportunityLineItem</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_PaticipanteCotizacion</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>GLBP1_Participante_de_cotizacion__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>GLB_P1_PaticipanteCotizacion</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>GLBP1_Participante_de_cotizacion__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Ventas Zurich Chile</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Empresa</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.FinServ__IndustriesBusiness</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Poliza_de_Seguro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicy</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Oportunidad</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.FinServ__General</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Propuesta_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLB_P1_Propuesta__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLB_P1_Direccion</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Address</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLB_P1_Direccion</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Address</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Activo_de_p_liza_de_seguro_P_gina_de_registro</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>InsurancePolicyAsset</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Asegurado_de_Poliza</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>GLBP1_Asegurado_de_poliza__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Call Center</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de Back Offices interno creación - cierre</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo de sucursal</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>GLBP1_Cuenta_Personal</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <type>Flexipage</type>
+        <profile>Ejecutivo Back Office Contact Center</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Quote</tabs>
+    <tabs>standard-InsurancePolicy</tabs>
+    <tabs>GLB_P1_Propuesta__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>FinServ__WMHouseholds</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Ventas_Zurich_Chile_UtilityBar</utilityBar>
+</CustomApplication>

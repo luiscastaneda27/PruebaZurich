@@ -1,0 +1,50 @@
+[
+  {
+    "EdadMinimaIngresoS": 23,
+    "ParentescoSalud": "Titular",
+    "EdadTopeIngresoS": 2,
+    "EdadSalidaS": 32
+  },
+  {
+    "EdadMinimaIngresoS": 2,
+    "ParentescoSalud": "Hijo/a",
+    "EdadTopeIngresoS": 3,
+    "EdadSalidaS": 23
+  },
+  {
+    "EdadMinimaIngresoS": 3,
+    "ParentescoSalud": "Hijos Duplos",
+    "EdadTopeIngresoS": 23,
+    "EdadSalidaS": 2
+  },
+  {
+    "EdadMinimaIngresoS": 2,
+    "ParentescoSalud": "Cónyuge",
+    "EdadTopeIngresoS": 32,
+    "EdadSalidaS": 3
+  },
+  {
+    "ParentescoSalud": "Beneficiario"
+  },
+  {
+    "ParentescoSalud": "Empresa"
+  },
+  {
+    "ParentescoSalud": "Hijastro (a)"
+  },
+  {
+    "ParentescoSalud": "Nieto"
+  },
+  {
+    "ParentescoSalud": "Otros"
+  },
+  {
+    "ParentescoSalud": "Padres"
+  },
+  {
+    "ParentescoSalud": "Sobrino (a)"
+  },
+  {
+    "ParentescoSalud": "Conviviente Civil"
+  }
+]

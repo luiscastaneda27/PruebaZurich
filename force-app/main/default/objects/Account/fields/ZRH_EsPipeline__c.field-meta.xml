@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_EsPipeline__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo para identificar si la cuenta es Pipeline</description>
+    <externalId>false</externalId>
+    <label>Es Pipeline</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

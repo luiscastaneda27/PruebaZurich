@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_SubEstado__c</fullName>
+    <description>Indica el sub estado, aporta un nivel mas de detalle que el campo estado.</description>
+    <externalId>false</externalId>
+    <label>Sub Estado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SE-01</fullName>
+                <default>false</default>
+                <label>Sinestrialidad</label>
+            </value>
+            <value>
+                <fullName>SE-02</fullName>
+                <default>false</default>
+                <label>Sospecha de Fraude</label>
+            </value>
+            <value>
+                <fullName>SE-03</fullName>
+                <default>false</default>
+                <label>Apetito de Riesgo</label>
+            </value>
+            <value>
+                <fullName>SE-04</fullName>
+                <default>false</default>
+                <label>Cuenta Vigente</label>
+            </value>
+            <value>
+                <fullName>SE-05</fullName>
+                <default>false</default>
+                <label>Reservada por otro corredor</label>
+            </value>
+            <value>
+                <fullName>SE-06</fullName>
+                <default>false</default>
+                <label>Falta de informacion</label>
+            </value>
+            <value>
+                <fullName>SE-07</fullName>
+                <default>false</default>
+                <label>Falta de Tiempo UW</label>
+            </value>
+            <value>
+                <fullName>SE-08</fullName>
+                <default>false</default>
+                <label>Otra</label>
+            </value>
+            <value>
+                <fullName>SE-09</fullName>
+                <default>false</default>
+                <label>Motivo</label>
+            </value>
+            <value>
+                <fullName>SE-10</fullName>
+                <default>false</default>
+                <label>Cia que ganó</label>
+            </value>
+            <value>
+                <fullName>SE-11</fullName>
+                <default>false</default>
+                <label>Prima de cierre</label>
+            </value>
+            <value>
+                <fullName>SE-12</fullName>
+                <default>false</default>
+                <label>Corredor que ganó</label>
+            </value>
+            <value>
+                <fullName>SE-13</fullName>
+                <default>false</default>
+                <label>Se cumplió fecha de caducidad</label>
+            </value>
+            <value>
+                <fullName>SE-14</fullName>
+                <default>false</default>
+                <label>Aceptada por Cliente</label>
+            </value>
+            <value>
+                <fullName>SE-15</fullName>
+                <default>false</default>
+                <label>Configuración Completada</label>
+            </value>
+            <value>
+                <fullName>SE-16</fullName>
+                <default>false</default>
+                <label>Renovación Sincronizada</label>
+            </value>
+            <value>
+                <fullName>SE-17</fullName>
+                <default>false</default>
+                <label>Renovación Sincronizada con Error</label>
+            </value>
+            <value>
+                <fullName>SE-18</fullName>
+                <default>false</default>
+                <label>Renovación en proceso de Sincronización</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>E-02</controllingFieldValue>
+            <valueName>SE-16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-02</controllingFieldValue>
+            <valueName>SE-17</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-02</controllingFieldValue>
+            <valueName>SE-18</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-01</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-02</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-03</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-04</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <controllingFieldValue>E-10</controllingFieldValue>
+            <valueName>SE-05</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-06</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-07</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-06</controllingFieldValue>
+            <valueName>SE-08</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-09</controllingFieldValue>
+            <valueName>SE-14</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-09</controllingFieldValue>
+            <valueName>SE-15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-10</controllingFieldValue>
+            <valueName>SE-09</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-10</controllingFieldValue>
+            <valueName>SE-10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-10</controllingFieldValue>
+            <valueName>SE-11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-10</controllingFieldValue>
+            <valueName>SE-12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-10</controllingFieldValue>
+            <valueName>SE-13</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

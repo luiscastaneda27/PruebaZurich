@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_TipoEndoso__c</fullName>
+    <description>Definición del tipo de endoso que se esta realizando</description>
+    <externalId>false</externalId>
+    <label>Tipo de Endoso</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ZRH_TipoEndoso</valueSetName>
+    </valueSet>
+</CustomField>

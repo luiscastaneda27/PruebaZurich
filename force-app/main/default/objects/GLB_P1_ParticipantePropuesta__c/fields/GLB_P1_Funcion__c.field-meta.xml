@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_Funcion__c</fullName>
+    <externalId>false</externalId>
+    <label>Función</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Funcion 1</fullName>
+                <default>false</default>
+                <label>Funcion 1</label>
+            </value>
+            <value>
+                <fullName>Funcion 2</fullName>
+                <default>false</default>
+                <label>Funcion 2</label>
+            </value>
+            <value>
+                <fullName>Funcion 3</fullName>
+                <default>false</default>
+                <label>Funcion 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

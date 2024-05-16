@@ -1,0 +1,98 @@
+.vloc-ins-product {
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.vloc-add-container {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    border: 1px solid rgb(221, 219, 218);
+    flex-direction: column;
+}
+
+.vloc-add-container .slds-media__figure {
+    max-height: 7rem;
+}
+
+.vloc-ins-add-icons {
+    cursor:pointer;
+}
+
+.vloc-ins-add-icons .vloc-ins-add-icon {
+    display: flex;
+    max-height: 8rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.vloc-ins-add-icon:first-child {
+    width: 6rem;
+    height: 6rem;
+    background-color: #d8edff;
+}
+
+.vloc-ins-add-icon:nth-child(2) {
+    height: 2rem;
+    width: 2rem;
+    bottom: 2rem;
+    left: 3.5rem;
+    padding: 1rem;
+    position: relative;
+    background-color: #006dcc;
+    border: 0.2rem solid white;
+}
+
+.vloc-ins-price-change-container {
+    border: 1px solid #4ACA82;
+    padding: 2rem;
+    box-shadow: none;
+    font-size: 1.1rem;
+    border-radius: 0.4em;
+}
+
+.vloc-ins-price-change {
+    font-weight: 600;
+    position: relative;
+}
+
+.vloc-ins-tooltip {
+    position: relative;
+    bottom: 0.2rem;
+}
+
+.vloc-ins-light {
+    color: #706E6C;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .vloc-ins-quote {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: #FFFFFF;
+    }
+
+    .vloc-ins-action {
+        width: 50%;
+        margin-bottom: 0.25rem;
+        padding-left: var(--lwc-spacingXxSmall,0.25rem);
+        padding-right: var(--lwc-spacingXxSmall,0.25rem);
+    }
+
+    .vloc-ins-action-container {
+        padding: 0 0 var(--lwc-spacingMedium,1rem) 0;
+        margin-left: 0;
+        margin-right: 0;
+        border: none;
+        width: 100%;
+    }
+
+    .vloc-ins-price-change-container {
+        padding: 1.1rem;
+    }
+}

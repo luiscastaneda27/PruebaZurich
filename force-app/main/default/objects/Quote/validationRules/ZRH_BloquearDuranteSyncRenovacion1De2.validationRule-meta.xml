@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_BloquearDuranteSyncRenovacion1De2</fullName>
+    <active>true</active>
+    <description>Bloquea la cotización de renovación mientras se sincroniza con AS400.</description>
+    <errorConditionFormula>AND(
+    /*Si es cotizacion renovacion*/
+    ZRH_RenovacionFlag__c,
+    /*Y no tiene permisos para sync*/
+    NOT($Permission.ZRH_SincronizarPolizasRenovacion),
+    /*Fue oficializada la renovacion*/
+    ZRH_PolizasPorRenovar__c,
+    /*Fue oficializada la renovacion*/
+    NOT(ISCHANGED(ZRH_PolizasPorRenovar__c)),
+    /*Y no esta terminada la sync*/
+    NOT(ZRH_RenovacionSincronizada__c),
+    /*Y quiere editar algun campo -&gt; ERROR */
+    OR(
+        ISCHANGED(CurrencyIsoCode),
+        ISCHANGED(Email),
+        ISCHANGED(OpportunityId),
+        ISCHANGED(OwnerId),
+        ISCHANGED(QuoteNumber),
+        ISCHANGED(RecordTypeId),
+        ISCHANGED(Status),
+        ISCHANGED(vlocity_ins__AgencyBrokerageId__c),
+        ISCHANGED(vlocity_ins__ProducerId__c),
+        ISCHANGED(vlocity_ins__UnderwriterId__c),
+        ISCHANGED(vlocity_ins_fsc__GroupCensusStdId__c),
+        ISCHANGED(ZRH_Adicionales__c),
+        ISCHANGED(ZRH_AprobacionPendiente__c),
+        ISCHANGED(ZRH_AtributosAsistenciasSeleccionados__c),
+        ISCHANGED(ZRH_AtributosCondicionadosParticulares__c),
+        ISCHANGED(ZRH_AtributosConfiguracionTopes__c),
+        ISCHANGED(ZRH_AtributosConveniosLineaSeleccionados__c),
+        ISCHANGED(ZRH_AtributosConveniosSeleccionados__c),
+        ISCHANGED(ZRH_AtributosSobreprimasSeleccionados__c),
+        ISCHANGED(ZRH_BusquedaAprobadorFuncion__c),
+        ISCHANGED(ZRH_BypassReglaValidacionActivo__c),
+        ISCHANGED(ZRH_CartaDeExclusividad__c),
+        ISCHANGED(ZRH_CoberturaEnElExterior__c),
+        ISCHANGED(ZRH_CodigoRespuestaAPIPDF__c),
+        ISCHANGED(ZRH_ComisionCorredor__c),
+        ISCHANGED(ZRH_ConsideraTopePreexistencias__c),
+        ISCHANGED(ZRH_CotizacionDelHolding__c),
+        ISCHANGED(ZRH_CotizacionHolding__c),
+        ISCHANGED(ZRH_CreadoPorUsuario__c),
+        ISCHANGED(ZRH_CualesPreexistencias__c),
+        ISCHANGED(ZRH_CualesPreexistenciasLectura__c),
+        ISCHANGED(ZRH_CubrePreexistencias__c),
+        ISCHANGED(ZRH_CubreTodasPreexistencias__c),
+        ISCHANGED(ZRH_CuentasDEF__c),
+        ISCHANGED(ZRH_EjecutivoPropietario__c),
+        ISCHANGED(ZRH_EsLicitacion__c),
+        ISCHANGED(ZRH_EsPipeline__c),
+        ISCHANGED(ZRH_EstadoSolicitud__c),
+        ISCHANGED(ZRH_EstadoSubEstado__c),
+        ISCHANGED(ZRH_FechaCaducidad__c),
+        ISCHANGED(ZRH_FechaHoraRespuestaAPIPDF__c),
+        ISCHANGED(ZRH_FechaLimitePregunta__c),
+        ISCHANGED(ZRH_FechaOficializacionContrato__c),
+        ISCHANGED(ZRH_FechaSolicitudEntrega__c),
+        ISCHANGED(ZRH_FondoLibreDisposicion__c),
+        ISCHANGED(ZRH_GenerandoPDF__c),
+        ISCHANGED(ZRH_Holding__c),
+        ISCHANGED(ZRH_IdJobCreacionPolizas__c),
+        ISCHANGED(ZRH_MensajeRespuestaAPIPDF__c),
+        ISCHANGED(ZRH_MesCreacion__c),
+        ISCHANGED(ZRH_Moneda__c),
+        ISCHANGED(ZRH_MontoAnualFondo__c),
+        ISCHANGED(ZRH_MontoTopePreexistencias__c),
+        ISCHANGED(ZRH_NivelAsistencia__c),
+        ISCHANGED(ZRH_NivelConvenio__c),
+        ISCHANGED(ZRH_NivelConvenioLinea__c),
+        ISCHANGED(ZRH_NivelDeCoberturaEnElExterior__c),
+        ISCHANGED(ZRH_NivelFondoLibreDisposicion__c),
+        ISCHANGED(ZRH_NivelPreexistencia__c),
+        ISCHANGED(ZRH_NivelSobreprima__c),
+        ISCHANGED(ZRH_NombreCorredor__c),
+        ISCHANGED(ZRH_NombreCortoCuenta__c),
+        ISCHANGED(ZRH_NombreHolding__c),
+        ISCHANGED(ZRH_NroAsegurados__c),
+        ISCHANGED(ZRH_NumeroDiasLibrePreexistencias__c),
+        ISCHANGED(ZRH_Observaciones__c),
+        ISCHANGED(ZRH_Origen__c),
+        ISCHANGED(ZRH_PDFCreado__c),
+        ISCHANGED(ZRH_PrimaTarget__c),
+        ISCHANGED(ZRH_PrimaTotalAnual_UF__c),
+        ISCHANGED(ZRH_PrimaTotalAnualUF_Salud__c),
+        ISCHANGED(ZRH_PrimaTotalAnualUF_Vida__c)
+       )
+)</errorConditionFormula>
+    <errorMessage>Esta cotización se encuentra en sincronización con AS400. No puedes editarla.</errorMessage>
+</ValidationRule>

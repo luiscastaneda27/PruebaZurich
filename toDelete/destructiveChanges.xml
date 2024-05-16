@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<!-- Ignacio Toledo / PCRM-1102 / 01-09-2021 -->
+	<types>
+		<members>Account.LP_NumeroCelular__c</members>		
+		<members>Account.LP_FechaAceptacionContratos__c</members>
+		<members>Account.LP_AsignacionPAN__c</members>		
+		<members>Account.LP_Nacionalidad__c</members>
+		<name>CustomField</name>
+	</types>
+	<!-- Abdon Tejos / PCRM-1298 / 07-10-2021 -->
+	<types>
+		<members>Account.LP_Cuenta</members>
+		<name>sharingGuestRules</name>
+	</types>
+	<types>
+		<members>LP_Base_Express__c.LP_PermisoBaseExpress</members>
+		<name>sharingGuestRules</name>
+	</types>
+	<types>
+		<members>LP_Ciudad__c.Guest_Onboarding</members>
+		<name>sharingGuestRules</name>
+	</types>
+	<types>
+		<members>LP_Nacionalidad__c.LP_VisualizacionNacionalidad</members>
+		<name>sharingGuestRules</name>
+	</types>
+	<types>
+		<members>LP_Onboarding__c.LP_Onboarding</members>
+		<name>sharingGuestRules</name>
+	</types>
+		<!-- Eilhert Andrade / PCRM-212 / 20-01-2022 -->
+		<types>
+			<members>LP_Vista360DescripcionServicios.Vista360_Orden_001</members>
+			<members>LP_Vista360DescripcionServicios.Vista360_Orden_002</members>
+			<members>LP_Vista360DescripcionServicios.Vista360_Orden_003</members>
+			<name>CustomMetadata</name>
+		</types>
+</Package>

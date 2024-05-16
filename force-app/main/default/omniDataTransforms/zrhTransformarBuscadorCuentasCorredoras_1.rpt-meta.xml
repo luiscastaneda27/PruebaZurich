@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;idCuenta&quot; : &quot;0013C00000kxBBHQA2&quot;,
+  &quot;nombreCuenta&quot; : &quot;Corredora / Broker&quot;,
+  &quot;rutCuenta&quot; : &quot;61106000‑9&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;idCuentaCorredor&quot; : &quot;0013C00000kxBBHQA2&quot;,
+  &quot;nombreCorredor&quot; : &quot;Corredora / Broker&quot;,
+  &quot;rutCorredor&quot; : &quot;61106000‑9&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarBuscadorCuentasCorredoras</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras01606099281340012</globalKey>
+        <inputFieldName>keyCorredor</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>keyCorredor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras8616778489599726</globalKey>
+        <inputFieldName>rutCuenta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>rutCorredor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras5308484244803517</globalKey>
+        <inputFieldName>nombreCuenta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>nombreCorredor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras38566458443639773</globalKey>
+        <inputFieldName>digitoVerificador</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>dvCorredor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras04810274480679899</globalKey>
+        <inputFieldName>sucursalCuenta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>sucursalCorredor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras4963236363737509</globalKey>
+        <inputFieldName>idCuenta</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>idCuentaCorredor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:nombreCuenta &quot;/\/\/&quot; + var:rutCuenta +</formulaConverted>
+        <formulaExpression>%nombreCuenta% + &quot; &quot; + %rutCuenta%</formulaExpression>
+        <formulaResultPath>keyCorredor</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarBuscadorCuentasCorredoras09773744594581313</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarBuscadorCuentasCorredoras</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;idCuenta&quot; : &quot;0013C00000kxBBHQA2&quot;,
+  &quot;nombreCuenta&quot; : &quot;Corredora / Broker&quot;,
+  &quot;rutCuenta&quot; : &quot;61106000‑9&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarBuscadorCuentasCorredoras_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

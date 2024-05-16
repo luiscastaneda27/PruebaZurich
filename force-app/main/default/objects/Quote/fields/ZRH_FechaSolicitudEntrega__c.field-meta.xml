@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_FechaSolicitudEntrega__c</fullName>
+    <description>Fecha de solicitud de entrega de la cotización</description>
+    <externalId>false</externalId>
+    <label>Fecha Solicitud Entrega</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

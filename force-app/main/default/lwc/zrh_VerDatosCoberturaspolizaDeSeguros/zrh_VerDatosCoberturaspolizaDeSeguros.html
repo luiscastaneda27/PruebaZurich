@@ -1,0 +1,16 @@
+<template>
+                    <div class="slds-form-element_compound">
+                        <div class="slds-grid slds-form__row">
+                    <template for:each={attributesPolicyToDisplay} for:item="seccion">
+                       
+                            
+                           <lightning-input  name="textield" class=" slds-col slds-size_6-of-12 summary-heading" type="text" label={seccion.category} value={seccion.attributes} key={seccion.category} readonly="true"></lightning-input>
+                        
+                        
+                    
+                    </template>
+                </div>
+            </div>
+                
+               
+</template>

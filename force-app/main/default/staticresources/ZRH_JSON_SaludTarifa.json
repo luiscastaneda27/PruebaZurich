@@ -1,0 +1,50 @@
+{
+  "IdTipoTarifa": "1",
+  "TarifaSalud": [
+    {
+      "TarifaSaludPP": 200,
+      "DescTarifaSalud": "EMPRESA",
+      "TarifaSaludNT": 2,
+      "TarifaSaludPV": 100,
+      "CodigoSubtipoTarifa": "0"
+    },
+    {
+      "DescTarifaSalud": "TITULAR",
+      "CodigoSubtipoTarifa": "1"
+    },
+    {
+      "DescTarifaSalud": "CONYUGE",
+      "CodigoSubtipoTarifa": "2"
+    },
+    {
+      "DescTarifaSalud": "HIJO",
+      "CodigoSubtipoTarifa": "3"
+    },
+    {
+      "DescTarifaSalud": "OTRO",
+      "CodigoSubtipoTarifa": "4"
+    },
+    {
+      "DescTarifaSalud": "CONYUGE (M)",
+      "CodigoSubtipoTarifa": "5"
+    },
+    {
+      "DescTarifaSalud": "HIJO (TM)",
+      "CodigoSubtipoTarifa": "6"
+    },
+    {
+      "DescTarifaSalud": "PADRE/MADRE DEL TITULAR",
+      "CodigoSubtipoTarifa": "7"
+    },
+    {
+      "DescTarifaSalud": "NIETO",
+      "CodigoSubtipoTarifa": "9"
+    },
+    {
+      "TarifaSaludPP": 400,
+      "DescTarifaSalud": "TOTAL",
+      "TarifaSaludNT": 2,
+      "TarifaSaludPV": 200
+    }
+  ]
+}

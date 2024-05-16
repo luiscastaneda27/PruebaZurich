@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Indica si la inscripción de asegurados de la nómina usará el objeto GroupCensusMemberPlan o si se hará en base al rol de los asegurados.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Group Census Member Plan Model</label>
+    <visibility>Public</visibility>
+</CustomObject>

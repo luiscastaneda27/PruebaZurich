@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <constants>
+        <name>MenorIDPackPoliza</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>PP-000001</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Existe_Rol_con_Mismo_Pack_de_Poliza</name>
+        <label>Existe Rol con Mismo Pack de Poliza</label>
+        <locationX>248</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>Obtener_Mayor_Id_Pack_Poliza</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Existe</defaultConnectorLabel>
+        <rules>
+            <name>Existe</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Obtener_Roles.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualizar_Registro_de_Origen</targetReference>
+            </connector>
+            <label>Existe</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Existen_Roles</name>
+        <label>Existen Roles</label>
+        <locationX>446</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>Actualizar_con_Menor_ID_Pack_Poliza</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Existen</defaultConnectorLabel>
+        <rules>
+            <name>Existen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>MayorIDPackPoliza</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Actualizar_con_ID_Pack_Poliza_Incrementado</targetReference>
+            </connector>
+            <label>Existen</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>IncrementarIDPackPoliza</name>
+        <dataType>String</dataType>
+        <expression>IF({!IncrementarIDPackPolizaNumero} &lt;10, 
+&quot;PP-00000&quot; + TEXT({!IncrementarIDPackPolizaNumero}), 
+IF({!IncrementarIDPackPolizaNumero} &lt; 100, 
+&quot;PP-0000&quot; + TEXT({!IncrementarIDPackPolizaNumero}), 
+IF({!IncrementarIDPackPolizaNumero} &lt; 1000, 
+&quot;PP-000&quot; + TEXT({!IncrementarIDPackPolizaNumero}), 
+IF({!IncrementarIDPackPolizaNumero} &lt; 10000, 
+&quot;PP-00&quot; + TEXT({!IncrementarIDPackPolizaNumero}), 
+IF({!IncrementarIDPackPolizaNumero} &lt; 100000, 
+&quot;PP-0&quot; + TEXT({!IncrementarIDPackPolizaNumero}), 
+IF({!IncrementarIDPackPolizaNumero} &lt; 1000000, 
+&quot;PP-&quot; + TEXT({!IncrementarIDPackPolizaNumero}), 
+&quot;Haz llegado al maximo de ID Pack de Polizas&quot;))))))</expression>
+    </formulas>
+    <formulas>
+        <name>IncrementarIDPackPolizaNumero</name>
+        <dataType>Number</dataType>
+        <expression>VALUE(RIGHT({!MayorIDPackPoliza}, 3)) + 1</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>ZRH_CrearIDPackPoliza {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ZRH_CrearIDPackPoliza</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Obtener_Mayor_Id_Pack_Poliza</name>
+        <label>Obtener Mayor Id Pack Poliza</label>
+        <locationX>446</locationX>
+        <locationY>611</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Existen_Roles</targetReference>
+        </connector>
+        <object>ContractGroupPlanGroupClass</object>
+        <outputAssignments>
+            <assignToReference>MayorIDPackPoliza</assignToReference>
+            <field>ZRH_IDPackPoliza__c</field>
+        </outputAssignments>
+        <sortField>ZRH_IDPackPoliza__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <name>Obtener_Quote_Line_Item</name>
+        <label>Obtener Quote Line Item</label>
+        <locationX>248</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Obtener_Roles</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ContractGroupPlan.QuoteLineItemId</elementReference>
+            </value>
+        </filters>
+        <object>QuoteLineItem</object>
+        <outputAssignments>
+            <assignToReference>AttributeSelectedValues</assignToReference>
+            <field>vlocity_ins__AttributeSelectedValues__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Obtener_Roles</name>
+        <label>Obtener Roles</label>
+        <locationX>248</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Existe_Rol_con_Mismo_Pack_de_Poliza</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>GroupClassId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.GroupClassId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ZRH_Contratante__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ContractGroupPlan.Contract.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ZRH_Holding__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ContractGroupPlan.Contract.Account.ParentId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ContractGroupPlanGroupClass</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>ZRH_IDPackPoliza__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Actualizar_con_ID_Pack_Poliza_Incrementado</name>
+        <label>Actualizar con ID Pack Poliza Incrementado</label>
+        <locationX>314</locationX>
+        <locationY>827</locationY>
+        <inputAssignments>
+            <field>ZRH_IDPackPoliza__c</field>
+            <value>
+                <elementReference>IncrementarIDPackPoliza</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Actualizar_con_Menor_ID_Pack_Poliza</name>
+        <label>Actualizar con Menor ID Pack Poliza</label>
+        <locationX>578</locationX>
+        <locationY>827</locationY>
+        <inputAssignments>
+            <field>ZRH_IDPackPoliza__c</field>
+            <value>
+                <elementReference>MenorIDPackPoliza</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Actualizar_Registro_de_Origen</name>
+        <label>Actualizar Registro de Origen</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>ZRH_IDPackPoliza__c</field>
+            <value>
+                <elementReference>Obtener_Roles.ZRH_IDPackPoliza__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>122</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Obtener_Quote_Line_Item</targetReference>
+        </connector>
+        <object>ContractGroupPlanGroupClass</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>AttributeSelectedValues</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>MayorIDPackPoliza</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

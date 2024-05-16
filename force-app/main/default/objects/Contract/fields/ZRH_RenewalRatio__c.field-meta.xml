@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZRH_RenewalRatio__c</fullName>
+    <description>Renewal Ratio representa el aumento porcentual en la prima de un grupo de pólizas para un contratante durante el proceso de renovación.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        NOT(ISBLANK(ZRH_GWPContratante__c)),
+        NOT(ISBLANK(ZRH_GWPPeriodoAnterior__c)),
+        ZRH_GWPPeriodoAnterior__c &lt;&gt; 0
+    ),
+    (ZRH_GWPContratante__c / ZRH_GWPPeriodoAnterior__c),
+    null
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Renewal Ratio (C)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

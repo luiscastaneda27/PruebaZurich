@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asegurado</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asegurados</value>
+    </caseValues>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins_fsc__GroupCensusMemberList</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins_fsc__RatingFactSourceFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>vlocity_ins_fsc__StandardFieldset</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Copy of Group Census Member Layout</layout>
+        <sections>
+            <label></label>
+            <section>Zurich</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Group Census Member Layout</layout>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Zurich</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

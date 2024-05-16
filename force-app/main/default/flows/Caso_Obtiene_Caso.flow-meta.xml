@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Transfiere ID de Caso a Acción Apex</description>
+        <name>Env_a_Caso_a_Apex</name>
+        <label>Envía Caso a Apex</label>
+        <locationX>1027</locationX>
+        <locationY>626</locationY>
+        <actionName>WS_CreateCase_GLB</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>caseIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>WS_CreateCase_GLB</nameSegment>
+        <outputParameters>
+            <assignToReference>varSyncroCasoSFDYN</assignToReference>
+            <name>output</name>
+        </outputParameters>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>ID_Caso</name>
+        <label>ID Caso</label>
+        <locationX>1183</locationX>
+        <locationY>497</locationY>
+        <assignmentItems>
+            <assignToReference>varIDCaso</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Copia_1_de_Obtiene_Caso.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Env_a_Caso_a_Apex</targetReference>
+        </connector>
+    </assignments>
+    <description>Detecta generación de un nuevo registro de Caso para transferir la data al microservicio que lo integrará a Dynamics como una nueva Solicitud de Servicio</description>
+    <environments>Default</environments>
+    <interviewLabel>Caso: Obtiene Caso {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Caso: Obtiene Caso</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Copia_1_de_Obtiene_Caso</name>
+        <label>Copia 1 de Obtiene Caso</label>
+        <locationX>1066</locationX>
+        <locationY>363</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ID_Caso</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Copia_1_de_Obtiene_Caso</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varIDCaso</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Respuesta de API Dynamics por envío de Caso Salesforce a creación de Solicitud de Servicio</description>
+        <name>varSyncroCasoSFDYN</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

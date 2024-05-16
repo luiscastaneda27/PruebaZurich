@@ -1,0 +1,50 @@
+[
+  {
+    "CamposDEF": [
+      {
+        "isPercent": true,
+        "Campo": "Porcentaje Devolucion",
+        "isVisibleValor": false,
+        "Aplica": "No"
+      },
+      {
+        "isPercent": true,
+        "Campo": "G = Fracción Gastos Incurridos de Prima",
+        "isVisibleValor": false,
+        "Aplica": "No"
+      },
+      {
+        "Campo": "A = Arrastre de Resultados Negativos de hasta M años anteriores",
+        "isNumber": true,
+        "isVisibleValor": true,
+        "Aplica": "Si",
+        "Valor": "2"
+      },
+      {
+        "Campo": "M = Años Anteriores",
+        "isNumber": true,
+        "isVisibleValor": false,
+        "Aplica": "No"
+      },
+      {
+        "isPercent": true,
+        "Campo": "I = Siniestros Incurridos y no Reportados",
+        "isVisibleValor": false,
+        "Aplica": "No"
+      },
+      {
+        "Campo": "C = Comisiones Pagadas",
+        "isNumber": true,
+        "isVisibleValor": true,
+        "Aplica": "Si",
+        "Valor": "2"
+      }
+    ],
+    "createdDate": "18/10/2023",
+    "Planes": [
+      "600"
+    ],
+    "lastModifiedDate": "18/10/2023",
+    "Id": 1
+  }
+]

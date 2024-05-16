@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;TarificacionEscolaridad&quot; : {
+    &quot;CoberturasEsc&quot; : [ {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.08,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 1,
+        &quot;CapAsegEsc&quot; : 1,
+        &quot;TasaAnualEsc&quot; : 1
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.08,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 1,
+        &quot;CapAsegEsc&quot; : 1,
+        &quot;TasaAnualEsc&quot; : 1
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 2,
+        &quot;TotalCapAsegEsc&quot; : 2,
+        &quot;TotalPrimaAnualEsc&quot; : 0,
+        &quot;TotalPrimaMensualEsc&quot; : 0
+      },
+      &quot;CodigoCobertura&quot; : &quot;1&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aEGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;FALLECIMIENTO&quot;
+    }, {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.17,
+        &quot;PrimaAnualEsc&quot; : null,
+        &quot;PrimaMensualEsc&quot; : null,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 2,
+        &quot;CapAsegEsc&quot; : 2,
+        &quot;TasaAnualEsc&quot; : 2
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.17,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 2,
+        &quot;CapAsegEsc&quot; : 2,
+        &quot;TasaAnualEsc&quot; : 2
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;,
+        &quot;CapAsegEsc&quot; : null
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 4,
+        &quot;TotalCapAsegEsc&quot; : 4,
+        &quot;TotalPrimaAnualEsc&quot; : null,
+        &quot;TotalPrimaMensualEsc&quot; : null
+      },
+      &quot;CodigoCobertura&quot; : &quot;82&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aFGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;
+    }, {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.25,
+        &quot;PrimaAnualEsc&quot; : 0.01,
+        &quot;PrimaMensualEsc&quot; : null,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 3,
+        &quot;CapAsegEsc&quot; : 3,
+        &quot;TasaAnualEsc&quot; : 3
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.25,
+        &quot;PrimaAnualEsc&quot; : 0.01,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 3,
+        &quot;CapAsegEsc&quot; : 3,
+        &quot;TasaAnualEsc&quot; : 3
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 6,
+        &quot;TotalCapAsegEsc&quot; : 6,
+        &quot;TotalPrimaAnualEsc&quot; : 0.02,
+        &quot;TotalPrimaMensualEsc&quot; : null
+      },
+      &quot;CodigoCobertura&quot; : &quot;80&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aGGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE (80)&quot;
+    } ],
+    &quot;IngresoAlgunValorATarifaEscolaridad&quot; : true
+  },
+  &quot;CodigoPlanVida&quot; : &quot;&quot;,
+  &quot;TarificacionVida&quot; : &quot;&quot;,
+  &quot;SubtarifasSalud&quot; : &quot;&quot;,
+  &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6aDGAS&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;TarificacionEscolaridad&quot; : {
+    &quot;CoberturasEsc&quot; : [ {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.08,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 1,
+        &quot;CapAsegEsc&quot; : 1,
+        &quot;TasaAnualEsc&quot; : 1
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.08,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 1,
+        &quot;CapAsegEsc&quot; : 1,
+        &quot;TasaAnualEsc&quot; : 1
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 2,
+        &quot;TotalCapAsegEsc&quot; : 2,
+        &quot;TotalPrimaAnualEsc&quot; : 0,
+        &quot;TotalPrimaMensualEsc&quot; : 0
+      },
+      &quot;CodigoCobertura&quot; : &quot;1&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aEGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;FALLECIMIENTO&quot;
+    }, {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.17,
+        &quot;PrimaAnualEsc&quot; : null,
+        &quot;PrimaMensualEsc&quot; : null,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 2,
+        &quot;CapAsegEsc&quot; : 2,
+        &quot;TasaAnualEsc&quot; : 2
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.17,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 2,
+        &quot;CapAsegEsc&quot; : 2,
+        &quot;TasaAnualEsc&quot; : 2
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;,
+        &quot;CapAsegEsc&quot; : null
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 4,
+        &quot;TotalCapAsegEsc&quot; : 4,
+        &quot;TotalPrimaAnualEsc&quot; : null,
+        &quot;TotalPrimaMensualEsc&quot; : null
+      },
+      &quot;CodigoCobertura&quot; : &quot;82&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aFGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;
+    }, {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.25,
+        &quot;PrimaAnualEsc&quot; : 0.01,
+        &quot;PrimaMensualEsc&quot; : null,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 3,
+        &quot;CapAsegEsc&quot; : 3,
+        &quot;TasaAnualEsc&quot; : 3
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.25,
+        &quot;PrimaAnualEsc&quot; : 0.01,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 3,
+        &quot;CapAsegEsc&quot; : 3,
+        &quot;TasaAnualEsc&quot; : 3
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 6,
+        &quot;TotalCapAsegEsc&quot; : 6,
+        &quot;TotalPrimaAnualEsc&quot; : 0.02,
+        &quot;TotalPrimaMensualEsc&quot; : null
+      },
+      &quot;CodigoCobertura&quot; : &quot;80&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aGGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE (80)&quot;
+    } ],
+    &quot;IngresoAlgunValorATarifaEscolaridad&quot; : true
+  },
+  &quot;CodigoPlanVida&quot; : &quot;&quot;,
+  &quot;TarificacionVida&quot; : &quot;&quot;,
+  &quot;SubtarifasSalud&quot; : &quot;&quot;,
+  &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6aDGAS&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>zrhTransformarTotalTarifaEscolaridad</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad3967487986669911</globalKey>
+        <inputFieldName>TarificacionEscolaridad:TotalTarifaEsc:TotalPrimaMensualEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:PrimaMensualEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad37443001790405117</globalKey>
+        <inputFieldName>TarificacionEscolaridad:TotalTarifaEsc:TotalCapAsegEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:CapAsegEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridadCustom1188</globalKey>
+        <inputFieldName>TarificacionEscolaridad:TotalTarifaEsc:TotalPrimaMensualVigenteEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:PrimaMensualVigenteEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad1772213063226653</globalKey>
+        <inputFieldName>TarificacionEscolaridad:TotalTarifaEsc:TotalNAseguradosEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:NAseguradosEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad8141803315827001</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>TotalTarifaEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridadCustom4807</globalKey>
+        <inputFieldName>TarificacionEscolaridad:TotalTarifaEsc:TotalPrimaAnualVigenteEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:PrimaAnualVigenteEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad35022904162615176</globalKey>
+        <inputFieldName>Total</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:DescripcionNivel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;TOTAL&quot;</formulaConverted>
+        <formulaExpression>&quot;TOTAL&quot;</formulaExpression>
+        <formulaResultPath>Total</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad7574334596976455</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>zrhTransformarTotalTarifaEscolaridad12420004697618126</globalKey>
+        <inputFieldName>TarificacionEscolaridad:TotalTarifaEsc:TotalPrimaAnualEsc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>zrhTransformarTotalTarifaEscolaridad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalTarifaEsc:PrimaAnualEsc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;TarificacionEscolaridad&quot; : {
+    &quot;CoberturasEsc&quot; : [ {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.08,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 1,
+        &quot;CapAsegEsc&quot; : 1,
+        &quot;TasaAnualEsc&quot; : 1
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.08,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 1,
+        &quot;CapAsegEsc&quot; : 1,
+        &quot;TasaAnualEsc&quot; : 1
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 2,
+        &quot;TotalCapAsegEsc&quot; : 2,
+        &quot;TotalPrimaAnualEsc&quot; : 0,
+        &quot;TotalPrimaMensualEsc&quot; : 0
+      },
+      &quot;CodigoCobertura&quot; : &quot;1&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aEGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;FALLECIMIENTO&quot;
+    }, {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.17,
+        &quot;PrimaAnualEsc&quot; : null,
+        &quot;PrimaMensualEsc&quot; : null,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 2,
+        &quot;CapAsegEsc&quot; : 2,
+        &quot;TasaAnualEsc&quot; : 2
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.17,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 2,
+        &quot;CapAsegEsc&quot; : 2,
+        &quot;TasaAnualEsc&quot; : 2
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;,
+        &quot;CapAsegEsc&quot; : null
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 4,
+        &quot;TotalCapAsegEsc&quot; : 4,
+        &quot;TotalPrimaAnualEsc&quot; : null,
+        &quot;TotalPrimaMensualEsc&quot; : null
+      },
+      &quot;CodigoCobertura&quot; : &quot;82&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aFGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE 2/3&quot;
+    }, {
+      &quot;NivelesEsc&quot; : [ {
+        &quot;TasaMensualEsc&quot; : 0.25,
+        &quot;PrimaAnualEsc&quot; : 0.01,
+        &quot;PrimaMensualEsc&quot; : null,
+        &quot;NivelEsc&quot; : &quot;SIN NIVEL ESCOLARIDAD&quot;,
+        &quot;NAseguradosEsc&quot; : 3,
+        &quot;CapAsegEsc&quot; : 3,
+        &quot;TasaAnualEsc&quot; : 3
+      }, {
+        &quot;TasaMensualEsc&quot; : 0.25,
+        &quot;PrimaAnualEsc&quot; : 0.01,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRE KINDER&quot;,
+        &quot;NAseguradosEsc&quot; : 3,
+        &quot;CapAsegEsc&quot; : 3,
+        &quot;TasaAnualEsc&quot; : 3
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;KINDER&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;OCTAVO BASICO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO MEDIO&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO TEC-SUPERIOR 5 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 6 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;PRIMERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEGUNDO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;TERCERO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;CUARTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;QUINTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEXTO SUPERIOR 7 AÑOS&quot;
+      }, {
+        &quot;TasaMensualEsc&quot; : 0,
+        &quot;PrimaAnualEsc&quot; : 0,
+        &quot;PrimaMensualEsc&quot; : 0,
+        &quot;NivelEsc&quot; : &quot;SEPTIMO SUPERIOR 7 AÑOS&quot;
+      } ],
+      &quot;TotalTarifaEsc&quot; : {
+        &quot;TotalNAseguradosEsc&quot; : 6,
+        &quot;TotalCapAsegEsc&quot; : 6,
+        &quot;TotalPrimaAnualEsc&quot; : 0.02,
+        &quot;TotalPrimaMensualEsc&quot; : null
+      },
+      &quot;CodigoCobertura&quot; : &quot;80&quot;,
+      &quot;IdCoberturaEsc&quot; : &quot;0QL75000000E6aGGAS&quot;,
+      &quot;NombreCobEsc&quot; : &quot;INVALIDEZ PERMANENTE (80)&quot;
+    } ],
+    &quot;IngresoAlgunValorATarifaEscolaridad&quot; : true
+  },
+  &quot;CodigoPlanVida&quot; : &quot;&quot;,
+  &quot;TarificacionVida&quot; : &quot;&quot;,
+  &quot;SubtarifasSalud&quot; : &quot;&quot;,
+  &quot;IdProductoCotizacion&quot; : &quot;0QL75000000E6aDGAS&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>zrhTransformarTotalTarifaEscolaridad_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

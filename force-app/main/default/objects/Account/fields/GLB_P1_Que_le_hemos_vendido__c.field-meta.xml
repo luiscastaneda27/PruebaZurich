@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GLB_P1_Que_le_hemos_vendido__c</fullName>
+    <externalId>false</externalId>
+    <label>¿Qué le hemos vendido?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Seguro accidentes</fullName>
+                <default>false</default>
+                <label>Seguro accidentes</label>
+            </value>
+            <value>
+                <fullName>Seguro de auto</fullName>
+                <default>false</default>
+                <label>Seguro de auto</label>
+            </value>
+            <value>
+                <fullName>Seguro de salud</fullName>
+                <default>false</default>
+                <label>Seguro de salud</label>
+            </value>
+            <value>
+                <fullName>Seguro desempleo</fullName>
+                <default>false</default>
+                <label>Seguro desempleo</label>
+            </value>
+            <value>
+                <fullName>Seguro desgravamen</fullName>
+                <default>false</default>
+                <label>Seguro desgravamen</label>
+            </value>
+            <value>
+                <fullName>Seguro de vida</fullName>
+                <default>false</default>
+                <label>Seguro de vida</label>
+            </value>
+            <value>
+                <fullName>SOAP</fullName>
+                <default>false</default>
+                <label>SOAP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
